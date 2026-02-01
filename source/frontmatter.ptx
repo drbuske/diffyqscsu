@@ -6,9 +6,9 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <bibinfo>
     <author>
-      <personname>Instructor Lastname</personname>
-      <department>Mathematical Sciences</department>
-      <institution>University of Templates</institution>
+      <personname>Dale Buske</personname>
+      <department>Department of Mathematics and Physics</department>
+      <institution>St. Cloud State University</institution>
     </author>
     <date>
       Last Updated: <today />

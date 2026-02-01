@@ -6,12 +6,19 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Name (change me)</title>
+    <title>Differential Equations with Linear Algebra</title>
 
-    <subtitle>MATH xxx Semester 20xx</subtitle>
+    <!-- <subtitle>MATH 327</subtitle> -->
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
+
+        <chapter xml:id="ch-Textbook">
+      <title>Daily Prep</title>
+      
+      <xi:include href="./handouts/02PrepWhatAreDifferentialEquations.ptx"/>
+
+    </chapter>
 
     <chapter xml:id="course-documents">
       <title>Course Documents</title>
@@ -32,26 +39,28 @@
       </introduction>
 
       <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
+      
       <!-- etc. -->
 
     </chapter>
 
 
-    <chapter xml:id="activities">
+
+
+    <!-- <chapter xml:id="activities">
       <title>In-Class Activities</title>
 
       <introduction>
         <p>
           These are copies of the in-class activities distributed during the semester.
         </p>
-      </introduction>
+      </introduction> -->
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
 
       <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
+    <!-- </chapter> -->
 
     <chapter xml:id="handouts">
       <title>Handouts</title>
@@ -59,13 +68,11 @@
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
     </chapter>
 
-    <chapter xml:id="homework">
+    <!-- <chapter xml:id="homework">
       <title>Homework</title>
 
-      <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
 
-    </chapter>
+    </chapter> --> 
 
     <!-- Include additional chapters for other categories -->
 

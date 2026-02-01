@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 0.2 - What are Differential Equations?</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    Differential equations are central to science and engineering 
+    because the laws of physics are written in this form and they describe how quantities 
+    change over time. You have already encountered and even solved 
+    simple differential equations in calculus, even if you did not recognize them. This section 
+    illustrates what a differential equation looks like and clarifies key ideas like dependent and independent variables. 
+    It also demonstrates that many differential equations can have multiple valid solutions, 
+    showing how to check a proposed solution by substitution. 
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Recognize what a <em>differential equation</em> is and identify the <em>dependent</em> and 
+              <em>independent</em> variables in an example.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Understand that differential equations arise naturally from physical laws 
+              such as Newton’s law of cooling.
+            </p>
+          </li>
+
+                    <li>
+            <p>
+              Verify whether a proposed function is a <em>solution</em> by computing its derivative 
+              and substituting into the equation.
+            </p>
+          </li>
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass52">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#introode">Intro to Differential Equations</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#subsection-7">Subsection 0.2.1: Differential equations</url>.
+    </p>
+  </li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> video <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#keydefs">The Key Definitions of Differential Equations</url>.
+          </p>
+        </li>
+
+                <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#subsection-8">Subsection 0.2.2: Solutions of differential equations</url>.
+          </p>
+        </li>
+
+      
+        <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#subsection-9">Subsection 0.2.3: Differential equations in practice </url> and <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#subsection_fourfundamental">Subsection 0.2.4: Four fundamental equations </url>.
+          </p>
+        </li>
+
+          <li>
+    <p>
+      <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=xQreuKvHFIo&amp;list=PLRfQb6m35rf5E7QllafnyOXD0tHHI_N9E&amp;index=2">Introduction to differential equations (34:13)</url> for a lecture on section 0.2.  
+    </p>
+  </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#exercise-1">Exercise 0.2.1</url>, <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#exercise-2">Exercise 0.2.2</url>. 
+          </p>
+        </li>
+
+
+
+
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/introde_section.html#subsection-11">Subsection 0.2.5: Exercises 0.2.5, 0.2.6, 0.2.7, 0.2.8, 0.2.19</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/classification_section.html#classification_section">Section 0.3: Classification of differential equations</url>.
+          </p>
+        </li>
+
+                  <li>
+    <p>
+      <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=ybg8dWlgtts&amp;list=PLRfQb6m35rf5E7QllafnyOXD0tHHI_N9E&amp;index=3&amp;pp=iAQB0gcJCZEKAYcqIYzv">Classification of differential equations (31:23)</url> for a lecture on section 0.3.  
+    </p>
+  </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/classification_section.html#subsection-12">Subsection 0.3.1: Exercises 0.3.1, 0.3.5</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              <li>
+                <p>
+What does the <em>order</em> of a differential equation refer to? 
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  Values are typical solutions to algebraic equations (e.g.
+<m>x=2</m> solves <m>3x=6</m>).
+What objects are typical solutions to differential equations?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Give a specific example of a differential equation that is autonomous and one that is not.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                (Newton’s Law of Cooling)
+                </p>
+
+                <p>
+                  The time rate of change of the temperature <m>T(t)</m> of a body is proportional to the difference between <m>T</m> and the temperature <m>A</m> of the surrounding medium.
+                  That is,
+                    <me>
+                      \frac{dT}{dt}= -k (T-A)
+                    </me>
+                  where <m>k</m> is a positive constant.
+                </p>
+
+<ol>
+  <li>
+    <p>
+      If <m>T > A</m>, is <m>\frac{dT}{dt}</m> positive, negative, or zero? Is the body warming or cooling?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      What can be said if <m>T &#x3C; A</m>?
+    </p>
+  </li>
+</ol>
+              </li>
+
+<li>
+  <p>
+    State the order of each differential equation and determine whether it is linear or nonlinear.
+</p>
+
+<ol>
+  <li>
+    <p>
+      <m>(1-x)y'' - 4xy' + 5y = \cos x</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\displaystyle x\frac{d^{3}y}{dx^{3}}- \left( \frac{dy}{dx}\right)^{4} + y = 0</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\displaystyle \frac{d^{2}u}{dr^{2}}+ \frac{du}{dr}+ u = \cos (r+u)</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\displaystyle (\sin \theta)y'''-(\cos \theta)y' = 2</m>
+    </p>
+  </li>
+</ol>
+
+</li>
+
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from these sections. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives52">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Explain why differential equations can have infinitely many solutions and 
+              interpret how solution families arise (e.g., from arbitrary constants).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Analyze an integral function using the usual techniques from differential calculus.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Analyze how different solutions correspond to different physical scenarios or 
+              initial conditions.
+            </p>
+          </li>
+
+                    <li>
+            <p>
+              Interpret the structure of a first‑order linear differential equation and 
+              understand how it models time‑varying physical processes (such as oscillating 
+              ambient temperature).
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+
+</handout>

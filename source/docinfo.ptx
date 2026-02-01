@@ -4,7 +4,7 @@
 <!-- This is where you can define macros and other book-wide -->
 <!-- settings. -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
-
+<brandlogo url="http://drbuske.github.io/Math327" source="SCSU_StC_Pri_DkBlkBG.png" alt="SCSU logo" />
   <!-- macros for defining latex math shortcuts. It is good practice -->
   <!-- to define these semantically, so that the macro relates to what-->
   <!-- it defines. -->
@@ -17,12 +17,18 @@
 
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
-  <latex-image-preamble>
-    \usepackage{tikz, pgfplots}
-    \usetikzlibrary{positioning,matrix,arrows}
-    \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
-    \usetikzlibrary{decorations.markings}
-  </latex-image-preamble>
+<latex-image-preamble>
+  \usepackage{tikz, pgfplots,xcolor}
+  \usetikzlibrary{positioning,matrix,arrows,shadings}
+  \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+  \usetikzlibrary{calc}
+  \definecolor{linecolor}{HTML}{0074C8}
+</latex-image-preamble>
+
+
+    <numbering>
+        <activity>no</activity>
+    </numbering>
 
   <!-- It is possible to rename elements: -->
   <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> -->
