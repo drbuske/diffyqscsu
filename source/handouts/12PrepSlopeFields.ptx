@@ -364,6 +364,58 @@ Sketch a solution to the initial value problem <m>\frac{dy}{dx} = 1.5y</m>, <m>y
 </p>
 </li>
 
+<li>
+  <p>
+    Use technology to generate the slope field of <m>\frac{dy}{dx} = -y-\sin x</m>. Then, 
+    sketch likely
+  solution curves for each of the following initial-value problems.
+</p>
+
+<ol>
+  <li>
+    <p>
+      <m>\frac{dy}{dx}= -y-\sin x, y(0) = 1/2</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\frac{dy}{dx}= -y-\sin x, y(0) = 2</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\frac{dy}{dx}= -y-\sin x, y(0) = -2</m>
+    </p>
+  </li>
+</ol>
+
+</li>
+
+<li>
+  <p>
+    Repeat the above question for the differential
+  equation <m>\frac{dy}{dx}= x^{2} - y</m> and the
+  initial-value problems below.
+</p>
+
+<ol>
+  <li>
+    <p>
+      <m>\frac{dy}{dx}= x^{2} - y, y(0) = 2</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <m>\frac{dy}{dx}= x^{2} - y, y(0) = -1</m>
+    </p>
+  </li>
+</ol>
+
+</li>
+
             </ol>
           </p>
         </li>
