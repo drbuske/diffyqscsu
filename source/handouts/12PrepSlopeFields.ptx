@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.2 - Slope Fields</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+  In this section, we are introduced to <term>slope fields</term> as a geometric way to visualize first‑order differential equations of the form <m>y' = f(x,y)</m>. A slope field assigns a small line segment with slope <m>f(x,y)</m> at each point of the plane, allowing us to see how solution curves must behave without solving the equation analytically. By following these slopes, we can sketch approximate solutions that satisfy various initial conditions and observe how small changes in starting points can lead to noticeably different solution behaviors.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+      Understand that a slope field represents the slope <m>f(x,y)</m> at each point for an ODE <m>y' = f(x,y)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Be able to interpret slope fields to sketch approximate solution curves passing through given initial conditions.
+            </p>
+          </li>
+
+<li>
+<p>
+Recognize that slope fields allow qualitative predictions when explicit solutions are difficult or impossible to obtain.
+</p>
+</li>
+
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass12">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+<li>
+<p>
+<alert>Watch</alert> video <url href="https://youtu.be/K6JBhII33_M">Introduction to Slope Fields (7:11)</url> by Mathispower4u.
+</p>
+</li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> video <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#first-slope">Video 1.2.1: Slope Fields</url> by Trevor Bazett.
+          </p>
+        </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#subsection-14">Subsection 1.2.1: Slope fields</url>.  Be sure to experiment with the GeoGebra activity found in <url href="https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#example-9">Example 1.2.1</url>.  
+    </p>
+  </li>
+
+<li>
+<p>
+<alert>Watch</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#first-existence">Video 1.2.2: Existence and Uniqueness</url> by Trevor Bazett.  
+</p>
+</li>
+
+<li>
+<p>
+<alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#subsection-15">Subsection 1.2.2: Existence and uniqueness 
+</url>. 
+</p>
+</li>
+
+<li>
+<p>
+Try these additional questions.  If necessary, use AI to guide your thinking. 
+<ol>
+
+<li>
+<p> 
+What do you see as the value in slope fields?  What role does technology play in this concept?  
+</p>
+</li>
+
+<li>
+<p> 
+In your own words, what does <url href="https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#slope_picardthm">Picard's theorem</url> say?  
+</p>
+</li>
+
+</ol>
+</p>
+</li>
+
+
+   
+
+    <li>
+    <p>
+      <alert>Watch</alert> <url href="https://youtu.be/LoO_zg4Ohzo?list=PLRfQb6m35rf5E7QllafnyOXD0tHHI_N9E">Slope Field (30:34)</url> for a lecture on section 1.2.  
+    </p>
+  </li>
+
+<li>
+<p>
+<alert>Watch</alert> <url href="https://youtu.be/Al7lCMutqmg">Create Slope Fields Using GeoGebra (2:49)</url>.  
+</p>
+</li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#subsection-16">Subsection 1.2.3: Exercises 1.2.2, 1.2.3, 1.2.4, 1.2.5, 1.2.6, 1.2.10, 1.2.11, 1.2.14, 1.2.16, 1.2.18.</url>.
+          </p>
+        </li>
+
+
+        <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              
+
+
+<li>
+<p>
+ Consider the differential equation <me>\frac{dy}{dx} = x - 2y.</me>
+</p>  
+<ol>
+<li> Fill in the table below with the slopes at various values of <m>x</m> and <m>y</m>.  
+
+<table xml:id="SlopeFieldData" >
+<title>Slopes at various values of <m>x</m> and <m>y</m> for <m>\frac{dy}{dx} = x - 2y</m>.</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <m>y=-2</m> </cell>
+<cell> <m>y=-1</m> </cell>
+<cell> <m>y=0</m> </cell>
+<cell> <m>y=1</m> </cell>
+<cell> <m>y=2</m> </cell>
+</row>
+
+<row>
+<cell> <m>x = -2</m> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell>  
+</row>
+
+<row>
+<cell> <m>x = -1</m> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell>  
+</row>
+
+<row>
+<cell> <m>x = 0</m> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell>  
+</row>
+
+<row>
+<cell> <m>x = 1</m> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell>  
+</row>
+
+<row>
+<cell> <m>x = 2</m> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell> 
+<cell> </cell>  
+</row>
+
+</tabular>
+</table>
+
+</li>
+
+<li>
+<p> Plot the slopes in the table above to form a slope field.
+</p>
+</li>
+
+<li>
+<p> On the given slope field in <xref ref="SlopeField2026a"/>, sketch a solution curve to the initial value problem <me>\frac{dy}{dx} = x-2y, \ \ \  y(0) = -2.</me>
+</p>
+
+<figure xml:id="SlopeField2026a" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Slope field for <m>\frac{dy}{dx} = x-2y</m>.</caption>
+      <image source="SlopeField2026a.jpg" width="50%">
+        <description>A slope field for y' = x-2y.</description>
+      </image>
+</figure>
+
+
+</li>
+
+</ol>
+</li>
+
+
+
+
+<li>
+<p> In <xref ref="SlopeField2026b"/> is a slope field for <m>\frac{dy}{dx} = 1.5y</m>. 
+</p>
+
+<ol>
+<li>
+<p> 
+Sketch a solution to the initial value problem <m>\frac{dy}{dx} = 1.5y</m>, <m>y(0)= 1</m>. 
+</p>
+</li>
+
+<li>
+<p>
+ Sketch a solution to the initial value problem <m>\frac{dy}{dx} = 1.5y</m>, <m>y(0)= -1</m>.
+</p>
+</li>
+ 
+<li>
+<p> Sketch a solution to the initial value problem <m>\frac{dy}{dx} = 1.5y</m>, <m>y(0)= 0</m>. 
+</p>
+</li>
+
+<li>
+<p>
+ Does the IVP <m>\frac{dy}{dx} = 1.5y</m>, <m>y(0)= \alpha</m> have a solution for every <m>\alpha</m>?  If so, is that solution unique?  
+</p>
+
+<figure xml:id="SlopeField2026b" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Slope field for <m>\frac{dy}{dx} = 1.5y</m>.</caption>
+      <image source="SlopeField2026b.jpg" width="50%">
+        <description>A slope field for y' = 1.5y.</description>
+      </image>
+</figure>
+
+</li>
+
+
+</ol>
+</li>
+
+
+
+
+ 
+<li>
+<p> The initial value problem <me>y' = \frac{1}{x}, \ \ \ y(0) = 0</me> has no solution.  Explain why this is the case in words using the slope field shown in <xref ref="SlopeField2026c"/>. 
+</p>
+
+<figure xml:id="SlopeField2026c" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Slope field for <m>\frac{dy}{dx} = \frac{1}{x}</m>.</caption>
+      <image source="SlopeField2026c.jpg" width="50%">
+        <description>A slope field for y' = 1 over x.</description>
+      </image>
+</figure>
+</li>
+
+<li>
+<p> The initial value problem <me>y' = 2\sqrt{y}, \ \ \ y(0) = 0</me> has <em>two</em> solutions: <m>y_1(x) = x^2</m> and <m>y_2(x) \equiv 0</m>.  Verify, algebraically, that both of these are indeed solutions.  Then, draw both of these solutions on the direction field shown in <xref ref="SlopeField2026d"/>. 
+</p>
+ 
+<figure xml:id="SlopeField2026d" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Slope field for <m>\frac{dy}{dx} = 2\sqrt{y}</m>.</caption>
+      <image source="SlopeField2026d.jpg" width="50%">
+        <description>A slope field for y' = 2 times the square root of y.</description>
+      </image>
+</figure>
+
+</li>
+
+<li>
+<p> [Multiple-choice] The slope field in <xref ref="SlopeField2026e"/> indicates the differential equation has which form? </p>
+
+<figure xml:id="SlopeField2026e" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A mystery slope field.</caption>
+      <image source="SlopeField2026e.jpg" width="50%">
+        <description>A mystery slope field.</description>
+      </image>
+</figure>
+
+<ol marker="A.">
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(y)</m> </p></li>
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t)</m> </p></li>
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t,y)</m> </p></li>
+</ol>
+</li>
+
+<li>
+<p> [Multiple-choice] The slope field in <xref ref="SlopeField2026f"/> indicates the differential equation has which form? </p>
+
+<figure xml:id="SlopeField2026f" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Another mystery slope field.</caption>
+      <image source="SlopeField2026f.jpg" width="50%">
+        <description>Another mystery slope field.</description>
+      </image>
+</figure>
+
+<ol marker="A.">
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(y)</m> </p></li>
+
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t)</m> </p></li>
+
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t,y)</m> </p></li>
+</ol>
+</li>
+
+
+<li>
+<p> [Multiple-choice] The slope field in <xref ref="SlopeField2026g"/> indicates the differential equation has which form? </p>
+<figure xml:id="SlopeField2026g" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>And yet another mystery slope field.</caption>
+      <image source="SlopeField2026g.jpg" width="50%">
+        <description>And yet another mystery slope field.</description>
+      </image>
+</figure> 
+
+<ol marker="A.">
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(y)</m> </p></li>
+
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t)</m> </p></li>
+
+<li><p> <m>\displaystyle \frac{dy}{dt} = f(t,y)</m> </p></li>
+</ol>
+</li>
+
+
+<li>
+<p> Solve the initial value problem <me>\frac{dy}{dx} = -6xy, \ \ y(0) = -4.</me>  Hint: 'Separate' the variables <m>x</m> and <m>y</m> by, informally, writing the equation as <m>\displaystyle \frac{dy}{y} = -6x \ dx.</m>
+</p>
+</li>
+
+            </ol>
+          </p>
+        </li>
+
+<li>
+<p>
+(Optional) <alert>Watch</alert> <url href="https://youtu.be/XE7I_yPMmsc">a video on section 1.2 by Math Matt (18:38)</url>.
+</p>
+</li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from this section. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives12">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+      Analyze how small changes in initial conditions can yield significantly different solution behaviors by examining the slope field. 
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Compare slope fields for two different differential equations to deduce how the structure of <m>f(x,y)</m> influences long‑term solution behavior.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Use geometric reasoning from slope fields to anticipate qualitative features such as stability, divergence, and monotonicity of solutions.
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+</handout>

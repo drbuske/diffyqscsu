@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.1 - Integrals as Solutions</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+This section shows how certain first-order differential equations can be solved simply by antidifferentiating. When the equation has the form <m>y' = f(x)</m>, its general solution is just an antiderivative of <m>f(x)</m> plus a constant. The text also clarifies the difference between definite and indefinite integrals and explains how initial conditions lead to a definite‑integral formula for the solution. 
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+
+          <li>
+            <p>
+                    Understand that a first-order ODE of the form <m>y' = f(x)</m> is solved by 
+                    finding an antiderivative of <m>f(x)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+      Recognize the role of initial conditions in determining the specific constant <m>C</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Distinguish between <em>definite</em> and <em>indefinite</em> integrals and know that 
+      the definite integral gives a computable expression for solutions.
+            </p>
+          </li>
+
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass11">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+          <li>
+          <p>
+            <alert>Watch</alert> video <url href=" 
+https://www.youtube.com/watch?v=rIajMSRfDUY">Integrals as Solutions (6:23)</url> by Mathispower4u.
+          </p>
+        </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#integralsols_section">Section 1.1: Integrals as solutions </url> up to Example 1.1.4.
+    </p>
+  </li>
+
+<li>
+<p>
+<alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#example-6">Example 1.1.4</url> and then think about the following question.  In this example, <m>y=0</m> is treated as a solution separately.  Why?  Plot this solution.  Then, verify that <m>y=</m> is indeed a solution.  
+</p>
+</li>
+
+
+
+                <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#example-7">Example 1.1.5</url>.
+          </p>
+        </li>
+
+<li>
+<p>
+<alert>Do</alert> the following for Example 1.1.5.  Plot the speed against time <m>t</m> of the car (labeling your axes with appropriate units).
+Then, plot the distance traveled <m>x</m> against time <m>t</m>. Label your axes.
+</p>
+</li>
+
+<li>
+<p>
+<alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#example-8">Example 1.1.6</url>.
+</p>
+</li>
+
+<li>
+<p>
+<alert>Do</alert> the exercise mentioned at the end of Example 1.1.6.
+</p>
+</li>
+
+      
+
+          <li>
+    <p>
+      <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=tOTPUgvPKDc&amp;list=PLRfQb6m35rf5E7QllafnyOXD0tHHI_N9E&amp;index=4">Integrals as Solutions (34:22)</url> for a lecture on section 1.1.  
+    </p>
+  </li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+Subsection 1.1.1: Exercises 
+https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#subsection-13">Subsection 1.1.1: Exercises 1.1.2, 1.1.4, 1.1.15, 1.1.18</url>.
+          </p>
+        </li>
+
+
+        <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              
+              <li>
+                <p>
+                  Write a differential equation that is a model for the following: In a city with a fixed population of <m>P</m> persons, the time rate of change of the number <m>N</m> of those persons infected with a certain contagious disease is proportional to the product of the number who have the disease and the number who do not.  
+                </p>
+              </li>
+
+              <li> 
+                <p>
+                  Substitute <m>y=e^{rx}</m> into the differential equation <m>y'' + y' - 2y = 0</m> to determine all values of the constant <m>r</m> for which <m>y=e^{rx}</m> is a solution.
+                </p>
+              </li>
+
+<li> 
+  <p> 
+    Write a differential equation that is a mathematical model for each situation.
+  </p>
+<ol>
+<li><p> The acceleration <m>\frac{dv}{dt}</m> of a Lamborghini is proportional to the difference between 250 km/h and the velocity <m>v</m> of the car.
+</p></li>
+<li><p> In a city having a fixed of population <m>P</m> persons, the time rate of change of the number <m>N</m> of those persons who have heard a certain rumor is proportional to the number of those who have not yet heard the rumor.
+</p></li>
+</ol>
+</li>
+
+<li>
+  <p>
+   Suppose that a football coach gets a salary of
+  one million dollars now, and a raise of <m>10\%</m> every year
+  (so exponential model, like population of bacteria).
+  Let <m>s</m> be the salary in millions of dollars, and <m>t</m> is time in years.
+  </p> 
+<ol>
+  <li>
+<p>What is <m>s(0)</m> and <m>s(1)</m>. </p>
+  </li>
+<li>
+  <p>
+Approximately how many years will it take for the salary to be 10 million?
+  </p>
+</li>
+<li>
+  <p>
+Approximately how many years will it take for the salary to be 20 million?
+  </p>
+</li>
+</ol>
+</li>
+
+<li>
+  <p> Sid is in a car traveling at speed <m>10t+70</m> miles per hour away from Las Vegas,
+  where <m>t</m> is in hours.
+  At <m>t=0</m>, Sid is 10 miles away from Vegas.
+  How far from Vegas is Sid 2 hours later?
+</p>
+</li>
+
+
+            </ol>
+          </p>
+        </li>
+
+        <li>
+<p>
+(Optional) <alert>Watch</alert> <url href="https://youtu.be/E7DRBOssCVM">a video on chapter 0 and section 1.1 by Mark Sullivan (43:05)</url>.
+</p>
+</li>
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from this section. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives11">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+      Explain why antidifferentiation works as a universal method when <m>f</m> depends only 
+      on <m>x</m>, using the Fundamental Theorem of Calculus.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Express solutions with initial conditions using definite-integral form 
+      <m>y(x) = \int_{x_0}^{x} f(s)\,ds + y_0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Articulate the conceptual difference between the definite integral (a number) and 
+      the indefinite integral (a family of antiderivatives).
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+</handout>

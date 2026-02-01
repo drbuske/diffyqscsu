@@ -17,18 +17,20 @@
       <title>Daily Prep</title>
       
       <xi:include href="./handouts/02PrepWhatAreDifferentialEquations.ptx"/>
+      <xi:include href="./handouts/11PrepIntegralsAsSolutions.ptx"/>
+      <xi:include href="./handouts/12PrepSlopeFields.ptx"/>
 
     </chapter>
 
-    <chapter xml:id="course-documents">
-      <title>Course Documents</title>
+    <!-- <chapter xml:id="course-documents">
+      <title>Course Documents</title> -->
 
       <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
+      <!-- <xi:include href="./syllabus/syllabus.ptx" /> -->
       <!-- Other documents could go here, like a schedule, project description, etc. -->
-    </chapter>
+    <!-- </chapter> -->
 
-    <chapter xml:id="course-notes">
+   <!-- <chapter xml:id="course-notes">
       <title>Course Notes</title>
 
       <introduction>
@@ -38,11 +40,11 @@
         </p>
       </introduction>
 
-      <xi:include href="./notes/week01.ptx"/>
+      <xi:include href="./notes/week01.ptx"/> -->
       
       <!-- etc. -->
 
-    </chapter>
+   <!--  </chapter> -->
 
 
 
@@ -62,11 +64,11 @@
       <!-- Add more xi:include files here to include them in the main course -->
     <!-- </chapter> -->
 
-    <chapter xml:id="handouts">
-      <title>Handouts</title>
+    <!-- <chapter xml:id="handouts">
+      <title>Handouts</title> --> 
       <!-- Include handouts -->
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
-    </chapter>
+    <!-- </chapter> -->
 
     <!-- <chapter xml:id="homework">
       <title>Homework</title>
