@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.4 - Linear Equations and the Integrating Factor</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+   This section introduces first-order <term>linear differential equations</term> of the form 
+   <m>y' + p(x)\,y = f(x)</m> and develops the <term>integrating factor method</term> for 
+   solving them. By multiplying the equation by a specially chosen function <m>r(x)</m>, 
+   the left-hand side becomes the derivative of a product, allowing the equation to be 
+   integrated directly. The integrating factor turns out to be <m>r(x) = e^{\int p(x)\,dx}</m>, 
+   and this method provides a systematic way to solve any linear first-order ODE, leading to an 
+   explicit formula for the solution when the required integrals can be computed.
+  </p>
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+     Recognize when an equation is a first-order linear ODE of the form <m>y' + p(x)\,y = f(x)</m>.
+            </p>
+          </li>
+
+<li>
+<p>
+Understand the purpose of an integrating factor <m>r(x)</m> and how it is used to rewrite the equation as the derivative of a product.
+</p>
+</li>
+
+          <li>
+            <p>
+      Apply the integrating factor method to obtain a solvable integrated equation.
+            </p>
+          </li>
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass14">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+<li>
+<p>
+<alert>Watch</alert> video <url href="https://youtu.be/HL7SXsOHNYQ">Introduction to Solving a First Order Linear Differential Equation Using an Integrating Factor (5:43)</url> by Mathispower4u.
+</p>
+</li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/intfactor_section.html#first-linear">Video 1.4.1: Linear Equations and Integrating Factors</url> by Trevor Bazett.
+          </p>
+        </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/intfactor_section.html#intfactor_section">Section 1.4: Linear equations and the integrating factor </url>.   
+    </p>
+  </li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/intfactor_section.html#first-linear2">Video 1.4.2: Integrating Factor Examples</url> by Trevor Bazett.
+          </p>
+        </li>
+
+     <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              
+<li>
+<p>
+There is a `trick' to solving linear first order differential equations described in this section that involves multiplying by a function <m>r(x)</m>.  What differentiation rule lies at the heart of this trick?  [Hint: It is not the power rule.]  
+</p>  
+</li>
+
+<li>
+<p> In <url href="
+https://web.uvic.ca/~tbazett/diffyqs/intfactor_section.html#example-18">Example 1.4.1</url>, <m>p(x) = 2x</m>.  Note that <m>\int p(x) \ dx = \int 2x \ dx = x^2 + C</m>.  However, the text simply writes <m>r(x) = e^{\int p(x) \ dx} = e^{x^2}</m> and does not write the arbitrary constant of integration <m>C</m>?  Why is this not necessary?  
+</p> 
+</li>
+
+<li>
+<p> Multiply <me>y'+p(x)y = q(x)</me> on both sides by by <m>I(x)</m>. </p>
+<ol>
+<li><p> What is the left-hand side? </p></li>
+<li><p> Compute <m>\left[ I(x)y(x) \right]'</m>.  </p></li>
+<li><p> How should $I(x)$ be chosen so that (a) and (b) are always equal?  That is, what (differential) equation must it solve?  </p></li>
+<li><p> Solve <m>\displaystyle \frac{dI}{dx} = I(x)\cdot p(x)</m> for <m>I(x)</m> in terms of <m>\int p(x) \ dx</m> using separation of variables. </p></li>
+</ol> 
+</li>
+
+<li>
+<p> Here, we solve the initial value problem <me>\frac{dy}{dx} - y = \frac{11}{8}e^{-x/3}, \ \ y(0) = -1.</me> </p>
+<ol>
+<li><p> Identify the integrating factor <m>I(x)</m>. </p></li>
+<li><p> Upon multiplying both sides of the differential equation by <m>I(x)</m>, the left-hand side can be written as <m>\displaystyle \frac{d}{dx} \left( ? \right)</m>. </p></li>
+<li><p> What is the general solution to the differential equation?  </p></li>
+</ol>
+</li>
+
+
+</ol>
+</p>
+</li>
+
+
+<li>
+<p>
+<alert>Watch</alert> <url href="https://youtu.be/eWLgWazTc-0">Integrating Factor to Solve a Differential Equation (3:29)</url> by Patrick JMT.  
+</p>
+</li>
+
+
+   
+
+    <li>
+    <p>
+      <alert>Watch</alert> <url href="https://youtu.be/rmRCqxwjSkk?si=JdUlcMmNw-Q_y6mE">Linear equations and the integrating factor (28:49)</url> for a lecture on section 1.4.  
+    </p>
+  </li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/intfactor_section.html#subsection-21">Subsection 1.4.1: Exercises 1.4.1, 1.4.2, 1.4.12, 1.4.13.</url>.
+          </p>
+        </li>
+
+
+        <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              
+
+
+<li>
+<p>
+A nitric acid solution flows at a constant rate of 6 L/min into a large tank that initially held 200 L of a 0.5% nitric acid solution.  The solution inside the tank remains stirred and flows out at a rate of 8 L/min.  If the solution entering the tank is 20% nitric acid, determine the volume of nitric acid in the tank after <m>t</m> minutes.  </p>
+
+<figure xml:id="BrineTank1" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Nitric acid in a tank.</caption>
+      <image source="BrineTank1.jpg" width="50%">
+        <description>  Diagram of a mixing tank showing a 20% acid solution flowing in at 6 liters per minute on the left, and a mixture flowing out at 8 liters per minute on the right. Inside the tank, the variable V(t) represents the volume of nitric acid after t minutes, with the initial condition V(0) = 1 liter.
+</description>
+      </image>
+</figure>
+
+
+<p> Here, <m>V(0) = (0.005)(200 \ {\textrm{L}}) = 1 \ {\textrm{L}}</m>.  Also, 
+<me>\frac{dV}{dt} = (0.2)(6 \ {\textrm{L/min}}) - \left( \frac{ V(t) }{200-2t} \right) (8 \ {\textrm{L/min}}).</me> </p>
+<ol>
+<li><p> Show that the solution to the initial value problem <me>\frac{dV}{dt} = 1.2 - \frac{4}{100-t} V, \ \ V(0) = 1</me> using an integrating factor is <me>V(t) = 0.4(100-t) - \frac{39}{100^4}(100-t)^4.</me>  </p></li>
+<li><p> After how many minutes <m>T</m> is the tank empty?  </p></li>
+<li><p> It stands to reason that <m>V(T)=0</m> should hold and our model should be valid for <m>0 \leq t \leq T</m>.  Does the graph of <m>V(t)</m> suggest this to be true? </p></li>
+</ol> 
+</li>
+
+<li>
+<p>
+At noon, a tank contains 100 L of solution in which 10 kg of chemical is dissolved.  Solution 
+containing 2 kg of the chemical per liter flows into the tank at 5 L/min.  The mixture is 
+well-stirred and drawn off at a rate of 4 L/min.  If the tank holds 500 L, when does it 
+overflow?  If <m>t</m> measures the number of minutes after noon, what is the mass of chemical, 
+<m>x(t)</m>, in the tank (in kg) at any time <m>t</m>?  [Set up an linear initial-value problem 
+and solve.]  
+</p>
+</li>
+
+<li>
+<p>
+Consider a tank initially containing 200 gallons of pure water, and start adding saltwater 
+(containing 3 ounces of salt per gallon of water) at a rate of 1/2 gallon per minute.  
+At the same time, the resulting mixture in the tank is drained at the rate of 1/2 gallon 
+per minute.  As usual, the mixture in the tank is thoroughly and uniformly mixed at all 
+times.  Assume also that a device (similar to a human liver) is attached to the tank that 
+each minute filters out half the salt in a single gallon from the mixture in the tank.  
+</p>
+
+<p> Let <m>y(t)</m> denote the number of ounces of salt in the tank at <m>t</m> minutes after we 
+  start adding saltwater.  </p>
+<ol>
+<li><p> Find an initial-value problem that models this situation. </p></li>
+<li><p> Use technology to sketch a slope field (<m>-200 \leq t \leq 1440, -80 \leq y \leq 800</m>) for this differential equation.  Do any equilibrium solutions appear to exist?  If so, where?  </p></li>
+
+<li><p> Solve the IVP to determine <m>y(t)</m>.  Plot <m>y(t)</m> for the first 24 hours using the technology.  </p></li>
+
+<li><p> Compute <m>\displaystyle \lim_{t \rightarrow \infty} y(t)</m>.  </p></li>
+
+</ol>
+</li>
+
+
+
+            </ol>
+          </p>
+        </li>
+
+<li>
+<p>
+(Optional) <alert>Watch</alert> video <url href="https://youtu.be/64QMx1aigtU">The Integrating Factor Method (9:55)</url> from a friend of mine, Matthew Wright, at St. Olaf College.
+</p>
+</li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from this section. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives14">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+     Derive the integrating factor <m>r(x) = e^{\int p(x)\,dx}</m> by requiring that the left-hand side become a product derivative.
+            </p>
+          </li>
+
+          <li>
+            <p>
+     Solve linear ODEs explicitly and check solutions using differentiation, including solutions involving initial conditions. 
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Explain why the constant of integration inside the integrating factor does not affect the final solution.
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+</handout>

@@ -19,6 +19,8 @@
       <xi:include href="./handouts/02PrepWhatAreDifferentialEquations.ptx"/>
       <xi:include href="./handouts/11PrepIntegralsAsSolutions.ptx"/>
       <xi:include href="./handouts/12PrepSlopeFields.ptx"/>
+      <xi:include href="./handouts/13PrepSeparableEquations.ptx"/>
+      <xi:include href="./handouts/14PrepLinearEquations.ptx"/>
 
     </chapter>
 
