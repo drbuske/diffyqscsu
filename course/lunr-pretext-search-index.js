@@ -107,6 +107,51 @@ var ptx_lunr_docs = [
   "number": "8",
   "title": "",
   "body": " And yet another mystery slope field.   And yet another mystery slope field.   "
+},
+{
+  "id": "ch-Textbook-5",
+  "level": "1",
+  "url": "ch-Textbook-5.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.3 - Separable Equations",
+  "body": " Daily Prep 1.3 - Separable Equations   Overview  This section introduces separable differential equations , a class of first‑order ODEs that can be rewritten so that all -terms appear on one side and all -terms on the other. Once written in the form , both sides can be integrated to obtain a general (often implicit) solution. The section demonstrates how separation works, why special solutions like must be considered, and how implicit solutions arise naturally when solving the resulting integrals. It also clarifies that separation is justified rigorously through substitution rather than by treating as an algebraic fraction.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Identify when a differential equation can be written in the separable form .    Correctly separate variables to obtain .    Integrate both sides to obtain the general (possibly implicit) solution.      Learn!  Complete the actions listed below.     Watch video Introduction to Separation of Variables to Solve (6:25) by Mathispower4u.     Watch  Video 1.3.1: Separation of Variables by Trevor Bazett.     Read  Subsection 1.3.1: Separable equations and Subsection 1.3.2: Implicit solutions .     Do the computation left to the reader at the beginning of Subsection 1.3.2: Implicit solutions .     Watch  Video 1.3.2: Newton’s Law of Cooling by Trevor Bazett.     Watch  Example 1.3.2 Solve a Separable Differentiable Equation Using Factor by Grouping by Mathispower4u.     Read  Subsection 1.3.3: Examples of separable equations . Refer to Example 1.3.5 . What is a singular solution?     Watch  Separable Equations (39:44) for a lecture on section 1.3.     Do  Subsection 1.3.4: Exercises 1.3.1, 1.3.4, 1.3.9, 1.3.11. .    Try these additional questions. If necessary, use AI to guide your thinking.    Solve the initial value problem Hint: 'Separate' the variables and by, informally, writing the equation as     Consider the ODE . Using separation of variables, we earlier found a general solution to be . Hence, the IVP has unique solution .   What is the unique solution to the following IVP?   Why does the method of separation of variables `lose' the solution found in (a)?       (Optional) Watch more videos on solving separable equations via a YouTube playlist of The Math Sorcerer.     Do MyOpenMath questions from this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform, with practice:    Justify separation using the chain rule and substitution rather than informal manipulation of .    Identify and include singular or special solutions (such as ) that arise when dividing by .    Recognize when the resulting integrals lead to solutions that must remain in implicit form and verify such solutions by differentiation.     "
+},
+{
+  "id": "ch-Textbook-5-2-2",
+  "level": "2",
+  "url": "ch-Textbook-5.html#ch-Textbook-5-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "separable differential equations "
+},
+{
+  "id": "ch-Textbook-6",
+  "level": "1",
+  "url": "ch-Textbook-6.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.4 - Linear Equations and the Integrating Factor",
+  "body": " Daily Prep 1.4 - Linear Equations and the Integrating Factor   Overview  This section introduces first-order linear differential equations of the form and develops the integrating factor method for solving them. By multiplying the equation by a specially chosen function , the left-hand side becomes the derivative of a product, allowing the equation to be integrated directly. The integrating factor turns out to be , and this method provides a systematic way to solve any linear first-order ODE, leading to an explicit formula for the solution when the required integrals can be computed.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Recognize when an equation is a first-order linear ODE of the form .    Understand the purpose of an integrating factor and how it is used to rewrite the equation as the derivative of a product.    Apply the integrating factor method to obtain a solvable integrated equation.      Learn!  Complete the actions listed below.     Watch video Introduction to Solving a First Order Linear Differential Equation Using an Integrating Factor (5:43) by Mathispower4u.     Watch  Video 1.4.1: Linear Equations and Integrating Factors by Trevor Bazett.     Read  Section 1.4: Linear equations and the integrating factor .     Watch  Video 1.4.2: Integrating Factor Examples by Trevor Bazett.    Try these additional questions. If necessary, use AI to guide your thinking.   There is a `trick' to solving linear first order differential equations described in this section that involves multiplying by a function . What differentiation rule lies at the heart of this trick? [Hint: It is not the power rule.]    In Example 1.4.1 , . Note that . However, the text simply writes and does not write the arbitrary constant of integration ? Why is this not necessary?    Multiply on both sides by by .   What is the left-hand side?  Compute .  How should $I(x)$ be chosen so that (a) and (b) are always equal? That is, what (differential) equation must it solve?  Solve for in terms of using separation of variables.     Here, we solve the initial value problem    Identify the integrating factor .  Upon multiplying both sides of the differential equation by , the left-hand side can be written as .  What is the general solution to the differential equation?         Watch  Integrating Factor to Solve a Differential Equation (3:29) by Patrick JMT.     Watch  Linear equations and the integrating factor (28:49) for a lecture on section 1.4.     Do  Subsection 1.4.1: Exercises 1.4.1, 1.4.2, 1.4.12, 1.4.13. .    Try these additional questions. If necessary, use AI to guide your thinking.   A nitric acid solution flows at a constant rate of 6 L\/min into a large tank that initially held 200 L of a 0.5% nitric acid solution. The solution inside the tank remains stirred and flows out at a rate of 8 L\/min. If the solution entering the tank is 20% nitric acid, determine the volume of nitric acid in the tank after minutes.   Nitric acid in a tank.   Diagram of a mixing tank showing a 20% acid solution flowing in at 6 liters per minute on the left, and a mixture flowing out at 8 liters per minute on the right. Inside the tank, the variable V(t) represents the volume of nitric acid after t minutes, with the initial condition V(0) = 1 liter.    Here, . Also,    Show that the solution to the initial value problem using an integrating factor is   After how many minutes is the tank empty?  It stands to reason that should hold and our model should be valid for . Does the graph of suggest this to be true?     At noon, a tank contains 100 L of solution in which 10 kg of chemical is dissolved. Solution containing 2 kg of the chemical per liter flows into the tank at 5 L\/min. The mixture is well-stirred and drawn off at a rate of 4 L\/min. If the tank holds 500 L, when does it overflow? If measures the number of minutes after noon, what is the mass of chemical, , in the tank (in kg) at any time ? [Set up an linear initial-value problem and solve.]    Consider a tank initially containing 200 gallons of pure water, and start adding saltwater (containing 3 ounces of salt per gallon of water) at a rate of 1\/2 gallon per minute. At the same time, the resulting mixture in the tank is drained at the rate of 1\/2 gallon per minute. As usual, the mixture in the tank is thoroughly and uniformly mixed at all times. Assume also that a device (similar to a human liver) is attached to the tank that each minute filters out half the salt in a single gallon from the mixture in the tank.  Let denote the number of ounces of salt in the tank at minutes after we start adding saltwater.   Find an initial-value problem that models this situation.  Use technology to sketch a slope field ( ) for this differential equation. Do any equilibrium solutions appear to exist? If so, where?  Solve the IVP to determine . Plot for the first 24 hours using the technology.  Compute .        (Optional) Watch video The Integrating Factor Method (9:55) from a friend of mine, Matthew Wright, at St. Olaf College.     Do MyOpenMath questions from this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform, with practice:    Derive the integrating factor by requiring that the left-hand side become a product derivative.    Solve linear ODEs explicitly and check solutions using differentiation, including solutions involving initial conditions.    Explain why the constant of integration inside the integrating factor does not affect the final solution.     "
+},
+{
+  "id": "ch-Textbook-6-2-2",
+  "level": "2",
+  "url": "ch-Textbook-6.html#ch-Textbook-6-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear differential equations integrating factor method "
+},
+{
+  "id": "BrineTank1",
+  "level": "2",
+  "url": "ch-Textbook-6.html#BrineTank1",
+  "type": "Figure",
+  "number": "9",
+  "title": "",
+  "body": " Nitric acid in a tank.   Diagram of a mixing tank showing a 20% acid solution flowing in at 6 liters per minute on the left, and a mixture flowing out at 8 liters per minute on the right. Inside the tank, the variable V(t) represents the volume of nitric acid after t minutes, with the initial condition V(0) = 1 liter.   "
 }
 ]
 
