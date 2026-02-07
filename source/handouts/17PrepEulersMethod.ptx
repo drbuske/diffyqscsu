@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.7 - Numerical Methods: Euler's Method</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    Many differential equations cannot be solved exactly, yet we still need to
+    understand how their solutions behave.  Numerical methods provide a way to
+    approximate solutions by replacing the continuous differential equation with
+    a sequence of discrete steps that can be carried out by hand, by calculator,
+    or by computer.  In earlier chapters, slope fields offered a qualitative
+    sense of how solutions evolve.  Numerical methods build on this idea by
+    giving a systematic procedure for constructing approximate solution curves.
+  </p>
+
+  
+  <p>
+    The foundational idea is simple: if we know a point on a solution curve and
+    its slope, then we can follow that slope a short distance to obtain an
+    approximate value of the solution at a nearby point.  Euler’s method, the
+    first and simplest numerical technique introduced in this section, does
+    exactly this.  Although Euler’s method is only a rough approximation, it
+    reveals the key principles that underlie more accurate methods and helps
+    establish good computational habits.
+  </p>
+
+  
+  <p>
+    This section emphasizes how to implement numerical procedures, how to
+    interpret their results, and how to understand their limitations.  Students
+    learn how step size affects accuracy, how numerical instability can appear,
+    and why different methods may behave differently even when applied to the
+    same differential equation.  By the end of the section, readers will have a
+    practical toolkit for approximating solutions and for connecting analytic,
+    graphical, and numerical viewpoints.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+Understand the motivation for numerical methods when exact solutions to
+      differential equations cannot be found easily or at all.
+            </p>
+          </li>
+
+<li>
+<p>
+      Explain the idea behind approximating a solution curve by following the 
+      slope given by a differential equation.
+</p>
+</li>
+
+          <li>
+            <p>
+      Use Euler’s method to generate approximate solution values for a 
+      first-order initial value problem with a given step size.
+            </p>
+          </li>
+          
+    <li><p>
+      Interpret numerical approximations graphically and compare them with
+      qualitative slope-field behavior.
+    </p></li>
+    
+    <li><p>
+      Describe how step size affects the quality and accuracy of numerical 
+      approximations.
+    </p></li>
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass17">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+<li>
+<p>
+<alert>Watch</alert> video <url href="https://youtu.be/-_hbPRnV9ro">Introduction to Euler's Method
+  to Approximate a Solution to an Initial Value Problem (6:40)</url> by Mathispower4u.
+</p>
+</li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://youtu.be/q87L9R9v274">Euler's Method (10:07)</url> from Khan Academy.
+          </p>
+        </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/numer_section.html#numer_section">Section 1.7: Numerical methods: Euler’s method</url>.   
+    </p>
+  </li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://youtu.be/q87L9R9v274">Euler's Method (Introduction and Example) (12:22)</url> from blackpenredpen.  
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Experiment</alert> with an <url href="https://www.geogebra.org/m/b5W3yTgs">Euler's Method GeoGebra Applet</url> from Juan Carlos Ponce Campuzano.
+          </p>
+        </li>
+
+                <li>
+          <p>
+            (Optional) <alert>Experiment</alert> with another <url href="https://mathlets.org/mathlets/eulers-method/">Euler's Method Applet</url> from MIT.
+          </p>
+        </li>
+
+    <li>
+    <p>
+      <alert>Watch</alert> <url href="https://youtu.be/XkcAZnL4344">Numerical methods: Euler's method (50:33)</url> for a lecture on section 1.7.  
+    </p>
+  </li>
+<li>
+<p>
+<alert>Watch</alert> <url href="https://www.youtube.com/watch?v=ukNbG7muKho">Euler's Method (20:49)</url> by The Organic Chemistry Tutor.  
+</p>
+</li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/numer_section.html#subsection-27">Subsection 1.7.1: Exercises 1.7.3, 1.7.4</url>.
+          </p>
+        </li>
+
+
+<li>
+<p>
+(Optional) <alert>Watch</alert> video <url href="https://youtu.be/64QMx1aigtU">The Integrating Factor Method (9:55)</url> from a friend of mine, Matthew Wright, at St. Olaf College.
+</p>
+</li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from this section. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives17">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+      Analyze sources of numerical error in Euler’s method, including local
+      truncation error and the accumulation of global error.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Explain why some numerical methods may be unstable even when the analytic
+      solution behaves well.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Compare Euler’s method with higher-order or improved methods in terms of
+      accuracy and stability.
+            </p>
+          </li>
+
+          
+    <li><p>
+      Evaluate how changing the step size influences numerical stability and 
+      identify when a numerical solution may no longer be reliable.
+    </p></li>
+
+
+        </ul>
+
+      </section>
+
+
+</handout>
