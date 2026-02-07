@@ -152,6 +152,33 @@ var ptx_lunr_docs = [
   "number": "9",
   "title": "",
   "body": " Nitric acid in a tank.   Diagram of a mixing tank showing a 20% acid solution flowing in at 6 liters per minute on the left, and a mixture flowing out at 8 liters per minute on the right. Inside the tank, the variable V(t) represents the volume of nitric acid after t minutes, with the initial condition V(0) = 1 liter.   "
+},
+{
+  "id": "ch-Textbook-7",
+  "level": "1",
+  "url": "ch-Textbook-7.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.6 - Autonomous Equations",
+  "body": " Daily Prep 1.6 - Autonomous Equations   Overview  This section introduces autonomous differential equations , equations of the form whose rate of change depends only on the dependent variable and not on the indpendent variable (which is often time ). Because of this simplification, autonomous equations allow powerful qualitative analysis: identifying equilibrium (constant) solutions, determining critical points where , and analyzing the stability of these equilibria by observing how nearby solutions behave. Using examples such as Newton’s law of cooling and the logistic population model, the section shows how slope fields reveal long‑term behavior—such as convergence to a stable equilibrium or divergence from an unstable one—even without solving the ODE explicitly.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Recognize an autonomous equation as one of the form where the derivative depends only on the dependent variable.    Identify equilibrium (constant) solutions by finding critical points where .    Use slope fields to sketch and interpret basic qualitative behaviors of solutions over time.      Learn!  Complete the actions listed below.     Watch video Introduction to Autonomous Differential Equations (8:14) by Mathispower4u.     Watch  Video 1.6.1: Autonomous Equations by Trevor Bazett.     Read  Section 1.6: Autonomous equations .     Watch  Video 1.6.2: Logistic Equation by Trevor Bazett.    Try these additional questions. If necessary, use AI to guide your thinking.    In section 1.6 , you read the following sentence: Note also, by looking at the graph, that the solution is ``stable” in that small perturbations in do not lead to substantially different solutions as grows. What is meant by the word `perturbation' in this context?       Watch  Autonomous equations (39:07) for a lecture on section 1.6.     Do  Subsection 1.6.1: Exercises 1.6.1, 1.6.6, 1.6.9. .    Try these additional questions. If necessary, use AI to guide your thinking.   How does the solution to the autonomous IVP compare to the solution of the IVP ? Can you generalize this idea for any autonomous equation? A slope field for is given in .   A slope field for .   A slope field on a square coordinate grid, with short line segments slanting downward to the right above the x‑axis and slanting upward to the right below the x‑axis. Along the horizontal line y = 3 the segments are nearly horizontal. Slopes become steeper as y moves farther away from 3.      Values of for which are called critical points . They provide equilibrium solutions of the autonomous equation . That is, are constant solutions.  Why are equilibrium solutions constant solutions? Hint: Remember the result of the previous problem.      Determine the equilibrium solutions to Use the slope field shown in to confirm your finding.   A slope field for .   A slope field on a square grid showing short line segments that tilt downward to the right above the x‑axis and tilt upward to the right below the x‑axis. Near the horizontal line y = 2, the segments are nearly horizontal. The slopes become steeper as y moves away from 2 in either direction.     Solution curves often approach equilibrium solutions as increases, or move away as increases. This is called stability .   If all nearby solution curves approach , then the equilibrium is called a sink ( stable ).  If at least some nearby solution curves do not approach , then the equilibrium is called unstable .  If all nearby solution curves move away from , then the equilibrium is called a source (unstable).   Determine the stability of the two equilibrium solutions and to the equation       A disease is spreading through the country. Let be the number of people infected. Let the constant be the number of people susceptible to infection. The infection rate is proportional to the product of already infected people, , and the number of susceptible but uninfected people, .   Write down the differential equation.  Supposing , that is, some people are infected at time , what is .  Does the solution to part (b) agree with your intuition? Why or why not?        (Optional) Watch video Autonomous First-Order ODEs (32:30) from Understand to Learn.     Do MyOpenMath questions from this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform, with practice:    Analyze stability of equilibrium points by determining whether nearby solutions move toward or away from them.    Describe long‑term behavior of solutions (e.g., convergence to stable equilibria, divergence from unstable ones) using graphical evidence alone.    Interpret models such as Newton’s cooling law and the logistic equation to understand how nonlinear autonomous equations can produce qualitatively different dynamics.     "
+},
+{
+  "id": "ch-Textbook-7-2-2",
+  "level": "2",
+  "url": "ch-Textbook-7.html#ch-Textbook-7-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "autonomous differential equations "
+},
+{
+  "id": "sec-Toprepareforclass16-3-8-1",
+  "level": "2",
+  "url": "ch-Textbook-7.html#sec-Toprepareforclass16-3-8-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "critical points equilibrium stability sink stable unstable source "
 }
 ]
 
