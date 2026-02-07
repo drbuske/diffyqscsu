@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.6 - Autonomous Equations</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+   This section introduces <term>autonomous differential equations</term>, equations of the 
+   form <m>x' = f(x)</m> whose rate of change depends only on the <em>dependent</em> variable 
+   and not on the indpendent variable (which is often time <m>t</m>). Because of this 
+   simplification, autonomous equations allow powerful qualitative analysis: 
+   identifying equilibrium (constant) solutions, determining critical points 
+   where <m>f(x)=0</m>, and analyzing the stability of these equilibria by observing how 
+   nearby solutions behave. Using examples such as Newton’s law of cooling and the 
+   logistic population model, the section shows how slope fields reveal long‑term 
+   behavior—such as convergence to a stable equilibrium or divergence from an unstable 
+   one—even without solving the ODE explicitly.
+  </p>
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+     Recognize an autonomous equation as one of the form <m>x' = f(x)</m> where the derivative depends only on the dependent variable.
+            </p>
+          </li>
+
+<li>
+<p>
+Identify equilibrium (constant) solutions by finding critical points where <m>f(x)=0</m>.
+</p>
+</li>
+
+          <li>
+            <p>
+      Use slope fields to sketch and interpret basic qualitative behaviors of solutions over time.
+            </p>
+          </li>
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass16">
+  <title>Learn!</title>
+
+  <p>
+    Complete the actions listed below.
+  </p>
+  <ul>
+
+<li>
+<p>
+<alert>Watch</alert> video <url href="https://youtu.be/saMhDJJV8VA?si=bFkfOvCnkxbpAfpf">Introduction to Autonomous Differential Equations (8:14)</url> by Mathispower4u.
+</p>
+</li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/auteq_section.html#first-autonomous">Video 1.6.1: Autonomous Equations </url> by Trevor Bazett.
+          </p>
+        </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/auteq_section.html#auteq_section">Section 1.6: Autonomous equations </url>.   
+    </p>
+  </li>
+
+          <li>
+          <p>
+            <alert>Watch</alert> <url href="
+https://web.uvic.ca/~tbazett/diffyqs/auteq_section.html#first-logistic">Video 1.6.2: Logistic Equation</url> by Trevor Bazett.
+          </p>
+        </li>
+
+     <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking.
+          </p>
+            <ol>
+              
+<li>
+<p>
+In <url href="
+https://web.uvic.ca/~tbazett/diffyqs/auteq_section.html#auteq_section">section 1.6</url>, you read the following sentence: <em>Note also, by looking at the graph, that the solution <m>x=A</m> is ``stable” in that small perturbations in <m>x</m> do not lead to substantially different solutions as <m>t</m> grows.</em>  What is meant by the word `perturbation' in this context?   
+</p>  
+</li>
+
+</ol>
+</li>
+
+    <li>
+    <p>
+      <alert>Watch</alert> <url href="https://youtu.be/szxt1dpRpvg?si=3QEAGbQfoo96vDLf">Autonomous equations (39:07)</url> for a lecture on section 1.6.  
+    </p>
+  </li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href=" 
+https://web.uvic.ca/~tbazett/diffyqs/auteq_section.html#subsection-26">Subsection 1.6.1: Exercises 1.6.1, 1.6.6, 1.6.9.</url>.
+          </p>
+        </li>
+
+
+        <li>
+          <p>
+            Try these additional questions.  If necessary, use AI to guide your thinking. 
+            <ol>
+              
+
+
+<li>
+<p>
+How does the solution to the autonomous IVP <m>\frac{dy}{dx} = \sin(y), y(-3) = 1</m> compare to the solution of the IVP <m>\frac{dy}{dx} = \sin(y), y(1) = 1</m>?  Can you generalize this idea for any autonomous equation?  A slope field for <m>\frac{dy}{dx} = \sin(y)</m> is given in <xref ref="AutonomousSlopeField2026a"/>.  </p> 
+
+<figure xml:id="AutonomousSlopeField2026a" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A slope field for <m>\frac{dy}{dx} = \sin(y)</m>.</caption>
+      <image source="AutonomousSlopeField2026a.jpg" width="50%">
+        <description>    A slope field on a square coordinate grid, with short line segments slanting downward to the right above the x‑axis and slanting upward to the right below the x‑axis. Along the horizontal line y = 3 the segments are nearly horizontal. Slopes become steeper as y moves farther away from 3.
+</description>
+      </image>
+</figure>
+ 
+</li>
+
+<li>
+<p>
+Values of <m>y_0</m> for which <m>f(y_0) = 0</m> are called <term>critical points</term>.  They provide <term>equilibrium</term> solutions of the autonomous equation <m>\frac{dy}{dx} = f(y)</m>.  That is, <m>y(x) \equiv y_0</m> are constant solutions.</p>
+
+<p> Why are equilibrium solutions constant solutions?  Hint: Remember the result of the previous problem.  
+</p>
+</li>
+
+<li>
+<p>
+<ol>
+<li><p> Determine the equilibrium solutions to <m>\displaystyle \frac{dy}{dx} = y^2 - y -2.</m>  
+  Use the slope field shown in <xref ref="AutonomousSlopeField2026b"/> to confirm your finding.
+</p>
+<figure xml:id="AutonomousSlopeField2026b" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A slope field for <m>\frac{dy}{dx} = y^2-y-2</m>.</caption>
+      <image source="AutonomousSlopeField2026b.jpg" width="50%">
+        <description>    A slope field on a square grid showing short line segments that tilt downward to the right above the x‑axis and tilt upward to the right below the x‑axis. Near the horizontal line y = 2, the segments are nearly horizontal. The slopes become steeper as y moves away from 2 in either direction.
+</description>
+      </image>
+</figure>
+</li> 
+<li><p> Solution curves often approach equilibrium solutions as <m>x</m> increases, or move away as <m>x</m> increases.  This is called <term>stability</term>. </p> 
+<ol>
+<li><p> If all nearby solution curves approach <m>y_0</m>, then the equilibrium is called a <term>sink</term> (<term>stable</term>).  </p></li>
+<li><p>  If at least some nearby solution curves do not approach <m>y_0</m>, then the equilibrium is called <term>unstable</term>.  </p></li>
+<li><p>  If all nearby solution curves move away from <m>y_0</m>, then the equilibrium is called a <term>source</term> (unstable).  </p></li>
+</ol>
+<p> Determine the stability of the two equilibrium solutions <m>y_1(x) \equiv -1</m> and <m>y_2(x) \equiv 2</m> to the equation <m>\displaystyle \frac{dy}{dx} = y^2 - y - 2.</m> </p>
+</li>
+</ol>
+</p>
+</li>
+
+<li><p> A disease is spreading through the country.  Let <m>x</m> be the number of people
+infected.  Let the constant <m>S</m> be the number of people susceptible to
+infection.  The infection rate <m>\frac{dx}{dt}</m> is proportional to the product
+of already infected people, <m>x</m>, and the number of susceptible but
+uninfected people, <m>S-x</m>.</p>
+<ol>
+<li><p> Write down the differential equation.</p></li>
+<li><p> Supposing <m>x(0) &gt; 0</m>, that is, some people are infected at time <m>t=0</m>,
+what is
+<m>\displaystyle \lim_{t\to\infty} x(t)</m>.</p></li>
+<li><p> Does the solution to part (b) agree with your intuition?  Why or why not?</p></li>
+</ol>
+</li> 
+
+
+
+            </ol>
+          </p>
+        </li>
+
+<li>
+<p>
+(Optional) <alert>Watch</alert> video <url href="https://youtu.be/FVzeVJlmdEw">Autonomous First-Order ODEs (32:30)</url> from Understand to Learn.
+</p>
+</li>
+
+
+        <li>
+          <p>
+            <alert>Do</alert> MyOpenMath questions from this section. 
+          </p>
+        </li>
+        
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives16">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able 
+          to perform, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+     Analyze stability of equilibrium points by determining whether nearby solutions move toward or away from them.
+            </p>
+          </li>
+
+          <li>
+            <p>
+     Describe long‑term behavior of solutions (e.g., convergence to stable equilibria, divergence from unstable ones) using graphical evidence alone.
+            </p>
+          </li>
+
+          <li>
+            <p>
+      Interpret models such as Newton’s cooling law and the logistic equation to understand how nonlinear autonomous equations can produce qualitatively different dynamics.
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+</handout>

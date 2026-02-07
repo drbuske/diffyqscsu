@@ -21,6 +21,7 @@
       <xi:include href="./handouts/12PrepSlopeFields.ptx"/>
       <xi:include href="./handouts/13PrepSeparableEquations.ptx"/>
       <xi:include href="./handouts/14PrepLinearEquations.ptx"/>
+      <xi:include href="./handouts/16PrepAutonomousEquations.ptx"/>
 
     </chapter>
 
