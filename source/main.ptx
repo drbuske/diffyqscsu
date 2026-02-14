@@ -23,6 +23,7 @@
       <xi:include href="./handouts/14PrepLinearEquations.ptx"/>
       <xi:include href="./handouts/16PrepAutonomousEquations.ptx"/>
       <xi:include href="./handouts/17PrepEulersMethod.ptx"/>
+      <xi:include href="./handouts/21PrepSecondOrderLinearODEs.ptx"/>
 
     </chapter>
 
