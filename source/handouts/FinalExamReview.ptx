@@ -2315,6 +2315,1866 @@ Portrait (IV) shows vertical straight-line trajectories: all motion is upward or
 
 </exercise>
 
+<exercise label="general-solution-ypp-3yp-2y">
+  <title>General Solution to a Second-Order Linear Homogeneous DE</title>
+
+  <statement>
+    <p>
+      Find the general solution to the differential equation
+      <m>y'' - 3y' + 2y = 0</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Try a solution of the form <m>y = e^{rt}</m> and substitute into the
+      differential equation to obtain the characteristic equation.
+      Then solve for the roots <m>r</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>y(t) = C_1 e^{t} + C_2 e^{2t}</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Substitute <m>y = e^{rt}</m> into the differential equation
+      <m>y'' - 3y' + 2y = 0</m>.
+      This gives the characteristic equation
+      <m>
+        r^2 - 3r + 2 = 0.
+      </m>
+    </p>
+
+    <p>
+      Factor the quadratic:
+      <m>
+        r^2 - 3r + 2 = (r - 1)(r - 2).
+      </m>
+      Thus, the roots are <m>r = 1</m> and <m>r = 2</m>.
+    </p>
+
+    <p>
+      Since the characteristic equation has two distinct real roots, the
+      general solution is
+      <m>
+        y(t) = C_1 e^{t} + C_2 e^{2t},
+      </m>
+      where <m>C_1</m> and <m>C_2</m> are arbitrary constants.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="general-solution-2ypp-3yp">
+  <title>General Solution to a Linear Homogeneous DE</title>
+
+  <statement>
+    <p>
+      Find the general solution to the differential equation
+      <m>2y'' + 3y' = 0</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Divide the equation by <m>2</m> and try a solution of the form 
+      <m>y = e^{rt}</m>.  
+      This produces the characteristic equation
+      <m>r(r + \tfrac{3}{2}) = 0</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>y(t) = C_1 + C_2 e^{-3t/2}</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Rewrite the differential equation as
+      <m>
+        y'' + \tfrac{3}{2} y' = 0.
+      </m>
+      Using the trial solution <m>y = e^{rt}</m> gives the characteristic
+      equation
+      <m>
+        r^2 + \tfrac{3}{2}r = 0.
+      </m>
+    </p>
+
+    <p>
+      Factor:
+      <m>
+        r(r + \tfrac{3}{2}) = 0,
+      </m>
+      so the roots are <m>r_1 = 0</m> and <m>r_2 = -\tfrac{3}{2}</m>.
+    </p>
+
+    <p>
+      With two distinct real roots, the general solution is
+      <m>
+        y(t) = C_1 e^{0t} + C_2 e^{-3t/2}
+        = C_1 + C_2 e^{-3t/2}.
+      </m>
+    </p>
+
+  </solution>
+
+</exercise>
+
+<exercise label="general-solution-9ypp-12yp-4y">
+  <title>General Solution to a Second-Order Linear DE</title>
+
+  <statement>
+    <p>
+      Find the general solution to the differential equation
+      <m>9y'' - 12y' + 4y = 0</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Use the trial solution <m>y = e^{rt}</m> to obtain the characteristic
+      equation.  Check whether the equation has distinct, repeated, or complex
+      roots.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      y(t) = (C_1 + C_2 t)e^{\frac{2}{3} t}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Substitute <m>y = e^{rt}</m> into the DE to obtain the characteristic
+      equation
+      <m>
+      9r^2 - 12r + 4 = 0.
+      </m>
+      Compute the discriminant:
+      <m>
+      (-12)^2 - 4(9)(4) = 144 - 144 = 0.
+      </m>
+      Since it is zero, there is a repeated root.
+    </p>
+
+    <p>
+      Solving,
+      <m>
+      r = \frac{12}{18} = \frac{2}{3}.
+      </m>
+      For a repeated root <m>r</m>, the general solution is
+      <m>
+      y(t) = (C_1 + C_2 t)e^{rt}.
+      </m>
+      Therefore,
+      <m>
+      y(t) = (C_1 + C_2 t)e^{\frac{2}{3} t}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="find-DE-from-general-solution">
+  <title>Finding a Differential Equation from Its General Solution</title>
+
+  <statement>
+    <p>
+      In each of the following, you are given a general solution <m>y(x)</m>
+      of a homogeneous second-order differential equation
+      <m>ay'' + by' + cy = 0</m> with constant coefficients.
+      Find such an equation.
+    </p>
+
+    <ol>
+      <li><m>y(x) = c_1 + c_2 e^{-10x}</m></li>
+      <li><m>y(x) = c_1 e^{10x} + c_2 e^{-10x}</m></li>
+      <li><m>y(x) = c_1 e^{-10x} + c_2 x e^{-10x}</m></li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Identify the characteristic roots from the form of the general solution.
+      For distinct roots <m>r_1, r_2</m>, the characteristic equation is
+      <m>(r - r_1)(r - r_2) = 0</m>.
+      For repeated roots <m>r</m>, the solution has the form
+      <m>(c_1 + c_2 x)e^{rx}</m> and the characteristic equation is
+      <m>(r - r)^2 = 0</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ol>
+        <li><m>y'' + 10y' = 0</m></li>
+        <li><m>y'' - 100y = 0</m></li>
+        <li><m>y'' + 20y' + 100y = 0</m></li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <strong>(a)</strong>
+      The solution contains <m>e^{0x}</m> and <m>e^{-10x}</m>, so the characteristic
+      roots are <m>r_1 = 0</m> and <m>r_2 = -10</m>.  
+      Thus,
+      <m>(r)(r+10) = r^2 + 10r = 0</m>.
+      The DE is <m>y'' + 10y' = 0</m>.
+    </p>
+
+    <p>
+      <strong>(b)</strong>
+      The roots are <m>r = 10</m> and <m>r = -10</m>.  
+      The characteristic equation is
+      <m>(r-10)(r+10) = r^2 - 100 = 0</m>.
+      Hence the DE is <m>y'' - 100y = 0</m>.
+    </p>
+
+    <p>
+      <strong>(c)</strong>
+      The presence of <m>x e^{-10x}</m> shows a repeated root <m>r = -10</m>.
+      Thus,
+      <m>(r+10)^2 = r^2 + 20r + 100 = 0</m>.
+      The DE is <m>y'' + 20y' + 100y = 0</m>.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="general-solution-5y4p-3y3p">
+  <title>General Solution of a Fourth-Order Linear DE</title>
+
+  <statement>
+    <p>
+      Find the general solution to the differential equation
+      <m>5y'''' + 3y''' = 0</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Try a solution of the form <m>y = e^{rx}</m> to obtain the characteristic
+      equation.  Factor it to find the roots and their multiplicities.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      y(x) = C_1 + C_2 x + C_3 x^2 + C_4 e^{-3x/5}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Substitute <m>y = e^{rx}</m> into the differential equation
+      <m>5y'''' + 3y''' = 0</m> to obtain the characteristic equation
+      <m>5r^4 + 3r^3 = 0.</m>
+    </p>
+
+    <p>
+      Factor:
+      <m>
+      r^3(5r + 3) = 0.
+      </m>
+      Thus the roots are <m>r = 0</m> (with multiplicity 3) and
+      <m>r = -\frac{3}{5}</m>.
+    </p>
+
+    <p>
+      For a triple root at <m>r = 0</m>, the corresponding solutions are
+      <m>1</m>, <m>x</m>, and <m>x^2</m>.  
+      For the simple root <m>r = -\frac{3}{5}</m>, the solution is
+      <m>e^{-3x/5}</m>.
+    </p>
+
+    <p>
+      Therefore, the general solution is
+      <m>
+      y(x) = C_1 + C_2 x + C_3 x^2 + C_4 e^{-3x/5}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="general-solution-ypp-8yp-25y">
+  <title>General Solution to a Homogeneous Linear DE</title>
+
+  <statement>
+    <p>
+      Find the general solution to the differential equation
+      <m>y'' + 8y' + 25y = 0</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Use the trial solution <m>y = e^{rt}</m> to obtain the characteristic
+      equation.  If the roots are complex, recall that solutions have the form
+      <m>e^{\alpha t}(C_1\cos(\beta t) + C_2\sin(\beta t))</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      y(t) = e^{-4t}\left(C_1 \cos(3t) + C_2 \sin(3t)\right).
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Substitute <m>y = e^{rt}</m> into <m>y'' + 8y' + 25y = 0</m> to obtain the
+      characteristic equation
+      <m>r^2 + 8r + 25 = 0.</m>
+      The discriminant is
+      <m>64 - 100 = -36</m>, so the roots are complex:
+      <m>r = -4 \pm 3i.</m>
+    </p>
+
+    <p>
+      For complex roots <m>\alpha \pm \beta i</m>, the general solution is
+      <m>
+        y(t) = e^{\alpha t}\left(C_1 \cos(\beta t) + C_2 \sin(\beta t)\right).
+      </m>
+      Using <m>\alpha = -4</m> and <m>\beta = 3</m>, we obtain
+      <m>
+        y(t) = e^{-4t}\left(C_1 \cos(3t) + C_2 \sin(3t)\right).
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="third-order-DE-from-basis">
+  <title>Constructing a DE from a Given Solution Basis</title>
+
+  <statement>
+    <p>
+      Find a linear, constant coefficient, third-order homogeneous differential
+      equation whose solution space has basis
+      <m>\{ e^{-3x},\ \cos(2x),\ \sin(2x) \}</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      The functions <m>e^{-3x}</m>, <m>\cos(2x)</m>, and <m>\sin(2x)</m>
+      correspond to characteristic roots <m>-3</m>, <m>2i</m>, and <m>-2i</m>.
+      Form the characteristic polynomial with these roots and expand it.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      One such differential equation is
+      <m>
+        y''' + 3y'' + 4y' + 12y = 0.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The given basis corresponds to characteristic roots
+      <m>-3</m>, <m>2i</m>, and <m>-2i</m>.  
+      Therefore the characteristic equation is
+      <m>
+        (r + 3)(r^2 + 4) = 0.
+      </m>
+    </p>
+
+    <p>
+      Expanding,
+      <m>
+        (r+3)(r^2+4) = r^3 + 3r^2 + 4r + 12.
+      </m>
+    </p>
+
+    <p>
+      Replacing <m>r^k</m> with <m>y^{(k)}</m>, the corresponding differential
+      equation is
+      <m>
+        y''' + 3y'' + 4y' + 12y = 0.
+      </m>
+      This equation has exactly the desired basis of solutions.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="mass-spring-amplitude-period-frequency">
+  <title>Amplitude, Period, and Frequency of a Mass–Spring System</title>
+
+  <statement>
+    <p>
+      A mass of <m>3</m> kg is attached to the end of a spring that is stretched
+      <m>20</m> cm by a force of <m>15</m> N.  
+      It is set in motion with initial position <m>x_0 = 0</m> and
+      initial velocity <m>v_0 = -10</m> m/s.
+      Find the amplitude, period, and frequency of the resulting motion.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Use Hooke’s law to compute the spring constant <m>k</m>.
+      Then solve the differential equation <m>mx'' + kx = 0</m>.
+      Apply the initial conditions to determine the constants and extract the
+      amplitude, period, and frequency.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      Amplitude: <m>2</m> m;  
+      Period: <m>\tfrac{2\pi}{5}</m>;  
+      Frequency: <m>\tfrac{5}{2\pi}</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      From Hooke’s law, <m>k = F/\Delta x = 15/0.2 = 75</m>.  
+      The motion satisfies <m>3x'' + 75x = 0</m>, or <m>x'' + 25x = 0</m>.
+    </p>
+
+    <p>
+      The general solution is
+      <m>
+        x(t) = C_1 \cos(5t) + C_2 \sin(5t),
+      </m>
+      since <m>\omega = \sqrt{25} = 5</m>.
+    </p>
+
+    <p>
+      Using <m>x(0)=0</m> gives <m>C_1 = 0</m>.  
+      Differentiating:
+      <m>x'(t) = 5C_2 \cos(5t).</m>
+      Applying <m>x'(0) = -10</m> yields <m>C_2 = -2</m>.
+    </p>
+
+    <p>
+      Therefore the solution is
+      <m>x(t) = -2\sin(5t).</m>
+      The amplitude is <m>A = 2</m>.
+    </p>
+
+    <p>
+      The period is
+      <m>
+        T = \frac{2\pi}{\omega} = \frac{2\pi}{5},
+      </m>
+      and the frequency is
+      <m>
+        f = \frac{1}{T} = \frac{5}{2\pi}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="particular-solution-xppp-4xp">
+  <title>Finding a Particular Solution</title>
+
+  <statement>
+    <p>
+      Find a particular solution <m>x_p(t)</m> of the differential equation
+      <m>x''' + 4x' = 3t - 1</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Because the right-hand side is a polynomial of degree 1, try a polynomial
+      particular solution of degree 2: <m>x_p(t) = At^2 + Bt + C</m>.  
+      Compute the required derivatives and match coefficients.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      x_p(t) = \frac{3}{8} t^2 - \frac14 t.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Try a particular solution of the form <m>x_p(t) = At^2 + Bt + C</m>.
+      Then
+      <m>
+      x_p'(t) = 2At + B,\quad
+      x_p''(t) = 2A,\quad
+      x_p'''(t) = 0.
+      </m>
+    </p>
+
+    <p>
+      Substitute into the differential equation:
+      <m>
+      0 + 4(2At + B) = 3t - 1,
+      </m>
+      so
+      <m>
+      8At + 4B = 3t - 1.
+      </m>
+    </p>
+
+    <p>
+      Matching coefficients gives
+      <m>8A = 3</m> and <m>4B = -1</m>, so
+      <m>
+      A = \frac{3}{8}, B = -\frac14.
+      </m>
+      The constant <m>C</m> does not appear, so we may take <m>C=0</m>.
+    </p>
+
+    <p>
+      Therefore, a particular solution is
+      <m>
+      x_p(t) = \frac{3}{8} t^2 - \frac14 t.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="undetermined-coefficients-forms">
+  <title>Forms of Particular Solutions via Undetermined Coefficients</title>
+
+  <statement>
+    <p>
+      This problem uses the method of undetermined coefficients.  
+      For each differential equation below, write an appropriate form of a
+      particular solution <m>y_p(x)</m>.  
+      <em>Do not solve for the coefficients.</em>
+    </p>
+
+    <ol>
+      <li><m>y'' - 2y' + 2y = e^{x}\sin x</m></li>
+      <li><m>y''''' - y''' = e^{x} + 2x^2 - 5</m></li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Match the form of the right-hand side with the standard trial forms used in
+      the method of undetermined coefficients.  
+      If any part of the trial solution overlaps with the complementary solution,
+      multiply by a sufficient power of <m>x</m> to remove the overlap.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ol>
+        <li><m>y_p(x) = x e^{x}(A\cos x + B\sin x)</m></li>
+        <li><m>y_p(x) = Ax e^{x} + x^3(Bx^2 + Cx + D)</m></li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <strong>(a)</strong>  
+      The forcing term <m>e^{x}\sin x</m> suggests a trial solution of the form
+      <m>e^{x}(A\cos x + B\sin x)</m>.  
+      However, the complementary solution already contains the functions
+      <m>e^{x}\cos x</m> and <m>e^{x}\sin x</m>, so we multiply the trial by
+      <m>x</m>.  
+      Thus,
+      <m>y_p(x) = x e^{x}(A\cos x + B\sin x)</m>.
+    </p>
+
+    <p>
+      <strong>(b)</strong>  
+      The right-hand side has two components:
+      <m>e^{x}</m> and <m>2x^2 - 5</m>.
+    </p>
+    <p>
+      Since <m>r=1</m> is a root of the characteristic equation 
+      <m>r^5 - r^3 = 0</m>, the trial for <m>e^{x}</m> must be multiplied by 
+      <m>x</m>, giving <m>Ax e^{x}</m>.
+    </p>
+    <p>
+      For the polynomial <m>2x^2 - 5</m>, one normally tries
+      <m>Bx^2 + Cx + D</m>, but <m>r=0</m> is a root with multiplicity 3.
+      Therefore, we multiply by <m>x^3</m>, giving
+      <m>x^3(Bx^2 + Cx + D)</m>.
+    </p>
+
+    <p>
+      Combining both parts yields
+      <m>
+      y_p(x) = Ax e^{x} + x^3(Bx^2 + Cx + D).
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="eigenvalues-eigenspaces-A">
+  <title>Eigenvalues and Eigenspaces of a Matrix</title>
+
+  <statement>
+    <p>
+      Find the eigenvalues and associated eigenspaces of the matrix
+      <m>
+        A = 
+        \begin{pmatrix}
+          4 \amp -2 \amp 1\\
+          2 \amp 0 \amp 1\\
+          2 \amp -2 \amp 3
+        \end{pmatrix}.
+      </m>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Compute the characteristic polynomial <m>\det(A - \lambda I)</m> and factor it
+      to find the eigenvalues.  
+      Then solve <m>(A - \lambda I)\mathbf{x} = \mathbf{0}</m> for each eigenvalue
+      to find its eigenspace.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      Eigenvalues:
+      <m>\lambda = 3</m>,  
+      <m>\lambda = 2</m> (multiplicity 2).  
+      Corresponding eigenspaces:
+      <ul>
+        <li>
+          <m>E_3 = \operatorname{span}\left\{
+          \left[\begin{array}{c}1\\1\\1\end{array}\right]\right\}</m>
+        </li>
+        <li>
+          <m>E_2 = \operatorname{span}\left\{
+          \left[\begin{array}{c}1\\0\\-2\end{array}\right],
+          \left[\begin{array}{c}0\\1\\2\end{array}\right]
+          \right\}</m>
+        </li>
+      </ul>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Compute <m>\det(A - \lambda I)</m> to obtain the characteristic polynomial
+      <m>\lambda^3 - 7\lambda^2 + 16\lambda - 12.</m>
+      Factoring gives roots <m>\lambda = 3</m> and <m>\lambda = 2</m>
+      (with multiplicity 2).
+    </p>
+
+    <p>
+      For <m>\lambda = 3</m>, row reduction of <m>A - 3I</m> yields the eigenspace
+      <m>
+      E_3 = \operatorname{span}\left\{
+      \left[\begin{array}{c}1\\1\\1\end{array}\right]
+      \right\}.
+      </m>
+    </p>
+
+    <p>
+      For <m>\lambda = 2</m>, the matrix <m>A - 2I</m> reduces to a single equation
+      <m>2x_1 - 2x_2 + x_3 = 0</m>, giving the eigenspace
+      <m>
+      E_2 = \operatorname{span}\left\{
+      \left[\begin{array}{c}1\\0\\-2\end{array}\right],
+      \left[\begin{array}{c}0\\1\\2\end{array}\right]
+      \right\}.
+      </m>
+    </p>
+
+    <p>
+      Thus the eigenvalues are <m>3</m> and <m>2</m> (multiplicity 2), with the eigenspaces above.
+    </p>
+  </solution>
+
+</exercise>
+
+<!-- 9 -->
+  <exercise label="tf-diagonizable-or-not">
+    <title>Diagonalizable or Not</title>
+    <statement>
+      <p>
+        The matrix in the previous problem is diagonalizable. 
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>Yes, the algebraic and geometric mulitiplicities of eigenvalues are the same.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No.  There are enough eigenvectors to diagonalize.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+ <exercise label="system-from-third-order-DE-corrected">
+  <title>Transforming and Solving a Third-Order Differential Equation</title>
+
+  <statement>
+    <p>
+      Consider the differential equation <m>x''' + 4x' = 3t - 1</m>.  
+      Answer the following questions.
+    </p>
+
+    <ol>
+      <li>
+        Transform the differential equation into a first-order system
+        <m>\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)</m>.
+      </li>
+
+      <li>
+        Find a particular solution <m>\mathbf{x}_p(t)</m> to the system.
+      </li>
+
+      <li>
+        Find the eigenvalues and eigenvectors of <m>A</m>.
+      </li>
+
+      <li>
+        Give the general solution to the associated homogeneous system
+        <m>\mathbf{x}' = A\mathbf{x}</m>.
+      </li>
+
+      <li>
+        Use the Wronskian to show that your basis of vector-valued solutions
+        is linearly independent.
+      </li>
+
+      <li>
+        Give a basis for the solution space of the scalar equation
+        <m>x''' + 4x' = 0</m> and verify linear independence using the Wronskian.
+      </li>
+
+      <li>
+        Give the general solution to the system
+        <m>\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)</m>.
+        Compare it to the general solution of the original differential equation.
+      </li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Let <m>x_1 = x</m>, <m>x_2 = x'</m>, and <m>x_3 = x''</m>.  
+      Then <m>x_1' = x_2</m>, <m>x_2' = x_3</m>, and 
+      <m>x_3' = -4x_2 + 3t - 1</m>.  
+      For the homogeneous case, solve <m>r(r^2 + 4)=0</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ol>
+        <li>
+          <m>
+          \mathbf{x}' =
+          \begin{pmatrix}
+            0 \amp 1 \amp 0\\
+            0 \amp 0 \amp 1\\
+            0 \amp -4 \amp 0
+          \end{pmatrix}
+          \mathbf{x}
+          +
+          \begin{bmatrix}
+            0\\0\\3t - 1
+          \end{bmatrix}.
+          </m>
+        </li>
+
+        <li>
+          <m>
+          \mathbf{x}_p(t) =
+          \begin{bmatrix}
+            \frac{3}{8}t^2 - \frac14 t\\
+            \frac34 t - \frac14\\
+            \frac34
+          \end{bmatrix}.
+          </m>
+        </li>
+
+        <li>
+          Eigenvalues:
+          <m>\lambda_1 = 0,\ \lambda_2 = 2i,\ \lambda_3 = -2i.</m><br/>
+          Eigenvectors:
+          <m>
+          \begin{bmatrix}1\\0\\0\end{bmatrix},\quad
+          \begin{bmatrix}-1\\ -2i\\ 4\end{bmatrix},\quad
+          \begin{bmatrix}-1\\ 2i\\ 4\end{bmatrix}.
+          </m>
+        </li>
+
+        <li>
+          <m>
+          \mathbf{x}_h(t)
+          =
+          c_1
+          \begin{bmatrix}1\\0\\0\end{bmatrix}
+          +
+          c_2
+          \begin{bmatrix}-\cos(2t)\\ 2\sin(2t)\\ 4\cos(2t)\end{bmatrix}
+          +
+          c_3
+          \begin{bmatrix}-\sin(2t)\\ -2\cos(2t)\\ 4\sin(2t)\end{bmatrix}.
+          </m>
+        </li>
+
+        <li>
+          <m>
+          W = 
+          \det
+          \begin{pmatrix}
+            1 \amp -\cos(2t) \amp -\sin(2t)\\
+            0 \amp 2\sin(2t) \amp -2\cos(2t)\\
+            0 \amp 4\cos(2t) \amp 4\sin(2t)
+          \end{pmatrix}
+          = 8 \neq 0.
+          </m>
+        </li>
+
+        <li>
+          Basis for <m>x''' + 4x' = 0</m>:
+          <m>\{1,\ -\cos(2t),\ -\sin(2t)\}</m>.  
+          Wronskian is again <m>8 \neq 0</m>, so independent.
+        </li>
+
+        <li>
+          <m>
+          \mathbf{x}(t) =
+          \mathbf{x}_h(t) + \mathbf{x}_p(t).
+          </m><br/>
+          The first component matches exactly the general solution of
+          <m>x''' + 4x' = 3t - 1</m>.
+        </li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <strong>(a)</strong><br/>
+      Using <m>x_1=x</m>, <m>x_2=x'</m>, <m>x_3=x''</m> gives
+      <m>
+      \mathbf{x}' =
+      \begin{pmatrix}
+        0 \amp 1 \amp 0\\
+        0 \amp 0 \amp 1\\
+        0 \amp -4 \amp 0
+      \end{pmatrix}
+      \mathbf{x}
+      +
+      \begin{bmatrix}
+        0\\0\\3t-1
+      \end{bmatrix}.
+      </m>
+    </p>
+
+    <p>
+      <strong>(b)</strong><br/>
+      Using the known particular solution of the scalar ODE gives
+      <m>
+      x_p(t) = \frac{3}{8}t^2 - \frac14 t,
+      </m>
+      and its derivatives lead to
+      <m>
+      \mathbf{x}_p(t) =
+      \begin{bmatrix}
+        \frac{3}{8}t^2 - \frac14 t\\
+        \frac34 t - \frac14\\
+        \frac34
+      \end{bmatrix}.
+      </m>
+    </p>
+
+    <p>
+      <strong>(c)</strong><br/>
+      The characteristic equation is
+      <m>- \lambda^3 - 4\lambda = -\lambda(\lambda^2 + 4)</m>,
+      giving eigenvalues <m>0, 2i, -2i</m>.  
+      The eigenvectors listed in the answer are verified directly.
+    </p>
+
+    <p>
+      <strong>(d)</strong><br/>
+      Converting complex solutions to real form yields the homogeneous solution:
+      <m>
+      \mathbf{x}_h(t)
+      =
+      c_1\begin{bmatrix}1\\0\\0\end{bmatrix}
+      +
+      c_2\begin{bmatrix}-\cos(2t)\\2\sin(2t)\\4\cos(2t)\end{bmatrix}
+      +
+      c_3\begin{bmatrix}-\sin(2t)\\-2\cos(2t)\\4\sin(2t)\end{bmatrix}.
+      </m>
+    </p>
+
+    <p>
+      <strong>(e)</strong><br/>
+      Computing the Wronskian gives
+      <m>
+      W = 8 \neq 0,
+      </m>
+      confirming linear independence.
+    </p>
+
+    <p>
+      <strong>(f)</strong><br/>
+      For the scalar DE <m>x''' + 4x' = 0</m>, the solution basis is
+      <m>\{1,\ -\cos(2t),\ -\sin(2t)\}</m>,  
+      with the same Wronskian <m>8</m>.
+    </p>
+
+    <p>
+      <strong>(g)</strong><br/>
+      The general solution to the system is
+      <m>\mathbf{x}(t) = \mathbf{x}_h(t) + \mathbf{x}_p(t)</m>.
+      Its first component matches the general solution of the original
+      differential equation.
+    </p>
+
+  </solution>
+
+</exercise>
+
+<exercise label="laplace-from-graph">
+  <title>Computing a Laplace Transform from a Graph</title>
+
+  <statement>
+    <p>
+      Compute the Laplace transform of the function <m>f(t)</m> graphed in <xref ref="GraphLaplaceTransformA"/>.
+    </p>
+
+    <figure xml:id="GraphLaplaceTransformA" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>The graph of <m>f(t)</m>.</caption>
+      <image width="50%">
+        <description>A line segment from (0,0) to (1,1) and 0 for t greater than 1.</description>
+        <latex-image>
+\begin{tikzpicture}[thick,scale=1.2] 
+   \draw [black!60,line width=0.3pt,-latex] (-1,0) -- (4,0) node [below] at (3.75,0) {$t$};
+   \draw [black!60,line width=0.3pt,-latex] (0,-1) -- (0,3) node [left] at (0,2.75) {$f(t)$};
+   \draw [linecolor,line width=2pt] (0,0) -- (1,1); 
+   \draw [linecolor,line width=2pt,-latex] (1.1,0) -- (4,0); 
+   \fill [linecolor] (0,0) circle (3pt);
+   \fill [linecolor] (1,1) circle (3pt) node [right] at (1,1) {$(1,1)$};
+\draw [linecolor] (1,0) circle (3pt);
+\foreach \x/\xtext in {1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+        </latex-image>
+      </image>
+</figure>
+  </statement>
+
+  <hint>
+    <p>
+      Express <m>f(t)</m> as a piecewise function.  
+      Only the interval <m>0 \le t \le 1</m> contributes to the Laplace transform.  
+      Compute <m>\int_0^1 t e^{-st}\,dt</m> using integration by parts.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      \mathcal{L}\{f(t)\}
+      =
+      \frac{1}{s^2}
+      -
+      \left(\frac{1}{s}+\frac{1}{s^2}\right)e^{-s}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      From the graph,
+      <me>
+      f(t)=
+      \begin{cases}
+        t, \amp 0 \le t \le 1,\\
+        0, \amp t &gt; 1.
+      \end{cases}
+      </me>
+      Thus,
+      <m>
+      \mathcal{L}\{f(t)\}
+      = \int_0^1 t e^{-st}\,dt.
+      </m>
+    </p>
+
+    <p>
+      Using integration by parts with
+      <m>u=t</m>, <m>dv=e^{-st}dt</m>,
+      we obtain
+      <m>
+      \int t e^{-st}\,dt
+      = -\frac{t}{s}e^{-st}
+        - \frac{1}{s^2}e^{-st}.
+      </m>
+      Evaluating from <m>0</m> to <m>1</m> gives
+      <m>
+      \int_0^1 t e^{-st}dt
+      = -\left(\frac{1}{s}+\frac{1}{s^2}\right)e^{-s}
+        + \frac{1}{s^2}.
+      </m>
+    </p>
+
+    <p>
+      Therefore,
+      <m>
+      \mathcal{L}\{f(t)\}
+      =
+      \frac{1}{s^2}
+      -
+      \left(\frac{1}{s}+\frac{1}{s^2}\right)e^{-s}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="laplace-IVP-second-order">
+  <title>Solving an IVP Using Laplace Transforms</title>
+
+  <statement>
+    <p>
+      Solve the IVP
+      <md>
+        <mrow>x'' - x' - 6x = 0,</mrow> 
+        <mrow>x(0) = 2, x'(0) = -1,</mrow>
+      </md>
+      using Laplace transforms.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Take the Laplace transform of both sides.  Recall the formulas
+      <m>\mathcal{L}\{x'\} = sX(s) - x(0)</m> and 
+      <m>\mathcal{L}\{x''\} = s^2 X(s) - s x(0) - x'(0)</m>.
+      Solve for <m>X(s)</m> and invert.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      x(t) = \frac{7}{5} e^{3t} + \frac{3}{5} e^{-2t}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Take the Laplace transform of the IVP:
+      <m>
+      \mathcal{L}\{x''\} - \mathcal{L}\{x'\} - 6\mathcal{L}\{x\} = 0.
+      </m>
+      Using
+      <m>
+      \mathcal{L}\{x''\} = s^2 X(s) - s x(0) - x'(0),
+      \quad
+      \mathcal{L}\{x'\} = sX(s) - x(0),
+      </m>
+      we obtain
+      <m>
+      (s^2 X - 2s + 1) - (sX - 2) - 6X = 0.
+      </m>
+    </p>
+
+    <p>
+      Simplify:
+      <m>
+      s^2 X - sX - 6X - 2s + 3 = 0
+      \quad\Longrightarrow\quad
+      X(s)(s^2 - s - 6) = 2s - 3.
+      </m>
+      Since
+      <m>s^2 - s - 6 = (s - 3)(s + 2),</m>
+      we have
+      <m>
+      X(s) = \frac{2s - 3}{(s - 3)(s + 2)}.
+      </m>
+    </p>
+
+    <p>
+      Use partial fractions.  Solve for constants <m>A</m> and <m>B</m> such that
+      <m>
+      \frac{2s - 3}{(s - 3)(s + 2)}
+      =
+      \frac{A}{s - 3} + \frac{B}{s + 2}.
+      </m>
+      Then
+      <m>
+      2s - 3 = A(s + 2) + B(s - 3).
+      </m>
+      Matching coefficients gives
+      <m>A = \frac{7}{5}, B = \frac{3}{5}.</m>
+    </p>
+
+    <p>
+      Thus
+      <m>
+      X(s) = \frac{7/5}{s - 3} + \frac{3/5}{s + 2}.
+      </m>
+      Inverting the Laplace transform yields
+      <m>
+      x(t) = \frac{7}{5} e^{3t} + \frac{3}{5}e^{-2t}.
+      </m>
+    </p>
+
+    <p>
+      Therefore, the solution of the IVP is
+      <m>
+      x(t) = \frac{7}{5} e^{3t} + \frac{3}{5} e^{-2t}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="inverse-laplace-2s+1-over-s-s2+9">
+  <title>Inverse Laplace Transform</title>
+
+  <statement>
+    <p>
+      Find the inverse Laplace transform of
+      <me>
+        F(s) = \frac{2s+1}{s(s^2+9)}.
+      </me>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Use partial fractions:
+      <me>
+      \frac{2s+1}{s(s^2+9)}
+      = \frac{A}{s} + \frac{Bs + C}{s^2+9}.
+      </me>
+      Then invert each term using basic Laplace transform formulas.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      f(t) = \frac{1}{9} - \frac{1}{9}\cos(3t) + \frac{2}{3}\sin(3t).
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Begin with partial fractions:
+      <me>
+      \frac{2s+1}{s(s^2+9)}
+      = \frac{A}{s} + \frac{Bs + C}{s^2+9}.
+      </me>
+      Solving for coefficients yields
+      <m>
+      A = \frac{1}{9},
+      B = -\frac{1}{9},
+      C = 2.
+      </m>
+    </p>
+
+    <p>
+      Thus
+      <me>
+      \frac{2s+1}{s(s^2+9)}
+      =
+      \frac{1}{9}\frac{1}{s}
+      - \frac{1}{9}\frac{s}{s^2+9}
+      + 2\frac{1}{s^2+9}.
+      </me>
+    </p>
+
+    <p>
+      Taking inverse Laplace transforms term‑by‑term:
+      <me>
+      \mathcal{L}^{-1}\left\{\frac{1}{s}\right\} = 1,
+      \mathcal{L}^{-1}\left\{\frac{s}{s^2+9}\right\} = \cos(3t),
+      \mathcal{L}^{-1}\left\{\frac{1}{s^2+9}\right\} = \frac{1}{3}\sin(3t).
+      </me>
+    </p>
+
+    <p>
+      Therefore,
+      <me>
+      f(t)
+      = \frac{1}{9}
+        - \frac{1}{9}\cos(3t)
+        + \frac{2}{3}\sin(3t).
+      </me>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="inverse-laplace-shifted-1-over-s-squared">
+  <title>Inverse Laplace Transform with a Shift</title>
+
+  <statement>
+    <p>
+      Find the inverse Laplace transform <m>f(t)</m> of
+      <m>
+        F(s) = \frac{e^{-3s}}{s^2}.
+      </m>
+      Then sketch the graph of <m>f(t)</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Use the time–shift theorem:
+      <m>\mathcal{L}^{-1}\{e^{-as}F(s)\} = u(t-a)f(t-a).</m>
+      First compute <m>\mathcal{L}^{-1}\{1/s^2\}</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      f(t) = u(t-3)\,\cdot (t-3).
+      </m>
+      The graph is zero for <m>t &lt; 3</m>, and is the line <m>t-3</m> for <m>t \ge 3</m> as in <xref ref="StepTimeTm3"/>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Since
+      <m>
+        \mathcal{L}^{-1}\left\{\frac{1}{s^2}\right\} = t,
+      </m>
+      we apply the time–shift rule:
+      <m>
+        \mathcal{L}^{-1}\{e^{-3s}F(s)\}
+        = u(t-3)\,f(t-3).
+      </m>
+      Here <m>f(t)=t</m>, so
+      <m>
+        f(t)
+        = u(t-3)\,\cdot (t-3).
+      </m>
+    </p>
+
+    <p>
+      The graph is:
+    </p>
+
+    <ul>
+      <li><m>f(t)=0</m> for <m>t &lt; 3</m>,</li>
+      <li><m>f(t)=t-3</m> for <m>t\ge 3</m>.</li>
+    </ul>
+
+    <p>
+      The graph is a ray starting at the point <m>(3,0)</m> and rising with
+      slope <m>1</m> as shown in <xref ref="StepTimeTm3"/>.
+    </p>
+
+    <figure xml:id="StepTimeTm3" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>The graph of <m>f(t) = u(t-3)\cdot(t-3)</m>.</caption>
+      <image width="50%">
+        <description>A graph is shown with the horizontal axis labeled t and the vertical axis labeled f of t. From t equals negative one up to t equals three, the graph lies on the horizontal axis, meaning f of t equals zero. At the point t equals three, f of t is still zero, but from that point the graph begins rising in a straight line with slope one. The rising line starts at the point three comma zero and goes upward to the point four comma one. Tick marks appear at t equals one, two, and three on the horizontal axis, and at f equals one and f equals two on the vertical axis.</description>
+<latex-image>
+  \begin{tikzpicture}[thick,scale=1.0] 
+   \draw [black!60,line width=0.3pt,-latex] (-1,0) -- (4,0) node [below] at (3.75,0) {$t$};
+   \draw [black!60,line width=0.3pt,-latex] (0,-1) -- (0,3) node [left] at (0,2.75) {$f(t)$};
+   \draw [linecolor,line width=2pt] (-1,0) -- (3,0); 
+   \draw [linecolor,line width=2pt,-latex] (3,0) -- (4,1); 
+\foreach \x/\xtext in {1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+  </solution>
+
+</exercise>
+
+<exercise label="slope-field-yprime-t-plus-y">
+  <title>Solution Curve and Existence–Uniqueness</title>
+
+  <statement>
+    <p>
+      The slope field for the differential equation <m>y' = t + y</m> is shown
+      in <xref ref="SlopeFieldtPy"/>. Sketch the likely solution curve to the IVP
+      <md><mrow>y' = t + y,</mrow><mrow>y(0) = -\tfrac12</mrow></md> on the slope field.
+      Then determine whether a unique solution to this IVP exists.
+    </p>
+
+    <figure xml:id="SlopeFieldtPy">
+      <caption>The slope field for <m>y'=t+y</m>.</caption>
+<image width="60%">
+  <prefigure xmlns="https://prefigure.org"
+             label="prefigure-rectangle">
+        <diagram dimensions="(300,300)" margins="12">
+  <definition>f(t,y) = t+y</definition>
+  <coordinates bbox="[-4,-4,4,4]">
+    <grid-axes/>
+    <slope-field function="f"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="A slope field in the t-y plane">
+      <annotation ref="graph-group" text="The short line segments grow steeper
+          and tilt upward as both t and y increase, consistent with the equation
+          y' = t + y">
+        <annotation ref="graph" text="Near t = 0 and y = -1/2 the slopes are slightly negative,
+          becoming positive as t increases"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
+</prefigure>
+      </image>
+    </figure>
+
+  </statement>
+
+  <hint>
+    <p>
+      Rewrite the DE as <m>y' - y = t</m> and recall that the existence and
+      uniqueness theorem applies because the right-hand side 
+      <m>f(t,y) = t + y</m> is continuous and satisfies
+      <m>\partial f / \partial y = 1</m>, which is also continuous everywhere.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      A unique solution exists for all real <m>t</m>, and its graph is an
+      increasing curve passing through the point <m>(0,-\tfrac12)</m>.  
+      The explicit solution is
+      <me>y(t) = t - 1 + \tfrac12 e^{t}.</me>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      To sketch the solution curve on the slope field, locate the initial
+      condition <m>(0,-\tfrac12)</m>.  
+      The slope field shows slightly negative slopes there, but slopes increase
+      rapidly as <m>t</m> increases.  
+      Following the slope field, the curve dips very slightly and then rises
+      smoothly upward as it moves right.
+    </p>
+
+    <p>
+      Solve the IVP explicitly.  Rewrite the differential equation as
+      <m>y' - y = t</m>.  
+      The integrating factor is <m>e^{-t}</m>.  
+      Multiplying both sides by <m>e^{-t}</m> gives
+      <m>(e^{-t}y)' = t e^{-t}.</m>
+      Integrating:
+      <m>
+        e^{-t}y = -t e^{-t} - e^{-t} + C.
+      </m>
+      Multiply by <m>e^{t}</m>:
+      <m>
+        y = -t - 1 + C e^{t}.
+      </m>
+    </p>
+
+    <p>
+      Apply the initial condition <m>y(0) = -\tfrac12</m>:
+      <m>
+        -1 + C = -\tfrac12 \Rightarrow C = \tfrac12.
+      </m>
+      Therefore the unique solution is:
+      <m>
+        y(t) = t - 1 + \tfrac12 e^{t}.
+      </m>
+    </p>
+
+    <p>
+      Because <m>f(t,y)=t+y</m> and <m>\partial f/\partial y = 1</m> are both
+      continuous on all of <m>\mathbb{R}^2</m>, the Existence–Uniqueness Theorem
+      guarantees that a unique solution exists through every point, including
+      <m>(0,-\tfrac12)</m>.
+    </p>
+
+    <p>
+      Thus the IVP has a unique solution, and the solution curve on the slope
+      field is the one that passes through <m>(0,-\tfrac12)</m> and follows the
+      increasing directions of the field.
+    </p>
+
+     <figure xml:id="SlopeFieldtPySolution">
+      <caption>The slope field for <m>y'=t+y</m> with a particular solution to an IVP.</caption>
+<image width="60%">
+  <prefigure xmlns="https://prefigure.org"
+             label="prefigure-rectangle2">
+        <diagram dimensions="(300,300)" margins="12">
+  <definition>f(t,y) = t+y</definition>
+   <coordinates bbox="[-4,-4,4,4]">
+    <grid-axes/>
+    <slope-field function="f"/>
+    <de-solve function="f" t0="0" y0="-0.5" t1="4" name="linear"/>
+    <plot-de-solution solution="linear" stroke="red"/>
+    <plot-de-solution function="f" t0="0" y0="-0.5" t1="4" stroke="red"/>
+  </coordinates>
+  <annotations>
+    <annotation ref="figure"
+                text="A slope field in the t-y plane">
+      <annotation ref="graph-group" text=" The short line segments grow steeper
+          and tilt upward as both t and y increase, consistent with the equation
+          y' = t + y">
+        <annotation ref="graph" text="Near t = 0 and y = -1/2 the slopes are slightly negative,
+          becoming positive as t increases"/>
+        <annotation ref="graph" text="Near t = 0 and y = -1/2 the solution first curves down and then curves up"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
+</prefigure>
+      </image>
+    </figure>
+
+  </solution>
+
+</exercise>
+
+<exercise label="autonomous-equilibria-stability">
+  <title>Autonomous Differential Equation and Equilibria</title>
+
+  <statement>
+    <p>
+      Consider the differential equation
+      <me>
+        \dfrac{dx}{dt} = k(N - x)(x - H),
+      </me>
+      where <m>k &gt; 0</m> and <m>H &lt; N</m> are constants.
+      Determine whether this DE is autonomous.  
+      If it is, find all equilibrium solutions and classify each as stable or unstable.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      A differential equation is autonomous if the right-hand side depends only on
+      <m>x</m> and constants, not on <m>t</m>.
+      Equilibria occur where <m>dx/dt = 0</m>.
+      Use a sign chart on <m>k(N-x)(x-H)</m> to determine stability.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The DE is autonomous.  
+      The equilibrium solutions are <m>x = H</m> and <m>x = N</m>.  
+      <m>x = H</m> is unstable, and <m>x = N</m> is stable.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The right-hand side of the DE,
+      <m>f(x) = k(N - x)(x - H),</m>
+      depends only on <m>x</m> (and constants), not on <m>t</m>, so the equation is
+      autonomous.
+    </p>
+
+    <p>
+      Equilibria occur where <m>dx/dt = 0</m>.  Thus,
+      <m>
+        k(N - x)(x - H) = 0
+      </m>
+      implies
+      <m>x = H</m> or <m>x = N</m>.
+    </p>
+
+    <p>
+      To classify the equilibria, examine the sign of <m>f(x)</m> on the intervals
+      determined by <m>H</m> and <m>N</m>.  
+      Because <m>k &gt; 0</m>, the sign of <m>dx/dt</m> is the sign of
+      <m>(N - x)(x - H)</m>.
+    </p>
+
+    <ul>
+      <li>
+        For <m>x &lt; H</m>,
+        <m>N - x &gt; 0</m> and <m>x - H &lt; 0</m>, so <m>dx/dt &lt; 0</m>.  
+        Solutions move left, away from <m>x = H</m>.
+      </li>
+      <li>
+        For <m>H &lt; x &lt; N</m>,
+        both <m>N - x</m> and <m>x - H</m> are positive, so <m>dx/dt &gt; 0</m>.  
+        Solutions move right, again away from <m>x = H</m>.
+      </li>
+    </ul>
+
+    <p>
+      Thus <m>x = H</m> is <em>unstable</em>.
+    </p>
+
+    <ul>
+      <li>
+        For <m>x &gt; N</m>,
+        <m>N - x &lt; 0</m> and <m>x - H &gt; 0</m>, so <m>dx/dt &lt; 0</m>.  
+        Solutions move left, toward <m>x = N</m>.
+      </li>
+      <li>
+        For <m>H &lt; x &lt; N</m>,
+        <m>dx/dt &gt; 0</m>, so solutions move right, again toward <m>x = N</m>.
+      </li>
+    </ul>
+
+    <p>
+      Thus <m>x = N</m> is <em>stable</em>.
+    </p>
+
+    <p>
+      Therefore, the equation is autonomous, with equilibrium solutions
+      <m>x = H</m> (unstable) and <m>x = N</m> (stable).
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="ivp-integrating-factor-yprime-plus-2x-y-equals-x">
+  <title>Solving an IVP with an Integrating Factor</title>
+
+  <statement>
+    <p>
+      Solve the IVP
+      <me>y' + 2x y = x,\quad y(0) = -2.</me>
+      <em>Hint:</em> Use an integrating factor.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Write the DE in the form <m>y' + p(x)y = q(x)</m>.  
+      The integrating factor is <m>\mu(x) = e^{\int p(x)\,dx} = e^{x^2}</m>.  
+      Multiply the entire equation by <m>e^{x^2}</m> and look for an exact derivative.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      y(x) = -2 e^{-x^2} + \frac{1}{2} e^{-x^2} \int_{0}^{x} t\, e^{t^2}\, dt.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The differential equation is already in linear form:
+      <m>
+        y' + 2x y = x.
+      </m>
+      Here <m>p(x) = 2x</m>, so the integrating factor is
+      <m>
+        \mu(x) = e^{\int 2x\,dx} = e^{x^2}.
+      </m>
+    </p>
+
+    <p>
+      Multiply the entire DE by <m>e^{x^2}</m>:
+      <m>
+        e^{x^2} y' + 2x e^{x^2} y = x e^{x^2}.
+      </m>
+      The left-hand side is the derivative of <m>e^{x^2} y</m>:
+      <m>
+        \frac{d}{dx}\!\left( e^{x^2} y \right)
+        = x e^{x^2}.
+      </m>
+      Integrate both sides:
+      <m>
+        e^{x^2} y 
+        = \int x e^{x^2}\,dx + C.
+      </m>
+    </p>
+
+    <p>
+      Compute the integral:
+      <m>
+        \int x e^{x^2}\,dx = \frac12 e^{x^2}.
+      </m>
+      Thus
+      <m>
+        e^{x^2} y = \frac12 e^{x^2} + C.
+      </m>
+      Solve for <m>y</m>:
+      <m>
+        y = \frac12 + C e^{-x^2}.
+      </m>
+    </p>
+
+    <p>
+      Apply <m>y(0) = -2</m>:
+      <m>
+        -2 = \frac12 + C \quad\Rightarrow\quad C = -\frac52.
+      </m>
+      Therefore,
+      <m>
+        y(x) = \frac12 - \frac52 e^{-x^2}.
+      </m>
+      This can also be written in integral form as
+      <m>
+        y(x)
+        = -2 e^{-x^2}
+        + \frac12 e^{-x^2}
+          \int_0^x t e^{t^2}\,dt.
+      </m>
+    </p>
+
+    <p>
+      Hence, the solution to the IVP is:
+      <m>
+        y(x) = \frac12 - \frac52 e^{-x^2}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="real-valued-solution-operator-factorization">
+  <title>Real-Valued General Solution from Operator Factorization</title>
+
+  <statement>
+    <p>
+      Find a real-valued general solution to
+      <m>
+        (D - 1)^3 (D^2 - 4)(D^2 - 4D + 5)\,y = 0.
+      </m>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Each factor of the operator corresponds to a characteristic root.
+      Use multiplicity to determine how many linearly independent solutions come
+      from each root.  
+      For quadratic factors, solve the corresponding characteristic equation.
+      Convert complex solutions into real-valued sine and cosine forms.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      A real-valued general solution is
+      <m>
+      y(t) =
+      C_1 e^{t} + C_2 t e^{t} + C_3 t^2 e^{t}
+      + C_4 e^{2t} + C_5 e^{-2t}
+      + e^{2t}\!\left(C_6 \cos t + C_7 \sin t\right).
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The operator factors give characteristic roots directly.
+    </p>
+
+    <ul>
+      <li>
+        <m>(D - 1)^3</m> gives the repeated root <m>r = 1</m> of multiplicity 3.
+        Thus the corresponding solutions are
+        <m>
+          e^{t},\; t e^{t},\; t^{2} e^{t}.
+        </m>
+      </li>
+
+      <li>
+        <m>(D^{2} - 4)</m> gives real roots <m>r = 2</m> and <m>r = -2</m>,
+        yielding solutions
+        <m>e^{2t}</m> and <m>e^{-2t}</m>.
+      </li>
+
+      <li>
+        <m>(D^{2} - 4D + 5)</m> gives roots
+        <m>
+        r = \frac{4 \pm \sqrt{16 - 20}}{2}
+          = 2 \pm i.
+        </m>
+        These produce the complex solutions <m>e^{(2 \pm i)t}</m>, which combine to
+        the real-valued pair
+        <m>e^{2t}\cos t</m> and <m>e^{2t}\sin t</m>.
+      </li>
+    </ul>
+
+    <p>
+      Combining all real solutions gives the complete real-valued general solution:
+      <m>
+      y(t)
+      =
+      C_1 e^{t}
+      + C_2 t e^{t}
+      + C_3 t^{2} e^{t}
+      + C_4 e^{2t}
+      + C_5 e^{-2t}
+      + e^{2t}\!\left(C_6 \cos t + C_7 \sin t\right).
+      </m>
+    </p>
+
+    <p>
+      Since these solutions arise from distinct roots (or multiplicities of a root),
+      and each corresponds to a linearly independent solution of the
+      linear homogeneous ODE, they form a basis for the solution space.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="eigenvalue-eigenvector-system-2x2">
+  <title>General Solution via Eigenvalues and Eigenvectors</title>
+
+  <statement>
+    <p>
+      Use the eigenvalue–eigenvector method to find a general solution to the system
+      </p>
+      <me>
+      \begin{aligned}
+      x_1' \amp= x_1 + 2x_2,\\
+      x_2' \amp= 2x_1 + x_2.
+      \end{aligned}
+      </me>
+      <p>
+      Is the equilibrium solution <m>x_1(t)\equiv 0</m>, <m>x_2(t)\equiv 0</m> stable or not?
+      </p>
+  </statement>
+
+  <hint>
+    <p>
+      Write the system in matrix form <m>\mathbf{x}' = A\mathbf{x}</m> and compute the
+      eigenvalues of <m>A</m>.  
+      Distinct real eigenvalues give independent eigenvectors, and the sign of each eigenvalue
+      determines stability of the origin.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The eigenvalues are <m>\lambda_1 = 3</m> and <m>\lambda_2 = -1</m>, with eigenvectors
+      <m>\left[\begin{array}{c}1\\1\end{array}\right]</m> and
+      <m>\left[\begin{array}{c}1\\-1\end{array}\right]</m>.
+      The general solution is
+      <m>
+      \mathbf{x}(t)
+      = C_1 e^{3t}\!\left[\begin{array}{c}1\\1\end{array}\right]
+      + C_2 e^{-t}\!\left[\begin{array}{c}1\\-1\end{array}\right].
+      </m>
+      The equilibrium at the origin is a saddle point and therefore unstable.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Write the system in matrix form:
+      <me>
+      \mathbf{x}' = A\mathbf{x},\qquad
+      A =
+      \begin{pmatrix}
+        1 \amp 2\\
+        2 \amp 1
+      \end{pmatrix}.
+      </me>
+      Compute the characteristic polynomial:
+      <me>
+      \det(A - \lambda I)
+      = \det\begin{pmatrix}1-\lambda \amp 2\\2 \amp 1-\lambda\end{pmatrix}
+      = (1-\lambda)^2 - 4
+      = \lambda^2 - 2\lambda - 3.
+      </me>
+      Factor:
+      <m>
+      \lambda^2 - 2\lambda - 3 = (\lambda - 3)(\lambda + 1).
+      </m>
+      Thus the eigenvalues are <m>\lambda_1 = 3</m> and <m>\lambda_2 = -1</m>.
+    </p>
+
+    <p>
+      For <m>\lambda_1 = 3</m>, solve <m>(A - 3I)\mathbf{v} = \mathbf{0}</m>:
+      <m>
+      A - 3I =
+      \begin{pmatrix}
+        -2 \amp 2\\
+        2 \amp -2
+      \end{pmatrix},
+      </m>
+      which yields eigenvector
+      <m>\left[\begin{array}{c}1\\1\end{array}\right].</m>
+    </p>
+
+    <p>
+      For <m>\lambda_2 = -1</m>, solve <m>(A + I)\mathbf{v} = \mathbf{0}</m>:
+      <m>
+      A + I =
+      \begin{pmatrix}
+        2 \amp 2\\
+        2 \amp 2
+      \end{pmatrix},
+      </m>
+      giving eigenvector
+      <m>\left[\begin{array}{c}1\\-1\end{array}\right].</m>
+    </p>
+
+    <p>
+      Therefore, the general solution is
+      <m>
+      \mathbf{x}(t)
+      = C_1 e^{3t}\!\left[\begin{array}{c}1\\1\end{array}\right]
+      + C_2 e^{-t}\!\left[\begin{array}{c}1\\-1\end{array}\right].
+      </m>
+    </p>
+
+    <p>
+      Since one eigenvalue is positive (<m>3</m>) and one is negative (<m>-1</m>),
+      solutions grow exponentially in the direction of the eigenvector for <m>\lambda = 3</m>
+      and decay in the direction of the eigenvector for <m>\lambda = -1</m>.
+      This makes the origin a saddle point.
+    </p>
+
+    <p>
+      A saddle point is always unstable.  
+      Thus the equilibrium solution <m>\mathbf{x}(t)=\mathbf{0}</m> is unstable.
+    </p>
+
+  </solution>
+
+</exercise>
+
   </exercises>
 
 </section>
