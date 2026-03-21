@@ -1,0 +1,2321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Final Exam Review</title>
+
+<section>
+<title>Successful students will be able to...</title>
+
+<ul>
+  <li>
+    <p>
+      develop a DE to model a physical situation (e.g.
+      Newton’s law of cooling, population growth, radioactive decay, Torricelli’s law, newton’s second law applied to spring mass systems, mixture problems using tanks)
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.2) determine if conditions are sufficient to provide for the existence and uniqueness of solutions to the IVP
+      <me>
+        \frac{dy}{dx}= f(x,y), \ \ y(x_{0})=y_{0}.
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.2) generate and interpret slope fields associated with DEs and utilize them to estimate solutions to the IVP <m>\frac{dy}{dx}= f(x,y), \ y(x_{0})=y_{0}</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.3) implement the method of separation of variables.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.4) implement the method of solving linear, first-order DEs by using an integrating factor.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.5) determine the stability of equilibrium solutions to autonomous DEs <m>\frac{dy}{dx}= f(y)</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (1.6) apply Euler’s method to estimate solutions to first-order DEs.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.1) convert a higher order DE to a first-order system of DEs.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (2.1, 2.5) apply the superposition principle to define general solutions.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      use a Wronskian to determine whether or not a set of solutions to a DE are linearly independent.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (2.3) solve <m>n^{th}</m> order, homoegeneous, constant coefficient, linear DEs.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (2.5) implement the method of undetermined coefficients to find a particular solution to certain <m>n^{th}</m> order linear constant coefficient, nonhomogeneous DEs.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (3.1) state the definition of the Laplace transform.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (3.1) compute a Laplace transform from the definition.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (3.1) compute an inverse Laplace transform using a table.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (3.2, 3.3, 3.4) solve IVPs (particularly those that involved discontinuous functions) using a Laplace transform.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.3) represent a system of linear equations using a matrix.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.2) perform matrix arithmetic (addition, multiplication, transpose, etc.).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.3) utilize elementary row operations to perform gaussian elimination (putting a matrix in row echelon form and reduced row echelon form).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.3) solve linear systems of equations through gaussian elimination.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.2) determine (using various criteria) when the inverse of a square matrix <m>A</m> exists and compute it when it does.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.6) compute the determinant of a matrix using both the permutation definition and cofactor expansion.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.6) understand how elementary row operations affect the determinant of a matrix.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.4) identify if a given set <m>S</m> is a vector space under a particular method of addition and scalar multiplication.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.4) identify if a subset <m>S</m> of a given vector space is a subspace.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.4) write the null space (kernel) of a matrix as the span of a set of vectors (by using gaussian elimination).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.4) identify if a given set of vectors (in <m>\mathbb{R}^{n}</m>) are linearly dependent or linearly independent.
+      [Writing one as a linear combination of the others if dependent.]
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (4.4) identify a basis for a finite-dimensional vector space (e.g.
+      for the solution space of a given DE, for the null space of a matrix <m>A</m>).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.4) state the definition of an eigenvalue and an eigenvector.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.4, 5.7) characterize an eigenspace associated with eigenvalue <m>\lambda</m> as the null space of <m>A-\lambda I</m> and write it as the span of a set of vectors in <m>\mathbb{R}^{n}</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.4) compute (real and complex) eigenvalues and eigenvectors.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.8) determine if a given square matrix <m>A</m> is diagonalizable.
+      If it is, compute a matrix <m>P</m> such that <m>A=PDP^{-1}</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.8) compute a matrix expoenential <m>e^{A}</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      determine whether a set of <m>n</m>-vector valued functions are linearly independent or linearly dependent using a Wronskian.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.3) apply the superposition principle to systems of DEs in the form <m>{\textbf{x}}' = A(t){\textbf{x}}+{\textbf{f}}(t)</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.5) solve homogeneous systems of DEs of the form <m>{\textbf{x}}' = A{\textbf{x}}</m> and determine the stability of the equilibrium point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      (5.4, 5.5) determine real-valued solutions to homogeneous systems of DEs of the form <m>{\textbf{x}}' = A{\textbf{x}}</m> in which <m>A</m> has complex eigenvalues.
+    </p>
+  </li>
+</ul>
+
+  <exercises xml:id="exercises-finalexamreview">
+    <title>Sample Questions</title>
+
+  <!-- 1 -->
+  <exercise label="tf-invertible-matrix">
+    <title>Invertibility of a Matrix</title>
+    <statement>
+      <p>
+        The matrix 
+        <m>
+          A = \begin{pmatrix} 0 \amp 1 \\ 1 \amp 1 \end{pmatrix}
+        </m>
+        is invertible.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. The determinant is 
+            <m>\det(A) = -1 \neq 0</m>,  
+            so the matrix is invertible.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. The matrix has nonzero determinant, so it is invertible.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 2 -->
+  <exercise label="tf-difference-eigenvectors">
+    <title>Difference of Eigenvectors</title>
+    <statement>
+      <p>
+        The difference of two eigenvectors 
+        <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m> of a matrix 
+        <m>A</m> is always an eigenvector of <m>A</m>.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice>
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>No. Only scalar multiples of a single eigenvector are guaranteed to remain eigenvectors.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>
+            Correct. The difference of eigenvectors corresponding to the 
+            <em>same</em> eigenvalue is an eigenvector, but this fails for
+            eigenvectors from different eigenvalues.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 3 -->
+  <exercise label="tf-diagonalizable-square">
+    <title>Diagonalizability of a Matrix and its Square</title>
+    <statement>
+      <p>
+        If a <m>2 \times 2</m> matrix <m>A</m> is diagonalizable,
+        then <m>A^2</m> is diagonalizable.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. If <m>A = PDP^{-1}</m>, then  
+            <m>A^2 = PD^2P^{-1}</m>, which is also diagonalizable.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. The diagonalizability of <m>A</m> guarantees the same for <m>A^2</m>.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 4 -->
+  <exercise label="tf-geom-alg-multiplicity">
+    <title>Geometric vs. Algebraic Multiplicity</title>
+    <statement>
+      <p>
+        In an <m>n \times n</m> matrix <m>A</m>, the geometric 
+        multiplicity of each eigenvalue is less than or equal to its algebraic multiplicity.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. This is a fundamental theorem of eigenstructure:  
+            <m>1 \le \text{geom mult} \le \text{alg mult}</m>.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. Geometric multiplicity can never exceed algebraic multiplicity.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 5 -->
+  <exercise label="tf-solution-count-20x10">
+    <title>Solutions to a Linear System</title>
+    <statement>
+      <p>
+        For a <m>20 \times 10</m> matrix <m>A</m>,
+        the equation <m>A\mathbf{x}=\mathbf{b}</m> has either zero or infinitely many solutions.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice>
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>No. Such a system can have exactly one solution if consistent and full column rank.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>
+            Correct. A tall matrix <m>A</m> (more equations than unknowns)
+            can have zero, one, or infinitely many solutions.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 6 -->
+  <exercise label="tf-diagonalizable-real-complex">
+    <title>Diagonalizability over <m>\mathbb{R}</m> vs. <m>\mathbb{C}</m></title>
+    <statement>
+      <p>
+        There exist matrices which are diagonalizable over the complex numbers
+        but not over the real numbers.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. For example, a rotation matrix in <m>\mathbb{R}^2</m> 
+            has complex eigenvalues but no real eigenvalues.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. Complex diagonalizability does not guarantee real diagonalizability.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 7 -->
+  <exercise label="tf-de-bounded-solutions">
+    <title>Boundedness of Differential Equation Solutions</title>
+    <statement>
+      <p>
+        For the differential equation 
+        <m>x''(t) + x(t) = \sin t</m>, all solutions are bounded.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice>
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>No. The forcing term <m>\sin t</m> resonates with the homogeneous solution.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>
+            Correct. There exist unbounded solutions due to resonance:
+            the particular solution contains a term linear in <m>t</m>.
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 8 -->
+  <exercise label="tf-similarity-transpose">
+    <title>Similarity and Transposes</title>
+    <statement>
+      <p>
+        If a <m>2\times 2</m> matrix <m>A</m> is similar to 
+        a matrix <m>B</m>, then the transpose <m>A^T</m> is similar to <m>B^T</m>.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. If <m>A = PBP^{-1}</m>, then  
+            <m>A^T = (P^{-1})^T B^T P^T</m>, showing similarity.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. Transposition preserves similarity.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 9 -->
+  <exercise label="tf-eigenvalues-invertible">
+    <title>Eigenvalues and Invertibility</title>
+    <statement>
+      <p>
+        A <m>3\times 3</m> matrix <m>A</m> is invertible 
+        if and only if all its eigenvalues are positive.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice>
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>No. Invertibility requires eigenvalues to be nonzero, not necessarily positive.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>Correct. A matrix with eigenvalues <m>-2, 3, -1</m> is invertible but not all positive.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <!-- 10 -->
+  <exercise label="tf-subspace-inequalities">
+    <title>Subspace Defined by Inequalities</title>
+    <statement>
+      <p>
+        The set of vectors 
+        <m>\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}</m> in <m>\mathbb{R}^2</m>
+        satisfying <m>x_1 \ge 2x_2</m> and <m>\frac12 x_1 \le x_2</m>
+        is a subspace.
+      </p>
+    </statement>
+
+    <choices randomize="no">
+      <choice correct="yes">
+        <statement><p>True.</p></statement>
+        <feedback>
+          <p>
+            Correct. The two inequalities together force 
+            <m>x_1 = 2x_2</m>, describing a line through the origin — a subspace.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement><p>False.</p></statement>
+        <feedback>
+          <p>No. The set actually forms a one-dimensional subspace.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+<exercise label="similar-matrices-eigenvalues">
+  <title>Similarity and Eigenvalues</title>
+
+  <statement>
+    <p>
+      Suppose
+      <m>
+        A = \begin{pmatrix} 1 \amp 1 \\ 0 \amp -1 \end{pmatrix},\quad
+        B = \begin{pmatrix} -1 \amp 0 \\ 0 \amp 1 \end{pmatrix},\quad
+        C = \begin{pmatrix} 2 \amp 0 \\ 0 \amp 0 \end{pmatrix},\quad
+        D = \begin{pmatrix} 1 \amp 1 \\ 1 \amp 1 \end{pmatrix},\quad
+        E = \begin{pmatrix} -1 \amp 1 \\ 0 \amp 1 \end{pmatrix}.
+      </m>
+      Which matrices have the same eigenvalues and are similar?
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Similar matrices must have exactly the same eigenvalues, including multiplicities.  
+      Compute the eigenvalues of each matrix and compare them.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>B</m>, <m>A</m>, and <m>E</m> have the same eigenvalues and are similar to each other.  
+      Also, <m>C</m> and <m>D</m> have the same eigenvalues and are similar.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      We compute eigenvalues one matrix at a time:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <m>A</m> has eigenvalues <m>1</m> and <m>-1</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>B</m> has eigenvalues <m>-1</m> and <m>1</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>E</m> also has eigenvalues <m>-1</m> and <m>1</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>C</m> has eigenvalues <m>2</m> and <m>0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>D</m> has eigenvalues <m>2</m> and <m>0</m>.
+        </p>
+      </li>
+    </ul>
+
+    <p>
+      Matrices that are similar must have exactly the same eigenvalues with the same multiplicities.  
+      So:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <m>A</m>, <m>B</m>, and <m>E</m> share the same two eigenvalues <m>1</m> and <m>-1</m>.  
+          Therefore, they are similar to one another.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>C</m> and <m>D</m> both have eigenvalues <m>2</m> and <m>0</m>.  
+          Thus, they are similar to each other as well.
+        </p>
+      </li>
+    </ul>
+
+  </solution>
+</exercise>
+
+<exercise label="match-phase-portraits">
+  <title>Matching Linear Systems to Phase Portraits</title>
+
+  <statement>
+    <p>
+      Match each linear system of differential equations below with its corresponding
+      phase portrait shown in <xref ref="phase-portraits-ABCD"/>.
+    </p>
+
+    <ol>
+      <li>
+        <m>
+          \mathbf{x}' =
+          \begin{pmatrix}
+            0 \amp -1 \\
+            1 \amp 0
+          \end{pmatrix}
+          \mathbf{x}
+        </m>
+      </li>
+
+      <li>
+        <m>
+          \mathbf{x}' =
+          \begin{pmatrix}
+            0 \amp 0 \\
+            0 \amp 1
+          \end{pmatrix}
+          \mathbf{x}
+        </m>
+      </li>
+
+      <li>
+        <m>
+          \mathbf{x}' =
+          \begin{pmatrix}
+            2 \amp 2 \\
+            0 \amp -2
+          \end{pmatrix}
+          \mathbf{x}
+        </m>
+      </li>
+
+      <li>
+        <m>
+          \mathbf{x}' =
+          \begin{pmatrix}
+            2 \amp 2 \\
+            0 \amp 2
+          \end{pmatrix}
+          \mathbf{x}
+        </m>
+      </li>
+    </ol>
+
+    <!-- Example of how you will include the figure in PreTeXt -->
+    
+    <figure xml:id="phase-portraits-ABCD">
+      <caption>Phase portraits (I)–(IV).</caption>
+      <image source="\images\PhasePortraitABCD.jpg" width="90%">
+      <description>A horizontal row of four phase portraits labeled (I), (II), (III), and (IV).
+Portrait (I) shows an improper unstable node: trajectories move outward, bending to the right, with a dominant expanding direction and a secondary curved direction.
+Portrait (II) shows a center: closed circular trajectories rotating around the origin.
+Portrait (III) shows a saddle: trajectories approach along one axis and diverge along another, with characteristic hyperbolic curves.
+Portrait (IV) shows vertical straight-line trajectories: all motion is upward or downward along parallel vertical lines, with no horizontal component. </description>
+      </image>
+    </figure>
+
+  </statement>
+
+  <hint>
+    <p>
+      Compute the eigenvalues for each system.  
+      Look for features such as rotation (imaginary eigenvalues), 
+      vertical lines (a zero eigenvalue with a positive eigenvalue), 
+      unstable nodes (repeated positive eigenvalues), and saddle behavior.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      (a) matches (II),  
+      (b) matches (IV),  
+      (c) matches (I),  
+      (d) matches (III).
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      We analyze each system by computing eigenvalues and identifying qualitative behavior.
+    </p>
+
+    <ul>
+
+      <li>
+        <p>
+          System (a):
+          <m>
+            \begin{pmatrix}
+              0 \amp -1 \\
+              1 \amp 0
+            \end{pmatrix}
+          </m>
+          has eigenvalues <m>\pm i</m>, indicating pure rotation.  
+          This corresponds to portrait (II), the center with circular motion.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          System (b):
+          <m>
+            \begin{pmatrix}
+              0 \amp 0 \\
+              0 \amp 1
+            \end{pmatrix}
+          </m>
+          has eigenvalues <m>0</m> and <m>1</m>.  
+          Motion is purely vertical with exponential growth in the second component.  
+          This matches portrait (IV).
+        </p>
+      </li>
+
+      <li>
+        <p>
+          System (c):
+          <m>
+            \begin{pmatrix}
+              2 \amp 2 \\
+              0 \amp -2
+            \end{pmatrix}
+          </m>
+          has eigenvalues <m>2</m> and <m>-2</m>, a classic saddle structure.  
+          This matches portrait (I), which shows the unstable–stable saddle dynamics.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          System (d):
+          <m>
+            \begin{pmatrix}
+              2 \amp 2 \\
+              0 \amp 2
+            \end{pmatrix}
+          </m>
+          has repeated eigenvalue <m>2</m> with only one eigenvector, producing an
+          improper (degenerate) unstable node.  
+          This matches portrait (III).
+        </p>
+      </li>
+
+    </ul>
+
+  </solution>
+
+</exercise>
+
+<exercise label="linear-system-3x6-solution">
+  <title>Solving a Linear System and Describing Its Solution Set</title>
+
+  <statement>
+    <p>
+      Consider the linear system
+    </p>
+
+    <p>
+      <m>
+      \begin{aligned}
+      x_1 + 2x_2 + 3x_3 + 3x_4 + 2x_5 + x_6 \amp = 3,\\
+      \quad x_2 + 2x_3 + 2x_4 + x_5 \amp = 2,\\
+      \quad x_3 + x_4 \amp = 1.
+      \end{aligned}
+      </m>
+    </p>
+
+    <p>Answer the following:</p>
+
+    <ol>
+      <li>Rewrite the system in matrix form <m>A\mathbf{x}=\mathbf{b}</m>.</li>
+      <li>Row reduce the augmented matrix <m>[A \mid \mathbf{b}]</m>.</li>
+      <li>Find the general solution to the system.</li>
+      <li>Determine whether the solution set is a subspace of <m>\mathbb{R}^6</m>.  
+          If it is, state its dimension; if not, explain why not.</li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Start by assembling the coefficient matrix <m>A</m> and vector <m>\mathbf{b}</m>.  
+      After forming the augmented matrix, perform row reduction carefully.  
+      Identify pivot and free variables before expressing the general solution.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The system can be written as <m>A\mathbf{x}=\mathbf{b}</m> with
+      <m>
+      A = \begin{pmatrix}
+      1 \amp 2 \amp 3 \amp 3 \amp 2 \amp 1\\
+      1 \amp 1 \amp 2 \amp 2 \amp 1 \amp 1\\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0
+      \end{pmatrix},
+      \quad
+      \mathbf{b}=
+      \begin{pmatrix}
+      3\\2\\1
+      \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      After row reduction:
+      <m>
+      \left[
+      \begin{array}{cccccc|c}
+      1 \amp 0 \amp 0 \amp 0 \amp 0 \amp 1 \amp 0\\
+      0 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0\\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+      \end{array}
+      \right].
+      </m>
+    </p>
+
+    <p>
+      A general solution is:
+      <m>
+      \mathbf{x}
+      =
+      \begin{pmatrix} 0\\0\\1\\0\\0\\0 \end{pmatrix}
+      + x_4\begin{pmatrix} 0\\0\\-1\\1\\0\\0 \end{pmatrix}
+      + x_5\begin{pmatrix} 0\\-1\\0\\0\\1\\0 \end{pmatrix}
+      + x_6\begin{pmatrix} -1\\0\\0\\0\\0\\1 \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      The solution set is not a subspace of <m>\mathbb{R}^6</m>, because it does not contain the zero vector.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+       
+      From the coefficients, we obtain:
+    </p>
+
+    <p>
+      <m>
+      A =
+      \begin{pmatrix}
+      1 \amp 2 \amp 3 \amp 3 \amp 2 \amp 1\\
+      1 \amp 1 \amp 2 \amp 2 \amp 1 \amp 1\\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0
+      \end{pmatrix},
+      \qquad
+      \mathbf{b}=
+      \begin{pmatrix}
+      3\\2\\1
+      \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+        
+      The augmented matrix is
+      <m>
+      \left[
+      \begin{array}{cccccc|c}
+      1 \amp 2 \amp 3 \amp 3 \amp 2 \amp 1 \amp 3\\
+      1 \amp 1 \amp 2 \amp 2 \amp 1 \amp 1 \amp 2\\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+      \end{array}
+      \right].
+      </m>
+      After row reduction:
+      <m>
+      \left[
+      \begin{array}{cccccc|c}
+      1 \amp 0 \amp 0 \amp 0 \amp 0 \amp 1 \amp 0\\
+      0 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \amp 0\\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+      \end{array}
+      \right].
+      </m>
+    </p>
+
+    <p>
+       
+      The pivot variables are <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>.  
+      The free variables are <m>x_4</m>, <m>x_5</m>, and <m>x_6</m>.  
+      Solving gives:
+    </p>
+
+    <p>
+      <m>
+      \mathbf{x}
+      =
+      \begin{pmatrix} 0\\0\\1\\0\\0\\0 \end{pmatrix}
+      + x_4\begin{pmatrix} 0\\0\\-1\\1\\0\\0 \end{pmatrix}
+      + x_5\begin{pmatrix} 0\\-1\\0\\0\\1\\0 \end{pmatrix}
+      + x_6\begin{pmatrix} -1\\0\\0\\0\\0\\1 \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+       
+      Because the solution set does not include the zero vector 
+      (the particular solution has a nonzero entry),  
+      it is not closed under scalar multiplication.  
+      Therefore, the set of solutions is <em>not</em> a subspace of <m>\mathbb{R}^6</m>.
+    </p>
+
+  </solution>
+
+</exercise>
+
+<exercise label="newton-cooling-cake-corrected">
+  <title>Newton's Law of Cooling</title>
+
+  <statement>
+    <p>
+      Newton's law of cooling states that the time rate of change of the temperature 
+      <m>T(t)</m> of a body immersed in a medium of constant temperature <m>A</m> 
+      is proportional to the difference <m>A - T</m>, that is,
+      <me>\dfrac{dT}{dt} = k(A - T).</me>
+    </p>
+
+    <p>
+      A cake is removed from an oven at <m>210^\circ\!F</m> and left to cool in a room 
+      with ambient temperature <m>70^\circ\!F</m>.  
+      After 30 minutes the cake’s temperature is <m>140^\circ\!F</m>.  
+      When will the temperature reach <m>100^\circ\!F</m>?
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Solve the differential equation to obtain 
+      <m>T(t) = A + (T_0 - A)e^{-kt}</m>.  
+      Use the known temperature at <m>t=30</m> to compute <m>k</m>,  
+      then solve <m>T(t)=100</m> for <m>t</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The cake reaches <m>100^\circ\!F</m> after approximately 
+      <m>66.7</m> minutes (about 66 minutes and 40 seconds).
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The general solution to Newton’s cooling equation is
+      <m>
+        T(t) = A + (T_0 - A)e^{-kt}.
+      </m>
+      Using <m>A = 70</m> and <m>T_0 = 210</m>, we obtain
+      <m>
+        T(t) = 70 + 140e^{-kt}.
+      </m>
+    </p>
+
+    <p>
+      We know that <m>T(30) = 140</m>, so:
+      <m>
+        140 = 70 + 140e^{-30k}
+        \quad\Longrightarrow\quad
+        70 = 140e^{-30k}
+        \quad\Longrightarrow\quad
+        \tfrac12 = e^{-30k}.
+      </m>
+    </p>
+
+    <p>
+      Taking natural logarithms,
+      <m>
+        -30k = \ln\!\left(\tfrac12\right) = -\ln 2,
+        \quad\text{so}\quad
+        k = \frac{\ln 2}{30}.
+      </m>
+    </p>
+
+    <p>
+      Now solve for <m>t</m> when <m>T(t)=100</m>:
+      <m>
+        100 = 70 + 140e^{-kt}
+        \quad\Longrightarrow\quad
+        30 = 140e^{-kt}
+        \quad\Longrightarrow\quad
+        \tfrac{3}{14} = e^{-kt}.
+      </m>
+    </p>
+
+    <p>
+      Taking logarithms again,
+      <m>
+        -kt = \ln\!\left(\tfrac{3}{14}\right),
+        \quad\Longrightarrow\quad
+        t = \frac{-\ln(\frac{3}{14})}{k}
+        = \frac{-\ln(\frac{3}{14})}{\ln 2 / 30}.
+      </m>
+    </p>
+
+    <p>
+      Numerically,
+      <m>
+        -\ln\!\left(\tfrac{3}{14}\right) \approx 1.540445,
+        \qquad
+        k \approx 0.0231049,
+      </m>
+      giving
+      <m>
+        t \approx \frac{1.540445}{0.0231049} \approx 66.7\ \text{minutes}.
+      </m>
+    </p>
+
+    <p>
+      Therefore, the cake cools to <m>100^\circ\!F</m> after approximately 
+      <m>66</m> minutes and <m>40</m> seconds.
+    </p>
+
+  </solution>
+
+</exercise>
+
+<exercise label="torricelli-draining-cylinder-corrected">
+  <title>Draining a Cylindrical Tank via Torricelli's Law</title>
+
+  <statement>
+    <p>
+      In the case of an upright cylindrical tank with constant cross-sectional area
+      <m>A</m>, Torricelli's law takes the form
+      <me>\dfrac{dy}{dt} = -c\sqrt{y}</me>
+      where <m>c = k/A</m>.  Here <m>y(t)</m> denotes the depth of the water in the tank at time <m>t</m>.
+    </p>
+
+    <p>
+      A vertical cylinder initially contains water to a depth of <m>9</m> feet, and a bottom plug 
+      is removed at <m>t=0</m> hours. After 1 hour, the depth has fallen to <m>4</m> feet.
+      How long does it take for the tank to drain completely?
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Separate variables and integrate to obtain
+      <m>2\sqrt{y} = -ct + C.</m>
+      Use <m>y(0)=9</m> and <m>y(1)=4</m> to find <m>c</m>,
+      then solve for the time <m>t</m> at which <m>y(t) = 0</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The tank empties after <m>3</m> hours.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Start with the differential equation
+      <m>\dfrac{dy}{dt} = -c\sqrt{y}.</m>
+      Separate variables:
+      <m>\dfrac{dy}{\sqrt{y}} = -c\,dt.</m>
+      Integrating gives
+      <m>2\sqrt{y} = -ct + C.</m>
+    </p>
+
+    <p>
+      Use the initial condition <m>y(0) = 9</m>:
+      <m>2\sqrt{9} = 6 = C.</m>
+      So the solution becomes
+      <m>2\sqrt{y} = -ct + 6.</m>
+    </p>
+
+    <p>
+      Apply the information <m>y(1)=4</m>:
+      <m>
+        2\sqrt{4} = 4 = -c(1) + 6
+        \quad\Longrightarrow\quad
+        c = 2.
+      </m>
+    </p>
+
+    <p>
+      Thus the solution is
+      <m>2\sqrt{y} = -2t + 6.</m>
+      The tank is empty when <m>y=0</m>, i.e., when <m>\sqrt{y}=0</m>:
+      <m>
+        0 = -t + 3,
+        \qquad t = 3.
+      </m>
+    </p>
+
+    <p>
+      Therefore, the tank drains completely after <m>3</m> hours.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="mixing-tank-when-full">
+  <title>Salt in a Tank with Unequal Inflow and Outflow</title>
+
+  <statement>
+    <p>
+      A 120-gallon tank initially contains <m>90</m> lb of salt dissolved in 
+      <m>90</m> gallons of water.  
+      Brine containing <m>2</m> lb/gal of salt flows into the tank at 
+      <m>4</m> gal/min, and the well-stirred mixture flows out at 
+      <m>3</m> gal/min.  
+      How much salt does the tank contain at the moment it becomes full?
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Let <m>Q(t)</m> be the amount of salt (in lb) and 
+      <m>V(t)=90+t</m> the volume (in gal).  
+      Set up the differential equation
+      <m>
+        \dfrac{dQ}{dt} = 8 \;-\; 3\,\dfrac{Q}{V(t)}.
+      </m>
+      Solve the resulting linear differential equation and then evaluate 
+      <m>Q(t)</m> at the time the tank reaches <m>120</m> gallons.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      When the tank is full, it contains approximately 
+      <m>202.03</m> lb of salt.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Since the inflow is <m>4</m> gal/min and the outflow is <m>3</m> gal/min, 
+      the tank gains volume at <m>1</m> gal/min.  
+      Starting at 90 gallons, it reaches its 120-gallon capacity after 
+      <m>30</m> minutes.
+    </p>
+
+    <p>
+      Let <m>Q(t)</m> be the amount of salt in pounds.  
+      The inflow brings in <m>4 \times 2 = 8</m> lb/min.  
+      The outflow concentration is <m>Q(t)/V(t)</m> where 
+      <m>V(t)=90+t</m>.  
+      Thus the outflow removes 
+      <m>3\,Q(t)/(90+t)</m> lb/min.
+    </p>
+
+    <p>
+      The differential equation is therefore
+      <m>
+        \dfrac{dQ}{dt} \;=\; 8 \;-\; 3\,\dfrac{Q}{90+t}.
+      </m>
+    </p>
+
+    <p>
+      This is linear:
+      <m>
+        \dfrac{dQ}{dt} + \dfrac{3}{90+t}Q = 8.
+      </m>
+      The integrating factor is
+      <m>
+        \mu(t) = (90+t)^3.
+      </m>
+    </p>
+
+    <p>
+      Multiplying and integrating gives
+      <m>
+        (90+t)^3 Q = 2(90+t)^4 + C.
+      </m>
+      Using <m>Q(0)=90</m>:
+      <m>
+        90^3 \cdot 90 = 2\cdot 90^4 + C
+        \quad\Longrightarrow\quad
+        C = -90^4.
+      </m>
+    </p>
+
+    <p>
+      Thus
+      <m>
+        Q(t) = 2(90+t) \;-\; \dfrac{90^4}{(90+t)^3}.
+      </m>
+      At <m>t=30</m> (when the tank is full), this gives
+      <m>
+        Q(30) = 2(120)\;-\;\dfrac{90^4}{120^3}
+        \approx 202.03\ \text{lb}.
+      </m>
+    </p>
+
+    <p>
+      Therefore, the tank contains approximately 
+      <m>202.03</m> lb of salt when it becomes full.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="linear-system-k-values">
+  <title>Classifying Solutions of a Linear System</title>
+
+  <statement>
+    <p>
+      Determine for which values of <m>k</m> the system
+    </p>
+
+    <p>
+      <m>
+      \begin{aligned}
+      3x + 2y \amp= 1,\\
+      6x + 4y \amp= k
+      \end{aligned}
+      </m>
+    </p>
+
+    <p>
+      has
+    </p>
+
+    <ol>
+      <li>a unique solution,</li>
+      <li>no solution,</li>
+      <li>infinitely many solutions.</li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Compare the two equations.  
+      Notice that the left-hand side of the second equation is 
+      <m>2</m> times the left-hand side of the first equation.
+      Check whether the right-hand sides show the same relationship.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The system has:
+      <ul>
+        <li><em>no unique solution</em> for any value of <m>k</m>,</li>
+        <li><em>no solution</em> when <m>k \ne 2</m>,</li>
+        <li><em>infinitely many solutions</em> when <m>k = 2</m>.</li>
+      </ul>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The coefficient matrix is
+      <m>
+      \begin{pmatrix}
+      3 \amp 2\\
+      6 \amp 4
+      \end{pmatrix},
+      </m>
+      whose determinant is
+      <m>
+      3\cdot 4 - 6\cdot 2 = 12 - 12 = 0.
+      </m>
+      Therefore, the system is never invertible and can never have a unique solution.
+    </p>
+
+    <p>
+      Observe that the left-hand side of the second equation is exactly twice the 
+      first equation's left-hand side:
+    </p>
+
+    <p>
+      <m>
+      6x + 4y = 2(3x + 2y).
+      </m>
+    </p>
+
+    <p>
+      For the system to be consistent, the right-hand sides must also satisfy the same relationship:
+      <m>
+      k = 2 \cdot 1 = 2.
+      </m>
+      Thus, when <m>k = 2</m>, the second equation is a duplicate of the first, and the system 
+      has infinitely many solutions.
+    </p>
+
+    <p>
+      When <m>k \ne 2</m>, the second equation contradicts the first, so the system has no solution.
+    </p>
+
+    <p>
+      Therefore:
+      <ul>
+        <li>No unique solution for any value of <m>k</m>,</li>
+        <li>No solution when <m>k \ne 2</m>,</li>
+        <li>Infinitely many solutions when <m>k = 2</m>.</li>
+      </ul>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="matrix-binomial-failure">
+  <title>Testing the Matrix Binomial Identity</title>
+
+  <statement>
+    <p>
+      Suppose
+      <m>
+        A = \begin{pmatrix} 2 \amp -1 \\ 4 \amp -3 \end{pmatrix}
+      </m>
+      and
+      <m>
+        B = \begin{pmatrix} 1 \amp 3 \\ 5 \amp 7 \end{pmatrix}.
+      </m>
+      Does the identity
+      <m>(A+B)^2 = A^2 + 2AB + B^2?</m>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Compute <m>(A+B)^2</m> explicitly and compare it to 
+      <m>A^2 + 2AB + B^2</m>.  
+      Remember that matrix multiplication is not commutative, so 
+      <m>AB \ne BA</m> in general.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      No.  The two matrices are not equal, so the binomial identity does not hold
+      for these matrices.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      First compute
+      <m>
+        A+B = \begin{pmatrix} 3 \amp 2 \\ 9 \amp 4 \end{pmatrix},
+      </m>
+      so
+      <m>
+        (A+B)^2 = \begin{pmatrix} 27 \amp 14 \\ 63 \amp 34 \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Next compute the pieces on the right side:
+    </p>
+
+    <p>
+      <m>
+      A^2 = \begin{pmatrix} 6 \amp -1 \\ -8 \amp -5 \end{pmatrix}, \quad
+      AB = \begin{pmatrix} -3 \amp -1 \\ -11 \amp -9 \end{pmatrix}, \quad
+      2AB = \begin{pmatrix} -6 \amp -2 \\ -22 \amp -18 \end{pmatrix},
+      </m>
+    </p>
+
+    <p>
+      <m>
+      B^2 = \begin{pmatrix} 16 \amp 24 \\ 40 \amp 64 \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Adding these,
+      <m>
+        A^2 + 2AB + B^2
+        =
+        \begin{pmatrix}
+          16 \amp 21\\
+          10 \amp 41
+        \end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Comparing,
+      <m>
+        (A+B)^2 = \begin{pmatrix} 27 \amp 14 \\ 63 \amp 34 \end{pmatrix}
+      </m>
+      is not equal to
+      <m>
+        A^2 + 2AB + B^2.
+      </m>
+    </p>
+
+    <p>
+      Therefore, the identity does not hold.  
+      This occurs because the binomial identity <m>(A+B)^2 = A^2 + 2AB + B^2</m>
+      only holds when <m>A</m> and <m>B</m> commute (i.e., <m>AB = BA</m>), which is not the case here.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="inverse-by-row-reduction-correct">
+  <title>Finding a Matrix Inverse by Row Reduction</title>
+
+  <statement>
+    <p>
+      Find <m>A^{-1}</m> if
+      <m>
+        A =
+        \begin{pmatrix}
+          1 \amp 1 \amp 5\\
+          1 \amp 4 \amp 13\\
+          3 \amp 2 \amp 12
+        \end{pmatrix}.
+      </m>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Form the augmented matrix <m>[A \mid I]</m> and row‑reduce until the left block
+      becomes the identity matrix.  
+      The right block will then be <m>A^{-1}</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      A^{-1} =
+      \begin{pmatrix}
+        -22 \amp 2 \amp 7\\
+        -27 \amp 3 \amp 8\\
+        10 \amp -1 \amp -3
+      \end{pmatrix}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Begin with the augmented matrix <m>[A \mid I]</m>:
+    </p>
+
+    <p>
+      <m>
+      \left[
+      \begin{array}{ccc|ccc}
+      1 \amp 1 \amp 5 \amp 1 \amp 0 \amp 0\\
+      1 \amp 4 \amp 13 \amp 0 \amp 1 \amp 0\\
+      3 \amp 2 \amp 12 \amp 0 \amp 0 \amp 1
+      \end{array}
+      \right]
+      </m>.
+    </p>
+
+    <p>
+      Row reduction yields:
+      <m>
+      \left[
+      \begin{array}{ccc|ccc}
+      1 \amp 0 \amp 0 \amp -22 \amp 2 \amp 7\\
+      0 \amp 1 \amp 0 \amp -27 \amp 3 \amp 8\\
+      0 \amp 0 \amp 1 \amp 10 \amp -1 \amp -3
+      \end{array}
+      \right].
+      </m>
+    </p>
+
+    <p>
+      Therefore,
+      <m>
+      A^{-1} =
+      \begin{pmatrix}
+        -22 \amp 2 \amp 7\\
+        -27 \amp 3 \amp 8\\
+        10 \amp -1 \amp -3
+      \end{pmatrix}.
+      </m>
+      Multiplying <m>A A^{-1}</m> confirms that the product is the identity matrix.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="tridiagonal-determinant">
+  <title>Determinants of Tridiagonal Matrices</title>
+
+  <statement>
+    <p>
+      Consider the determinants:
+    </p>
+
+    <ol>
+      <li>
+        Compute
+        <m>
+        \det\begin{pmatrix}2 \amp 1\\ 1 \amp 2\end{pmatrix}
+        </m>
+        and
+        <m>
+        \det\begin{pmatrix}
+        2 \amp 1 \amp 0\\
+        1 \amp 2 \amp 1\\
+        0 \amp 1 \amp 2
+        \end{pmatrix}.
+        </m>
+      </li>
+
+      <li>
+        Let
+        <me>
+        B_n = 
+        \det\!
+        \begin{pmatrix}
+        2 \amp 1 \amp 0 \amp 0 \amp \cdots \amp 0 \amp 0\\
+        1 \amp 2 \amp 1 \amp 0 \amp \cdots \amp 0 \amp 0\\
+        0 \amp 1 \amp 2 \amp 1 \amp \cdots \amp 0 \amp 0\\
+        0 \amp 0 \amp 1 \amp 2 \amp \cdots \amp 0 \amp 0\\
+        \vdots \amp \vdots \amp \vdots \amp \vdots \amp \ddots \amp \vdots \amp \vdots\\
+        0 \amp 0 \amp 0 \amp 0 \amp \cdots \amp 2 \amp 1\\
+        0 \amp 0 \amp 0 \amp 0 \amp \cdots \amp 1 \amp 2
+        \end{pmatrix}
+        </me>
+        where all main diagonal entries are 2, the adjacent diagonals are 1, and all other entries are 0.
+        Show that
+        <m>
+        B_n = 2B_{n-1} - B_{n-2}.
+        </m>
+      </li>
+
+      <li>
+        Give an explicit formula for <m>B_n</m> for <m>n \ge 2</m>.
+      </li>
+    </ol>
+
+  </statement>
+
+  <hint>
+    <p>
+      For (a), expand the determinants directly.
+      For (b), perform a cofactor expansion along the first row: only two minors survive.
+      For (c), solve the linear recurrence 
+      <m>B_n = 2B_{n-1} - B_{n-2}</m> 
+      using the initial conditions from part (a).
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ol>
+        <li>
+          <m>\det\begin{pmatrix}2 \amp 1\\ 1 \amp 2\end{pmatrix} = 3</m>,  
+          <m>\det\begin{pmatrix}2 \amp 1 \amp 0\\ 1 \amp 2 \amp 1\\ 0 \amp 1 \amp 2\end{pmatrix} = 4</m>.
+        </li>
+        <li>
+          <m>B_n = 2B_{n-1} - B_{n-2}</m>.
+        </li>
+        <li>
+          <m>B_n = n + 1</m>.
+        </li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <strong>(a)</strong>  
+      The <m>2 \times 2</m> determinant is
+      <m>
+      2\cdot 2 - 1\cdot 1 = 3.
+      </m>
+      For the <m>3 \times 3</m> determinant, expand along the first row:
+      <m>
+      2\det\begin{pmatrix}2 \amp 1\\ 1 \amp 2\end{pmatrix}
+      - \det\begin{pmatrix}1 \amp 1\\ 0 \amp 2\end{pmatrix}
+      = 2(3) - 2 = 4.
+      </m>
+    </p>
+
+    <p>
+      <strong>(b)</strong>  
+      Expanding <m>B_n</m> along the first row produces only two terms:
+      <m>
+      B_n = 2 B_{n-1} - B_{n-2}.
+      </m>
+      The sign pattern in the cofactor expansion ensures the subtraction of the second minor.
+    </p>
+
+    <p>
+      <strong>(c)</strong>  
+      The recurrence
+      <m>B_n = 2B_{n-1} - B_{n-2}</m>
+      has characteristic equation
+      <m>(r-1)^2=0</m>,
+      giving
+      <m>B_n = C_1 + C_2 n.</m>
+      Using
+      <m>B_1 = 2</m>
+      and
+      <m>B_2 = 3</m>
+      yields
+      <m>C_2 = 1</m> and <m>C_1 = 1</m>.
+      Thus
+      <m>
+      B_n = n + 1.
+      </m>
+      This agrees with <m>B_3 = 4</m> from part (a).
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="linear-dependence-check">
+  <title>Checking Linear Dependence of Three Vectors</title>
+
+  <statement>
+    <p>
+      Determine whether the vectors
+      <m>\begin{pmatrix}3\\ -1\\ 2\end{pmatrix}</m>,
+      <m>\begin{pmatrix}5\\ 4\\ -6\end{pmatrix}</m>, and
+      <m>\begin{pmatrix}8\\ 3\\ -4\end{pmatrix}</m>
+      are linearly dependent or linearly independent.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Form a matrix whose columns are the three vectors and compute its determinant.
+      A determinant of zero means the vectors are linearly dependent.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The three vectors are <em>linearly dependent</em>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Form the matrix
+      <m>
+      M =
+      \begin{pmatrix}
+        3 \amp 5 \amp 8\\
+        -1 \amp 4 \amp 3\\
+        2 \amp -6 \amp -4
+      \end{pmatrix}.
+      </m>
+      Compute its determinant:
+      <m>
+      \det(M)
+      =
+      3\begin{vmatrix}4 \amp 3\\ -6 \amp -4\end{vmatrix}
+      -
+      5\begin{vmatrix}-1 \amp 3\\ 2 \amp -4\end{vmatrix}
+      +
+      8\begin{vmatrix}-1 \amp 4\\ 2 \amp -6\end{vmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Evaluating the minors:
+      <m>
+      \begin{aligned}
+      \begin{vmatrix}4 \amp 3\\ -6 \amp -4\end{vmatrix} \amp = 2,\\[4pt]
+      \begin{vmatrix}-1 \amp 3\\ 2 \amp -4\end{vmatrix} \amp = -2,\\[4pt]
+      \begin{vmatrix}-1 \amp 4\\ 2 \amp -6\end{vmatrix} \amp = -2.
+      \end{aligned}
+      </m>
+      Thus
+      <m>
+      \det(M) = 3(2) - 5(-2) + 8(-2) = 6 + 10 - 16 = 0.
+      </m>
+    </p>
+
+    <p>
+      Since the determinant is zero, the matrix is singular, and therefore the three
+      vectors do not form a linearly independent set.
+    </p>
+
+    <p>
+      Hence, the vectors are <em>linearly dependent</em>.
+    </p>
+
+  </solution>
+
+</exercise>
+
+<exercise label="basis-subspace-x1+x2+x3=0">
+  <title>Finding a Basis for a Subspace of <m>\mathbb{R}^{3}</m></title>
+
+  <statement>
+    <p>
+      Find a basis for the subspace
+      <m>
+        S = \left\{
+        \begin{pmatrix} x_1\\ x_2\\ x_3 \end{pmatrix}
+        : x_1 + x_2 + x_3 = 0
+        \right\}
+      </m>
+      of <m>\mathbb{R}^3</m>.  Compute <m>\dim(S)</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Solve the equation <m>x_1 + x_2 + x_3 = 0</m> for one variable in terms of the
+      other two, and express all vectors in <m>S</m> as linear combinations of
+      two independent vectors.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      A possible basis is
+      <m>
+      \left\{
+      \begin{pmatrix}-1\\ 1\\ 0\end{pmatrix},
+      \begin{pmatrix}-1\\ 0\\ 1\end{pmatrix}
+      \right\},
+      </m>
+      and <m>\dim(S)=2</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The subspace <m>S</m> consists of all vectors
+      <m>
+      \begin{pmatrix} x_1\\ x_2\\ x_3 \end{pmatrix}
+      </m>
+      satisfying the linear constraint
+      <m>x_1 + x_2 + x_3 = 0.</m>
+    </p>
+
+    <p>
+      Solve this equation for <m>x_1</m>:
+      <m>
+      x_1 = -x_2 - x_3.
+      </m>
+      Then every vector in <m>S</m> can be written as
+      <m>
+      \begin{pmatrix}
+        -x_2 - x_3\\
+        x_2\\
+        x_3
+      \end{pmatrix}
+      =
+      x_2 \begin{pmatrix}-1\\1\\0\end{pmatrix}
+      +
+      x_3 \begin{pmatrix}-1\\0\\1\end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      The vectors
+      <m>
+      \begin{pmatrix}-1\\1\\0\end{pmatrix}
+      </m>
+      and
+      <m>
+      \begin{pmatrix}-1\\0\\1\end{pmatrix}
+      </m>
+      are linearly independent, so they form a basis for <m>S</m>.
+    </p>
+
+    <p>
+      Since the basis contains two independent vectors,
+      <m>\dim(S)=2.</m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="nullspace-of-A-corrected">
+  <title>Finding a Basis for a Null Space</title>
+
+  <statement>
+    <p>
+      Find a basis for the null space of
+      <m>
+      A =
+      \begin{pmatrix}
+        1 \amp 3 \amp 8 \amp -1\\
+        1 \amp -3 \amp -10 \amp 5\\
+        1 \amp 4 \amp 11 \amp -2
+      \end{pmatrix}.
+      </m>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Row-reduce the augmented matrix <m>[A \mid \mathbf{0}]</m> and express the solution
+      in terms of the free variables.  The resulting parameter vectors form a basis.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      A basis for the null space is
+      <m>
+      \left\{
+      \begin{pmatrix}1\\ -3\\ 1\\ 0\end{pmatrix},
+      \begin{pmatrix}-2\\ 1\\ 0\\ 1\end{pmatrix}
+      \right\}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Row-reducing the matrix <m>[A \mid \mathbf{0}]</m> yields
+      <m>
+      \begin{pmatrix}
+        1 \amp 0 \amp -1 \amp 2\\
+        0 \amp 1 \amp 3 \amp -1\\
+        0 \amp 0 \amp 0 \amp 0
+      \end{pmatrix},
+      </m>
+      corresponding to the equations
+      <m>
+        x_1 - x_3 + 2x_4 = 0, \qquad
+        x_2 + 3x_3 - x_4 = 0.
+      </m>
+    </p>
+
+    <p>
+      Let <m>x_3 = s</m> and <m>x_4 = t</m>. Then
+      <m>
+      x_1 = s - 2t,\qquad
+      x_2 = -3s + t.
+      </m>
+    </p>
+
+    <p>
+      The general solution is
+      <m>
+      \mathbf{x}
+      =
+      s\begin{pmatrix}1\\ -3\\ 1\\ 0\end{pmatrix}
+      +
+      t\begin{pmatrix}-2\\ 1\\ 0\\ 1\end{pmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Therefore, a basis for the null space is
+      <m>
+      \left\{
+      \begin{pmatrix}1\\ -3\\ 1\\ 0\end{pmatrix},
+      \begin{pmatrix}-2\\ 1\\ 0\\ 1\end{pmatrix}
+      \right\}.
+      </m>
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="linear-combination-matrix-equation">
+  <title>Finding a Nontrivial Linear Combination</title>
+
+  <statement>
+    <p>
+      Find a nontrivial linear combination of the vectors
+      <m>\left[ \begin{array}{c} 2\\0\\-3 \end{array} \right]</m>,
+      <m>\left[ \begin{array}{c} 4\\-5\\6 \end{array} \right]</m>, and
+      <m>\left[ \begin{array}{c} -2\\1\\3 \end{array} \right]</m>
+      that equals the zero vector.  
+      Then determine whether the vectors are linearly dependent or linearly independent.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Form the matrix with the vectors as columns:
+      <m>
+      M =
+      \begin{pmatrix}
+        2 \amp 4 \amp -2\\
+        0 \amp -5 \amp 1\\
+        -3 \amp 6 \amp 3
+      \end{pmatrix},
+      </m>
+      and solve the homogeneous system <m>M\mathbf{c}=\mathbf{0}</m>.
+      Any nonzero solution <m>\mathbf{c}</m> gives a dependence relation.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      One nontrivial dependence relation is
+      <m>
+      3\left[ \begin{array}{c}2\\0\\-3\end{array}\right]
+      +
+      1\left[ \begin{array}{c}4\\-5\\6\end{array}\right]
+      +
+      5\left[ \begin{array}{c}-2\\1\\3\end{array}\right]
+      =
+      \left[ \begin{array}{c}0\\0\\0\end{array}\right].
+      </m>
+      Thus, the vectors are linearly dependent.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Place the vectors as columns in the matrix
+      <m>
+      M =
+      \begin{pmatrix}
+        2 \amp 4 \amp -2\\
+        0 \amp -5 \amp 1\\
+        -3 \amp 6 \amp 3
+      \end{pmatrix}.
+      </m>
+      We seek a nonzero vector <m>\mathbf{c}</m> such that <m>M\mathbf{c}=\mathbf{0}</m>.
+    </p>
+
+    <p>
+      Solving the homogeneous system by row reduction yields a one-parameter family
+      of solutions.  One convenient choice is
+      <m>
+      \mathbf{c} =
+      \begin{bmatrix} 3\\ 1\\ 5 \end{bmatrix}.
+      </m>
+    </p>
+
+    <p>
+      Substituting back:
+      <m>
+      3\left[ \begin{array}{c}2\\0\\-3\end{array}\right]
+      +
+      1\left[ \begin{array}{c}4\\-5\\6\end{array}\right]
+      +
+      5\left[ \begin{array}{c}-2\\1\\3\end{array}\right]
+      =
+      \left[ \begin{array}{c}
+      0\\0\\0
+      \end{array}\right].
+      </m>
+    </p>
+
+    <p>
+      Since a nontrivial linear combination equals the zero vector, the three vectors
+      are <em>linearly dependent</em>.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="basis-check-R4">
+  <title>Do Three Vectors Form a Basis for <m>\mathbb{R}^{4}</m>?</title>
+
+  <statement>
+    <p>
+      Determine whether the vectors
+      <m>\left[ \begin{array}{c} 2\\0\\-3\\1 \end{array} \right]</m>,
+      <m>\left[ \begin{array}{c} 4\\-5\\6\\-3 \end{array} \right]</m>, and
+      <m>\left[ \begin{array}{c} -2\\1\\3\\0 \end{array} \right]</m>
+      form a basis for <m>\mathbb{R}^4</m>.  
+      If not, explain why.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Three vectors cannot form a basis for <m>\mathbb{R}^4</m>, because any basis
+      must contain four linearly independent vectors.  
+      But you may still check whether these three vectors are linearly independent.
+      Form the matrix
+      <m>
+      M =
+      \begin{pmatrix}
+        2 \amp 4 \amp -2\\
+        0 \amp -5 \amp 1\\
+        -3 \amp 6 \amp 3\\
+        1 \amp -3 \amp 0
+      \end{pmatrix}
+      </m>
+      and solve <m>M\mathbf{c}=\mathbf{0}</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The vectors do <em>not</em> form a basis for <m>\mathbb{R}^4</m> because a basis
+      requires four vectors.  
+      However, these three vectors are linearly independent.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      A basis for <m>\mathbb{R}^4</m> must contain exactly four linearly independent
+      vectors. Since only three vectors are given, they cannot form a basis.
+    </p>
+
+    <p>
+      To check linear independence, place the vectors as columns of the matrix
+      <m>
+      M =
+      \begin{pmatrix}
+        2 \amp 4 \amp -2\\
+        0 \amp -5 \amp 1\\
+        -3 \amp 6 \amp 3\\
+        1 \amp -3 \amp 0
+      \end{pmatrix}
+      </m>
+      and solve the homogeneous system <m>M\mathbf{c}=\mathbf{0}</m>.
+    </p>
+
+    <p>
+      Row reduction yields only the trivial solution. Thus the three vectors are
+      linearly independent.
+    </p>
+
+    <p>
+      Despite being independent, they do <em>not</em> form a basis for 
+      <m>\mathbb{R}^4</m> because there are only three of them.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="solution-space-yprime-equals-ky">
+  <title>The Solution Space of <m>y' = ky</m></title>
+
+  <statement>
+    <p>
+      Determine whether the set of all solutions to the differential equation
+      <m>y' = ky</m> forms a vector space.  
+      If it does, give a basis for this function space.  
+      If it does not, explain why.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Solve the differential equation first.  
+      Then check whether the set of all solutions is closed under addition and 
+      scalar multiplication, and whether it contains the zero function.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      Yes, the solution set is a vector space.  
+      A basis is <m>\{ e^{kt} \}</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Solving the differential equation <m>y' = ky</m> gives the family of 
+      solutions
+      <m>
+        y(t) = Ce^{kt},
+      </m>
+      where <m>C</m> is any real constant.
+    </p>
+
+    <p>
+      The set of solutions is therefore
+      <m>
+        S = \{ Ce^{kt} : C \in \mathbb{R} \}.
+      </m>
+    </p>
+
+    <p>
+      This set is closed under addition:
+      <m>
+      C_1 e^{kt} + C_2 e^{kt} = (C_1 + C_2)e^{kt} \in S.
+      </m>
+      It is closed under scalar multiplication:
+      <m>
+      \alpha (Ce^{kt}) = (\alpha C)e^{kt} \in S.
+      </m>
+      And it contains the zero function by choosing <m>C = 0</m>.
+    </p>
+
+    <p>
+      Therefore, <m>S</m> is a vector space.  
+      Since every element of <m>S</m> is a scalar multiple of <m>e^{kt}</m>, 
+      a basis is
+      <m>\{ e^{kt} \}</m>,
+      and the solution space is one-dimensional.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="dimension-solution-space-y-triple-prime">
+  <title>Dimension of the Solution Space to <m>y''' = 0</m></title>
+
+  <statement>
+    <p>
+      Suppose <m>S</m> is the solution space to the differential equation
+      <m>y''' = 0</m>.  
+      Compute <m>\dim(S)</m>.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Integrate the equation three times to obtain the general form of all solutions.
+      Then determine how many independent functions appear.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>\dim(S) = 3</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Integrating <m>y''' = 0</m> yields
+      <m>y'' = C_1</m>,
+      <m>y' = C_1 t + C_2</m>, and finally
+      <m>y = C_1 t^2 + C_2 t + C_3</m>.
+    </p>
+
+    <p>
+      Thus every solution is a linear combination of the three functions
+      <m>t^2</m>, <m>t</m>, and <m>1</m>.  
+      These three functions are linearly independent.
+    </p>
+
+    <p>
+      Therefore, the dimension of the solution space is
+      <m>\dim(S) = 3</m>.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="subspaces-of-P3">
+  <title>Subspaces of <m>\mathbb{P}_{3}</m></title>
+
+  <statement>
+    <p>
+      Consider the set of all polynomials of the form
+      <m>a_0 + a_1 x + a_2 x^2 + a_3 x^3</m>.
+      Determine whether the set of all such polynomials satisfying each condition
+      below is a subspace of <m>\mathbb{P}_3</m>.
+    </p>
+
+    <ol>
+      <li><m>a_3 \ne 0</m></li>
+      <li><m>a_0 = a_1 = 0</m></li>
+      <li><m>a_0 + a_1 + a_2 + a_3 = 0</m></li>
+      <li>All coefficients <m>a_0, a_1, a_2, a_3</m> are integers</li>
+    </ol>
+  </statement>
+
+  <hint>
+    <p>
+      Recall that a subspace must contain the zero polynomial and must be closed
+      under both addition and scalar multiplication.  
+      For (c), notice that a single homogeneous linear equation defines a subspace.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ul>
+        <li>(a) Not a subspace.</li>
+        <li>(b) A subspace.</li>
+        <li>(c) A subspace.</li>
+        <li>(d) Not a subspace.</li>
+      </ul>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <strong>(a)</strong>  
+      The condition <m>a_3 \ne 0</m> excludes the zero polynomial, so the set
+      cannot be a subspace.  It is also not closed under scalar multiplication.
+    </p>
+
+    <p>
+      <strong>(b)</strong>  
+      The condition <m>a_0 = a_1 = 0</m> gives polynomials of the form
+      <m>a_2 x^2 + a_3 x^3</m>, which is closed under addition and scalar
+      multiplication and contains the zero polynomial.  
+      Thus it is a subspace.
+    </p>
+
+    <p>
+      <strong>(c)</strong>  
+      The condition <m>a_0 + a_1 + a_2 + a_3 = 0</m> is a single homogeneous
+      linear constraint on the coefficients.  Such a set is always a subspace.
+    </p>
+
+    <p>
+      <strong>(d)</strong>  
+      Requiring all coefficients to be integers makes the set not closed under
+      scalar multiplication (for example, multiply any such polynomial by
+      <m>\tfrac12</m>).  Therefore it is not a subspace.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise label="odd-functions-subspace">
+  <title>Odd Functions as a Subspace</title>
+
+  <statement>
+    <p>
+      Is the set of all real-valued functions <m>f</m> satisfying
+      <m>f(-x) = -f(x)</m> for all real <m>x</m> a subspace of the vector space
+      of all real-valued functions on <m>\mathbb{R}</m>?
+      If so, provide a basis for this function space.
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Check whether the set contains the zero function and is closed under
+      addition and scalar multiplication.  Use the identity
+      <m>(f+g)(-x) = f(-x) + g(-x)</m> and 
+      <m>(cf)(-x) = c f(-x)</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      Yes, the set of all odd functions is a subspace.  
+      A possible basis is <m>\{x, x^3, x^5, \dots\}</m>.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The condition <m>f(-x) = -f(x)</m> defines the set of odd functions.
+      The zero function satisfies <m>0(-x) = 0 = -0(x)</m>, so it is in the set.
+    </p>
+
+    <p>
+      If <m>f</m> and <m>g</m> are odd, then
+      <m>
+      (f+g)(-x) = f(-x) + g(-x)
+      = -f(x) - g(x)
+      = -(f(x) + g(x)),
+      </m>
+      so <m>f+g</m> is also odd.
+    </p>
+
+    <p>
+      For any scalar <m>c</m>,
+      <m>
+      (cf)(-x) = c f(-x) = c(-f(x)) = -(cf)(x),
+      </m>
+      so the set is closed under scalar multiplication.
+    </p>
+
+    <p>
+      Therefore, the odd functions form a subspace of the vector space of all
+      real-valued functions on <m>\mathbb{R}</m>.  
+      A basis for this space is, for example,
+      <m>\{x, x^3, x^5, x^7, \dots\}</m>.
+    </p>
+  </solution>
+
+</exercise>
+
+  </exercises>
+
+</section>
+</handout>

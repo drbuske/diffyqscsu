@@ -66,6 +66,10 @@
     <!-- <chapter xml:id="course-documents">
       <title>Course Documents</title> -->
 
+      <chapter xml:id="ch-final-review">
+      <title>Final Exam Review</title>
+<xi:include href="./handouts/FinalExamReview.ptx" />
+      </chapter>
 
     <!-- </chapter> -->
 

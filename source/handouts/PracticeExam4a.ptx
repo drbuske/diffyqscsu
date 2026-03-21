@@ -329,7 +329,990 @@
 
 </exercise>
 
+<exercise xml:id="matrix-linear-system-exam">
+  <!-- <title>Matrix Form and Matrix–Vector Computation</title> -->
 
+  <statement>
+    <p>
+      Consider the system of differential equations
+    </p>
+
+    <me>
+      \begin{aligned}
+      x' \amp= 4x - y, \\
+      y' \amp= 2x + 3y.
+      \end{aligned}
+    </me>
+
+    <p>
+      <ol>
+        <li>
+          Write this system in matrix–vector form <m>\vec{x}' = A\vec{x}</m>.
+        </li>
+        <li>
+          Compute <m>A\vec{v}</m> for the vector  
+          <m>\vec{v} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}</m>.
+        </li>
+      </ol>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      To write the system in matrix form, place the coefficients of <m>x</m> and 
+      <m>y</m> into a matrix so that
+    </p>
+
+    <me>
+      A = 
+      \begin{bmatrix}
+      4 \amp -1 \\
+      2 \amp 3
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      For part (b), recall the matrix–vector multiplication rule:
+    </p>
+
+    <me>
+      A
+      \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}
+      =
+      \begin{bmatrix}
+      4v_1 - v_2 \\
+      2v_1 + 3v_2
+      \end{bmatrix}.
+    </me>
+  </hint>
+
+  <answer>
+    <p>
+      <m>
+      A =
+      \begin{bmatrix}
+      4 \amp -1 \\
+      2 \amp 3
+      \end{bmatrix},
+      \qquad
+      A\vec{v} =
+      \begin{bmatrix}
+      6 \\
+      -4
+      \end{bmatrix}.
+      </m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      (a)  
+      The system
+    </p>
+
+    <me>
+      x' = 4x - y, \qquad y' = 2x + 3y
+    </me>
+
+    <p>
+      can be written in vector form as
+    </p>
+
+    <me>
+      \vec{x}' =
+      \begin{bmatrix}
+      4 \amp -1 \\
+      2 \amp 3
+      \end{bmatrix}
+      \vec{x},
+    </me>
+
+    <p>
+      where
+    </p>
+
+    <me>
+      \vec{x} =
+      \begin{bmatrix}
+      x \\
+      y
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      (b)  
+      To compute <m>A\vec{v}</m> with  
+      <m>\vec{v}=\begin{bmatrix}1 \\ -2\end{bmatrix}</m>, perform the matrix–vector product:
+    </p>
+
+    <me>
+      A\vec{v}
+      =
+      \begin{bmatrix}
+      4 \amp -1 \\
+      2 \amp 3
+      \end{bmatrix}
+      \begin{bmatrix}
+      1 \\
+      -2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Compute each entry:
+    </p>
+
+    <me>
+      \begin{aligned}
+      4(1) - (-2) \amp= 4 + 2 = 6, \\
+      2(1) + 3(-2) \amp= 2 - 6 = -4.
+      \end{aligned}
+    </me>
+
+    <p>
+      Therefore,
+    </p>
+
+    <me>
+      A\vec{v}
+      =
+      \begin{bmatrix}
+      6 \\
+      -4
+      \end{bmatrix}.
+    </me>
+  </solution>
+
+</exercise>
+
+<exercise xml:id="linsys-diagonal-example">
+  <!-- <title>Solving a Linear System with a Diagonal Matrix</title> -->
+
+  <statement>
+    <p>
+      Consider the linear system of differential equations
+    </p>
+
+    <me>
+      \vec{x}' = A\vec{x},
+      \qquad
+      A =
+      \begin{bmatrix}
+      -2 \amp 0 \\
+      0 \amp 5
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      with initial condition
+    </p>
+
+    <me>
+      \vec{x}(0) =
+      \begin{bmatrix}
+      4 \\
+      -3
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      <ol>
+        <li>Write the system in scalar form.</li>
+        <li>Solve the system for <m>\vec{x}(t)</m>.</li>
+      </ol>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Because <m>A</m> is diagonal, the system decouples:
+    </p>
+
+    <me>
+      x_1' = -2x_1,
+      \qquad
+      x_2' = 5x_2.
+    </me>
+
+    <p>
+      Solve each equation separately.  
+      Recall that the general solution of <m>x' = kx</m> is
+    </p>
+
+    <me>
+      x(t) = C e^{kt}.
+    </me>
+
+    <p>
+      Then use the initial condition to determine the constants.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The solution is
+    </p>
+
+    <me>
+      \vec{x}(t) =
+      \begin{bmatrix}
+      4e^{-2t} \\
+      -3e^{5t}
+      \end{bmatrix}.
+    </me>
+  </answer>
+
+  <solution>
+    <p>
+      (a)  Since <m>A</m> is diagonal, the system becomes
+    </p>
+
+    <me>
+      \begin{aligned}
+      x_1' \amp= -2x_1, \\
+      x_2' \amp= 5x_2.
+      \end{aligned}
+    </me>
+
+    <p>
+      (b)  
+      Solve each equation separately.
+    </p>
+
+    <p>
+      For <m>x_1' = -2x_1</m>:
+    </p>
+
+    <me>
+      x_1(t) = C_1 e^{-2t}.
+    </me>
+
+    <p>
+      For <m>x_2' = 5x_2</m>:
+    </p>
+
+    <me>
+      x_2(t) = C_2 e^{5t}.
+    </me>
+
+    <p>
+      Apply the initial condition
+      <m>\vec{x}(0) = \begin{bmatrix}4 \\ -3\end{bmatrix}</m>.
+    </p>
+
+    <me>
+      x_1(0) = C_1 = 4,
+      \qquad
+      x_2(0) = C_2 = -3.
+    </me>
+
+    <p>
+      Thus the solution is
+    </p>
+
+    <me>
+      \vec{x}(t) =
+      \begin{bmatrix}
+      4e^{-2t} \\
+      -3e^{5t}
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      The system is completely decoupled, so each component evolves independently
+      according to its exponential growth or decay rate.
+    </p>
+  </solution>
+
+</exercise>
+
+<exercise xml:id="eigenmethod-linear-system">
+  <!-- <title>Solving a Linear System Using the Eigenvalue Method</title> -->
+
+  <statement>
+    <p>
+      Consider the system of differential equations
+    </p>
+
+    <me>
+      \vec{x}' =
+      \begin{bmatrix}
+      5 \amp -2 \\
+      4 \amp -1
+      \end{bmatrix}
+      \vec{x},
+      \qquad
+      \vec{x}(0) =
+      \begin{bmatrix}
+      3 \\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      <ol>
+        <li>Find the eigenvalues of the matrix.</li>
+        <li>Find an eigenvector for each eigenvalue.</li>
+        <li>Write the general solution of the system.</li>
+        <li>Use the initial condition to find the specific solution <m>\vec{x}(t)</m>.</li>
+      </ol>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      Begin by computing the characteristic polynomial:
+    </p>
+
+    <me>
+      \det(A - \lambda I)
+      = 
+      \begin{vmatrix}
+      5-\lambda \amp -2 \\
+      4 \amp -1-\lambda
+      \end{vmatrix}.
+    </me>
+
+    <p>
+      After finding the eigenvalues, solve <m>(A - \lambda I)\vec{v} = \vec{0}</m>  
+      to find eigenvectors.  
+      Each eigenpair gives a solution of the form <m>e^{\lambda t}\vec{v}</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      Eigenvalues: <m>\lambda_1 = 3</m>, <m>\lambda_2 = 1</m>.
+    </p>
+
+    <p>
+      Corresponding eigenvectors:
+    </p>
+
+    <me>
+      \vec{v}_1 =
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix},
+      \qquad
+      \vec{v}_2 =
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Specific solution:
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      2e^{3t}
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix}
+      +
+      1e^{t}
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+  </answer>
+
+  <solution>
+    <p>
+      (a)  Compute the characteristic polynomial:
+    </p>
+
+    <me>
+      \det(A - \lambda I)
+      =
+      (5-\lambda)(-1-\lambda) - (-2)(4).
+    </me>
+
+    <me>
+      = (5-\lambda)(-1-\lambda) + 8
+      = ( -5 -5\lambda + \lambda + \lambda^2 ) + 8
+      = \lambda^2 -4\lambda + 3.
+    </me>
+
+    <p>
+      Solve <m>\lambda^2 - 4\lambda + 3 = 0</m>:
+    </p>
+
+    <me>
+      \lambda = 1, \; 3.
+    </me>
+
+    <p>
+      (b)  Find eigenvectors.
+    </p>
+
+    <p>
+      For <m>\lambda_1 = 3</m>, solve <m>(A - 3I)\vec{v} = 0</m>:
+    </p>
+
+    <me>
+      A - 3I =
+      \begin{bmatrix}
+      2 \amp -2 \\
+      4 \amp -4
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      The rows are multiples; a solution is
+    </p>
+
+    <me>
+      \vec{v}_1 =
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      For <m>\lambda_2 = 1</m>, solve <m>(A - I)\vec{v} = 0</m>:
+    </p>
+
+    <me>
+      A - I =
+      \begin{bmatrix}
+      4 \amp -2 \\
+      4 \amp -2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      A solution is
+    </p>
+
+    <me>
+      \vec{v}_2 =
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      (c)  The general solution is
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      C_1 e^{3t}
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix}
+      +
+      C_2 e^{t}
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      (d)  Apply <m>\vec{x}(0) = \begin{bmatrix}3 \\ 1\end{bmatrix}</m>:
+    </p>
+
+    <me>
+      C_1
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix}
+      +
+      C_2
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      3 \\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Solve the system:
+    </p>
+
+    <me>
+      \begin{aligned}
+      C_1 + C_2 \amp= 3, \\
+      C_1 + 2C_2 \amp= 1.
+      \end{aligned}
+    </me>
+
+    <p>
+      Subtract the first equation from the second:
+    </p>
+
+    <me>
+      C_2 = -2,
+      \qquad
+      C_1 = 5.
+    </me>
+
+    <p>
+      Thus the specific solution is
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      5e^{3t}
+      \begin{bmatrix}
+      1 \\
+      1
+      \end{bmatrix}
+      +
+      (-2)e^{t}
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Simplifying gives
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      \begin{bmatrix}
+      5e^{3t} - 2e^{t} \\
+      5e^{3t} - 4e^{t}
+      \end{bmatrix}.
+    </me>
+  </solution>
+
+</exercise>
+
+<exercise xml:id="eigenmethod-complex-clean-corrected">
+  <!-- <title>Linear System with Complex Eigenvalues</title> -->
+
+  <statement>
+    <p>
+      Consider the system
+    </p>
+
+    <me>
+      \vec{x}' =
+      \begin{bmatrix}
+      3 \amp -4 \\
+      1 \amp  3
+      \end{bmatrix}
+      \vec{x},
+      \qquad
+      \vec{x}(0) =
+      \begin{bmatrix}
+      1 \\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      <ol>
+        <li>Find the eigenvalues of the matrix.</li>
+        <li>Find an eigenvector corresponding to the eigenvalue with positive imaginary part.</li>
+        <li>Write the real general solution of the system.</li>
+        <li>Use the initial condition to find the specific solution <m>\vec{x}(t)</m>.</li>
+      </ol>
+    </p>
+  </statement>
+
+  <hint>
+    <p>
+      The characteristic polynomial is
+    </p>
+
+    <me>
+      (3-\lambda)^2 + 4.
+    </me>
+
+    <p>
+      For <m>\lambda = a + bi</m> and eigenvector <m>\vec{v} = \vec{p} + i\vec{q}</m>, 
+      the real solution is built from
+    </p>
+
+    <me>
+      e^{at}\big(\vec{p}\cos(bt) - \vec{q}\sin(bt)\big)
+      \qquad\text{and}\qquad
+      e^{at}\big(\vec{p}\sin(bt) + \vec{q}\cos(bt)\big).
+    </me>
+  </hint>
+
+  <answer>
+    <p>
+      Eigenvalues: <m>\lambda = 3 \pm 2i</m>.
+    </p>
+
+    <p>
+      An eigenvector for <m>3 + 2i</m> is
+    </p>
+
+    <me>
+      \vec{v}
+      =
+      \begin{bmatrix}
+      2i \\
+      1
+      \end{bmatrix}
+      =
+      \vec{p} + i\vec{q},
+      \qquad
+      \vec{p} = \begin{bmatrix} 0 \\ 1 \end{bmatrix},
+      \quad
+      \vec{q} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}.
+    </me>
+
+    <p>
+      The specific real solution is
+    </p>
+
+       <me>
+      \vec{x}(t)
+      =
+      e^{3t}
+      \begin{bmatrix}
+      \cos(2t)-4\sin(2t) \\
+      2\cos(2t)+\frac{1}{2}\sin(2t)
+      \end{bmatrix}.
+    </me>
+  </answer>
+
+  <solution>
+    <p>(a) Compute eigenvalues.</p>
+
+    <me>
+      \det(A - \lambda I)
+      =
+      (3-\lambda)^2 - (-4)(1)
+      =
+      (3-\lambda)^2 + 4.
+    </me>
+
+    <me>
+      (3-\lambda)^2 + 4
+      =
+      \lambda^2 - 6\lambda + 13.
+    </me>
+
+    <me>
+      \lambda
+      =
+      \frac{6 \pm \sqrt{36 - 52}}{2}
+      =
+      3 \pm 2i.
+    </me>
+
+    <p>(b) Eigenvector for <m>\lambda = 3 + 2i</m>.</p>
+
+    <me>
+      A - (3+2i)I
+      =
+      \begin{bmatrix}
+      -2i \amp -4 \\
+      1 \amp -2i
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      First row:
+    </p>
+
+    <me>
+      -2i\,v_1 - 4v_2 = 0
+      \quad\Rightarrow\quad
+      v_1 = 2i\,v_2.
+    </me>
+
+    <p>
+      Choose <m>v_2=1</m>.  
+      Then <m>v_1 = 2i</m>.
+    </p>
+
+    <p>
+      So an eigenvector is
+    </p>
+
+    <me>
+      \vec{v}
+      =
+      \begin{bmatrix}
+      2i \\
+      1
+      \end{bmatrix}
+      =
+      \vec{p} + i\vec{q},
+      \qquad
+      \vec{p}=\begin{bmatrix}0 \\ 1\end{bmatrix},
+      \quad
+      \vec{q}=\begin{bmatrix}2 \\ 0\end{bmatrix}.
+    </me>
+
+    <p>(c) General real solution.</p>
+
+    <me>
+      \vec{x}(t)
+      =
+      e^{3t}
+      \Big(
+      C_1(\vec{p}\cos(2t) - \vec{q}\sin(2t))
+      +
+      C_2(\vec{p}\sin(2t) + \vec{q}\cos(2t))
+      \Big).
+    </me>
+
+    <p>
+      Substitute <m>\vec{p}</m> and <m>\vec{q}</m>:
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      e^{3t}
+      \left[
+      C_1
+      \begin{bmatrix}
+      -2\sin(2t) \\
+      \cos(2t)
+      \end{bmatrix}
+      +
+      C_2
+      \begin{bmatrix}
+      2\cos(2t) \\
+      \sin(2t)
+      \end{bmatrix}
+      \right].
+    </me>
+
+    <p>(d) Apply <m>\vec{x}(0)=\begin{bmatrix}1 \\ 2\end{bmatrix}</m>.</p>
+
+    <me>
+      C_1\begin{bmatrix}0 \\ 1\end{bmatrix}
+      +
+      C_2\begin{bmatrix}2 \\ 0\end{bmatrix}
+      =
+      \begin{bmatrix}1 \\ 2\end{bmatrix}.
+    </me>
+
+    <p>
+      From the second component:  
+      <m>C_1 = 2.</m>
+    </p>
+
+    <p>
+      From the first component:
+    </p>
+
+    <me>
+      2C_2 = 1
+      \quad\Rightarrow\quad
+      C_2 = \tfrac12.
+    </me>
+
+    <p>
+      Thus the specific solution is
+    </p>
+
+    <me>
+      \vec{x}(t)
+      =
+      e^{3t}
+      \begin{bmatrix}
+      \cos(2t)-4\sin(2t) \\
+      2\cos(2t)+\frac{1}{2}\sin(2t)
+      \end{bmatrix}.
+    </me>
+
+  </solution>
+
+</exercise>
+
+<exercise xml:id="twodimaut-correct-complex-evals">
+  <!-- <title>Classifying a Two-Dimensional Linear System and Sketching Its Phase Portrait</title> -->
+
+  <statement>
+    <p>
+      Consider the autonomous system
+    </p>
+
+    <me>
+      \vec{x}' =
+      A\vec{x},
+      \qquad
+      A =
+      \begin{bmatrix}
+      1 \amp -3 \\
+      1 \amp 1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      <ol>
+        <li>Compute the eigenvalues of <m>A</m>.</li>
+        <li>Classify the equilibrium at <m>\vec{x}=\vec{0}</m> (node, spiral, saddle, center).</li>
+        <li>Determine whether the equilibrium is stable or unstable.</li>
+        <li>Describe qualitatively the behavior of trajectories.</li>
+      </ol>
+    </p>
+
+  </statement>
+
+  <hint>
+    <p>
+      Compute <m>\det(A - \lambda I)</m> directly:
+    </p>
+
+    <me>
+      \det(A-\lambda I)
+      =
+      \begin{vmatrix}
+      1-\lambda \amp -3 \\
+      1 \amp 1-\lambda
+      \end{vmatrix}.
+    </me>
+
+    <p>
+      Solve for the eigenvalues.  
+      Use the <em>real part</em> of the eigenvalues to determine stability.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      The eigenvalues are
+    </p>
+
+    <me>
+      \lambda = 1 \pm i\sqrt{3}.
+    </me>
+
+    <p>
+      Since the real part is positive, the equilibrium is an
+      <strong>unstable spiral source</strong>.
+    </p>
+  </answer>
+
+  <solution>
+    <p><strong>(a) Compute eigenvalues.</strong></p>
+
+    <me>
+      \det(A-\lambda I)
+      =
+      (1-\lambda)(1-\lambda) - (-3)(1)
+      =
+      (1-\lambda)^2 + 3.
+    </me>
+
+    <p>Expand:</p>
+
+    <me>
+      (1-\lambda)^2 + 3
+      =
+      \lambda^2 - 2\lambda + 1 + 3
+      =
+      \lambda^2 - 2\lambda + 4.
+    </me>
+
+    <p>
+      Solve:
+    </p>
+
+    <me>
+      \lambda
+      =
+      \frac{2 \pm \sqrt{4 - 16}}{2}
+      =
+      1 \pm i\sqrt{3}.
+    </me>
+
+    <p><strong>(b) Classification.</strong></p>
+
+    <p>
+      The eigenvalues are complex (non-real), so the origin is a
+      <em>spiral equilibrium</em>.
+    </p>
+
+    <p><strong>(c) Stability.</strong></p>
+
+    <p>
+      The real part of both eigenvalues is <m>1 &gt; 0</m>.
+      Therefore solutions spiral <em>away</em> from the origin:
+      the equilibrium is an <strong>unstable spiral</strong>.
+    </p>
+
+    <p><strong>(d) Qualitative behavior.</strong></p>
+
+    <ul>
+      <li>Solutions spiral outward as <m>t \to \infty</m>.</li>
+      <li>The imaginary part <m>\sqrt{3}</m> causes oscillations.</li>
+      <li>The positive real part produces exponential growth in radius.</li>
+      <li>Rotation is counterclockwise because the off-diagonal entries produce that turning direction.</li>
+    </ul>
+
+    <p>
+      The phase portrait in <xref ref="phaseportrait-spiralsource"/> shows several outward‑spiraling trajectories along with the direction field.
+    </p>
+
+     <p>
+    <figure xml:id="phaseportrait-spiralsource">
+      <caption>A phase portrait illustrating the dynamics of the system.</caption>
+      <image width="60%">
+      <description>
+        A phase portrait showing an unstable counterclockwise spiral around the origin
+        for the system x' = Ax. Several solution curves spiral
+        outward from the origin and a direction field is drawn with small arrows.
+      </description>
+        <latex-image>
+\begin{tikzpicture}[scale=1.15]
+  % 1. Use a clipping path so spirals don't bleed into your margins
+  \clip (-2.6,-2.6) rectangle (2.6,2.6);
+
+  % 2. Vector field (keeping your logic)
+  \foreach \x in {-2,-1.5,...,2}
+    \foreach \y in {-2,-1.5,...,2}{
+      \pgfmathsetmacro{\vx}{\x - 3*\y}
+      \pgfmathsetmacro{\vy}{\x + \y}
+      \pgfmathsetmacro{\norm}{sqrt(\vx*\vx + \vy*\vy+0.1)}
+      \draw[->, thin, gray!80] (\x,\y) -- ++(0.2*\vx/\norm, 0.2*\vy/\norm);
+    }
+
+  % 3. Fixed Spiral Trajectories 
+  % We use a smaller domain (0:2.5) so exp(t) stays small
+  \foreach \offset in {0, 1.2, 2.4, 3.6, 4.8}{
+    \draw[blue, thick, smooth, domain=0:2.5, samples=100, variable=\t]
+         plot ({0.2*exp(\t/1.5)*cos(deg(4*\t + \offset))},
+               {0.2*exp(\t/1.5)*sin(deg(4*\t + \offset))});
+  }
+
+  % 4. Axes
+  \draw[->, thick] (-2.5,0) -- (2.5,0) node[right] {$x$};
+  \draw[->, thick] (0,-2.5) -- (0,2.5) node[above] {$y$};
+  \fill (0,0) circle (2pt);
+\end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </p>
+
+  </solution>
+
+</exercise>
 
   </exercises>
 
