@@ -3347,6 +3347,663 @@ var ptx_lunr_docs = [
   "number": "9",
   "title": "",
   "body": "   Consider the nonhomogeneous differential equation     Find the general solution to the corresponding homogeneous equation.  Use variation of parameters to find a particular solution of the nonhomogeneous equation.  Write the general solution .      For the homogeneous equation , the characteristic equation is with roots and . Thus a fundamental set of solutions is and .  For variation of parameters, use the formulas   where is the Wronskian and .    A homogeneous solution is A particular solution is Thus the general solution is     (a) Solve the homogeneous equation   The characteristic equation is which factors as , giving and . Therefore,   (b) Apply variation of parameters. Let   Compute the Wronskian:   The forcing function is . Use the formula   Compute each integral:    Next,   Compute the integral:   Combine both contributions:   Since a particular solution is needed, we can absorb constant multiples of into the homogeneous term. Thus we may take the simpler equivalent form   (c) The general solution of the nonhomogeneous differential equation is    "
+},
+{
+  "id": "ch-practice-exams-4",
+  "level": "1",
+  "url": "ch-practice-exams-4.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Practice Exam 3",
+  "body": " Practice Exam 3   Topics  Sections 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 4.3, 4.4  You will have a short table of Laplace tranforms to use during the exam. Be sure to try each question before looking at the solutions.   Questions      Using only the definition,   compute the Laplace transform of the function   Do not use a Laplace transform table; evaluate the integral by hand.    You should compute   Recall the standard integral (integration by parts):   Here, . Make sure to justify why is required for convergence.    For ,     By definition of the Laplace transform,   For the integral to converge, we require . Let . Then the integral becomes   Integrate by parts:   Substituting , we obtain   This is valid for .       Compute the inverse Laplace transform of     Recall the standard Laplace transform identities.    for .   .   Match each term of with one of these standard forms.         We compute the inverse Laplace transform term by term.  First,   since .  Next,   Note that   Therefore,   Combining both parts gives        Use the Laplace transform to solve the initial value problem     Recall the Laplace transform of a first derivative:   Also use that   After applying the Laplace transform, solve for and rewrite it in a form suitable for taking an inverse transform.    The solution to the IVP is     Take the Laplace transform of both sides of   using .  First compute :   Therefore,   Combine terms:   Solve for :   Thus,   Perform partial fraction decomposition. Write   Then   Expand:   Match coefficients:   Solve the system:   Therefore,   Take inverse Laplace transforms term by term:   Therefore the solution is        Using the convolution theorem, compute the inverse Laplace transform of   Do not use partial fractions. Instead, express as a product of simpler transforms and use the convolution formula.    Recall that   The convolution theorem states:   Use and .         We begin by writing   Then   By the convolution theorem,   Compute the integral:    Therefore,          Consider the initial value problem   Use the Laplace transform and the identity   to find the solution . Your final answer should be written using a unit step function .    Let . Use the Laplace transform formulas:       After solving for , recall that   and apply the time‑shift rule     The solution is     Apply the Laplace transform to both sides of   Compute using the initial conditions:   Thus the transformed equation is   Factor out :   So   Now apply the inverse Laplace transform. We use the time‑shift rule:   hence   Therefore, the solution to the IVP is     Response to a Dirac Delta Impulse at .   The graph shows a function that stays at zero until time t equals pi, where a vertical dashed line marks an impulse. After that point, the graph becomes a small sine wave that rises to about one‑half, then falls to about negative one‑half, repeating in a smooth oscillation.            Vectors (blue) and (red) appear in . Draw the vector on the same grid.    Use the grid to construct .   Large coordinate grid with two vectors from the origin: u in blue points up-and-right; v in red points up and slightly more steeply.        First construct (same direction as but half the length). Then reverse it to obtain . Place the tail of at the tip of ; the vector from the origin to the new tip is .    The requested vector is ; it can be drawn from the origin to the tip of , as illustrated in .    We sketch (half the red vector in the same direction), reverse it to get , and place its tail at the tip of . The vector from the origin to that final tip is , drawn here in black.   Construction of (black) using a tip-to-tail method.   Same grid with u (blue) and v (red) from the origin, plus the constructed vector w = u minus one-half v in purple from the origin to the appropriate tip.          Compute the magnitude of the vector     Recall that the magnitude of a vector in is          Using the formula   compute:   Sum the squares:   Therefore,        Let   Compute each of the following:      Compute the inverse .     For matrix addition, subtraction, or scalar multiplication, work entry‑wise. For , use   For the inverse of a matrix   use the formula      , , , and     (a) Add matrices entry‑wise:   (b) Compute then subtract :    (c) Multiply by :   (d) Compute . For   the determinant is   Thus,        Solve the following linear system using elimination:   Show all elimination steps clearly.    Eliminate by multiplying the first equation by and adding it to the second. After that, solve for and substitute back to find .     and .    The system is:   Multiply the second equation by to eliminate :   Add this to the first equation:   Thus,   Substitute into :   Solve for :   Therefore, the solution is:        Use elementary row operations on the augmented matrix to compute , where   Show your row operations clearly and stop when you reach .    Form the augmented matrix and use row operations to reduce the left block to the identity:   Aim for leading s down the diagonal on the left, clearing above and below each pivot. (Swapping rows early can simplify getting a pivot in the first row.)    The inverse is     Start with the augmented matrix:   Swap to get a pivot in the upper left:   Eliminate below the pivot in column : .   Make a pivot in row column by swapping :   Clear column above and below the pivot: , .   Make the pivot in row column a : .   Clear column above the pivot: , .   Hence,        Consider the matrix   Use elimination to find a linearly independent set of columns of that still spans the column space. (Your answer should list which columns form such a set.)    Perform row‑reduction on and identify the pivot columns . These columns form a linearly independent set that spans the column space.  You may row‑reduce the entire matrix at once, or you may augment with column labels and track which columns contain pivots.    Columns and form a linearly independent set that spans the column space of .    Start with :   First, swap and so that the top-left pivot is :   Eliminate below the pivot in column 1: :   Make a pivot in column 2 by swapping and :   Now eliminate below: :   The row‑reduced form shows pivots in columns 1 and 2. Column 3 has no pivot, so it is a linear combination of the first two.  Therefore, the first two columns of form a linearly independent set that spans the column space.        Consider the matrix     Use row reduction to find a basis for the kernel of .  Determine the dimension of the kernel.  Is the kernel a subspace of ? Briefly justify your answer.      Row‑reduce . You should find that the rows are multiples of one another. After reducing, express the solution to in parametric vector form.  Remember: the kernel of a matrix is always a subspace of the domain. Once you have the parametric form, count the number of free variables to determine the dimension.    A basis for the kernel is   The kernel has dimension . Yes, it is a subspace of .    Begin with   Notice that and . Perform row reduction:   Solve from the single non‑zero equation:   Let and (free variables). Then   Therefore a basis for the kernel is   Since there are two free variables, the dimension of the kernel is .  The kernel of any linear transformation (and therefore any matrix) is always a subspace of its domain, so here it is a subspace of .      "
+},
+{
+  "id": "laplace-direct-integral",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#laplace-direct-integral",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "   Using only the definition,   compute the Laplace transform of the function   Do not use a Laplace transform table; evaluate the integral by hand.    You should compute   Recall the standard integral (integration by parts):   Here, . Make sure to justify why is required for convergence.    For ,     By definition of the Laplace transform,   For the integral to converge, we require . Let . Then the integral becomes   Integrate by parts:   Substituting , we obtain   This is valid for .   "
+},
+{
+  "id": "inverse-laplace-basic",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#inverse-laplace-basic",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "   Compute the inverse Laplace transform of     Recall the standard Laplace transform identities.    for .   .   Match each term of with one of these standard forms.         We compute the inverse Laplace transform term by term.  First,   since .  Next,   Note that   Therefore,   Combining both parts gives    "
+},
+{
+  "id": "laplace-derivatives-ode",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#laplace-derivatives-ode",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "   Use the Laplace transform to solve the initial value problem     Recall the Laplace transform of a first derivative:   Also use that   After applying the Laplace transform, solve for and rewrite it in a form suitable for taking an inverse transform.    The solution to the IVP is     Take the Laplace transform of both sides of   using .  First compute :   Therefore,   Combine terms:   Solve for :   Thus,   Perform partial fraction decomposition. Write   Then   Expand:   Match coefficients:   Solve the system:   Therefore,   Take inverse Laplace transforms term by term:   Therefore the solution is    "
+},
+{
+  "id": "laplace-convolution-easy",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#laplace-convolution-easy",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "   Using the convolution theorem, compute the inverse Laplace transform of   Do not use partial fractions. Instead, express as a product of simpler transforms and use the convolution formula.    Recall that   The convolution theorem states:   Use and .         We begin by writing   Then   By the convolution theorem,   Compute the integral:    Therefore,    "
+},
+{
+  "id": "dirac-delta-impulse-response",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#dirac-delta-impulse-response",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "   Consider the initial value problem   Use the Laplace transform and the identity   to find the solution . Your final answer should be written using a unit step function .    Let . Use the Laplace transform formulas:       After solving for , recall that   and apply the time‑shift rule     The solution is     Apply the Laplace transform to both sides of   Compute using the initial conditions:   Thus the transformed equation is   Factor out :   So   Now apply the inverse Laplace transform. We use the time‑shift rule:   hence   Therefore, the solution to the IVP is     Response to a Dirac Delta Impulse at .   The graph shows a function that stays at zero until time t equals pi, where a vertical dashed line marks an impulse. After that point, the graph becomes a small sine wave that rises to about one‑half, then falls to about negative one‑half, repeating in a smooth oscillation.       "
+},
+{
+  "id": "vector-geometry-one-task",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#vector-geometry-one-task",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "   Vectors (blue) and (red) appear in . Draw the vector on the same grid.    Use the grid to construct .   Large coordinate grid with two vectors from the origin: u in blue points up-and-right; v in red points up and slightly more steeply.        First construct (same direction as but half the length). Then reverse it to obtain . Place the tail of at the tip of ; the vector from the origin to the new tip is .    The requested vector is ; it can be drawn from the origin to the tip of , as illustrated in .    We sketch (half the red vector in the same direction), reverse it to get , and place its tail at the tip of . The vector from the origin to that final tip is , drawn here in black.   Construction of (black) using a tip-to-tail method.   Same grid with u (blue) and v (red) from the origin, plus the constructed vector w = u minus one-half v in purple from the origin to the appropriate tip.      "
+},
+{
+  "id": "vector-magnitude-3d",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#vector-magnitude-3d",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "   Compute the magnitude of the vector     Recall that the magnitude of a vector in is          Using the formula   compute:   Sum the squares:   Therefore,    "
+},
+{
+  "id": "matrix-algebra-basics-with-inverse",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#matrix-algebra-basics-with-inverse",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "   Let   Compute each of the following:      Compute the inverse .     For matrix addition, subtraction, or scalar multiplication, work entry‑wise. For , use   For the inverse of a matrix   use the formula      , , , and     (a) Add matrices entry‑wise:   (b) Compute then subtract :    (c) Multiply by :   (d) Compute . For   the determinant is   Thus,    "
+},
+{
+  "id": "elimination-corrected",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#elimination-corrected",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "   Solve the following linear system using elimination:   Show all elimination steps clearly.    Eliminate by multiplying the first equation by and adding it to the second. After that, solve for and substitute back to find .     and .    The system is:   Multiply the second equation by to eliminate :   Add this to the first equation:   Thus,   Substitute into :   Solve for :   Therefore, the solution is:    "
+},
+{
+  "id": "inverse-3x3-row-reduction",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#inverse-3x3-row-reduction",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "   Use elementary row operations on the augmented matrix to compute , where   Show your row operations clearly and stop when you reach .    Form the augmented matrix and use row operations to reduce the left block to the identity:   Aim for leading s down the diagonal on the left, clearing above and below each pivot. (Swapping rows early can simplify getting a pivot in the first row.)    The inverse is     Start with the augmented matrix:   Swap to get a pivot in the upper left:   Eliminate below the pivot in column : .   Make a pivot in row column by swapping :   Clear column above and below the pivot: , .   Make the pivot in row column a : .   Clear column above the pivot: , .   Hence,    "
+},
+{
+  "id": "column-space-independent-set",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#column-space-independent-set",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "   Consider the matrix   Use elimination to find a linearly independent set of columns of that still spans the column space. (Your answer should list which columns form such a set.)    Perform row‑reduction on and identify the pivot columns . These columns form a linearly independent set that spans the column space.  You may row‑reduce the entire matrix at once, or you may augment with column labels and track which columns contain pivots.    Columns and form a linearly independent set that spans the column space of .    Start with :   First, swap and so that the top-left pivot is :   Eliminate below the pivot in column 1: :   Make a pivot in column 2 by swapping and :   Now eliminate below: :   The row‑reduced form shows pivots in columns 1 and 2. Column 3 has no pivot, so it is a linear combination of the first two.  Therefore, the first two columns of form a linearly independent set that spans the column space.    "
+},
+{
+  "id": "kernel-dimension-exam",
+  "level": "2",
+  "url": "ch-practice-exams-4.html#kernel-dimension-exam",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "   Consider the matrix     Use row reduction to find a basis for the kernel of .  Determine the dimension of the kernel.  Is the kernel a subspace of ? Briefly justify your answer.      Row‑reduce . You should find that the rows are multiples of one another. After reducing, express the solution to in parametric vector form.  Remember: the kernel of a matrix is always a subspace of the domain. Once you have the parametric form, count the number of free variables to determine the dimension.    A basis for the kernel is   The kernel has dimension . Yes, it is a subspace of .    Begin with   Notice that and . Perform row reduction:   Solve from the single non‑zero equation:   Let and (free variables). Then   Therefore a basis for the kernel is   Since there are two free variables, the dimension of the kernel is .  The kernel of any linear transformation (and therefore any matrix) is always a subspace of its domain, so here it is a subspace of .   "
+},
+{
+  "id": "ch-practice-exams-5",
+  "level": "1",
+  "url": "ch-practice-exams-5.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Practice Exam 4",
+  "body": " Practice Exam 4   Topics  Sections 5.1, 5.2, 5.3, 5.4, 5.5, 5.6  Be sure to try each question before looking at the solutions.   Questions     Consider the second-order differential equation     Introduce new variables to rewrite this equation as an equivalent first-order system in two variables.  Express the resulting system using vector notation for some matrix .      Let and . Then compute and using the original equation. Remember that and that can be replaced with an expression involving and .    One possible system is   In vector form,     (a) We introduce the standard substitution for converting a second-order ODE into a first-order system:   Then   To compute , use the original equation:   Substituting and gives   Therefore the first-order system is   (b) In vector–matrix notation, with   the system becomes   This is the standard first-order vector representation of the original second-order equation.       Two tanks are connected in such a way that fluid flows between them. Tank A contains 200 liters of brine, and Tank B contains 150 liters. At time , Tank A contains 30 kg of salt and Tank B contains 5 kg.  A pump moves well‑stirred brine from Tank A into Tank B at a rate of . Another pump moves well‑stirred brine from Tank B back into Tank A at a rate of . There are no other inflows or outflows, so volumes remain constant.  Let be the amount of salt (in kg) in Tank A at time , and let be the amount of salt in Tank B at time .   Task: Derive a system of differential equations for and .    Two interconnected mixing tanks with flow rates.   Diagram showing two tanks, Tank A on the left and Tank B on the right with arrows indicating 5 liters per minute from A to B and 3 liters per minute from B to A.        Use the standard “rate in minus rate out” principle. The concentration in each tank is “amount of salt divided by volume.” For example, the concentration in Tank A is .  Multiply each concentration by its respective flow rate to obtain salt transport rates.    The system is     The concentration in Tank A is (kg\/L), and Tank B has concentration .   Tank A: Salt flows in from Tank B at rate   Salt flows out to Tank B at rate   So    Tank B: Salt flows in from Tank A at   and flows out to Tank A at   Therefore   This yields the system:   which correctly models the exchange of salt between the two tanks.       Consider the system of differential equations     Write this system in matrix–vector form .  Compute for the vector .      To write the system in matrix form, place the coefficients of and into a matrix so that   For part (b), recall the matrix–vector multiplication rule:          (a) The system   can be written in vector form as   where   (b) To compute with , perform the matrix–vector product:   Compute each entry:   Therefore,        Consider the linear system of differential equations   with initial condition     Write the system in scalar form.  Solve the system for .      Because is diagonal, the system decouples:   Solve each equation separately. Recall that the general solution of is   Then use the initial condition to determine the constants.    The solution is     (a) Since is diagonal, the system becomes   (b) Solve each equation separately.  For :   For :   Apply the initial condition .   Thus the solution is   The system is completely decoupled, so each component evolves independently according to its exponential growth or decay rate.       Consider the system of differential equations     Find the eigenvalues of the matrix.  Find an eigenvector for each eigenvalue.  Write the general solution of the system.  Use the initial condition to find the specific solution .      Begin by computing the characteristic polynomial:   After finding the eigenvalues, solve to find eigenvectors. Each eigenpair gives a solution of the form .    Eigenvalues: , .  Corresponding eigenvectors:   Specific solution:     (a) Compute the characteristic polynomial:    Solve :   (b) Find eigenvectors.  For , solve :   The rows are multiples; a solution is   For , solve :   A solution is   (c) The general solution is   (d) Apply :   Solve the system:   Subtract the first equation from the second:   Thus the specific solution is   Simplifying gives        Consider the system     Find the eigenvalues of the matrix.  Find an eigenvector corresponding to the eigenvalue with positive imaginary part.  Write the real general solution of the system.  Use the initial condition to find the specific solution .      The characteristic polynomial is   For and eigenvector , the real solution is built from     Eigenvalues: .  An eigenvector for is   The specific real solution is     (a) Compute eigenvalues.     (b) Eigenvector for .   First row:   Choose . Then .  So an eigenvector is   (c) General real solution.   Substitute and :   (d) Apply .   From the second component:   From the first component:   Thus the specific solution is        Consider the autonomous system     Compute the eigenvalues of .  Classify the equilibrium at (node, spiral, saddle, center).  Determine whether the equilibrium is stable or unstable.  Describe qualitatively the behavior of trajectories.      Compute directly:   Solve for the eigenvalues. Use the real part of the eigenvalues to determine stability.    The eigenvalues are   Since the real part is positive, the equilibrium is an unstable spiral source .    (a) Compute eigenvalues.   Expand:   Solve:   (b) Classification.  The eigenvalues are complex (non-real), so the origin is a spiral equilibrium .  (c) Stability.  The real part of both eigenvalues is . Therefore solutions spiral away from the origin: the equilibrium is an unstable spiral .  (d) Qualitative behavior.   Solutions spiral outward as .  The imaginary part causes oscillations.  The positive real part produces exponential growth in radius.  Rotation is counterclockwise because the off-diagonal entries produce that turning direction.   The phase portrait in shows several outward‑spiraling trajectories along with the direction field.    A phase portrait illustrating the dynamics of the system.   A phase portrait showing an unstable counterclockwise spiral around the origin for the system x' = Ax. Several solution curves spiral outward from the origin and a direction field is drawn with small arrows.          "
+},
+{
+  "id": "intro-systems-exam",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#intro-systems-exam",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "   Consider the second-order differential equation     Introduce new variables to rewrite this equation as an equivalent first-order system in two variables.  Express the resulting system using vector notation for some matrix .      Let and . Then compute and using the original equation. Remember that and that can be replaced with an expression involving and .    One possible system is   In vector form,     (a) We introduce the standard substitution for converting a second-order ODE into a first-order system:   Then   To compute , use the original equation:   Substituting and gives   Therefore the first-order system is   (b) In vector–matrix notation, with   the system becomes   This is the standard first-order vector representation of the original second-order equation.   "
+},
+{
+  "id": "two-tank-mixing-system",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#two-tank-mixing-system",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "   Two tanks are connected in such a way that fluid flows between them. Tank A contains 200 liters of brine, and Tank B contains 150 liters. At time , Tank A contains 30 kg of salt and Tank B contains 5 kg.  A pump moves well‑stirred brine from Tank A into Tank B at a rate of . Another pump moves well‑stirred brine from Tank B back into Tank A at a rate of . There are no other inflows or outflows, so volumes remain constant.  Let be the amount of salt (in kg) in Tank A at time , and let be the amount of salt in Tank B at time .   Task: Derive a system of differential equations for and .    Two interconnected mixing tanks with flow rates.   Diagram showing two tanks, Tank A on the left and Tank B on the right with arrows indicating 5 liters per minute from A to B and 3 liters per minute from B to A.        Use the standard “rate in minus rate out” principle. The concentration in each tank is “amount of salt divided by volume.” For example, the concentration in Tank A is .  Multiply each concentration by its respective flow rate to obtain salt transport rates.    The system is     The concentration in Tank A is (kg\/L), and Tank B has concentration .   Tank A: Salt flows in from Tank B at rate   Salt flows out to Tank B at rate   So    Tank B: Salt flows in from Tank A at   and flows out to Tank A at   Therefore   This yields the system:   which correctly models the exchange of salt between the two tanks.   "
+},
+{
+  "id": "matrix-linear-system-exam",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#matrix-linear-system-exam",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "   Consider the system of differential equations     Write this system in matrix–vector form .  Compute for the vector .      To write the system in matrix form, place the coefficients of and into a matrix so that   For part (b), recall the matrix–vector multiplication rule:          (a) The system   can be written in vector form as   where   (b) To compute with , perform the matrix–vector product:   Compute each entry:   Therefore,    "
+},
+{
+  "id": "linsys-diagonal-example",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#linsys-diagonal-example",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "   Consider the linear system of differential equations   with initial condition     Write the system in scalar form.  Solve the system for .      Because is diagonal, the system decouples:   Solve each equation separately. Recall that the general solution of is   Then use the initial condition to determine the constants.    The solution is     (a) Since is diagonal, the system becomes   (b) Solve each equation separately.  For :   For :   Apply the initial condition .   Thus the solution is   The system is completely decoupled, so each component evolves independently according to its exponential growth or decay rate.   "
+},
+{
+  "id": "eigenmethod-linear-system",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#eigenmethod-linear-system",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "   Consider the system of differential equations     Find the eigenvalues of the matrix.  Find an eigenvector for each eigenvalue.  Write the general solution of the system.  Use the initial condition to find the specific solution .      Begin by computing the characteristic polynomial:   After finding the eigenvalues, solve to find eigenvectors. Each eigenpair gives a solution of the form .    Eigenvalues: , .  Corresponding eigenvectors:   Specific solution:     (a) Compute the characteristic polynomial:    Solve :   (b) Find eigenvectors.  For , solve :   The rows are multiples; a solution is   For , solve :   A solution is   (c) The general solution is   (d) Apply :   Solve the system:   Subtract the first equation from the second:   Thus the specific solution is   Simplifying gives    "
+},
+{
+  "id": "eigenmethod-complex-clean-corrected",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#eigenmethod-complex-clean-corrected",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "   Consider the system     Find the eigenvalues of the matrix.  Find an eigenvector corresponding to the eigenvalue with positive imaginary part.  Write the real general solution of the system.  Use the initial condition to find the specific solution .      The characteristic polynomial is   For and eigenvector , the real solution is built from     Eigenvalues: .  An eigenvector for is   The specific real solution is     (a) Compute eigenvalues.     (b) Eigenvector for .   First row:   Choose . Then .  So an eigenvector is   (c) General real solution.   Substitute and :   (d) Apply .   From the second component:   From the first component:   Thus the specific solution is    "
+},
+{
+  "id": "twodimaut-correct-complex-evals",
+  "level": "2",
+  "url": "ch-practice-exams-5.html#twodimaut-correct-complex-evals",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "   Consider the autonomous system     Compute the eigenvalues of .  Classify the equilibrium at (node, spiral, saddle, center).  Determine whether the equilibrium is stable or unstable.  Describe qualitatively the behavior of trajectories.      Compute directly:   Solve for the eigenvalues. Use the real part of the eigenvalues to determine stability.    The eigenvalues are   Since the real part is positive, the equilibrium is an unstable spiral source .    (a) Compute eigenvalues.   Expand:   Solve:   (b) Classification.  The eigenvalues are complex (non-real), so the origin is a spiral equilibrium .  (c) Stability.  The real part of both eigenvalues is . Therefore solutions spiral away from the origin: the equilibrium is an unstable spiral .  (d) Qualitative behavior.   Solutions spiral outward as .  The imaginary part causes oscillations.  The positive real part produces exponential growth in radius.  Rotation is counterclockwise because the off-diagonal entries produce that turning direction.   The phase portrait in shows several outward‑spiraling trajectories along with the direction field.    A phase portrait illustrating the dynamics of the system.   A phase portrait showing an unstable counterclockwise spiral around the origin for the system x' = Ax. Several solution curves spiral outward from the origin and a direction field is drawn with small arrows.       "
+},
+{
+  "id": "ch-final-review-2",
+  "level": "1",
+  "url": "ch-final-review-2.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Final Exam Review",
+  "body": " Final Exam Review   Successful students will be able to...    develop a DE to model a physical situation (e.g. Newton’s law of cooling, population growth, radioactive decay, Torricelli’s law, newton’s second law applied to spring mass systems, mixture problems using tanks)    (1.2) determine if conditions are sufficient to provide for the existence and uniqueness of solutions to the IVP     (1.2) generate and interpret slope fields associated with DEs and utilize them to estimate solutions to the IVP .    (1.3) implement the method of separation of variables.    (1.4) implement the method of solving linear, first-order DEs by using an integrating factor.    (1.5) determine the stability of equilibrium solutions to autonomous DEs .    (1.6) apply Euler’s method to estimate solutions to first-order DEs.    (5.1) convert a higher order DE to a first-order system of DEs.    (2.1, 2.5) apply the superposition principle to define general solutions.    use a Wronskian to determine whether or not a set of solutions to a DE are linearly independent.    (2.3) solve order, homoegeneous, constant coefficient, linear DEs.    (2.5) implement the method of undetermined coefficients to find a particular solution to certain order linear constant coefficient, nonhomogeneous DEs.    (3.1) state the definition of the Laplace transform.    (3.1) compute a Laplace transform from the definition.    (3.1) compute an inverse Laplace transform using a table.    (3.2, 3.3, 3.4) solve IVPs (particularly those that involved discontinuous functions) using a Laplace transform.    (4.3) represent a system of linear equations using a matrix.    (4.2) perform matrix arithmetic (addition, multiplication, transpose, etc.).    (4.3) utilize elementary row operations to perform gaussian elimination (putting a matrix in row echelon form and reduced row echelon form).    (4.3) solve linear systems of equations through gaussian elimination.    (4.2) determine (using various criteria) when the inverse of a square matrix exists and compute it when it does.    (4.6) compute the determinant of a matrix using both the permutation definition and cofactor expansion.    (4.6) understand how elementary row operations affect the determinant of a matrix.    (4.4) identify if a given set is a vector space under a particular method of addition and scalar multiplication.    (4.4) identify if a subset of a given vector space is a subspace.    (4.4) write the null space (kernel) of a matrix as the span of a set of vectors (by using gaussian elimination).    (4.4) identify if a given set of vectors (in ) are linearly dependent or linearly independent. [Writing one as a linear combination of the others if dependent.]    (4.4) identify a basis for a finite-dimensional vector space (e.g. for the solution space of a given DE, for the null space of a matrix ).    (5.4) state the definition of an eigenvalue and an eigenvector.    (5.4, 5.7) characterize an eigenspace associated with eigenvalue as the null space of and write it as the span of a set of vectors in .    (5.4) compute (real and complex) eigenvalues and eigenvectors.    (5.8) determine if a given square matrix is diagonalizable. If it is, compute a matrix such that .    (5.8) compute a matrix expoenential .    determine whether a set of -vector valued functions are linearly independent or linearly dependent using a Wronskian.    (5.3) apply the superposition principle to systems of DEs in the form .    (5.5) solve homogeneous systems of DEs of the form and determine the stability of the equilibrium point.    (5.4, 5.5) determine real-valued solutions to homogeneous systems of DEs of the form in which has complex eigenvalues.     Sample Questions    Invertibility of a Matrix   The matrix is invertible.     True.   Correct. The determinant is , so the matrix is invertible.     False.   No. The matrix has nonzero determinant, so it is invertible.        Difference of Eigenvectors   The difference of two eigenvectors and of a matrix is always an eigenvector of .     True.   No. Only scalar multiples of a single eigenvector are guaranteed to remain eigenvectors.     False.   Correct. The difference of eigenvectors corresponding to the same eigenvalue is an eigenvector, but this fails for eigenvectors from different eigenvalues.        Diagonalizability of a Matrix and its Square   If a matrix is diagonalizable, then is diagonalizable.     True.   Correct. If , then , which is also diagonalizable.     False.   No. The diagonalizability of guarantees the same for .        Geometric vs. Algebraic Multiplicity   In an matrix , the geometric multiplicity of each eigenvalue is less than or equal to its algebraic multiplicity.     True.   Correct. This is a fundamental theorem of eigenstructure: .     False.   No. Geometric multiplicity can never exceed algebraic multiplicity.        Solutions to a Linear System   For a matrix , the equation has either zero or infinitely many solutions.     True.   No. Such a system can have exactly one solution if consistent and full column rank.     False.   Correct. A tall matrix (more equations than unknowns) can have zero, one, or infinitely many solutions.        Diagonalizability over vs.   There exist matrices which are diagonalizable over the complex numbers but not over the real numbers.     True.   Correct. For example, a rotation matrix in has complex eigenvalues but no real eigenvalues.     False.   No. Complex diagonalizability does not guarantee real diagonalizability.        Boundedness of Differential Equation Solutions   For the differential equation , all solutions are bounded.     True.   No. The forcing term resonates with the homogeneous solution.     False.   Correct. There exist unbounded solutions due to resonance: the particular solution contains a term linear in .        Similarity and Transposes   If a matrix is similar to a matrix , then the transpose is similar to .     True.   Correct. If , then , showing similarity.     False.   No. Transposition preserves similarity.        Eigenvalues and Invertibility   A matrix is invertible if and only if all its eigenvalues are positive.     True.   No. Invertibility requires eigenvalues to be nonzero, not necessarily positive.     False.   Correct. A matrix with eigenvalues is invertible but not all positive.        Subspace Defined by Inequalities   The set of vectors in satisfying and is a subspace.     True.   Correct. The two inequalities together force , describing a line through the origin — a subspace.     False.   No. The set actually forms a one-dimensional subspace.       Similarity and Eigenvalues   Suppose Which matrices have the same eigenvalues and are similar?    Similar matrices must have exactly the same eigenvalues, including multiplicities. Compute the eigenvalues of each matrix and compare them.     , , and have the same eigenvalues and are similar to each other. Also, and have the same eigenvalues and are similar.    We compute eigenvalues one matrix at a time:     has eigenvalues and .     has eigenvalues and .     also has eigenvalues and .     has eigenvalues and .     has eigenvalues and .    Matrices that are similar must have exactly the same eigenvalues with the same multiplicities. So:     , , and share the same two eigenvalues and . Therefore, they are similar to one another.     and both have eigenvalues and . Thus, they are similar to each other as well.       Matching Linear Systems to Phase Portraits   Match each linear system of differential equations below with its corresponding phase portrait shown in .                  Phase portraits (I)–(IV).   A horizontal row of four phase portraits labeled (I), (II), (III), and (IV). Portrait (I) shows an improper unstable node: trajectories move outward, bending to the right, with a dominant expanding direction and a secondary curved direction. Portrait (II) shows a center: closed circular trajectories rotating around the origin. Portrait (III) shows a saddle: trajectories approach along one axis and diverge along another, with characteristic hyperbolic curves. Portrait (IV) shows vertical straight-line trajectories: all motion is upward or downward along parallel vertical lines, with no horizontal component.      Compute the eigenvalues for each system. Look for features such as rotation (imaginary eigenvalues), vertical lines (a zero eigenvalue with a positive eigenvalue), unstable nodes (repeated positive eigenvalues), and saddle behavior.    (a) matches (II), (b) matches (IV), (c) matches (I), (d) matches (III).    We analyze each system by computing eigenvalues and identifying qualitative behavior.    System (a): has eigenvalues , indicating pure rotation. This corresponds to portrait (II), the center with circular motion.    System (b): has eigenvalues and . Motion is purely vertical with exponential growth in the second component. This matches portrait (IV).    System (c): has eigenvalues and , a classic saddle structure. This matches portrait (I), which shows the unstable–stable saddle dynamics.    System (d): has repeated eigenvalue with only one eigenvector, producing an improper (degenerate) unstable node. This matches portrait (III).       Solving a Linear System and Describing Its Solution Set   Consider the linear system     Answer the following:   Rewrite the system in matrix form .  Row reduce the augmented matrix .  Find the general solution to the system.  Determine whether the solution set is a subspace of . If it is, state its dimension; if not, explain why not.     Start by assembling the coefficient matrix and vector . After forming the augmented matrix, perform row reduction carefully. Identify pivot and free variables before expressing the general solution.    The system can be written as with   After row reduction:   A general solution is:   The solution set is not a subspace of , because it does not contain the zero vector.    From the coefficients, we obtain:     The augmented matrix is After row reduction:   The pivot variables are , , and . The free variables are , , and . Solving gives:     Because the solution set does not include the zero vector (the particular solution has a nonzero entry), it is not closed under scalar multiplication. Therefore, the set of solutions is not a subspace of .     Newton's Law of Cooling   Newton's law of cooling states that the time rate of change of the temperature of a body immersed in a medium of constant temperature is proportional to the difference , that is,   A cake is removed from an oven at and left to cool in a room with ambient temperature . After 30 minutes the cake’s temperature is . When will the temperature reach ?    Solve the differential equation to obtain . Use the known temperature at to compute , then solve for .    The cake reaches after approximately minutes (about 66 minutes and 40 seconds).    The general solution to Newton’s cooling equation is Using and , we obtain   We know that , so:   Taking natural logarithms,   Now solve for when :   Taking logarithms again,   Numerically, giving   Therefore, the cake cools to after approximately minutes and seconds.     Draining a Cylindrical Tank via Torricelli's Law   In the case of an upright cylindrical tank with constant cross-sectional area , Torricelli's law takes the form where . Here denotes the depth of the water in the tank at time .  A vertical cylinder initially contains water to a depth of feet, and a bottom plug is removed at hours. After 1 hour, the depth has fallen to feet. How long does it take for the tank to drain completely?    Separate variables and integrate to obtain Use and to find , then solve for the time at which .    The tank empties after hours.    Start with the differential equation Separate variables: Integrating gives   Use the initial condition : So the solution becomes   Apply the information :   Thus the solution is The tank is empty when , i.e., when :   Therefore, the tank drains completely after hours.     Salt in a Tank with Unequal Inflow and Outflow   A 120-gallon tank initially contains lb of salt dissolved in gallons of water. Brine containing lb\/gal of salt flows into the tank at gal\/min, and the well-stirred mixture flows out at gal\/min. How much salt does the tank contain at the moment it becomes full?    Let be the amount of salt (in lb) and the volume (in gal). Set up the differential equation Solve the resulting linear differential equation and then evaluate at the time the tank reaches gallons.    When the tank is full, it contains approximately lb of salt.    Since the inflow is gal\/min and the outflow is gal\/min, the tank gains volume at gal\/min. Starting at 90 gallons, it reaches its 120-gallon capacity after minutes.  Let be the amount of salt in pounds. The inflow brings in lb\/min. The outflow concentration is where . Thus the outflow removes lb\/min.  The differential equation is therefore   This is linear: The integrating factor is   Multiplying and integrating gives Using :   Thus At (when the tank is full), this gives   Therefore, the tank contains approximately lb of salt when it becomes full.     Classifying Solutions of a Linear System   Determine for which values of the system     has   a unique solution,  no solution,  infinitely many solutions.     Compare the two equations. Notice that the left-hand side of the second equation is times the left-hand side of the first equation. Check whether the right-hand sides show the same relationship.    The system has:  no unique solution for any value of ,  no solution when ,  infinitely many solutions when .      The coefficient matrix is whose determinant is Therefore, the system is never invertible and can never have a unique solution.  Observe that the left-hand side of the second equation is exactly twice the first equation's left-hand side:     For the system to be consistent, the right-hand sides must also satisfy the same relationship: Thus, when , the second equation is a duplicate of the first, and the system has infinitely many solutions.  When , the second equation contradicts the first, so the system has no solution.  Therefore:  No unique solution for any value of ,  No solution when ,  Infinitely many solutions when .       Testing the Matrix Binomial Identity   Suppose and Does the identity     Compute explicitly and compare it to . Remember that matrix multiplication is not commutative, so in general.    No. The two matrices are not equal, so the binomial identity does not hold for these matrices.    First compute so   Next compute the pieces on the right side:        Adding these,   Comparing, is not equal to   Therefore, the identity does not hold. This occurs because the binomial identity only holds when and commute (i.e., ), which is not the case here.     Finding a Matrix Inverse by Row Reduction   Find if     Form the augmented matrix and row‑reduce until the left block becomes the identity matrix. The right block will then be .         Begin with the augmented matrix :   .  Row reduction yields:   Therefore, Multiplying confirms that the product is the identity matrix.     Determinants of Tridiagonal Matrices   Consider the determinants:   Compute and   Let where all main diagonal entries are 2, the adjacent diagonals are 1, and all other entries are 0. Show that   Give an explicit formula for for .     For (a), expand the determinants directly. For (b), perform a cofactor expansion along the first row: only two minors survive. For (c), solve the linear recurrence using the initial conditions from part (a).       , .   .   .       (a) The determinant is For the determinant, expand along the first row:    (b) Expanding along the first row produces only two terms: The sign pattern in the cofactor expansion ensures the subtraction of the second minor.   (c) The recurrence has characteristic equation , giving Using and yields and . Thus This agrees with from part (a).     Checking Linear Dependence of Three Vectors   Determine whether the vectors , , and are linearly dependent or linearly independent.    Form a matrix whose columns are the three vectors and compute its determinant. A determinant of zero means the vectors are linearly dependent.    The three vectors are linearly dependent .    Form the matrix Compute its determinant:   Evaluating the minors: Thus   Since the determinant is zero, the matrix is singular, and therefore the three vectors do not form a linearly independent set.  Hence, the vectors are linearly dependent .     Finding a Basis for a Subspace of   Find a basis for the subspace of . Compute .    Solve the equation for one variable in terms of the other two, and express all vectors in as linear combinations of two independent vectors.    A possible basis is and .    The subspace consists of all vectors satisfying the linear constraint   Solve this equation for : Then every vector in can be written as   The vectors and are linearly independent, so they form a basis for .  Since the basis contains two independent vectors,      Finding a Basis for a Null Space   Find a basis for the null space of     Row-reduce the augmented matrix and express the solution in terms of the free variables. The resulting parameter vectors form a basis.    A basis for the null space is     Row-reducing the matrix yields corresponding to the equations   Let and . Then   The general solution is   Therefore, a basis for the null space is      Finding a Nontrivial Linear Combination   Find a nontrivial linear combination of the vectors , , and that equals the zero vector. Then determine whether the vectors are linearly dependent or linearly independent.    Form the matrix with the vectors as columns: and solve the homogeneous system . Any nonzero solution gives a dependence relation.    One nontrivial dependence relation is Thus, the vectors are linearly dependent.    Place the vectors as columns in the matrix We seek a nonzero vector such that .  Solving the homogeneous system by row reduction yields a one-parameter family of solutions. One convenient choice is   Substituting back:   Since a nontrivial linear combination equals the zero vector, the three vectors are linearly dependent .     Do Three Vectors Form a Basis for ?   Determine whether the vectors , , and form a basis for . If not, explain why.    Three vectors cannot form a basis for , because any basis must contain four linearly independent vectors. But you may still check whether these three vectors are linearly independent. Form the matrix and solve .    The vectors do not form a basis for because a basis requires four vectors. However, these three vectors are linearly independent.    A basis for must contain exactly four linearly independent vectors. Since only three vectors are given, they cannot form a basis.  To check linear independence, place the vectors as columns of the matrix and solve the homogeneous system .  Row reduction yields only the trivial solution. Thus the three vectors are linearly independent.  Despite being independent, they do not form a basis for because there are only three of them.     The Solution Space of   Determine whether the set of all solutions to the differential equation forms a vector space. If it does, give a basis for this function space. If it does not, explain why.    Solve the differential equation first. Then check whether the set of all solutions is closed under addition and scalar multiplication, and whether it contains the zero function.    Yes, the solution set is a vector space. A basis is .    Solving the differential equation gives the family of solutions where is any real constant.  The set of solutions is therefore   This set is closed under addition: It is closed under scalar multiplication: And it contains the zero function by choosing .  Therefore, is a vector space. Since every element of is a scalar multiple of , a basis is , and the solution space is one-dimensional.     Dimension of the Solution Space to   Suppose is the solution space to the differential equation . Compute .    Integrate the equation three times to obtain the general form of all solutions. Then determine how many independent functions appear.     .    Integrating yields , , and finally .  Thus every solution is a linear combination of the three functions , , and . These three functions are linearly independent.  Therefore, the dimension of the solution space is .     Subspaces of   Consider the set of all polynomials of the form . Determine whether the set of all such polynomials satisfying each condition below is a subspace of .      All coefficients are integers     Recall that a subspace must contain the zero polynomial and must be closed under both addition and scalar multiplication. For (c), notice that a single homogeneous linear equation defines a subspace.      (a) Not a subspace.  (b) A subspace.  (c) A subspace.  (d) Not a subspace.       (a) The condition excludes the zero polynomial, so the set cannot be a subspace. It is also not closed under scalar multiplication.   (b) The condition gives polynomials of the form , which is closed under addition and scalar multiplication and contains the zero polynomial. Thus it is a subspace.   (c) The condition is a single homogeneous linear constraint on the coefficients. Such a set is always a subspace.   (d) Requiring all coefficients to be integers makes the set not closed under scalar multiplication (for example, multiply any such polynomial by ). Therefore it is not a subspace.     Odd Functions as a Subspace   Is the set of all real-valued functions satisfying for all real a subspace of the vector space of all real-valued functions on ? If so, provide a basis for this function space.    Check whether the set contains the zero function and is closed under addition and scalar multiplication. Use the identity and .    Yes, the set of all odd functions is a subspace. A possible basis is .    The condition defines the set of odd functions. The zero function satisfies , so it is in the set.  If and are odd, then so is also odd.  For any scalar , so the set is closed under scalar multiplication.  Therefore, the odd functions form a subspace of the vector space of all real-valued functions on . A basis for this space is, for example, .     General Solution to a Second-Order Linear Homogeneous DE   Find the general solution to the differential equation .    Try a solution of the form and substitute into the differential equation to obtain the characteristic equation. Then solve for the roots .     .    Substitute into the differential equation . This gives the characteristic equation   Factor the quadratic: Thus, the roots are and .  Since the characteristic equation has two distinct real roots, the general solution is where and are arbitrary constants.     General Solution to a Linear Homogeneous DE   Find the general solution to the differential equation .    Divide the equation by and try a solution of the form . This produces the characteristic equation .     .    Rewrite the differential equation as Using the trial solution gives the characteristic equation   Factor: so the roots are and .  With two distinct real roots, the general solution is      General Solution to a Second-Order Linear DE   Find the general solution to the differential equation .    Use the trial solution to obtain the characteristic equation. Check whether the equation has distinct, repeated, or complex roots.         Substitute into the DE to obtain the characteristic equation Compute the discriminant: Since it is zero, there is a repeated root.  Solving, For a repeated root , the general solution is Therefore,      Finding a Differential Equation from Its General Solution   In each of the following, you are given a general solution of a homogeneous second-order differential equation with constant coefficients. Find such an equation.         Identify the characteristic roots from the form of the general solution. For distinct roots , the characteristic equation is . For repeated roots , the solution has the form and the characteristic equation is .              (a) The solution contains and , so the characteristic roots are and . Thus, . The DE is .   (b) The roots are and . The characteristic equation is . Hence the DE is .   (c) The presence of shows a repeated root . Thus, . The DE is .     General Solution of a Fourth-Order Linear DE   Find the general solution to the differential equation .    Try a solution of the form to obtain the characteristic equation. Factor it to find the roots and their multiplicities.         Substitute into the differential equation to obtain the characteristic equation   Factor: Thus the roots are (with multiplicity 3) and .  For a triple root at , the corresponding solutions are , , and . For the simple root , the solution is .  Therefore, the general solution is      General Solution to a Homogeneous Linear DE   Find the general solution to the differential equation .    Use the trial solution to obtain the characteristic equation. If the roots are complex, recall that solutions have the form .         Substitute into to obtain the characteristic equation The discriminant is , so the roots are complex:   For complex roots , the general solution is Using and , we obtain      Constructing a DE from a Given Solution Basis   Find a linear, constant coefficient, third-order homogeneous differential equation whose solution space has basis .    The functions , , and correspond to characteristic roots , , and . Form the characteristic polynomial with these roots and expand it.    One such differential equation is     The given basis corresponds to characteristic roots , , and . Therefore the characteristic equation is   Expanding,   Replacing with , the corresponding differential equation is This equation has exactly the desired basis of solutions.     Amplitude, Period, and Frequency of a Mass–Spring System   A mass of kg is attached to the end of a spring that is stretched cm by a force of N. It is set in motion with initial position and initial velocity m\/s. Find the amplitude, period, and frequency of the resulting motion.    Use Hooke’s law to compute the spring constant . Then solve the differential equation . Apply the initial conditions to determine the constants and extract the amplitude, period, and frequency.    Amplitude: m; Period: ; Frequency: .    From Hooke’s law, . The motion satisfies , or .  The general solution is since .  Using gives . Differentiating: Applying yields .  Therefore the solution is The amplitude is .  The period is and the frequency is      Finding a Particular Solution   Find a particular solution of the differential equation .    Because the right-hand side is a polynomial of degree 1, try a polynomial particular solution of degree 2: . Compute the required derivatives and match coefficients.         Try a particular solution of the form . Then   Substitute into the differential equation: so   Matching coefficients gives and , so The constant does not appear, so we may take .  Therefore, a particular solution is      Forms of Particular Solutions via Undetermined Coefficients   This problem uses the method of undetermined coefficients. For each differential equation below, write an appropriate form of a particular solution . Do not solve for the coefficients.         Match the form of the right-hand side with the standard trial forms used in the method of undetermined coefficients. If any part of the trial solution overlaps with the complementary solution, multiply by a sufficient power of to remove the overlap.             (a) The forcing term suggests a trial solution of the form . However, the complementary solution already contains the functions and , so we multiply the trial by . Thus, .   (b) The right-hand side has two components: and .  Since is a root of the characteristic equation , the trial for must be multiplied by , giving .  For the polynomial , one normally tries , but is a root with multiplicity 3. Therefore, we multiply by , giving .  Combining both parts yields      Eigenvalues and Eigenspaces of a Matrix   Find the eigenvalues and associated eigenspaces of the matrix     Compute the characteristic polynomial and factor it to find the eigenvalues. Then solve for each eigenvalue to find its eigenspace.    Eigenvalues: , (multiplicity 2). Corresponding eigenspaces:            Compute to obtain the characteristic polynomial Factoring gives roots and (with multiplicity 2).  For , row reduction of yields the eigenspace   For , the matrix reduces to a single equation , giving the eigenspace   Thus the eigenvalues are and (multiplicity 2), with the eigenspaces above.      Diagonalizable or Not   The matrix in the previous problem is diagonalizable.     True.   Yes, the algebraic and geometric mulitiplicities of eigenvalues are the same.     False.   No. There are enough eigenvectors to diagonalize.       Transforming and Solving a Third-Order Differential Equation   Consider the differential equation . Answer the following questions.   Transform the differential equation into a first-order system .  Find a particular solution to the system.  Find the eigenvalues and eigenvectors of .  Give the general solution to the associated homogeneous system .  Use the Wronskian to show that your basis of vector-valued solutions is linearly independent.  Give a basis for the solution space of the scalar equation and verify linear independence using the Wronskian.  Give the general solution to the system . Compare it to the general solution of the original differential equation.     Let , , and . Then , , and . For the homogeneous case, solve .            Eigenvalues: Eigenvectors:         Basis for : . Wronskian is again , so independent.   The first component matches exactly the general solution of .       (a) Using , , gives    (b) Using the known particular solution of the scalar ODE gives and its derivatives lead to    (c) The characteristic equation is , giving eigenvalues . The eigenvectors listed in the answer are verified directly.   (d) Converting complex solutions to real form yields the homogeneous solution:    (e) Computing the Wronskian gives confirming linear independence.   (f) For the scalar DE , the solution basis is , with the same Wronskian .   (g) The general solution to the system is . Its first component matches the general solution of the original differential equation.     Computing a Laplace Transform from a Graph   Compute the Laplace transform of the function graphed in .   The graph of .   A line segment from (0,0) to (1,1) and 0 for t greater than 1.       Express as a piecewise function. Only the interval contributes to the Laplace transform. Compute using integration by parts.         From the graph, Thus,   Using integration by parts with , , we obtain Evaluating from to gives   Therefore,      Solving an IVP Using Laplace Transforms   Solve the IVP using Laplace transforms.    Take the Laplace transform of both sides. Recall the formulas and . Solve for and invert.         Take the Laplace transform of the IVP: Using we obtain   Simplify: Since we have   Use partial fractions. Solve for constants and such that Then Matching coefficients gives   Thus Inverting the Laplace transform yields   Therefore, the solution of the IVP is      Inverse Laplace Transform   Find the inverse Laplace transform of     Use partial fractions: Then invert each term using basic Laplace transform formulas.         Begin with partial fractions: Solving for coefficients yields   Thus   Taking inverse Laplace transforms term‑by‑term:   Therefore,      Inverse Laplace Transform with a Shift   Find the inverse Laplace transform of Then sketch the graph of .    Use the time–shift theorem: First compute .     The graph is zero for , and is the line for as in .    Since we apply the time–shift rule: Here , so   The graph is:   for ,  for .   The graph is a ray starting at the point and rising with slope as shown in .   The graph of .   A graph is shown with the horizontal axis labeled t and the vertical axis labeled f of t. From t equals negative one up to t equals three, the graph lies on the horizontal axis, meaning f of t equals zero. At the point t equals three, f of t is still zero, but from that point the graph begins rising in a straight line with slope one. The rising line starts at the point three comma zero and goes upward to the point four comma one. Tick marks appear at t equals one, two, and three on the horizontal axis, and at f equals one and f equals two on the vertical axis.        Solution Curve and Existence–Uniqueness   The slope field for the differential equation is shown in . Sketch the likely solution curve to the IVP on the slope field. Then determine whether a unique solution to this IVP exists.   The slope field for .     f(t,y) = t+y                   Rewrite the DE as and recall that the existence and uniqueness theorem applies because the right-hand side is continuous and satisfies , which is also continuous everywhere.    A unique solution exists for all real , and its graph is an increasing curve passing through the point . The explicit solution is     To sketch the solution curve on the slope field, locate the initial condition . The slope field shows slightly negative slopes there, but slopes increase rapidly as increases. Following the slope field, the curve dips very slightly and then rises smoothly upward as it moves right.  Solve the IVP explicitly. Rewrite the differential equation as . The integrating factor is . Multiplying both sides by gives Integrating: Multiply by :   Apply the initial condition : Therefore the unique solution is:   Because and are both continuous on all of , the Existence–Uniqueness Theorem guarantees that a unique solution exists through every point, including .  Thus the IVP has a unique solution, and the solution curve on the slope field is the one that passes through and follows the increasing directions of the field.   The slope field for with a particular solution to an IVP.     f(t,y) = t+y                        Autonomous Differential Equation and Equilibria   Consider the differential equation where and are constants. Determine whether this DE is autonomous. If it is, find all equilibrium solutions and classify each as stable or unstable.    A differential equation is autonomous if the right-hand side depends only on and constants, not on . Equilibria occur where . Use a sign chart on to determine stability.    The DE is autonomous. The equilibrium solutions are and . is unstable, and is stable.    The right-hand side of the DE, depends only on (and constants), not on , so the equation is autonomous.  Equilibria occur where . Thus, implies or .  To classify the equilibria, examine the sign of on the intervals determined by and . Because , the sign of is the sign of .   For , and , so . Solutions move left, away from .  For , both and are positive, so . Solutions move right, again away from .   Thus is unstable .   For , and , so . Solutions move left, toward .  For , , so solutions move right, again toward .   Thus is stable .  Therefore, the equation is autonomous, with equilibrium solutions (unstable) and (stable).     Solving an IVP with an Integrating Factor   Solve the IVP  Hint: Use an integrating factor.    Write the DE in the form . The integrating factor is . Multiply the entire equation by and look for an exact derivative.         The differential equation is already in linear form: Here , so the integrating factor is   Multiply the entire DE by : The left-hand side is the derivative of : Integrate both sides:   Compute the integral: Thus Solve for :   Apply : Therefore, This can also be written in integral form as   Hence, the solution to the IVP is:      Real-Valued General Solution from Operator Factorization   Find a real-valued general solution to     Each factor of the operator corresponds to a characteristic root. Use multiplicity to determine how many linearly independent solutions come from each root. For quadratic factors, solve the corresponding characteristic equation. Convert complex solutions into real-valued sine and cosine forms.    A real-valued general solution is     The operator factors give characteristic roots directly.    gives the repeated root of multiplicity 3. Thus the corresponding solutions are    gives real roots and , yielding solutions and .   gives roots These produce the complex solutions , which combine to the real-valued pair and .   Combining all real solutions gives the complete real-valued general solution:   Since these solutions arise from distinct roots (or multiplicities of a root), and each corresponds to a linearly independent solution of the linear homogeneous ODE, they form a basis for the solution space.     General Solution via Eigenvalues and Eigenvectors   Use the eigenvalue–eigenvector method to find a general solution to the system   Is the equilibrium solution , stable or not?    Write the system in matrix form and compute the eigenvalues of . Distinct real eigenvalues give independent eigenvectors, and the sign of each eigenvalue determines stability of the origin.    The eigenvalues are and , with eigenvectors and . The general solution is The equilibrium at the origin is a saddle point and therefore unstable.    Write the system in matrix form: Compute the characteristic polynomial: Factor: Thus the eigenvalues are and .  For , solve : which yields eigenvector   For , solve : giving eigenvector   Therefore, the general solution is   Since one eigenvalue is positive ( ) and one is negative ( ), solutions grow exponentially in the direction of the eigenvector for and decay in the direction of the eigenvector for . This makes the origin a saddle point.  A saddle point is always unstable. Thus the equilibrium solution is unstable.      "
+},
+{
+  "id": "tf-invertible-matrix",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-invertible-matrix",
+  "type": "Exercise",
+  "number": "1",
+  "title": "Invertibility of a Matrix.",
+  "body": " Invertibility of a Matrix   The matrix is invertible.     True.   Correct. The determinant is , so the matrix is invertible.     False.   No. The matrix has nonzero determinant, so it is invertible.     "
+},
+{
+  "id": "tf-difference-eigenvectors",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-difference-eigenvectors",
+  "type": "Exercise",
+  "number": "2",
+  "title": "Difference of Eigenvectors.",
+  "body": " Difference of Eigenvectors   The difference of two eigenvectors and of a matrix is always an eigenvector of .     True.   No. Only scalar multiples of a single eigenvector are guaranteed to remain eigenvectors.     False.   Correct. The difference of eigenvectors corresponding to the same eigenvalue is an eigenvector, but this fails for eigenvectors from different eigenvalues.     "
+},
+{
+  "id": "tf-diagonalizable-square",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-diagonalizable-square",
+  "type": "Exercise",
+  "number": "3",
+  "title": "Diagonalizability of a Matrix and its Square.",
+  "body": " Diagonalizability of a Matrix and its Square   If a matrix is diagonalizable, then is diagonalizable.     True.   Correct. If , then , which is also diagonalizable.     False.   No. The diagonalizability of guarantees the same for .     "
+},
+{
+  "id": "tf-geom-alg-multiplicity",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-geom-alg-multiplicity",
+  "type": "Exercise",
+  "number": "4",
+  "title": "Geometric vs. Algebraic Multiplicity.",
+  "body": " Geometric vs. Algebraic Multiplicity   In an matrix , the geometric multiplicity of each eigenvalue is less than or equal to its algebraic multiplicity.     True.   Correct. This is a fundamental theorem of eigenstructure: .     False.   No. Geometric multiplicity can never exceed algebraic multiplicity.     "
+},
+{
+  "id": "tf-solution-count-20x10",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-solution-count-20x10",
+  "type": "Exercise",
+  "number": "5",
+  "title": "Solutions to a Linear System.",
+  "body": " Solutions to a Linear System   For a matrix , the equation has either zero or infinitely many solutions.     True.   No. Such a system can have exactly one solution if consistent and full column rank.     False.   Correct. A tall matrix (more equations than unknowns) can have zero, one, or infinitely many solutions.     "
+},
+{
+  "id": "tf-diagonalizable-real-complex",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-diagonalizable-real-complex",
+  "type": "Exercise",
+  "number": "6",
+  "title": "Diagonalizability over <span class=\"process-math\">\\(\\mathbb{R}\\)<\/span> vs. <span class=\"process-math\">\\(\\mathbb{C}\\)<\/span>.",
+  "body": " Diagonalizability over vs.   There exist matrices which are diagonalizable over the complex numbers but not over the real numbers.     True.   Correct. For example, a rotation matrix in has complex eigenvalues but no real eigenvalues.     False.   No. Complex diagonalizability does not guarantee real diagonalizability.     "
+},
+{
+  "id": "tf-de-bounded-solutions",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-de-bounded-solutions",
+  "type": "Exercise",
+  "number": "7",
+  "title": "Boundedness of Differential Equation Solutions.",
+  "body": " Boundedness of Differential Equation Solutions   For the differential equation , all solutions are bounded.     True.   No. The forcing term resonates with the homogeneous solution.     False.   Correct. There exist unbounded solutions due to resonance: the particular solution contains a term linear in .     "
+},
+{
+  "id": "tf-similarity-transpose",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-similarity-transpose",
+  "type": "Exercise",
+  "number": "8",
+  "title": "Similarity and Transposes.",
+  "body": " Similarity and Transposes   If a matrix is similar to a matrix , then the transpose is similar to .     True.   Correct. If , then , showing similarity.     False.   No. Transposition preserves similarity.     "
+},
+{
+  "id": "tf-eigenvalues-invertible",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-eigenvalues-invertible",
+  "type": "Exercise",
+  "number": "9",
+  "title": "Eigenvalues and Invertibility.",
+  "body": " Eigenvalues and Invertibility   A matrix is invertible if and only if all its eigenvalues are positive.     True.   No. Invertibility requires eigenvalues to be nonzero, not necessarily positive.     False.   Correct. A matrix with eigenvalues is invertible but not all positive.     "
+},
+{
+  "id": "tf-subspace-inequalities",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-subspace-inequalities",
+  "type": "Exercise",
+  "number": "10",
+  "title": "Subspace Defined by Inequalities.",
+  "body": " Subspace Defined by Inequalities   The set of vectors in satisfying and is a subspace.     True.   Correct. The two inequalities together force , describing a line through the origin — a subspace.     False.   No. The set actually forms a one-dimensional subspace.     "
+},
+{
+  "id": "similar-matrices-eigenvalues",
+  "level": "2",
+  "url": "ch-final-review-2.html#similar-matrices-eigenvalues",
+  "type": "Exercise",
+  "number": "11",
+  "title": "Similarity and Eigenvalues.",
+  "body": " Similarity and Eigenvalues   Suppose Which matrices have the same eigenvalues and are similar?    Similar matrices must have exactly the same eigenvalues, including multiplicities. Compute the eigenvalues of each matrix and compare them.     , , and have the same eigenvalues and are similar to each other. Also, and have the same eigenvalues and are similar.    We compute eigenvalues one matrix at a time:     has eigenvalues and .     has eigenvalues and .     also has eigenvalues and .     has eigenvalues and .     has eigenvalues and .    Matrices that are similar must have exactly the same eigenvalues with the same multiplicities. So:     , , and share the same two eigenvalues and . Therefore, they are similar to one another.     and both have eigenvalues and . Thus, they are similar to each other as well.     "
+},
+{
+  "id": "match-phase-portraits",
+  "level": "2",
+  "url": "ch-final-review-2.html#match-phase-portraits",
+  "type": "Exercise",
+  "number": "12",
+  "title": "Matching Linear Systems to Phase Portraits.",
+  "body": " Matching Linear Systems to Phase Portraits   Match each linear system of differential equations below with its corresponding phase portrait shown in .                  Phase portraits (I)–(IV).   A horizontal row of four phase portraits labeled (I), (II), (III), and (IV). Portrait (I) shows an improper unstable node: trajectories move outward, bending to the right, with a dominant expanding direction and a secondary curved direction. Portrait (II) shows a center: closed circular trajectories rotating around the origin. Portrait (III) shows a saddle: trajectories approach along one axis and diverge along another, with characteristic hyperbolic curves. Portrait (IV) shows vertical straight-line trajectories: all motion is upward or downward along parallel vertical lines, with no horizontal component.      Compute the eigenvalues for each system. Look for features such as rotation (imaginary eigenvalues), vertical lines (a zero eigenvalue with a positive eigenvalue), unstable nodes (repeated positive eigenvalues), and saddle behavior.    (a) matches (II), (b) matches (IV), (c) matches (I), (d) matches (III).    We analyze each system by computing eigenvalues and identifying qualitative behavior.    System (a): has eigenvalues , indicating pure rotation. This corresponds to portrait (II), the center with circular motion.    System (b): has eigenvalues and . Motion is purely vertical with exponential growth in the second component. This matches portrait (IV).    System (c): has eigenvalues and , a classic saddle structure. This matches portrait (I), which shows the unstable–stable saddle dynamics.    System (d): has repeated eigenvalue with only one eigenvector, producing an improper (degenerate) unstable node. This matches portrait (III).     "
+},
+{
+  "id": "linear-system-3x6-solution",
+  "level": "2",
+  "url": "ch-final-review-2.html#linear-system-3x6-solution",
+  "type": "Exercise",
+  "number": "13",
+  "title": "Solving a Linear System and Describing Its Solution Set.",
+  "body": " Solving a Linear System and Describing Its Solution Set   Consider the linear system     Answer the following:   Rewrite the system in matrix form .  Row reduce the augmented matrix .  Find the general solution to the system.  Determine whether the solution set is a subspace of . If it is, state its dimension; if not, explain why not.     Start by assembling the coefficient matrix and vector . After forming the augmented matrix, perform row reduction carefully. Identify pivot and free variables before expressing the general solution.    The system can be written as with   After row reduction:   A general solution is:   The solution set is not a subspace of , because it does not contain the zero vector.    From the coefficients, we obtain:     The augmented matrix is After row reduction:   The pivot variables are , , and . The free variables are , , and . Solving gives:     Because the solution set does not include the zero vector (the particular solution has a nonzero entry), it is not closed under scalar multiplication. Therefore, the set of solutions is not a subspace of .   "
+},
+{
+  "id": "newton-cooling-cake-corrected",
+  "level": "2",
+  "url": "ch-final-review-2.html#newton-cooling-cake-corrected",
+  "type": "Exercise",
+  "number": "14",
+  "title": "Newton’s Law of Cooling.",
+  "body": " Newton's Law of Cooling   Newton's law of cooling states that the time rate of change of the temperature of a body immersed in a medium of constant temperature is proportional to the difference , that is,   A cake is removed from an oven at and left to cool in a room with ambient temperature . After 30 minutes the cake’s temperature is . When will the temperature reach ?    Solve the differential equation to obtain . Use the known temperature at to compute , then solve for .    The cake reaches after approximately minutes (about 66 minutes and 40 seconds).    The general solution to Newton’s cooling equation is Using and , we obtain   We know that , so:   Taking natural logarithms,   Now solve for when :   Taking logarithms again,   Numerically, giving   Therefore, the cake cools to after approximately minutes and seconds.   "
+},
+{
+  "id": "torricelli-draining-cylinder-corrected",
+  "level": "2",
+  "url": "ch-final-review-2.html#torricelli-draining-cylinder-corrected",
+  "type": "Exercise",
+  "number": "15",
+  "title": "Draining a Cylindrical Tank via Torricelli’s Law.",
+  "body": " Draining a Cylindrical Tank via Torricelli's Law   In the case of an upright cylindrical tank with constant cross-sectional area , Torricelli's law takes the form where . Here denotes the depth of the water in the tank at time .  A vertical cylinder initially contains water to a depth of feet, and a bottom plug is removed at hours. After 1 hour, the depth has fallen to feet. How long does it take for the tank to drain completely?    Separate variables and integrate to obtain Use and to find , then solve for the time at which .    The tank empties after hours.    Start with the differential equation Separate variables: Integrating gives   Use the initial condition : So the solution becomes   Apply the information :   Thus the solution is The tank is empty when , i.e., when :   Therefore, the tank drains completely after hours.   "
+},
+{
+  "id": "mixing-tank-when-full",
+  "level": "2",
+  "url": "ch-final-review-2.html#mixing-tank-when-full",
+  "type": "Exercise",
+  "number": "16",
+  "title": "Salt in a Tank with Unequal Inflow and Outflow.",
+  "body": " Salt in a Tank with Unequal Inflow and Outflow   A 120-gallon tank initially contains lb of salt dissolved in gallons of water. Brine containing lb\/gal of salt flows into the tank at gal\/min, and the well-stirred mixture flows out at gal\/min. How much salt does the tank contain at the moment it becomes full?    Let be the amount of salt (in lb) and the volume (in gal). Set up the differential equation Solve the resulting linear differential equation and then evaluate at the time the tank reaches gallons.    When the tank is full, it contains approximately lb of salt.    Since the inflow is gal\/min and the outflow is gal\/min, the tank gains volume at gal\/min. Starting at 90 gallons, it reaches its 120-gallon capacity after minutes.  Let be the amount of salt in pounds. The inflow brings in lb\/min. The outflow concentration is where . Thus the outflow removes lb\/min.  The differential equation is therefore   This is linear: The integrating factor is   Multiplying and integrating gives Using :   Thus At (when the tank is full), this gives   Therefore, the tank contains approximately lb of salt when it becomes full.   "
+},
+{
+  "id": "linear-system-k-values",
+  "level": "2",
+  "url": "ch-final-review-2.html#linear-system-k-values",
+  "type": "Exercise",
+  "number": "17",
+  "title": "Classifying Solutions of a Linear System.",
+  "body": " Classifying Solutions of a Linear System   Determine for which values of the system     has   a unique solution,  no solution,  infinitely many solutions.     Compare the two equations. Notice that the left-hand side of the second equation is times the left-hand side of the first equation. Check whether the right-hand sides show the same relationship.    The system has:  no unique solution for any value of ,  no solution when ,  infinitely many solutions when .      The coefficient matrix is whose determinant is Therefore, the system is never invertible and can never have a unique solution.  Observe that the left-hand side of the second equation is exactly twice the first equation's left-hand side:     For the system to be consistent, the right-hand sides must also satisfy the same relationship: Thus, when , the second equation is a duplicate of the first, and the system has infinitely many solutions.  When , the second equation contradicts the first, so the system has no solution.  Therefore:  No unique solution for any value of ,  No solution when ,  Infinitely many solutions when .     "
+},
+{
+  "id": "matrix-binomial-failure",
+  "level": "2",
+  "url": "ch-final-review-2.html#matrix-binomial-failure",
+  "type": "Exercise",
+  "number": "18",
+  "title": "Testing the Matrix Binomial Identity.",
+  "body": " Testing the Matrix Binomial Identity   Suppose and Does the identity     Compute explicitly and compare it to . Remember that matrix multiplication is not commutative, so in general.    No. The two matrices are not equal, so the binomial identity does not hold for these matrices.    First compute so   Next compute the pieces on the right side:        Adding these,   Comparing, is not equal to   Therefore, the identity does not hold. This occurs because the binomial identity only holds when and commute (i.e., ), which is not the case here.   "
+},
+{
+  "id": "inverse-by-row-reduction-correct",
+  "level": "2",
+  "url": "ch-final-review-2.html#inverse-by-row-reduction-correct",
+  "type": "Exercise",
+  "number": "19",
+  "title": "Finding a Matrix Inverse by Row Reduction.",
+  "body": " Finding a Matrix Inverse by Row Reduction   Find if     Form the augmented matrix and row‑reduce until the left block becomes the identity matrix. The right block will then be .         Begin with the augmented matrix :   .  Row reduction yields:   Therefore, Multiplying confirms that the product is the identity matrix.   "
+},
+{
+  "id": "tridiagonal-determinant",
+  "level": "2",
+  "url": "ch-final-review-2.html#tridiagonal-determinant",
+  "type": "Exercise",
+  "number": "20",
+  "title": "Determinants of Tridiagonal Matrices.",
+  "body": " Determinants of Tridiagonal Matrices   Consider the determinants:   Compute and   Let where all main diagonal entries are 2, the adjacent diagonals are 1, and all other entries are 0. Show that   Give an explicit formula for for .     For (a), expand the determinants directly. For (b), perform a cofactor expansion along the first row: only two minors survive. For (c), solve the linear recurrence using the initial conditions from part (a).       , .   .   .       (a) The determinant is For the determinant, expand along the first row:    (b) Expanding along the first row produces only two terms: The sign pattern in the cofactor expansion ensures the subtraction of the second minor.   (c) The recurrence has characteristic equation , giving Using and yields and . Thus This agrees with from part (a).   "
+},
+{
+  "id": "linear-dependence-check",
+  "level": "2",
+  "url": "ch-final-review-2.html#linear-dependence-check",
+  "type": "Exercise",
+  "number": "21",
+  "title": "Checking Linear Dependence of Three Vectors.",
+  "body": " Checking Linear Dependence of Three Vectors   Determine whether the vectors , , and are linearly dependent or linearly independent.    Form a matrix whose columns are the three vectors and compute its determinant. A determinant of zero means the vectors are linearly dependent.    The three vectors are linearly dependent .    Form the matrix Compute its determinant:   Evaluating the minors: Thus   Since the determinant is zero, the matrix is singular, and therefore the three vectors do not form a linearly independent set.  Hence, the vectors are linearly dependent .   "
+},
+{
+  "id": "basis-subspace-x1+x2+x3=0",
+  "level": "2",
+  "url": "ch-final-review-2.html#basis-subspace-x1+x2+x3=0",
+  "type": "Exercise",
+  "number": "22",
+  "title": "Finding a Basis for a Subspace of <span class=\"process-math\">\\(\\mathbb{R}^{3}\\)<\/span>.",
+  "body": " Finding a Basis for a Subspace of   Find a basis for the subspace of . Compute .    Solve the equation for one variable in terms of the other two, and express all vectors in as linear combinations of two independent vectors.    A possible basis is and .    The subspace consists of all vectors satisfying the linear constraint   Solve this equation for : Then every vector in can be written as   The vectors and are linearly independent, so they form a basis for .  Since the basis contains two independent vectors,    "
+},
+{
+  "id": "nullspace-of-A-corrected",
+  "level": "2",
+  "url": "ch-final-review-2.html#nullspace-of-A-corrected",
+  "type": "Exercise",
+  "number": "23",
+  "title": "Finding a Basis for a Null Space.",
+  "body": " Finding a Basis for a Null Space   Find a basis for the null space of     Row-reduce the augmented matrix and express the solution in terms of the free variables. The resulting parameter vectors form a basis.    A basis for the null space is     Row-reducing the matrix yields corresponding to the equations   Let and . Then   The general solution is   Therefore, a basis for the null space is    "
+},
+{
+  "id": "linear-combination-matrix-equation",
+  "level": "2",
+  "url": "ch-final-review-2.html#linear-combination-matrix-equation",
+  "type": "Exercise",
+  "number": "24",
+  "title": "Finding a Nontrivial Linear Combination.",
+  "body": " Finding a Nontrivial Linear Combination   Find a nontrivial linear combination of the vectors , , and that equals the zero vector. Then determine whether the vectors are linearly dependent or linearly independent.    Form the matrix with the vectors as columns: and solve the homogeneous system . Any nonzero solution gives a dependence relation.    One nontrivial dependence relation is Thus, the vectors are linearly dependent.    Place the vectors as columns in the matrix We seek a nonzero vector such that .  Solving the homogeneous system by row reduction yields a one-parameter family of solutions. One convenient choice is   Substituting back:   Since a nontrivial linear combination equals the zero vector, the three vectors are linearly dependent .   "
+},
+{
+  "id": "basis-check-R4",
+  "level": "2",
+  "url": "ch-final-review-2.html#basis-check-R4",
+  "type": "Exercise",
+  "number": "25",
+  "title": "Do Three Vectors Form a Basis for <span class=\"process-math\">\\(\\mathbb{R}^{4}\\text{?}\\)<\/span>",
+  "body": " Do Three Vectors Form a Basis for ?   Determine whether the vectors , , and form a basis for . If not, explain why.    Three vectors cannot form a basis for , because any basis must contain four linearly independent vectors. But you may still check whether these three vectors are linearly independent. Form the matrix and solve .    The vectors do not form a basis for because a basis requires four vectors. However, these three vectors are linearly independent.    A basis for must contain exactly four linearly independent vectors. Since only three vectors are given, they cannot form a basis.  To check linear independence, place the vectors as columns of the matrix and solve the homogeneous system .  Row reduction yields only the trivial solution. Thus the three vectors are linearly independent.  Despite being independent, they do not form a basis for because there are only three of them.   "
+},
+{
+  "id": "solution-space-yprime-equals-ky",
+  "level": "2",
+  "url": "ch-final-review-2.html#solution-space-yprime-equals-ky",
+  "type": "Exercise",
+  "number": "26",
+  "title": "The Solution Space of <span class=\"process-math\">\\(y' = ky\\)<\/span>.",
+  "body": " The Solution Space of   Determine whether the set of all solutions to the differential equation forms a vector space. If it does, give a basis for this function space. If it does not, explain why.    Solve the differential equation first. Then check whether the set of all solutions is closed under addition and scalar multiplication, and whether it contains the zero function.    Yes, the solution set is a vector space. A basis is .    Solving the differential equation gives the family of solutions where is any real constant.  The set of solutions is therefore   This set is closed under addition: It is closed under scalar multiplication: And it contains the zero function by choosing .  Therefore, is a vector space. Since every element of is a scalar multiple of , a basis is , and the solution space is one-dimensional.   "
+},
+{
+  "id": "dimension-solution-space-y-triple-prime",
+  "level": "2",
+  "url": "ch-final-review-2.html#dimension-solution-space-y-triple-prime",
+  "type": "Exercise",
+  "number": "27",
+  "title": "Dimension of the Solution Space to <span class=\"process-math\">\\(y''' = 0\\)<\/span>.",
+  "body": " Dimension of the Solution Space to   Suppose is the solution space to the differential equation . Compute .    Integrate the equation three times to obtain the general form of all solutions. Then determine how many independent functions appear.     .    Integrating yields , , and finally .  Thus every solution is a linear combination of the three functions , , and . These three functions are linearly independent.  Therefore, the dimension of the solution space is .   "
+},
+{
+  "id": "subspaces-of-P3",
+  "level": "2",
+  "url": "ch-final-review-2.html#subspaces-of-P3",
+  "type": "Exercise",
+  "number": "28",
+  "title": "Subspaces of <span class=\"process-math\">\\(\\mathbb{P}_{3}\\)<\/span>.",
+  "body": " Subspaces of   Consider the set of all polynomials of the form . Determine whether the set of all such polynomials satisfying each condition below is a subspace of .      All coefficients are integers     Recall that a subspace must contain the zero polynomial and must be closed under both addition and scalar multiplication. For (c), notice that a single homogeneous linear equation defines a subspace.      (a) Not a subspace.  (b) A subspace.  (c) A subspace.  (d) Not a subspace.       (a) The condition excludes the zero polynomial, so the set cannot be a subspace. It is also not closed under scalar multiplication.   (b) The condition gives polynomials of the form , which is closed under addition and scalar multiplication and contains the zero polynomial. Thus it is a subspace.   (c) The condition is a single homogeneous linear constraint on the coefficients. Such a set is always a subspace.   (d) Requiring all coefficients to be integers makes the set not closed under scalar multiplication (for example, multiply any such polynomial by ). Therefore it is not a subspace.   "
+},
+{
+  "id": "odd-functions-subspace",
+  "level": "2",
+  "url": "ch-final-review-2.html#odd-functions-subspace",
+  "type": "Exercise",
+  "number": "29",
+  "title": "Odd Functions as a Subspace.",
+  "body": " Odd Functions as a Subspace   Is the set of all real-valued functions satisfying for all real a subspace of the vector space of all real-valued functions on ? If so, provide a basis for this function space.    Check whether the set contains the zero function and is closed under addition and scalar multiplication. Use the identity and .    Yes, the set of all odd functions is a subspace. A possible basis is .    The condition defines the set of odd functions. The zero function satisfies , so it is in the set.  If and are odd, then so is also odd.  For any scalar , so the set is closed under scalar multiplication.  Therefore, the odd functions form a subspace of the vector space of all real-valued functions on . A basis for this space is, for example, .   "
+},
+{
+  "id": "general-solution-ypp-3yp-2y",
+  "level": "2",
+  "url": "ch-final-review-2.html#general-solution-ypp-3yp-2y",
+  "type": "Exercise",
+  "number": "30",
+  "title": "General Solution to a Second-Order Linear Homogeneous DE.",
+  "body": " General Solution to a Second-Order Linear Homogeneous DE   Find the general solution to the differential equation .    Try a solution of the form and substitute into the differential equation to obtain the characteristic equation. Then solve for the roots .     .    Substitute into the differential equation . This gives the characteristic equation   Factor the quadratic: Thus, the roots are and .  Since the characteristic equation has two distinct real roots, the general solution is where and are arbitrary constants.   "
+},
+{
+  "id": "general-solution-2ypp-3yp",
+  "level": "2",
+  "url": "ch-final-review-2.html#general-solution-2ypp-3yp",
+  "type": "Exercise",
+  "number": "31",
+  "title": "General Solution to a Linear Homogeneous DE.",
+  "body": " General Solution to a Linear Homogeneous DE   Find the general solution to the differential equation .    Divide the equation by and try a solution of the form . This produces the characteristic equation .     .    Rewrite the differential equation as Using the trial solution gives the characteristic equation   Factor: so the roots are and .  With two distinct real roots, the general solution is    "
+},
+{
+  "id": "general-solution-9ypp-12yp-4y",
+  "level": "2",
+  "url": "ch-final-review-2.html#general-solution-9ypp-12yp-4y",
+  "type": "Exercise",
+  "number": "32",
+  "title": "General Solution to a Second-Order Linear DE.",
+  "body": " General Solution to a Second-Order Linear DE   Find the general solution to the differential equation .    Use the trial solution to obtain the characteristic equation. Check whether the equation has distinct, repeated, or complex roots.         Substitute into the DE to obtain the characteristic equation Compute the discriminant: Since it is zero, there is a repeated root.  Solving, For a repeated root , the general solution is Therefore,    "
+},
+{
+  "id": "find-DE-from-general-solution",
+  "level": "2",
+  "url": "ch-final-review-2.html#find-DE-from-general-solution",
+  "type": "Exercise",
+  "number": "33",
+  "title": "Finding a Differential Equation from Its General Solution.",
+  "body": " Finding a Differential Equation from Its General Solution   In each of the following, you are given a general solution of a homogeneous second-order differential equation with constant coefficients. Find such an equation.         Identify the characteristic roots from the form of the general solution. For distinct roots , the characteristic equation is . For repeated roots , the solution has the form and the characteristic equation is .              (a) The solution contains and , so the characteristic roots are and . Thus, . The DE is .   (b) The roots are and . The characteristic equation is . Hence the DE is .   (c) The presence of shows a repeated root . Thus, . The DE is .   "
+},
+{
+  "id": "general-solution-5y4p-3y3p",
+  "level": "2",
+  "url": "ch-final-review-2.html#general-solution-5y4p-3y3p",
+  "type": "Exercise",
+  "number": "34",
+  "title": "General Solution of a Fourth-Order Linear DE.",
+  "body": " General Solution of a Fourth-Order Linear DE   Find the general solution to the differential equation .    Try a solution of the form to obtain the characteristic equation. Factor it to find the roots and their multiplicities.         Substitute into the differential equation to obtain the characteristic equation   Factor: Thus the roots are (with multiplicity 3) and .  For a triple root at , the corresponding solutions are , , and . For the simple root , the solution is .  Therefore, the general solution is    "
+},
+{
+  "id": "general-solution-ypp-8yp-25y",
+  "level": "2",
+  "url": "ch-final-review-2.html#general-solution-ypp-8yp-25y",
+  "type": "Exercise",
+  "number": "35",
+  "title": "General Solution to a Homogeneous Linear DE.",
+  "body": " General Solution to a Homogeneous Linear DE   Find the general solution to the differential equation .    Use the trial solution to obtain the characteristic equation. If the roots are complex, recall that solutions have the form .         Substitute into to obtain the characteristic equation The discriminant is , so the roots are complex:   For complex roots , the general solution is Using and , we obtain    "
+},
+{
+  "id": "third-order-DE-from-basis",
+  "level": "2",
+  "url": "ch-final-review-2.html#third-order-DE-from-basis",
+  "type": "Exercise",
+  "number": "36",
+  "title": "Constructing a DE from a Given Solution Basis.",
+  "body": " Constructing a DE from a Given Solution Basis   Find a linear, constant coefficient, third-order homogeneous differential equation whose solution space has basis .    The functions , , and correspond to characteristic roots , , and . Form the characteristic polynomial with these roots and expand it.    One such differential equation is     The given basis corresponds to characteristic roots , , and . Therefore the characteristic equation is   Expanding,   Replacing with , the corresponding differential equation is This equation has exactly the desired basis of solutions.   "
+},
+{
+  "id": "mass-spring-amplitude-period-frequency",
+  "level": "2",
+  "url": "ch-final-review-2.html#mass-spring-amplitude-period-frequency",
+  "type": "Exercise",
+  "number": "37",
+  "title": "Amplitude, Period, and Frequency of a Mass–Spring System.",
+  "body": " Amplitude, Period, and Frequency of a Mass–Spring System   A mass of kg is attached to the end of a spring that is stretched cm by a force of N. It is set in motion with initial position and initial velocity m\/s. Find the amplitude, period, and frequency of the resulting motion.    Use Hooke’s law to compute the spring constant . Then solve the differential equation . Apply the initial conditions to determine the constants and extract the amplitude, period, and frequency.    Amplitude: m; Period: ; Frequency: .    From Hooke’s law, . The motion satisfies , or .  The general solution is since .  Using gives . Differentiating: Applying yields .  Therefore the solution is The amplitude is .  The period is and the frequency is    "
+},
+{
+  "id": "particular-solution-xppp-4xp",
+  "level": "2",
+  "url": "ch-final-review-2.html#particular-solution-xppp-4xp",
+  "type": "Exercise",
+  "number": "38",
+  "title": "Finding a Particular Solution.",
+  "body": " Finding a Particular Solution   Find a particular solution of the differential equation .    Because the right-hand side is a polynomial of degree 1, try a polynomial particular solution of degree 2: . Compute the required derivatives and match coefficients.         Try a particular solution of the form . Then   Substitute into the differential equation: so   Matching coefficients gives and , so The constant does not appear, so we may take .  Therefore, a particular solution is    "
+},
+{
+  "id": "undetermined-coefficients-forms",
+  "level": "2",
+  "url": "ch-final-review-2.html#undetermined-coefficients-forms",
+  "type": "Exercise",
+  "number": "39",
+  "title": "Forms of Particular Solutions via Undetermined Coefficients.",
+  "body": " Forms of Particular Solutions via Undetermined Coefficients   This problem uses the method of undetermined coefficients. For each differential equation below, write an appropriate form of a particular solution . Do not solve for the coefficients.         Match the form of the right-hand side with the standard trial forms used in the method of undetermined coefficients. If any part of the trial solution overlaps with the complementary solution, multiply by a sufficient power of to remove the overlap.             (a) The forcing term suggests a trial solution of the form . However, the complementary solution already contains the functions and , so we multiply the trial by . Thus, .   (b) The right-hand side has two components: and .  Since is a root of the characteristic equation , the trial for must be multiplied by , giving .  For the polynomial , one normally tries , but is a root with multiplicity 3. Therefore, we multiply by , giving .  Combining both parts yields    "
+},
+{
+  "id": "eigenvalues-eigenspaces-A",
+  "level": "2",
+  "url": "ch-final-review-2.html#eigenvalues-eigenspaces-A",
+  "type": "Exercise",
+  "number": "40",
+  "title": "Eigenvalues and Eigenspaces of a Matrix.",
+  "body": " Eigenvalues and Eigenspaces of a Matrix   Find the eigenvalues and associated eigenspaces of the matrix     Compute the characteristic polynomial and factor it to find the eigenvalues. Then solve for each eigenvalue to find its eigenspace.    Eigenvalues: , (multiplicity 2). Corresponding eigenspaces:            Compute to obtain the characteristic polynomial Factoring gives roots and (with multiplicity 2).  For , row reduction of yields the eigenspace   For , the matrix reduces to a single equation , giving the eigenspace   Thus the eigenvalues are and (multiplicity 2), with the eigenspaces above.   "
+},
+{
+  "id": "tf-diagonizable-or-not",
+  "level": "2",
+  "url": "ch-final-review-2.html#tf-diagonizable-or-not",
+  "type": "Exercise",
+  "number": "41",
+  "title": "Diagonalizable or Not.",
+  "body": " Diagonalizable or Not   The matrix in the previous problem is diagonalizable.     True.   Yes, the algebraic and geometric mulitiplicities of eigenvalues are the same.     False.   No. There are enough eigenvectors to diagonalize.     "
+},
+{
+  "id": "system-from-third-order-DE-corrected",
+  "level": "2",
+  "url": "ch-final-review-2.html#system-from-third-order-DE-corrected",
+  "type": "Exercise",
+  "number": "42",
+  "title": "Transforming and Solving a Third-Order Differential Equation.",
+  "body": " Transforming and Solving a Third-Order Differential Equation   Consider the differential equation . Answer the following questions.   Transform the differential equation into a first-order system .  Find a particular solution to the system.  Find the eigenvalues and eigenvectors of .  Give the general solution to the associated homogeneous system .  Use the Wronskian to show that your basis of vector-valued solutions is linearly independent.  Give a basis for the solution space of the scalar equation and verify linear independence using the Wronskian.  Give the general solution to the system . Compare it to the general solution of the original differential equation.     Let , , and . Then , , and . For the homogeneous case, solve .            Eigenvalues: Eigenvectors:         Basis for : . Wronskian is again , so independent.   The first component matches exactly the general solution of .       (a) Using , , gives    (b) Using the known particular solution of the scalar ODE gives and its derivatives lead to    (c) The characteristic equation is , giving eigenvalues . The eigenvectors listed in the answer are verified directly.   (d) Converting complex solutions to real form yields the homogeneous solution:    (e) Computing the Wronskian gives confirming linear independence.   (f) For the scalar DE , the solution basis is , with the same Wronskian .   (g) The general solution to the system is . Its first component matches the general solution of the original differential equation.   "
+},
+{
+  "id": "laplace-from-graph",
+  "level": "2",
+  "url": "ch-final-review-2.html#laplace-from-graph",
+  "type": "Exercise",
+  "number": "43",
+  "title": "Computing a Laplace Transform from a Graph.",
+  "body": " Computing a Laplace Transform from a Graph   Compute the Laplace transform of the function graphed in .   The graph of .   A line segment from (0,0) to (1,1) and 0 for t greater than 1.       Express as a piecewise function. Only the interval contributes to the Laplace transform. Compute using integration by parts.         From the graph, Thus,   Using integration by parts with , , we obtain Evaluating from to gives   Therefore,    "
+},
+{
+  "id": "laplace-IVP-second-order",
+  "level": "2",
+  "url": "ch-final-review-2.html#laplace-IVP-second-order",
+  "type": "Exercise",
+  "number": "44",
+  "title": "Solving an IVP Using Laplace Transforms.",
+  "body": " Solving an IVP Using Laplace Transforms   Solve the IVP using Laplace transforms.    Take the Laplace transform of both sides. Recall the formulas and . Solve for and invert.         Take the Laplace transform of the IVP: Using we obtain   Simplify: Since we have   Use partial fractions. Solve for constants and such that Then Matching coefficients gives   Thus Inverting the Laplace transform yields   Therefore, the solution of the IVP is    "
+},
+{
+  "id": "inverse-laplace-2s+1-over-s-s2+9",
+  "level": "2",
+  "url": "ch-final-review-2.html#inverse-laplace-2s+1-over-s-s2+9",
+  "type": "Exercise",
+  "number": "45",
+  "title": "Inverse Laplace Transform.",
+  "body": " Inverse Laplace Transform   Find the inverse Laplace transform of     Use partial fractions: Then invert each term using basic Laplace transform formulas.         Begin with partial fractions: Solving for coefficients yields   Thus   Taking inverse Laplace transforms term‑by‑term:   Therefore,    "
+},
+{
+  "id": "inverse-laplace-shifted-1-over-s-squared",
+  "level": "2",
+  "url": "ch-final-review-2.html#inverse-laplace-shifted-1-over-s-squared",
+  "type": "Exercise",
+  "number": "46",
+  "title": "Inverse Laplace Transform with a Shift.",
+  "body": " Inverse Laplace Transform with a Shift   Find the inverse Laplace transform of Then sketch the graph of .    Use the time–shift theorem: First compute .     The graph is zero for , and is the line for as in .    Since we apply the time–shift rule: Here , so   The graph is:   for ,  for .   The graph is a ray starting at the point and rising with slope as shown in .   The graph of .   A graph is shown with the horizontal axis labeled t and the vertical axis labeled f of t. From t equals negative one up to t equals three, the graph lies on the horizontal axis, meaning f of t equals zero. At the point t equals three, f of t is still zero, but from that point the graph begins rising in a straight line with slope one. The rising line starts at the point three comma zero and goes upward to the point four comma one. Tick marks appear at t equals one, two, and three on the horizontal axis, and at f equals one and f equals two on the vertical axis.      "
+},
+{
+  "id": "slope-field-yprime-t-plus-y",
+  "level": "2",
+  "url": "ch-final-review-2.html#slope-field-yprime-t-plus-y",
+  "type": "Exercise",
+  "number": "47",
+  "title": "Solution Curve and Existence–Uniqueness.",
+  "body": " Solution Curve and Existence–Uniqueness   The slope field for the differential equation is shown in . Sketch the likely solution curve to the IVP on the slope field. Then determine whether a unique solution to this IVP exists.   The slope field for .     f(t,y) = t+y                   Rewrite the DE as and recall that the existence and uniqueness theorem applies because the right-hand side is continuous and satisfies , which is also continuous everywhere.    A unique solution exists for all real , and its graph is an increasing curve passing through the point . The explicit solution is     To sketch the solution curve on the slope field, locate the initial condition . The slope field shows slightly negative slopes there, but slopes increase rapidly as increases. Following the slope field, the curve dips very slightly and then rises smoothly upward as it moves right.  Solve the IVP explicitly. Rewrite the differential equation as . The integrating factor is . Multiplying both sides by gives Integrating: Multiply by :   Apply the initial condition : Therefore the unique solution is:   Because and are both continuous on all of , the Existence–Uniqueness Theorem guarantees that a unique solution exists through every point, including .  Thus the IVP has a unique solution, and the solution curve on the slope field is the one that passes through and follows the increasing directions of the field.   The slope field for with a particular solution to an IVP.     f(t,y) = t+y                      "
+},
+{
+  "id": "autonomous-equilibria-stability",
+  "level": "2",
+  "url": "ch-final-review-2.html#autonomous-equilibria-stability",
+  "type": "Exercise",
+  "number": "48",
+  "title": "Autonomous Differential Equation and Equilibria.",
+  "body": " Autonomous Differential Equation and Equilibria   Consider the differential equation where and are constants. Determine whether this DE is autonomous. If it is, find all equilibrium solutions and classify each as stable or unstable.    A differential equation is autonomous if the right-hand side depends only on and constants, not on . Equilibria occur where . Use a sign chart on to determine stability.    The DE is autonomous. The equilibrium solutions are and . is unstable, and is stable.    The right-hand side of the DE, depends only on (and constants), not on , so the equation is autonomous.  Equilibria occur where . Thus, implies or .  To classify the equilibria, examine the sign of on the intervals determined by and . Because , the sign of is the sign of .   For , and , so . Solutions move left, away from .  For , both and are positive, so . Solutions move right, again away from .   Thus is unstable .   For , and , so . Solutions move left, toward .  For , , so solutions move right, again toward .   Thus is stable .  Therefore, the equation is autonomous, with equilibrium solutions (unstable) and (stable).   "
+},
+{
+  "id": "ivp-integrating-factor-yprime-plus-2x-y-equals-x",
+  "level": "2",
+  "url": "ch-final-review-2.html#ivp-integrating-factor-yprime-plus-2x-y-equals-x",
+  "type": "Exercise",
+  "number": "49",
+  "title": "Solving an IVP with an Integrating Factor.",
+  "body": " Solving an IVP with an Integrating Factor   Solve the IVP  Hint: Use an integrating factor.    Write the DE in the form . The integrating factor is . Multiply the entire equation by and look for an exact derivative.         The differential equation is already in linear form: Here , so the integrating factor is   Multiply the entire DE by : The left-hand side is the derivative of : Integrate both sides:   Compute the integral: Thus Solve for :   Apply : Therefore, This can also be written in integral form as   Hence, the solution to the IVP is:    "
+},
+{
+  "id": "real-valued-solution-operator-factorization",
+  "level": "2",
+  "url": "ch-final-review-2.html#real-valued-solution-operator-factorization",
+  "type": "Exercise",
+  "number": "50",
+  "title": "Real-Valued General Solution from Operator Factorization.",
+  "body": " Real-Valued General Solution from Operator Factorization   Find a real-valued general solution to     Each factor of the operator corresponds to a characteristic root. Use multiplicity to determine how many linearly independent solutions come from each root. For quadratic factors, solve the corresponding characteristic equation. Convert complex solutions into real-valued sine and cosine forms.    A real-valued general solution is     The operator factors give characteristic roots directly.    gives the repeated root of multiplicity 3. Thus the corresponding solutions are    gives real roots and , yielding solutions and .   gives roots These produce the complex solutions , which combine to the real-valued pair and .   Combining all real solutions gives the complete real-valued general solution:   Since these solutions arise from distinct roots (or multiplicities of a root), and each corresponds to a linearly independent solution of the linear homogeneous ODE, they form a basis for the solution space.   "
+},
+{
+  "id": "eigenvalue-eigenvector-system-2x2",
+  "level": "2",
+  "url": "ch-final-review-2.html#eigenvalue-eigenvector-system-2x2",
+  "type": "Exercise",
+  "number": "51",
+  "title": "General Solution via Eigenvalues and Eigenvectors.",
+  "body": " General Solution via Eigenvalues and Eigenvectors   Use the eigenvalue–eigenvector method to find a general solution to the system   Is the equilibrium solution , stable or not?    Write the system in matrix form and compute the eigenvalues of . Distinct real eigenvalues give independent eigenvectors, and the sign of each eigenvalue determines stability of the origin.    The eigenvalues are and , with eigenvectors and . The general solution is The equilibrium at the origin is a saddle point and therefore unstable.    Write the system in matrix form: Compute the characteristic polynomial: Factor: Thus the eigenvalues are and .  For , solve : which yields eigenvector   For , solve : giving eigenvector   Therefore, the general solution is   Since one eigenvalue is positive ( ) and one is negative ( ), solutions grow exponentially in the direction of the eigenvector for and decay in the direction of the eigenvector for . This makes the origin a saddle point.  A saddle point is always unstable. Thus the equilibrium solution is unstable.   "
 }
 ]
 

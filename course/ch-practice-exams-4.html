@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Practice Exam 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Differential Equations with Linear Algebra">
+<meta property="book:author" content="Dale Buske">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="http://drbuske.github.io/Math327"><img src="external/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Differential Equations with Linear Algebra</span> <span class="subtitle">MATH 327</span></a></h1>
+<p class="byline">Dale Buske</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-practice-exams-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-practice-exams.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-practice-exams-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(  \newcommand{\N}{\mathbb N}
+  \newcommand{\Z}{\mathbb Z}
+  \newcommand{\Q}{\mathbb Q}
+  \newcommand{\R}{\mathbb R}
+
+  \newcommand{\avec}{{\mathbf a}}
+  \newcommand{\bvec}{{\mathbf b}}
+  \newcommand{\cvec}{{\mathbf c}}
+  \newcommand{\dvec}{{\mathbf d}}
+  \newcommand{\dtil}{\widetilde{\mathbf d}}
+  \newcommand{\evec}{{\mathbf e}}
+  \newcommand{\fvec}{{\mathbf f}}
+  \newcommand{\nvec}{{\mathbf n}}
+  \newcommand{\pvec}{{\mathbf p}}
+  \newcommand{\qvec}{{\mathbf q}}
+  \newcommand{\svec}{{\mathbf s}}
+  \newcommand{\tvec}{{\mathbf t}}
+  \newcommand{\uvec}{{\mathbf u}}
+  \newcommand{\vvec}{{\mathbf v}}
+  \newcommand{\wvec}{{\mathbf w}}
+  \newcommand{\xvec}{{\mathbf x}}
+  \newcommand{\yvec}{{\mathbf y}}
+  \newcommand{\zvec}{{\mathbf z}}
+  \newcommand{\rvec}{{\mathbf r}}
+  \newcommand{\mvec}{{\mathbf m}}
+  \newcommand{\zerovec}{{\mathbf 0}}
+  \newcommand{\onevec}{{\mathbf 1}}
+  \newcommand{\real}{{\mathbb R}}
+  \newcommand{\twovec}[2]{\left[\begin{array}{r}#1 \\ #2
+  \end{array}\right]}
+  \newcommand{\ctwovec}[2]{\left[\begin{array}{c}#1 \\ #2
+  \end{array}\right]}
+  \newcommand{\threevec}[3]{\left[\begin{array}{r}#1 \\ #2 \\ #3
+  \end{array}\right]}
+  \newcommand{\cthreevec}[3]{\left[\begin{array}{c}#1 \\ #2 \\ #3
+  \end{array}\right]}
+  \newcommand{\fourvec}[4]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\ #4
+  \end{array}\right]}
+  \newcommand{\cfourvec}[4]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\ #4
+  \end{array}\right]}
+  \newcommand{\fivevec}[5]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\
+  #4 \\ #5 \\ \end{array}\right]}
+  \newcommand{\cfivevec}[5]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\
+  #4 \\ #5 \\ \end{array}\right]}
+  \newcommand{\mattwo}[4]{\left[\begin{array}{rr}#1 \amp #2 \\ #3 \amp #4 \\ \end{array}\right]}
+  \newcommand{\laspan}[1]{\text{Span}\left\{#1\right\}}
+  \newcommand{\bcal}{{\cal B}}
+  \newcommand{\ccal}{{\cal C}}
+  \newcommand{\scal}{{\cal S}}
+  \newcommand{\wcal}{{\cal W}}
+  \newcommand{\ecal}{{\cal E}}
+  \newcommand{\coords}[2]{\left\{#1\right\}_{#2}}
+  \newcommand{\gray}[1]{\color{gray}{#1}}
+  \newcommand{\lgray}[1]{\color{lightgray}{#1}}
+  \newcommand{\rank}{\operatorname{rank}}
+  \newcommand{\row}{\text{Row}}
+  \newcommand{\col}{\text{Col}}
+  \renewcommand{\row}{\text{Row}}
+  \newcommand{\nul}{\text{Nul}}
+  \newcommand{\var}{\text{Var}}
+  \newcommand{\corr}{\text{corr}}
+  \newcommand{\len}[1]{\left|#1\right|}
+  \newcommand{\bbar}{\overline{\bvec}}
+  \newcommand{\bhat}{\widehat{\bvec}}
+  \newcommand{\bperp}{\bvec^\perp}
+  \newcommand{\xhat}{\widehat{\xvec}}
+  \newcommand{\vhat}{\widehat{\vvec}}
+  \newcommand{\uhat}{\widehat{\uvec}}
+  \newcommand{\what}{\widehat{\wvec}}
+  \newcommand{\Sighat}{\widehat{\Sigma}}
+  \newcommand{\basis}[2]{#1_1,#1_2,\ldots,#1_{#2}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-course-info.html" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus-4.html" class="internal"><span class="title">Topics and Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-calendar.html" class="internal"><span class="title">Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-assessments.html" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Textbook.html" class="internal"><span class="title">Daily Prep</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-2.html" class="internal"><span class="title">Daily Prep 0.2 - What are Differential Equations?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-2.html#ch-Textbook-2-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-2.html#ch-Textbook-2-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-2.html#sec-Toprepareforclass02" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-2.html#sec-Toprepareforclass02-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-2.html#sec-Advancedlearningobjectives02" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-3.html" class="internal"><span class="title">Daily Prep 1.1 - Integrals as Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-3.html#ch-Textbook-3-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-3.html#ch-Textbook-3-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-3.html#sec-Toprepareforclass11" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-3.html#sec-Toprepareforclass11-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-3.html#sec-Advancedlearningobjectives11" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-4.html" class="internal"><span class="title">Daily Prep 1.2 - Slope Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-4.html#ch-Textbook-4-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-4.html#ch-Textbook-4-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-4.html#sec-Toprepareforclass12" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-4.html#sec-Toprepareforclass12-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-4.html#sec-Advancedlearningobjectives12" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-5.html" class="internal"><span class="title">Daily Prep 1.3 - Separable Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-5.html#ch-Textbook-5-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-5.html#ch-Textbook-5-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-5.html#sec-Toprepareforclass13" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-5.html#sec-Toprepareforclass13-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-5.html#sec-Advancedlearningobjectives13" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-6.html" class="internal"><span class="title">Daily Prep 1.4 - Linear Equations and the Integrating Factor</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-6.html#ch-Textbook-6-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-6.html#ch-Textbook-6-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-6.html#sec-Toprepareforclass14" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-6.html#sec-Toprepareforclass14-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-6.html#sec-Advancedlearningobjectives14" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-7.html" class="internal"><span class="title">Daily Prep 1.6 - Autonomous Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-7.html#ch-Textbook-7-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-7.html#ch-Textbook-7-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-7.html#sec-Toprepareforclass16" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-7.html#sec-Toprepareforclass16-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-7.html#sec-Advancedlearningobjectives16" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-8.html" class="internal"><span class="title">Daily Prep 1.7 - Numerical Methods: Euler’s Method</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-8.html#ch-Textbook-8-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-8.html#ch-Textbook-8-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-8.html#sec-Toprepareforclass17" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-8.html#sec-Toprepareforclass17-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-8.html#sec-Advancedlearningobjectives17" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-9.html" class="internal"><span class="title">Daily Prep 2.1 - Second Order Linear ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-9.html#ch-Textbook-9-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-9.html#ch-Textbook-9-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-9.html#sec-Toprepareforclass21" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-9.html#sec-Toprepareforclass21-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-9.html#sec-Advancedlearningobjectives21" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-10.html" class="internal"><span class="title">Daily Prep 2.2 - Constant Coefficient Second Order ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-10.html#ch-Textbook-10-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-10.html#ch-Textbook-10-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-10.html#sec-Toprepareforclass22" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-10.html#sec-Toprepareforclass22-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-10.html#sec-Advancedlearningobjectives22" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-11.html" class="internal"><span class="title">Daily Prep 2.3 - Higher Order Linear ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-11.html#ch-Textbook-11-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-11.html#ch-Textbook-11-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-11.html#sec-Toprepareforclass23" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-11.html#sec-Toprepareforclass23-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-11.html#sec-Advancedlearningobjectives23" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-12.html" class="internal"><span class="title">Daily Prep 2.4 - Mechanical Vibrations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-12.html#ch-Textbook-12-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-12.html#ch-Textbook-12-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-12.html#sec-Toprepareforclass24" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-12.html#sec-Toprepareforclass24-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-12.html#sec-Advancedlearningobjectives24" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-13.html" class="internal"><span class="title">Daily Prep 2.5 - Nonhomogeneous Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-13.html#ch-Textbook-13-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-13.html#ch-Textbook-13-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-13.html#sec-Toprepareforclass25" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-13.html#sec-Toprepareforclass25-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-13.html#sec-Advancedlearningobjectives25" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-14.html" class="internal"><span class="title">Daily Prep 3.1 - The Laplace Transform</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-14.html#ch-Textbook-14-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-14.html#ch-Textbook-14-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-14.html#sec-Toprepareforclass31" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-14.html#sec-Toprepareforclass31-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-14.html#sec-Advancedlearningobjectives31" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-15.html" class="internal"><span class="title">Daily Prep 3.2 - Transforms of Derivatives and ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-15.html#ch-Textbook-15-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-15.html#ch-Textbook-15-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-15.html#sec-Toprepareforclass32" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-15.html#sec-Toprepareforclass32-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-15.html#sec-Advancedlearningobjectives32" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-16.html" class="internal"><span class="title">Daily Prep 3.3 - Convolution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-16.html#ch-Textbook-16-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-16.html#ch-Textbook-16-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-16.html#sec-Toprepareforclass33" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-16.html#sec-Toprepareforclass33-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-16.html#sec-Advancedlearningobjectives33" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-17.html" class="internal"><span class="title">Daily Prep 3.4 - Dirac Delta and Impulse Response</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-17.html#ch-Textbook-17-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-17.html#ch-Textbook-17-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-17.html#sec-Toprepareforclass34" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-17.html#sec-Toprepareforclass34-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-17.html#sec-Advancedlearningobjectives34" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-18.html" class="internal"><span class="title">Daily Prep 4.1 - Vectors, Mappings, and Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-18.html#ch-Textbook-18-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-18.html#ch-Textbook-18-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-18.html#sec-Toprepareforclass41" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-18.html#sec-Toprepareforclass41-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-18.html#sec-Advancedlearningobjectives41" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-19.html" class="internal"><span class="title">Daily Prep 4.2 - Matrix Algebra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-19.html#ch-Textbook-19-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-19.html#ch-Textbook-19-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-19.html#sec-Toprepareforclass42" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-19.html#sec-Toprepareforclass42-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-19.html#sec-Advancedlearningobjectives42" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-20.html" class="internal"><span class="title">Daily Prep 4.3 - Elimination</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-20.html#ch-Textbook-20-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-20.html#ch-Textbook-20-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-20.html#sec-Toprepareforclass43" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-20.html#exercises-section43" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-20.html#sec-Advancedlearningobjectives43" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-21.html" class="internal"><span class="title">Daily Prep 4.4 - Subspaces, Dimension, and the Kernel</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-21.html#ch-Textbook-21-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-21.html#ch-Textbook-21-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-21.html#sec-Toprepareforclass44" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-21.html#sec-Toprepareforclass44-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-21.html#sec-Advancedlearningobjectives44" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-22.html" class="internal"><span class="title">Daily Prep 5.1 - Introduction to Systems of ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-22.html#ch-Textbook-22-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-22.html#ch-Textbook-22-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-22.html#sec-Toprepareforclass51" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-22.html#sec-Toprepareforclass51-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-22.html#sec-Advancedlearningobjectives51" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-23.html" class="internal"><span class="title">Daily Prep 5.2 - Matrices and Linear Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-23.html#ch-Textbook-23-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-23.html#ch-Textbook-23-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-23.html#ch-Textbook-23-4" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-23.html#ch-Textbook-23-4-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-23.html#ch-Textbook-23-5" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-24.html" class="internal"><span class="title">Daily Prep 5.3 - Linear Systems of ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-24.html#ch-Textbook-24-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-24.html#ch-Textbook-24-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-24.html#sec-Toprepareforclass53" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-24.html#sec-Toprepareforclass53-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-24.html#sec-Advancedlearningobjectives53" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-25.html" class="internal"><span class="title">Daily Prep 5.4 - Eigenvalue Method</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-25.html#ch-Textbook-25-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-25.html#ch-Textbook-25-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-25.html#sec-Toprepareforclass54" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-25.html#sec-Toprepareforclass54-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-25.html#sec-Advancedlearningobjectives54" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-26.html" class="internal"><span class="title">Daily Prep 5.5 - Two-Dimensional Systems and their Vector Fields</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-26.html#ch-Textbook-26-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-26.html#ch-Textbook-26-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-26.html#sec-Toprepareforclass55" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-26.html#sec-Toprepareforclass55-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-26.html#sec-Advancedlearningobjectives55" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-27.html" class="internal"><span class="title">Daily Prep 5.6 - Second Order Systems and Applications</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-27.html#ch-Textbook-27-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-27.html#ch-Textbook-27-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-27.html#sec-Toprepareforclass56" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-27.html#sec-Toprepareforclass56-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-27.html#sec-Advancedlearningobjectives56" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-28.html" class="internal"><span class="title">Daily Prep 5.7 - Multiple Eigenvalues</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-28.html#ch-Textbook-28-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-28.html#ch-Textbook-28-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-28.html#sec-Toprepareforclass57" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-28.html#sec-Toprepareforclass57-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-28.html#sec-Advancedlearningobjectives57" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-29.html" class="internal"><span class="title">Daily Prep 5.8 - Matrix Exponentials</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-29.html#ch-Textbook-29-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-29.html#ch-Textbook-29-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-29.html#sec-Toprepareforclass58" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-29.html#sec-Toprepareforclass58-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-29.html#sec-Advancedlearningobjectives58" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-Textbook-30.html" class="internal"><span class="title">Daily Prep 5.9 - Nonhomogeneous Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-30.html#ch-Textbook-30-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-30.html#ch-Textbook-30-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Textbook-30.html#sec-Toprepareforclass59" class="internal"><span class="title">Learn!</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-Textbook-30.html#sec-Toprepareforclass59-4" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Textbook-30.html#sec-Advancedlearningobjectives59" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="root-1-2-6.html" class="internal"><span class="title">Concept Maps</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-practice-exams.html" class="internal"><span class="title">Practice Exams</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-practice-exams-2.html" class="internal"><span class="title">Practice Exam 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-practice-exams-2.html#ch-practice-exams-2-2" class="internal"><span class="title">Topics</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-practice-exams-2.html#exercises-practiceexam1" class="internal"><span class="title">Questions</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-practice-exams-3.html" class="internal"><span class="title">Practice Exam 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-practice-exams-3.html#ch-practice-exams-3-2" class="internal"><span class="title">Topics</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-practice-exams-3.html#exercises-practiceexam2" class="internal"><span class="title">Questions</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-handout contains-active">
+<div class="toc-title-box"><a href="ch-practice-exams-4.html" class="internal"><span class="title">Practice Exam 3</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-practice-exams-4.html#ch-practice-exams-4-2" class="internal"><span class="title">Topics</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-practice-exams-4.html#exercises-practiceexam3" class="internal"><span class="title">Questions</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-practice-exams-5.html" class="internal"><span class="title">Practice Exam 4</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-practice-exams-5.html#ch-practice-exams-5-2" class="internal"><span class="title">Topics</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-practice-exams-5.html#exercises-practiceexam4" class="internal"><span class="title">Questions</span></a></div></li></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-final-review.html" class="internal"><span class="title">Final Exam Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="ch-final-review-2.html" class="internal"><span class="title">Final Exam Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-final-review-2.html#ch-final-review-2-2" class="internal"><span class="title">Successful students will be able to...</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-final-review-2.html#exercises-finalexamreview" class="internal"><span class="title">Sample Questions</span></a></div></li></ul>
+</li></ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options">
+<div class="hide-option">
+<label for="hide-hint-checkbox">Hide hints</label><input type="checkbox" id="hide-hint-checkbox">
+</div>
+<div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div>
+<div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="handout" id="ch-practice-exams-4" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Exam 3</span><div class="print-links"><a href="?printpreview=ch-practice-exams-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="section" id="ch-practice-exams-4-2"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Topics</span>
+</h3>
+<div class="para" id="ch-practice-exams-4-2-2">Sections 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 4.3, 4.4<div class="autopermalink" data-description="Paragraph"><a href="#ch-practice-exams-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-practice-exams-4-2-3">You will have a short table of Laplace tranforms to use during the exam.  Be sure to try each question before looking at the solutions.<div class="autopermalink" data-description="Paragraph"><a href="#ch-practice-exams-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="exercises-practiceexam3"><h4 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Questions</span>
+</h4>
+<article class="exercise exercise-like" id="laplace-direct-integral"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="laplace-direct-integral-1-1">Using only the definition,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-1-2">
+\begin{equation*}
+\mathcal{L}\{f(t)\}(s) = \int_{0}^{\infty} e^{-st} f(t)\, dt,
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-1-3">compute the Laplace transform of the function <span class="process-math">\(f(t) = t e^{-2t}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="laplace-direct-integral-1-4">Do <em class="emphasis">not</em> use a Laplace transform table; evaluate the integral by hand.<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="laplace-direct-integral-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="laplace-direct-integral-2-1">You should compute<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-2-2">
+\begin{equation*}
+\int_{0}^{\infty} t e^{-st} e^{-2t}\, dt
+=
+\int_{0}^{\infty} t e^{-(s+2)t}\, dt.
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-2-3">Recall the standard integral (integration by parts):<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-2-4">
+\begin{equation*}
+\int_{0}^{\infty} t e^{-a t}\, dt = \frac{1}{a^{2}},
+\qquad \text{for } a &gt; 0.
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-2-5">Here, <span class="process-math">\(a = s+2\text{.}\)</span> Make sure to justify why <span class="process-math">\(s+2 &gt; 0\)</span> is required for convergence.<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.1"><a href="#laplace-direct-integral-2" title="Copy heading and permalink for Hint 1.1" aria-label="Copy heading and permalink for Hint 1.1">🔗</a></div>
+</div></details><details id="laplace-direct-integral-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="laplace-direct-integral-3-1">
+<div class="para">For <span class="process-math">\(s &gt; -2\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-3-1-2">
+\begin{equation*}
+\mathcal{L}\{t e^{-2t}\}(s)
+= \frac{1}{(s+2)^{2}}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.1"><a href="#laplace-direct-integral-3" title="Copy heading and permalink for Answer 1.1" aria-label="Copy heading and permalink for Answer 1.1">🔗</a></div>
+</div></details><details id="laplace-direct-integral-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="laplace-direct-integral-4-1">By definition of the Laplace transform,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-4-2">
+\begin{align*}
+\mathcal{L}\{t e^{-2t}\}(s)
+\amp =
+\int_{0}^{\infty} t e^{-st} e^{-2t}\, dt \\
+\amp =
+\int_{0}^{\infty} t e^{-(s+2)t}\, dt. 
+\end{align*}
+</div>
+<div class="para" id="laplace-direct-integral-4-3">For the integral to converge, we require <span class="process-math">\(s+2 &gt; 0\text{.}\)</span> Let <span class="process-math">\(a = s+2\text{.}\)</span> Then the integral becomes<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-4-4">
+\begin{equation*}
+\int_{0}^{\infty} t e^{-a t}\, dt.
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-4-5">Integrate by parts:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-4-6">
+\begin{equation*}
+\begin{aligned}
+\int_{0}^{\infty} t e^{-a t}\, dt
+\amp = \left[ -\frac{t}{a} e^{-a t} \right]_{0}^{\infty}
++ \frac{1}{a} \int_{0}^{\infty} e^{-a t}\, dt \\[1ex]
+\amp = 0 + \frac{1}{a} \left[ -\frac{1}{a} e^{-a t} \right]_{0}^{\infty} \\[1ex]
+\amp = \frac{1}{a^{2}}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-4-7">Substituting <span class="process-math">\(a = s+2\text{,}\)</span> we obtain<div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-direct-integral-4-8">
+\begin{equation*}
+\mathcal{L}\{t e^{-2t}\}(s)
+= \frac{1}{(s+2)^{2}}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-direct-integral-4-9">This is valid for <span class="process-math">\(s &gt; -2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-direct-integral-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.1"><a href="#laplace-direct-integral-4" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 1"><a href="#laplace-direct-integral" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article> <article class="exercise exercise-like" id="inverse-laplace-basic"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="inverse-laplace-basic-1-1">Compute the inverse Laplace transform of<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-1-2">
+\begin{equation*}
+F(s) = \frac{3}{s-2} \;+\; \frac{5}{s^{2}+4}.
+\end{equation*}
+</div>
+<div class="solutions">
+<details id="inverse-laplace-basic-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="inverse-laplace-basic-2-1">Recall the standard Laplace transform identities.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="inverse-laplace-basic-2-2">
+<li id="inverse-laplace-basic-2-2-1">
+<div class="para" id="p-derived-inverse-laplace-basic-2-2-1">
+<span class="process-math">\(\mathcal{L}\{e^{at}\} = \dfrac{1}{s-a}\)</span> for <span class="process-math">\(s &gt; a\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-laplace-basic-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-laplace-basic-2-2-2">
+<div class="para" id="p-derived-inverse-laplace-basic-2-2-2"><span class="process-math">\(\mathcal{L}\{\sin(bt)\} = \dfrac{b}{s^{2}+b^{2}}\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-laplace-basic-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="inverse-laplace-basic-2-3">Match each term of <span class="process-math">\(F(s)\)</span> with one of these standard forms.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 2.1"><a href="#inverse-laplace-basic-2" title="Copy heading and permalink for Hint 2.1" aria-label="Copy heading and permalink for Hint 2.1">🔗</a></div>
+</div></details><details id="inverse-laplace-basic-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="inverse-laplace-basic-3-1">
+<span class="process-math">\(f(t) = \mathcal{L}^{-1}\{F(s)\}(t)
+= 3e^{2t} + \tfrac{5}{2}\sin(2t).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1"><a href="#inverse-laplace-basic-3" title="Copy heading and permalink for Answer 2.1" aria-label="Copy heading and permalink for Answer 2.1">🔗</a></div>
+</div></details><details id="inverse-laplace-basic-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="inverse-laplace-basic-4-1">We compute the inverse Laplace transform term by term.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-laplace-basic-4-2">First,<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-4-3">
+\begin{equation*}
+\frac{3}{s-2}
+\quad\longrightarrow\quad
+3e^{2t},
+\end{equation*}
+</div>
+<div class="para" id="inverse-laplace-basic-4-4">since <span class="process-math">\(\mathcal{L}\{e^{2t}\} = \dfrac{1}{s-2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-laplace-basic-4-5">Next,<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-4-6">
+\begin{equation*}
+\frac{5}{s^{2}+4}.
+\end{equation*}
+</div>
+<div class="para" id="inverse-laplace-basic-4-7">Note that<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-4-8">
+\begin{equation*}
+\mathcal{L}\{\sin(2t)\}
+= \frac{2}{s^{2}+4}.
+\end{equation*}
+</div>
+<div class="para" id="inverse-laplace-basic-4-9">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-4-10">
+\begin{equation*}
+\frac{5}{s^{2}+4}
+= \frac{5}{2} \cdot \frac{2}{s^{2}+4}
+\quad\longrightarrow\quad
+\frac{5}{2}\sin(2t).
+\end{equation*}
+</div>
+<div class="para" id="inverse-laplace-basic-4-11">Combining both parts gives<div class="autopermalink" data-description="Paragraph"><a href="#inverse-laplace-basic-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-laplace-basic-4-12">
+\begin{equation*}
+f(t) = \mathcal{L}^{-1}\{F(s)\}(t)
+= 3e^{2t} + \frac{5}{2}\sin(2t).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 2.1"><a href="#inverse-laplace-basic-4" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 2"><a href="#inverse-laplace-basic" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article> <article class="exercise exercise-like" id="laplace-derivatives-ode"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="laplace-derivatives-ode-1-1">Use the Laplace transform to solve the initial value problem<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-1-2">
+\begin{equation*}
+y' + 3y = e^{-2t}, \qquad y(0) = 5.
+\end{equation*}
+</div>
+<div class="solutions">
+<details id="laplace-derivatives-ode-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="laplace-derivatives-ode-2-1">Recall the Laplace transform of a first derivative:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-2-2">
+\begin{equation*}
+\mathcal{L}\{y'\}(s) = sY(s) - y(0).
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-2-3">Also use that<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-2-4">
+\begin{equation*}
+\mathcal{L}\{e^{-2t}\}(s) = \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-2-5">After applying the Laplace transform, solve for <span class="process-math">\(Y(s)\)</span> and rewrite it in a form suitable for taking an inverse transform.<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1"><a href="#laplace-derivatives-ode-2" title="Copy heading and permalink for Hint 3.1" aria-label="Copy heading and permalink for Hint 3.1">🔗</a></div>
+</div></details><details id="laplace-derivatives-ode-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="laplace-derivatives-ode-3-1">The solution to the IVP is<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-3-2">
+\begin{equation*}
+y(t) = 4e^{-3t} + e^{-2t}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Answer 3.1"><a href="#laplace-derivatives-ode-3" title="Copy heading and permalink for Answer 3.1" aria-label="Copy heading and permalink for Answer 3.1">🔗</a></div>
+</div></details><details id="laplace-derivatives-ode-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="laplace-derivatives-ode-4-1">Take the Laplace transform of both sides of<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-2">
+\begin{equation*}
+y' + 3y = e^{-2t},
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-3">using <span class="process-math">\(y(0)=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laplace-derivatives-ode-4-4">First compute <span class="process-math">\(\mathcal{L}\{y'\}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-5">
+\begin{equation*}
+\mathcal{L}\{y'\}(s) = sY(s) - y(0) = sY(s) - 5.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-6">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-7">
+\begin{equation*}
+sY(s) - 5 + 3Y(s) = \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-8">Combine terms:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-9">
+\begin{equation*}
+(s + 3)Y(s) - 5 = \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-10">Solve for <span class="process-math">\(Y(s)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-11">
+\begin{equation*}
+(s+3)Y(s)
+= \frac{1}{s+2} + 5
+= \frac{1 + 5(s+2)}{s+2}
+= \frac{5s + 11}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-12">Thus,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-13">
+\begin{equation*}
+Y(s)
+= \frac{5s + 11}{(s+3)(s+2)}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-14">Perform partial fraction decomposition. Write<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-15">
+\begin{equation*}
+\frac{5s + 11}{(s+3)(s+2)}
+= \frac{A}{s+3} + \frac{B}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-16">Then<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-17">
+\begin{equation*}
+5s + 11 = A(s+2) + B(s+3).
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-18">Expand:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-19">
+\begin{equation*}
+5s + 11 = (A+B)s + (2A + 3B).
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-20">Match coefficients:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-21">
+\begin{equation*}
+A + B = 5, \qquad 2A + 3B = 11.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-22">Solve the system:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-23">
+\begin{equation*}
+A = 4, \qquad B = 1.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-24">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-25">
+\begin{equation*}
+Y(s) = \frac{4}{s+3} + \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-26">Take inverse Laplace transforms term by term:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-27">
+\begin{equation*}
+\mathcal{L}^{-1}\left\{\frac{4}{s+3}\right\} = 4e^{-3t},
+\qquad
+\mathcal{L}^{-1}\left\{\frac{1}{s+2}\right\} = e^{-2t}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-derivatives-ode-4-28">Therefore the solution is<div class="autopermalink" data-description="Paragraph"><a href="#laplace-derivatives-ode-4-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-derivatives-ode-4-29">
+\begin{equation*}
+y(t) = 4e^{-3t} + e^{-2t}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 3.1"><a href="#laplace-derivatives-ode-4" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 3"><a href="#laplace-derivatives-ode" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article> <article class="exercise exercise-like" id="laplace-convolution-easy"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="laplace-convolution-easy-1-1">Using the convolution theorem, compute the inverse Laplace transform of<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-1-2">
+\begin{equation*}
+F(s) = \frac{1}{s(s+2)}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-1-3">Do <em class="emphasis">not</em> use partial fractions. Instead, express <span class="process-math">\(F(s)\)</span> as a product of simpler transforms and use the convolution formula.<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="laplace-convolution-easy-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="laplace-convolution-easy-2-1">Recall that<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-2-2">
+\begin{equation*}
+\mathcal{L}\{1\}(s) = \frac{1}{s},
+\qquad
+\mathcal{L}\{e^{-2t}\}(s) = \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-2-3">The convolution theorem states:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-2-4">
+\begin{equation*}
+\mathcal{L}^{-1}\{F(s)G(s)\}
+= (f * g)(t)
+= \int_{0}^{t} f(\tau)\, g(t-\tau)\, d\tau.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-2-5">Use <span class="process-math">\(f(t)=1\)</span> and <span class="process-math">\(g(t)=e^{-2t}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 4.1"><a href="#laplace-convolution-easy-2" title="Copy heading and permalink for Hint 4.1" aria-label="Copy heading and permalink for Hint 4.1">🔗</a></div>
+</div></details><details id="laplace-convolution-easy-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="laplace-convolution-easy-3-1">
+<span class="process-math">\(\mathcal{L}^{-1}\!\left\{\dfrac{1}{s(s+2)}\right\}(t)
+= \frac{1 - e^{-2t}}{2}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 4.1"><a href="#laplace-convolution-easy-3" title="Copy heading and permalink for Answer 4.1" aria-label="Copy heading and permalink for Answer 4.1">🔗</a></div>
+</div></details><details id="laplace-convolution-easy-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="laplace-convolution-easy-4-1">We begin by writing<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-2">
+\begin{equation*}
+F(s) = \frac{1}{s} \cdot \frac{1}{s+2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-4-3">Then<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-4">
+\begin{equation*}
+\mathcal{L}^{-1}\left\{\frac{1}{s}\right\} = 1,
+\qquad
+\mathcal{L}^{-1}\left\{\frac{1}{s+2}\right\} = e^{-2t}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-4-5">By the convolution theorem,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-6">
+\begin{equation*}
+\mathcal{L}^{-1}\{F(s)\}(t)
+= (1 * e^{-2t})(t)
+= \int_{0}^{t} 1 \cdot e^{-2(t-\tau)}\, d\tau.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-4-7">Compute the integral:<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-8">
+\begin{equation*}
+\int_{0}^{t} e^{-2(t-\tau)}\, d\tau
+= e^{-2t} \int_{0}^{t} e^{2\tau}\, d\tau.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-9">
+\begin{equation*}
+= e^{-2t} \left[\frac{1}{2} e^{2\tau}\right]_{0}^{t}
+= e^{-2t} \left(\frac{1}{2}e^{2t} - \frac{1}{2}\right)
+= \frac{1 - e^{-2t}}{2}.
+\end{equation*}
+</div>
+<div class="para" id="laplace-convolution-easy-4-10">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#laplace-convolution-easy-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="laplace-convolution-easy-4-11">
+\begin{equation*}
+\mathcal{L}^{-1}\!\left\{\frac{1}{s(s+2)}\right\}(t)
+= \frac{1 - e^{-2t}}{2}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 4.1"><a href="#laplace-convolution-easy-4" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 4"><a href="#laplace-convolution-easy" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="dirac-delta-impulse-response"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="dirac-delta-impulse-response-1-1">Consider the initial value problem<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-1-2">
+\begin{equation*}
+y'' + 4y = \delta(t - \pi), 
+\qquad 
+y(0) = 0,\;
+y'(0) = 0.
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-1-3">Use the Laplace transform and the identity<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-1-4">
+\begin{equation*}
+\mathcal{L}\{\delta(t-a)\} = e^{-as},
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-1-5">to find the solution <span class="process-math">\(y(t)\text{.}\)</span> Your final answer should be written using a unit step function <span class="process-math">\(u(t-\pi)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="dirac-delta-impulse-response-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="dirac-delta-impulse-response-2-1">Let <span class="process-math">\(Y(s) = \mathcal{L}\{y(t)\}\text{.}\)</span> Use the Laplace transform formulas:<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="dirac-delta-impulse-response-2-2">
+<li id="dirac-delta-impulse-response-2-2-1">
+<div class="para" id="p-derived-dirac-delta-impulse-response-2-2-1"><span class="process-math">\(\displaystyle \mathcal{L}\{y''\} = s^{2}Y(s) - s y(0) - y'(0)\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#dirac-delta-impulse-response-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="dirac-delta-impulse-response-2-2-2">
+<div class="para" id="p-derived-dirac-delta-impulse-response-2-2-2"><span class="process-math">\(\displaystyle \mathcal{L}\{y\} = Y(s)\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#dirac-delta-impulse-response-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="dirac-delta-impulse-response-2-2-3">
+<div class="para" id="p-derived-dirac-delta-impulse-response-2-2-3"><span class="process-math">\(\displaystyle \mathcal{L}\{\delta(t-\pi)\} = e^{-\pi s}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#dirac-delta-impulse-response-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="dirac-delta-impulse-response-2-3">After solving for <span class="process-math">\(Y(s)\text{,}\)</span> recall that<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-2-4">
+\begin{equation*}
+\mathcal{L}^{-1}\!\left\{\frac{1}{s^{2}+4}\right\} = \frac{1}{2}\sin(2t)
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-2-5">and apply the time‑shift rule<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-2-6">
+\begin{equation*}
+\mathcal{L}^{-1}\{e^{-as}F(s)\} 
+= u(t-a)\, f(t-a).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Hint 5.1"><a href="#dirac-delta-impulse-response-2" title="Copy heading and permalink for Hint 5.1" aria-label="Copy heading and permalink for Hint 5.1">🔗</a></div>
+</div></details><details id="dirac-delta-impulse-response-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="dirac-delta-impulse-response-3-1">The solution is<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-3-2">
+\begin{equation*}
+y(t) = 
+\tfrac{1}{2}\, u(t-\pi)\, \sin\!\bigl(2(t-\pi)\bigr).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Answer 5.1"><a href="#dirac-delta-impulse-response-3" title="Copy heading and permalink for Answer 5.1" aria-label="Copy heading and permalink for Answer 5.1">🔗</a></div>
+</div></details><details id="dirac-delta-impulse-response-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="dirac-delta-impulse-response-4-1">Apply the Laplace transform to both sides of<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-2">
+\begin{equation*}
+y'' + 4y = \delta(t-\pi),
+\qquad
+y(0)=0,\; y'(0)=0.
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-3">Compute <span class="process-math">\(\mathcal{L}\{y''\}\)</span> using the initial conditions:<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-4">
+\begin{equation*}
+\mathcal{L}\{y''\}
+= s^{2}Y(s) - s y(0) - y'(0)
+= s^{2}Y(s).
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-5">Thus the transformed equation is<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-6">
+\begin{equation*}
+s^{2}Y(s) + 4Y(s) = e^{-\pi s}.
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-7">Factor out <span class="process-math">\(Y(s)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-8">
+\begin{equation*}
+(s^{2} + 4) Y(s) = e^{-\pi s}.
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-9">So<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-10">
+\begin{equation*}
+Y(s) = \frac{e^{-\pi s}}{s^{2} + 4}.
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-11">Now apply the inverse Laplace transform. We use the time‑shift rule:<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-12">
+\begin{equation*}
+\mathcal{L}^{-1}\!\left\{\frac{1}{s^{2}+4}\right\}
+= \frac{1}{2}\sin(2t),
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-13">hence<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-14">
+\begin{equation*}
+\mathcal{L}^{-1}\!\left\{\frac{e^{-\pi s}}{s^{2}+4}\right\}
+= u(t-\pi)\,\frac{1}{2}\sin\!\bigl(2(t-\pi)\bigr).
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-15">Therefore, the solution to the IVP is<div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dirac-delta-impulse-response-4-16">
+\begin{equation*}
+y(t) 
+= 
+\tfrac{1}{2}\, u(t-\pi)\, \sin\!\bigl(2(t-\pi)\bigr).
+\end{equation*}
+</div>
+<div class="para" id="dirac-delta-impulse-response-4-17">
+<figure class="figure figure-like" id="dirac-impulse-plot"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/dirac-impulse-plot-2.svg" role="img" class="contained" alt="The graph shows a function that stays at zero until time t equals pi, where a vertical dashed line marks an impulse. After that point, the graph becomes a small sine wave that rises to about one‑half, then falls to about negative one‑half, repeating in a smooth oscillation."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Response to a Dirac Delta Impulse at <span class="process-math">\(t=\pi\text{.}\)</span><div class="autopermalink" data-description="Figure 35"><a href="#dirac-impulse-plot" title="Copy heading and permalink for Figure 35" aria-label="Copy heading and permalink for Figure 35">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#dirac-delta-impulse-response-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.1"><a href="#dirac-delta-impulse-response-4" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 5"><a href="#dirac-delta-impulse-response" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="vector-geometry-one-task"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="vector-geometry-one-task-1-1">Vectors <span class="process-math">\(\vec{u}\)</span> (blue) and <span class="process-math">\(\vec{v}\)</span> (red) appear in <a href="ch-practice-exams-4.html#fig-uv-largegrid" class="xref" data-knowl="./knowl/xref/fig-uv-largegrid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 36">Figure 36</a>. Draw the vector <span class="process-math">\(\vec{u} - \tfrac12\,\vec{v}\)</span> on the same grid.<div class="autopermalink" data-description="Paragraph"><a href="#vector-geometry-one-task-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="vector-geometry-one-task-1-2">
+<figure class="figure figure-like" id="fig-uv-largegrid"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uv-largegrid-2.svg" role="img" class="contained" alt="Large coordinate grid with two vectors from the origin: u in blue points up-and-right; v in red points up and slightly more steeply."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Use the grid to construct <span class="process-math">\(\vec{u} - \tfrac12\,\vec{v}\text{.}\)</span><div class="autopermalink" data-description="Figure 36"><a href="#fig-uv-largegrid" title="Copy heading and permalink for Figure 36" aria-label="Copy heading and permalink for Figure 36">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#vector-geometry-one-task-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="vector-geometry-one-task-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="vector-geometry-one-task-2-1">First construct <span class="process-math">\(\tfrac12\,\vec{v}\)</span> (same direction as <span class="process-math">\(\vec{v}\)</span> but half the length). Then reverse it to obtain <span class="process-math">\(-\tfrac12\,\vec{v}\text{.}\)</span> Place the tail of <span class="process-math">\(-\tfrac12\,\vec{v}\)</span> at the tip of <span class="process-math">\(\vec{u}\text{;}\)</span> the vector from the origin to the new tip is <span class="process-math">\(\vec{u} - \tfrac12\,\vec{v}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#vector-geometry-one-task-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 6.1"><a href="#vector-geometry-one-task-2" title="Copy heading and permalink for Hint 6.1" aria-label="Copy heading and permalink for Hint 6.1">🔗</a></div>
+</div></details><details id="vector-geometry-one-task-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="vector-geometry-one-task-3-1">The requested vector is <span class="process-math">\(\vec{w}=\vec{u} - \tfrac12\,\vec{v}\text{;}\)</span> it can be drawn from the origin to the tip of <span class="process-math">\(\vec{u} + \bigl(-\tfrac12\,\vec{v}\bigr)\text{,}\)</span> as illustrated in <a href="ch-practice-exams-4.html#fig-uv-solution" class="xref" data-knowl="./knowl/xref/fig-uv-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 37">Figure 37</a>.<div class="autopermalink" data-description="Paragraph"><a href="#vector-geometry-one-task-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 6.1"><a href="#vector-geometry-one-task-3" title="Copy heading and permalink for Answer 6.1" aria-label="Copy heading and permalink for Answer 6.1">🔗</a></div>
+</div></details><details id="vector-geometry-one-task-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="vector-geometry-one-task-4-1">We sketch <span class="process-math">\(\tfrac12\,\vec{v}\)</span> (half the red vector in the same direction), reverse it to get <span class="process-math">\(-\tfrac12\,\vec{v}\text{,}\)</span> and place its tail at the tip of <span class="process-math">\(\vec{u}\text{.}\)</span> The vector from the origin to that final tip is <span class="process-math">\(\vec{w}=\vec{u} - \tfrac12\,\vec{v}\text{,}\)</span> drawn here in black.<div class="autopermalink" data-description="Paragraph"><a href="#vector-geometry-one-task-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-uv-solution"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-uv-solution-2.svg" role="img" class="contained" alt="Same grid with u (blue) and v (red) from the origin, plus the constructed vector w = u minus one-half v in purple from the origin to the appropriate tip."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Construction of <span class="process-math">\(\vec{w}=\vec{u} - \tfrac12\,\vec{v}\)</span> (black) using a tip-to-tail method.<div class="autopermalink" data-description="Figure 37"><a href="#fig-uv-solution" title="Copy heading and permalink for Figure 37" aria-label="Copy heading and permalink for Figure 37">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Solution 6.1"><a href="#vector-geometry-one-task-4" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 6"><a href="#vector-geometry-one-task" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="vector-magnitude-3d"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="vector-magnitude-3d-1-1">Compute the magnitude of the vector     <span class="process-math">\(\vec{w} = \begin{bmatrix} 3 \\ -4 \\ 12 \end{bmatrix}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="vector-magnitude-3d-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="vector-magnitude-3d-2-1">Recall that the magnitude of a vector in <span class="process-math">\(\mathbb{R}^3\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="vector-magnitude-3d-2-2">
+\begin{equation*}
+\|\vec{w}\| = \sqrt{w_1^2 + w_2^2 + w_3^2}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Hint 7.1"><a href="#vector-magnitude-3d-2" title="Copy heading and permalink for Hint 7.1" aria-label="Copy heading and permalink for Hint 7.1">🔗</a></div>
+</div></details><details id="vector-magnitude-3d-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="vector-magnitude-3d-3-1">
+<span class="process-math">\(\|\vec{w}\| = 13.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 7.1"><a href="#vector-magnitude-3d-3" title="Copy heading and permalink for Answer 7.1" aria-label="Copy heading and permalink for Answer 7.1">🔗</a></div>
+</div></details><details id="vector-magnitude-3d-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="vector-magnitude-3d-4-1">Using the formula<div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="vector-magnitude-3d-4-2">
+\begin{equation*}
+\|\vec{w}\| = \sqrt{3^2 + (-4)^2 + 12^2},
+\end{equation*}
+</div>
+<div class="para" id="vector-magnitude-3d-4-3">compute:<div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="vector-magnitude-3d-4-4">
+\begin{equation*}
+3^2 = 9,\qquad (-4)^2 = 16,\qquad 12^2 = 144.
+\end{equation*}
+</div>
+<div class="para" id="vector-magnitude-3d-4-5">Sum the squares:<div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="vector-magnitude-3d-4-6">
+\begin{equation*}
+9 + 16 + 144 = 169.
+\end{equation*}
+</div>
+<div class="para" id="vector-magnitude-3d-4-7">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#vector-magnitude-3d-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="vector-magnitude-3d-4-8">
+\begin{equation*}
+\|\vec{w}\| = \sqrt{169} = 13.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 7.1"><a href="#vector-magnitude-3d-4" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 7"><a href="#vector-magnitude-3d" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="matrix-algebra-basics-with-inverse"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="matrix-algebra-basics-with-inverse-1-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-1-2">
+\begin{equation*}
+A =
+\begin{bmatrix}
+2 \amp -1 \\
+3 \amp 4
+\end{bmatrix},
+\qquad
+B =
+\begin{bmatrix}
+1 \amp 5 \\
+-2 \amp 0
+\end{bmatrix},
+\qquad
+\vec{v} =
+\begin{bmatrix}
+3 \\
+-1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-1-3">Compute each of the following:<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="lower-alpha lower-alpha-level-1" id="matrix-algebra-basics-with-inverse-1-4">
+<li id="matrix-algebra-basics-with-inverse-1-4-1">
+<div class="para" id="p-derived-matrix-algebra-basics-with-inverse-1-4-1"><span class="process-math">\(\displaystyle A + B\)</span></div>
+<div class="autopermalink" data-description="Item 8.a"><a href="#matrix-algebra-basics-with-inverse-1-4-1" title="Copy heading and permalink for Item 8.a" aria-label="Copy heading and permalink for Item 8.a">🔗</a></div>
+</li>
+<li id="matrix-algebra-basics-with-inverse-1-4-2">
+<div class="para" id="p-derived-matrix-algebra-basics-with-inverse-1-4-2"><span class="process-math">\(\displaystyle 2A - B\)</span></div>
+<div class="autopermalink" data-description="Item 8.b"><a href="#matrix-algebra-basics-with-inverse-1-4-2" title="Copy heading and permalink for Item 8.b" aria-label="Copy heading and permalink for Item 8.b">🔗</a></div>
+</li>
+<li id="matrix-algebra-basics-with-inverse-1-4-3">
+<div class="para" id="p-derived-matrix-algebra-basics-with-inverse-1-4-3"><span class="process-math">\(\displaystyle A\vec{v}\)</span></div>
+<div class="autopermalink" data-description="Item 8.c"><a href="#matrix-algebra-basics-with-inverse-1-4-3" title="Copy heading and permalink for Item 8.c" aria-label="Copy heading and permalink for Item 8.c">🔗</a></div>
+</li>
+<li id="matrix-algebra-basics-with-inverse-1-4-4">
+<div class="para" id="p-derived-matrix-algebra-basics-with-inverse-1-4-4">Compute the inverse <span class="process-math">\(A^{-1}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 8.d"><a href="#matrix-algebra-basics-with-inverse-1-4-4" title="Copy heading and permalink for Item 8.d" aria-label="Copy heading and permalink for Item 8.d">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="matrix-algebra-basics-with-inverse-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="matrix-algebra-basics-with-inverse-2-1">For matrix addition, subtraction, or scalar multiplication, work entry‑wise. For <span class="process-math">\(A\vec{v}\text{,}\)</span> use<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-2-2">
+\begin{equation*}
+A\vec{v}
+=
+\begin{bmatrix}
+a_{11}v_1 + a_{12}v_2 \\
+a_{21}v_1 + a_{22}v_2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-2-3">For the inverse of a <span class="process-math">\(2\times 2\)</span> matrix<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-2-4">
+\begin{equation*}
+\begin{bmatrix}
+a \amp b \\
+c \amp d
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-2-5">use the formula<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-2-6">
+\begin{equation*}
+\dfrac{1}{ad - bc}
+\begin{bmatrix}
+d \amp -b \\
+-c \amp a
+\end{bmatrix},
+\qquad
+\text{provided } ad - bc \neq 0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Hint 8.1"><a href="#matrix-algebra-basics-with-inverse-2" title="Copy heading and permalink for Hint 8.1" aria-label="Copy heading and permalink for Hint 8.1">🔗</a></div>
+</div></details><details id="matrix-algebra-basics-with-inverse-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="matrix-algebra-basics-with-inverse-3-1">
+<span class="process-math">\(A + B =
+\begin{bmatrix}
+3 \amp 4 \\
+1 \amp 4
+\end{bmatrix}\text{,}\)</span> <span class="process-math">\(2A - B =
+\begin{bmatrix}
+3 \amp -7 \\
+8 \amp 8
+\end{bmatrix}\text{,}\)</span> <span class="process-math">\(A\vec{v} =
+\begin{bmatrix}
+7 \\
+5
+\end{bmatrix}\text{,}\)</span> and<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-3-2">
+\begin{equation*}
+A^{-1} =
+\frac{1}{11}
+\begin{bmatrix}
+4 \amp 1 \\
+-3 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Answer 8.1"><a href="#matrix-algebra-basics-with-inverse-3" title="Copy heading and permalink for Answer 8.1" aria-label="Copy heading and permalink for Answer 8.1">🔗</a></div>
+</div></details><details id="matrix-algebra-basics-with-inverse-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="matrix-algebra-basics-with-inverse-4-1">(a)  Add matrices entry‑wise:<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-2">
+\begin{equation*}
+A + B
+=
+\begin{bmatrix}
+2+1 \amp -1+5 \\
+3+(-2) \amp 4+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \amp 4 \\
+1 \amp 4
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-4-3">(b)  Compute <span class="process-math">\(2A\)</span> then subtract <span class="process-math">\(B\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-4">
+\begin{equation*}
+2A =
+\begin{bmatrix}
+4 \amp -2 \\
+6 \amp 8
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-5">
+\begin{equation*}
+2A - B
+=
+\begin{bmatrix}
+4-1 \amp -2-5 \\
+6-(-2) \amp 8-0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \amp -7 \\
+8 \amp 8
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-4-6">(c)  Multiply <span class="process-math">\(A\)</span> by <span class="process-math">\(\vec{v}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-7">
+\begin{equation*}
+A\vec{v}
+=
+\begin{bmatrix}
+2(3) + (-1)(-1) \\
+3(3) + 4(-1)
+\end{bmatrix}
+=
+\begin{bmatrix}
+6+1 \\
+9-4
+\end{bmatrix}
+=
+\begin{bmatrix}
+7 \\
+5
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-4-8">(d)  Compute <span class="process-math">\(A^{-1}\text{.}\)</span> For<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-9">
+\begin{equation*}
+A =
+\begin{bmatrix}
+2 \amp -1 \\
+3 \amp 4
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-4-10">the determinant is<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-11">
+\begin{equation*}
+\det(A) = 2\cdot 4 - (-1)\cdot 3 = 8 + 3 = 11.
+\end{equation*}
+</div>
+<div class="para" id="matrix-algebra-basics-with-inverse-4-12">Thus,<div class="autopermalink" data-description="Paragraph"><a href="#matrix-algebra-basics-with-inverse-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrix-algebra-basics-with-inverse-4-13">
+\begin{equation*}
+A^{-1}
+=
+\frac{1}{11}
+\begin{bmatrix}
+4 \amp 1 \\
+-3 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 8.1"><a href="#matrix-algebra-basics-with-inverse-4" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 8"><a href="#matrix-algebra-basics-with-inverse" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="elimination-corrected"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="elimination-corrected-1-1">Solve the following linear system using elimination:<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-1-2">
+\begin{equation*}
+\begin{aligned}
+2x + 3y \amp= 7, \\
+4x - y \amp= 1.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-1-3">Show all elimination steps clearly.<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="elimination-corrected-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="elimination-corrected-2-1">Eliminate <span class="process-math">\(x\)</span> by multiplying the first equation by <span class="process-math">\(-2\)</span> and adding it to the second. After that, solve for <span class="process-math">\(y\)</span> and substitute back to find <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 9.1"><a href="#elimination-corrected-2" title="Copy heading and permalink for Hint 9.1" aria-label="Copy heading and permalink for Hint 9.1">🔗</a></div>
+</div></details><details id="elimination-corrected-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="elimination-corrected-3-1">
+<span class="process-math">\(x = \frac{5}{7}\)</span> and <span class="process-math">\(y = \frac{13}{7}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 9.1"><a href="#elimination-corrected-3" title="Copy heading and permalink for Answer 9.1" aria-label="Copy heading and permalink for Answer 9.1">🔗</a></div>
+</div></details><details id="elimination-corrected-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="elimination-corrected-4-1">The system is:<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-2">
+\begin{equation*}
+\begin{aligned}
+2x + 3y \amp= 7, \\
+4x - y \amp= 1.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-3">Multiply the second equation by <span class="process-math">\(3\)</span> to eliminate <span class="process-math">\(y\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-4">
+\begin{equation*}
+12x - 3y = 3.
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-5">Add this to the first equation:<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-6">
+\begin{equation*}
+\begin{aligned}
+(12x - 3y) + (2x + 3y) \amp= 3 + 7, \\
+14x \amp= 10.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-7">Thus,<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-8">
+\begin{equation*}
+x = \frac{10}{14} = \frac{5}{7}.
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-9">Substitute into <span class="process-math">\(4x - y = 1\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-10">
+\begin{equation*}
+4\left(\frac{5}{7}\right) - y = 1.
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-11">Solve for <span class="process-math">\(y\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-12">
+\begin{equation*}
+\frac{20}{7} - y = 1, \\
+-y = 1 - \frac{20}{7}
+= -\frac{13}{7}, \\
+y = \frac{13}{7}.
+\end{equation*}
+</div>
+<div class="para" id="elimination-corrected-4-13">Therefore, the solution is:<div class="autopermalink" data-description="Paragraph"><a href="#elimination-corrected-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="elimination-corrected-4-14">
+\begin{equation*}
+x = \frac{5}{7}, \qquad y = \frac{13}{7}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 9.1"><a href="#elimination-corrected-4" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 9"><a href="#elimination-corrected" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="inverse-3x3-row-reduction"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="inverse-3x3-row-reduction-1-1">Use elementary row operations on the augmented matrix <span class="process-math">\((A \mid I)\)</span> to compute <span class="process-math">\(A^{-1}\text{,}\)</span> where<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-1-2">
+\begin{equation*}
+A =
+\begin{bmatrix}
+2 \amp 0 \amp 1 \\
+1 \amp 1 \amp 0 \\
+0 \amp 1 \amp 1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-1-3">Show your row operations clearly and stop when you reach <span class="process-math">\((I \mid A^{-1})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="inverse-3x3-row-reduction-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="inverse-3x3-row-reduction-2-1">Form the augmented matrix <span class="process-math">\((A \mid I)\)</span> and use row operations to reduce the left block to the identity:<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-2-2">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+2 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \\
+1 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-2-3">Aim for leading <span class="process-math">\(1\)</span>s down the diagonal on the left, clearing above and below each pivot. (Swapping rows early can simplify getting a pivot <span class="process-math">\(1\)</span> in the first row.)<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 10.1"><a href="#inverse-3x3-row-reduction-2" title="Copy heading and permalink for Hint 10.1" aria-label="Copy heading and permalink for Hint 10.1">🔗</a></div>
+</div></details><details id="inverse-3x3-row-reduction-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="inverse-3x3-row-reduction-3-1">The inverse is<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-3-2">
+\begin{equation*}
+A^{-1} =
+\begin{bmatrix}
+\tfrac{1}{3} \amp \tfrac{1}{3} \amp -\tfrac{1}{3} \\
+-\tfrac{1}{3} \amp \tfrac{2}{3} \amp \tfrac{1}{3} \\
+\tfrac{1}{3} \amp -\tfrac{2}{3} \amp \tfrac{2}{3}
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Answer 10.1"><a href="#inverse-3x3-row-reduction-3" title="Copy heading and permalink for Answer 10.1" aria-label="Copy heading and permalink for Answer 10.1">🔗</a></div>
+</div></details><details id="inverse-3x3-row-reduction-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="inverse-3x3-row-reduction-4-1">Start with the augmented matrix:<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-2">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+2 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \\
+1 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-3">Swap <span class="process-math">\(R_{1} \leftrightarrow R_{2}\)</span> to get a pivot <span class="process-math">\(1\)</span> in the upper left:<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-4">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \\
+2 \amp 0 \amp 1 \amp 1 \amp 0 \amp 0 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-5">Eliminate below the pivot in column <span class="process-math">\(1\text{:}\)</span> <span class="process-math">\(R_{2} \leftarrow R_{2} - 2R_{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-6">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \\
+0 \amp -2 \amp 1 \amp 1 \amp -2 \amp 0 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-7">Make a pivot <span class="process-math">\(1\)</span> in row <span class="process-math">\(2\)</span> column <span class="process-math">\(2\)</span> by swapping <span class="process-math">\(R_{2} \leftrightarrow R_{3}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-8">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 1 \amp 0 \amp 0 \amp 1 \amp 0 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1 \\
+0 \amp -2 \amp 1 \amp 1 \amp -2 \amp 0
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-9">Clear column <span class="process-math">\(2\)</span> above and below the pivot: <span class="process-math">\(R_{1} \leftarrow R_{1} - R_{2}\text{,}\)</span> <span class="process-math">\(R_{3} \leftarrow R_{3} + 2R_{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-10">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 0 \amp -1 \amp 0 \amp 1 \amp -1 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1 \\
+0 \amp 0 \amp 3 \amp 1 \amp -2 \amp 2
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-11">Make the pivot in row <span class="process-math">\(3\)</span> column <span class="process-math">\(3\)</span> a <span class="process-math">\(1\text{:}\)</span> <span class="process-math">\(R_{3} \leftarrow \tfrac{1}{3}R_{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-12">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 0 \amp -1 \amp 0 \amp 1 \amp -1 \\
+0 \amp 1 \amp 1 \amp 0 \amp 0 \amp 1 \\
+0 \amp 0 \amp 1 \amp \tfrac{1}{3} \amp -\tfrac{2}{3} \amp \tfrac{2}{3}
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-13">Clear column <span class="process-math">\(3\)</span> above the pivot: <span class="process-math">\(R_{1} \leftarrow R_{1} + R_{3}\text{,}\)</span> <span class="process-math">\(R_{2} \leftarrow R_{2} - R_{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-14">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1 \amp 0 \amp 0 \amp \tfrac{1}{3} \amp \tfrac{1}{3} \amp -\tfrac{1}{3} \\
+0 \amp 1 \amp 0 \amp -\tfrac{1}{3} \amp \tfrac{2}{3} \amp \tfrac{1}{3} \\
+0 \amp 0 \amp 1 \amp \tfrac{1}{3} \amp -\tfrac{2}{3} \amp \tfrac{2}{3}
+\end{array}
+\right]
+\;=\;
+\left( I \;\middle|\;
+\begin{array}{ccc}
+\tfrac{1}{3} \amp \tfrac{1}{3} \amp -\tfrac{1}{3} \\
+-\tfrac{1}{3} \amp \tfrac{2}{3} \amp \tfrac{1}{3} \\
+\tfrac{1}{3} \amp -\tfrac{2}{3} \amp \tfrac{2}{3}
+\end{array}
+\right).
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-row-reduction-4-15">Hence,<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-row-reduction-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-row-reduction-4-16">
+\begin{equation*}
+A^{-1} =
+\begin{bmatrix}
+\tfrac{1}{3} \amp \tfrac{1}{3} \amp -\tfrac{1}{3} \\
+-\tfrac{1}{3} \amp \tfrac{2}{3} \amp \tfrac{1}{3} \\
+\tfrac{1}{3} \amp -\tfrac{2}{3} \amp \tfrac{2}{3}
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 10.1"><a href="#inverse-3x3-row-reduction-4" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 10"><a href="#inverse-3x3-row-reduction" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="column-space-independent-set"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="column-space-independent-set-1-1">Consider the matrix<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-1-2">
+\begin{equation*}
+A =
+\begin{bmatrix}
+2 \amp 4 \amp 6 \\
+1 \amp 3 \amp 5 \\
+0 \amp 1 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-1-3">Use elimination to find a <em class="emphasis">linearly independent</em> set of columns of <span class="process-math">\(A\)</span> that still spans the column space. (Your answer should list which columns form such a set.)<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="column-space-independent-set-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="column-space-independent-set-2-1">Perform row‑reduction on <span class="process-math">\(A\)</span> and identify the <em class="emphasis">pivot columns</em>. These columns form a linearly independent set that spans the column space.<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="column-space-independent-set-2-2">You may row‑reduce the entire matrix at once, or you may augment with column labels and track which columns contain pivots.<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 11.1"><a href="#column-space-independent-set-2" title="Copy heading and permalink for Hint 11.1" aria-label="Copy heading and permalink for Hint 11.1">🔗</a></div>
+</div></details><details id="column-space-independent-set-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="column-space-independent-set-3-1">Columns <span class="process-math">\(1\)</span> and <span class="process-math">\(2\)</span> form a linearly independent set that spans the column space of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.1"><a href="#column-space-independent-set-3" title="Copy heading and permalink for Answer 11.1" aria-label="Copy heading and permalink for Answer 11.1">🔗</a></div>
+</div></details><details id="column-space-independent-set-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="column-space-independent-set-4-1">Start with <span class="process-math">\(A\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-2">
+\begin{equation*}
+\begin{bmatrix}
+2 \amp 4 \amp 6 \\
+1 \amp 3 \amp 5 \\
+0 \amp 1 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-4-3">First, swap <span class="process-math">\(R_1\)</span> and <span class="process-math">\(R_2\)</span> so that the top-left pivot is <span class="process-math">\(1\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-4">
+\begin{equation*}
+\begin{bmatrix}
+1 \amp 3 \amp 5 \\
+2 \amp 4 \amp 6 \\
+0 \amp 1 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-4-5">Eliminate below the pivot in column 1: <span class="process-math">\(R_2 \leftarrow R_2 - 2R_1\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-6">
+\begin{equation*}
+\begin{bmatrix}
+1 \amp 3 \amp 5 \\
+0 \amp -2 \amp -4 \\
+0 \amp 1 \amp 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-4-7">Make a pivot in column 2 by swapping <span class="process-math">\(R_2\)</span> and <span class="process-math">\(R_3\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-8">
+\begin{equation*}
+\begin{bmatrix}
+1 \amp 3 \amp 5 \\
+0 \amp 1 \amp 2 \\
+0 \amp -2 \amp -4
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-4-9">Now eliminate below: <span class="process-math">\(R_3 \leftarrow R_3 + 2R_2\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-10">
+\begin{equation*}
+\begin{bmatrix}
+1 \amp 3 \amp 5 \\
+0 \amp 1 \amp 2 \\
+0 \amp 0 \amp 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="column-space-independent-set-4-11">The row‑reduced form shows pivots in columns 1 and 2. Column 3 has no pivot, so it is a linear combination of the first two.<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="column-space-independent-set-4-12">Therefore, the first two columns of <span class="process-math">\(A\)</span> form a linearly independent set that spans the column space.<div class="autopermalink" data-description="Paragraph"><a href="#column-space-independent-set-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="column-space-independent-set-4-13">
+\begin{equation*}
+\{\text{column }1,\; \text{column }2\}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 11.1"><a href="#column-space-independent-set-4" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 11"><a href="#column-space-independent-set" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="kernel-dimension-exam"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="kernel-dimension-exam-1-1">Consider the matrix<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-1-2">
+\begin{equation*}
+A =
+\begin{bmatrix}
+1 \amp 2 \amp -1 \\
+2 \amp 4 \amp -2 \\
+3 \amp 6 \amp -3
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para logical" id="kernel-dimension-exam-1-3">
+<ol class="lower-alpha lower-alpha-level-1" id="kernel-dimension-exam-1-3-1">
+<li id="kernel-dimension-exam-1-3-1-1">
+<div class="para" id="p-derived-kernel-dimension-exam-1-3-1-1">Use row reduction to find a basis for the kernel of <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 12.a"><a href="#kernel-dimension-exam-1-3-1-1" title="Copy heading and permalink for Item 12.a" aria-label="Copy heading and permalink for Item 12.a">🔗</a></div>
+</li>
+<li id="kernel-dimension-exam-1-3-1-2">
+<div class="para" id="p-derived-kernel-dimension-exam-1-3-1-2">Determine the dimension of the kernel.</div>
+<div class="autopermalink" data-description="Item 12.b"><a href="#kernel-dimension-exam-1-3-1-2" title="Copy heading and permalink for Item 12.b" aria-label="Copy heading and permalink for Item 12.b">🔗</a></div>
+</li>
+<li id="kernel-dimension-exam-1-3-1-3">
+<div class="para" id="p-derived-kernel-dimension-exam-1-3-1-3">Is the kernel a subspace of <span class="process-math">\(\mathbb{R}^3\text{?}\)</span>  Briefly justify your answer.</div>
+<div class="autopermalink" data-description="Item 12.c"><a href="#kernel-dimension-exam-1-3-1-3" title="Copy heading and permalink for Item 12.c" aria-label="Copy heading and permalink for Item 12.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="kernel-dimension-exam-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="kernel-dimension-exam-2-1">Row‑reduce <span class="process-math">\(A\text{.}\)</span> You should find that the rows are multiples of one another. After reducing, express the solution to <span class="process-math">\(A\vec{x} = \vec{0}\)</span> in parametric vector form.<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="kernel-dimension-exam-2-2">Remember: the kernel of a matrix is always a subspace of the domain. Once you have the parametric form, count the number of free variables to determine the dimension.<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 12.1"><a href="#kernel-dimension-exam-2" title="Copy heading and permalink for Hint 12.1" aria-label="Copy heading and permalink for Hint 12.1">🔗</a></div>
+</div></details><details id="kernel-dimension-exam-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="kernel-dimension-exam-3-1">A basis for the kernel is<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-3-2">
+\begin{equation*}
+\left\{
+\begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix},
+\begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}
+\right\}.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-3-3">The kernel has dimension <span class="process-math">\(2\text{.}\)</span> Yes, it is a subspace of <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 12.1"><a href="#kernel-dimension-exam-3" title="Copy heading and permalink for Answer 12.1" aria-label="Copy heading and permalink for Answer 12.1">🔗</a></div>
+</div></details><details id="kernel-dimension-exam-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="kernel-dimension-exam-4-1">Begin with<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-4-2">
+\begin{equation*}
+A =
+\begin{bmatrix}
+1 \amp 2 \amp -1 \\
+2 \amp 4 \amp -2 \\
+3 \amp 6 \amp -3
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-4-3">Notice that <span class="process-math">\(R_2 = 2R_1\)</span> and <span class="process-math">\(R_3 = 3R_1\text{.}\)</span> Perform row reduction:<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-4-4">
+\begin{equation*}
+\begin{bmatrix}
+1 \amp 2 \amp -1 \\
+2 \amp 4 \amp -2 \\
+3 \amp 6 \amp -3
+\end{bmatrix}
+\xrightarrow{R_2 - 2R_1,\; R_3 - 3R_1}
+\begin{bmatrix}
+1 \amp 2 \amp -1 \\
+0 \amp 0 \amp 0 \\
+0 \amp 0 \amp 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-4-5">Solve <span class="process-math">\(A\vec{x}=0\)</span> from the single non‑zero equation:<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-4-6">
+\begin{equation*}
+x_1 + 2x_2 - x_3 = 0
+\quad\Rightarrow\quad
+x_1 = -2x_2 + x_3.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-4-7">Let <span class="process-math">\(x_2 = s\)</span> and <span class="process-math">\(x_3 = t\)</span> (free variables). Then<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-4-8">
+\begin{equation*}
+\vec{x}
+=
+\begin{bmatrix}
+-2s + t \\
+s \\
+t
+\end{bmatrix}
+=
+s
+\begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix}
++
+t
+\begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-4-9">Therefore a basis for the kernel is<div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="kernel-dimension-exam-4-10">
+\begin{equation*}
+\left\{
+\begin{bmatrix}
+-2 \\
+1 \\
+0
+\end{bmatrix},
+\begin{bmatrix}
+1 \\
+0 \\
+1
+\end{bmatrix}
+\right\}.
+\end{equation*}
+</div>
+<div class="para" id="kernel-dimension-exam-4-11">Since there are two free variables, the dimension of the kernel is <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="kernel-dimension-exam-4-12">The kernel of any linear transformation (and therefore any matrix) is always a subspace of its domain, so here it is a subspace of <span class="process-math">\(\mathbb{R}^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#kernel-dimension-exam-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.1"><a href="#kernel-dimension-exam-4" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 12"><a href="#kernel-dimension-exam" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Questions"><a href="#exercises-practiceexam3" title="Copy heading and permalink for Exercises: Questions" aria-label="Copy heading and permalink for Exercises: Questions">🔗</a></div></section><div class="autopermalink" data-description="Section: Topics"><a href="#ch-practice-exams-4-2" title="Copy heading and permalink for Section: Topics" aria-label="Copy heading and permalink for Section: Topics">🔗</a></div></section><div class="autopermalink" data-description="Handout: Practice Exam 3"><a href="#ch-practice-exams-4" title="Copy heading and permalink for Handout: Practice Exam 3" aria-label="Copy heading and permalink for Handout: Practice Exam 3">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-practice-exams-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-practice-exams-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>
