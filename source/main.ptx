@@ -20,7 +20,7 @@
         <chapter xml:id="ch-Textbook">
       <title>Daily Prep</title>
       
-      <!-- <xi:include href="./handouts/02PrepWhatAreDifferentialEquations.ptx"/>
+      <xi:include href="./handouts/02PrepWhatAreDifferentialEquations.ptx"/>
       <xi:include href="./handouts/11PrepIntegralsAsSolutions.ptx"/>
       <xi:include href="./handouts/12PrepSlopeFields.ptx"/>
       <xi:include href="./handouts/13PrepSeparableEquations.ptx"/> 
@@ -48,7 +48,7 @@
       <xi:include href="./handouts/56PrepSecondOrderSystemsApp.ptx"/>
       <xi:include href="./handouts/57PrepMultipleEigenvalues.ptx"/> 
       <xi:include href="./handouts/58PrepMatrixExponentials.ptx"/>
-      <xi:include href="./handouts/59PrepNonhomogeneousSystems.ptx"/> -->
+      <xi:include href="./handouts/59PrepNonhomogeneousSystems.ptx"/> 
 
     </chapter>
 

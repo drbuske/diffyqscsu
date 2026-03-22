@@ -3272,10 +3272,10 @@ Portrait (IV) shows vertical straight-line trajectories: all motion is upward or
 
   <statement>
     <p>
-      Compute the Laplace transform of the function <m>f(t)</m> graphed in <xref ref="GraphLaplaceTransformA"/>.
+      Compute the Laplace transform of the function <m>f(t)</m> graphed in <xref ref="GraphLaplaceTransformF"/>.
     </p>
 
-    <figure xml:id="GraphLaplaceTransformA" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <figure xml:id="GraphLaplaceTransformF" xmlns:xi="http://www.w3.org/2001/XInclude">
       <caption>The graph of <m>f(t)</m>.</caption>
       <image width="50%">
         <description>A line segment from (0,0) to (1,1) and 0 for t greater than 1.</description>
