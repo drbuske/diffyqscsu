@@ -400,6 +400,75 @@ what is
   </choices>
 </exercise>
 
+<exercise label="16-prep-cardsort1">
+<title>Autonomous ODE behavior</title>
+<statement>
+<p> 
+ 
+Sort the statements so that they correctly describe the behavior of
+      solutions to each equation.  
+
+ </p>
+</statement>
+<cardsort>
+ 
+ <match>
+      <premise>Autonomous equation with a stable equilibrium
+      </premise>
+
+      <premise>
+        Solutions decrease when <m>y&gt;0</m> and increase when <m>y&lt;0</m>.
+      </premise>
+
+      <premise>
+        All solutions approach <m>y=0</m> as <m>t\to\infty</m>.
+      </premise>
+
+      <response>
+        <p><m>\dfrac{dy}{dt} = -y</m></p>
+      </response>
+    </match>
+
+ <match>
+      <premise>
+       Autonomous equation with an unstable equilibrium
+      </premise>
+
+      <premise>
+        Solutions with <m>y(0)&gt;0</m> increase without bound.
+      </premise>
+
+      <response>
+        <p> <m>\dfrac{dy}{dt} = y^2</m></p>
+      </response>
+    </match>
+
+  <match>
+      <premise>Autonomous equation with multiple equilibria
+        
+      </premise>
+
+      <premise>
+        <m>y=-1</m> and <m>y=2</m> are equilibrium solutions.
+      </premise>
+
+      <premise>
+        Solutions decrease when <m>-1&lt;y&lt;2</m>.
+      </premise>
+
+      <premise>
+        Solutions with <m>y(0)&gt;2</m> increase without bound.
+      </premise>
+
+      <response>
+        <p><m>\dfrac{dy}{dt} = (y-2)(y+1)</m></p>
+      </response>
+    </match>
+
+
+</cardsort>
+</exercise>
+
 <exercise xml:id="autonomous-compare-solns">
   <statement>
     <p>

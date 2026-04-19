@@ -377,6 +377,58 @@ https://web.uvic.ca/~tbazett/diffyqs/numer_section.html#subsection-27">Subsectio
   </choices>
 </exercise>
 
+<exercise label="17-prep-cardsort1">
+<title>Comparing Euler's method to exact solutions</title>
+<statement>
+<p> 
+Sort the statements to the appropriate initial value problem.  
+ </p>
+</statement>
+<cardsort>
+<match>
+<premise>
+       Euler’s method produces a solution that lies below the exact solution.
+      </premise>
+
+      <premise>
+        The exact solution curve is increasing.
+      </premise>
+
+      <response>
+        <p> <m>\dfrac{dy}{dt} = y</m>, with <m>y(0)=1</m></p>
+      </response>
+    </match>
+
+   <match>
+      <premise>
+       Euler’s method produces a solution that lies above the exact solution.
+      </premise>
+
+      <premise>
+        The exact solution curve is decreasing.
+      </premise>
+
+      <response>
+        <p> <m>\dfrac{dy}{dt} = -y</m>, with <m>y(0)=1</m></p>
+      </response>
+    </match>
+
+<match>
+      <premise>
+        The slope alternates between positive and negative.
+      </premise>
+
+      <premise>
+        Euler’s method is likely to overshoot local maxima and minima of the exact solution.
+      </premise>
+
+      <response>
+        <p> <m>\dfrac{dy}{dt} = \cos t</m>, with <m>y(0)=0</m></p>
+      </response>
+    </match>
+</cardsort>
+</exercise>
+
 <exercise xml:id="euler-concept-theory">
   <statement>
     <p>

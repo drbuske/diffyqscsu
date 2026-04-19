@@ -332,6 +332,62 @@ each minute filters out half the salt in a single gallon from the mixture in the
   </choices>
 </exercise>
 
+<exercise label="14-prep-cardsort1">
+<title>First-order linear ODE or Not? </title>
+<statement>
+<p> 
+ A first-order ordinary differential equation is
+      <em>linear</em> if it can be written in the form
+      <m>\dfrac{dy}{dx} + p(x)y = q(x)</m>.
+      Sort each equation into the appropriate category.
+ </p>
+</statement>
+<cardsort>
+ 
+<match>
+      <premise>
+        <m>\dfrac{dy}{dx} + 3y = e^x</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} - \dfrac{2}{x}y = x^2</m>
+      </premise>
+
+      <premise>
+        <m>x\dfrac{dy}{dx} + y = \sin x</m>
+      </premise>
+
+ <premise>
+        <m>x\dfrac{dy}{dx} + xy = 1</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = \dfrac{1-y}{x}</m>
+      </premise>
+
+      <response>
+        <p>First-order linear ordinary differential equation</p>
+      </response>
+    </match>
+
+
+ <match>
+      <premise>
+        <m>\dfrac{dy}{dx} = y^2 + x</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = \sin(y)</m>
+      </premise>
+
+      <response>
+        <p>Nonlinear first-order ordinary differential equation</p>
+      </response>
+    </match>
+
+</cardsort>
+</exercise>
+
 <exercise xml:id="intfactor-concept-1">
   <statement>
     <p>

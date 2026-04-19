@@ -359,6 +359,48 @@ https://web.uvic.ca/~tbazett/diffyqs/integralsols_section.html#subsection-13">Su
   </choices>
 </exercise>
 
+<exercise label="11-prep-cardsort1">
+<title>Sorting Solutions to ODEs </title>
+<statement>
+<p> Sort each solution to an appropriate differential equation. </p>
+</statement>
+<cardsort>
+<match>
+<premise>
+ <m>y(x) = 3e^{2x} + C</m>
+</premise>
+<response>
+<p> <m>\dfrac{dy}{dx} = 6e^{2x}</m></p>
+</response>
+</match>
+<match>
+<premise>
+ <m>y(x) = x^2 + C</m>
+</premise>
+<premise>
+   <m>y(x) = x^2 + 5</m>
+</premise>
+<response>
+<p>   <m>\dfrac{dy}{dx} = 2x</m></p>
+</response>
+</match>
+<match>
+<premise>
+  <m>y(x) = Ax + B</m>
+</premise>
+<premise>
+  <m>y(x) = 3x - 1</m>
+</premise>
+<premise>
+    <m>y(x) = -\tfrac12 x + 4</m>
+</premise>
+<response>
+<p><m>\dfrac{d^2y}{dx^2} = 0</m></p>
+</response>
+</match>
+</cardsort>
+</exercise>
+
 <exercise xml:id="integralsols-open-new-1">
   <title>Finding a Solution Using a Definite Integral</title>
 

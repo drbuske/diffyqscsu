@@ -332,6 +332,57 @@ https://web.uvic.ca/~tbazett/diffyqs/classification_section.html#subsection-12">
   </choices>
 </exercise>
 
+<exercise label="02-prep-cardsort1">
+<title>Sorting Differential Equations </title>
+<statement>
+<p> Sort each differential equation into the appropriate category. </p>
+</statement>
+<cardsort>
+<match>
+<premise>
+<m>\dfrac{dy}{dt} + 3y = e^t</m>
+</premise>
+<premise>
+ <m>\dfrac{d^2y}{dt^2} - y = 0</m>
+</premise>
+<premise>
+The set
+ <m>t^2\dfrac{dy}{dt} + ty = 1</m>
+</premise>
+<response>
+<p>Linear ordinary differential equation</p>
+</response>
+</match>
+<match>
+<premise>
+<m>\dfrac{dy}{dt} = y^2 - t</m>
+</premise>
+<premise>
+  <m>\dfrac{d^2y}{dt^2} + \sin(y) = 0</m>
+</premise>
+<premise>
+  <m>\dfrac{dy}{dt} = \sqrt{y}</m>
+</premise>
+<response>
+<p>Nonlinear ordinary differential equation</p>
+</response>
+</match>
+<match>
+<premise>
+   <m>\dfrac{\partial u}{\partial t}
+             = \dfrac{\partial^2 u}{\partial x^2}</m>
+</premise>
+<premise>
+   <m>\dfrac{\partial u}{\partial x}
+             + u\,\dfrac{\partial u}{\partial y} = 0</m>
+</premise>
+<response>
+<p>Partial differential equation</p>
+</response>
+</match>
+</cardsort>
+</exercise>
+
 <exercise xml:id="order-of-de">
   <statement>
     <p>

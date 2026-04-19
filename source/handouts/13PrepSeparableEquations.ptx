@@ -333,6 +333,50 @@ https://web.uvic.ca/~tbazett/diffyqs/separable_section.html#subsection-20">Subse
 
   </choices>
 </exercise>
+
+<exercise label="13-prep-cardsort1">
+<title>Separable or Not? </title>
+<statement>
+<p> Sort the following as separable or not. </p>
+</statement>
+<cardsort>
+ <match>
+      <premise>
+        <m>\dfrac{dy}{dx} = x y</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = (1+x^2)\sin y</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = \dfrac{x}{1+y^2}</m>
+      </premise>
+
+      <response>
+        <p>Separable differential equation</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\dfrac{dy}{dx} = x + y</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = y + \sin x</m>
+      </premise>
+
+      <premise>
+        <m>\dfrac{dy}{dx} = x y + 1</m>
+      </premise>
+
+      <response>
+        <p>Not separable in its given form</p>
+      </response>
+    </match>
+</cardsort>
+</exercise>
    
 <exercise>
 <statement>

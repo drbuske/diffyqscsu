@@ -277,6 +277,97 @@ https://web.uvic.ca/~tbazett/diffyqs/slopefields_section.html#subsection-16">Sub
   </choices>
 </exercise>
 
+<exercise label="12-prep-cardsort1">
+<title>Sorting Slope Field Characteristics of ODEs </title>
+<statement>
+<p> Sort the following into the appropriate category. </p>
+</statement>
+<cardsort>
+<match>
+<premise>
+<m>\dfrac{dy}{dx} = 2</m>
+</premise>
+<premise>
+ All slope segments have the same positive slope everywhere in the
+        plane.
+</premise>
+<premise>
+  Solution curves are straight lines with constant slope.
+</premise>
+<response>
+<p> Slope depends on neither <m>x</m> nor <m>y</m></p>
+</response>
+</match>
+<match>
+<premise>
+<m>\dfrac{dy}{dx} = x</m>
+</premise>
+<premise>
+Slopes change as you move left or right, but are the same along
+        vertical lines.
+</premise>
+<premise>
+   Slope segments are horizontal along the <m>y</m>-axis.
+</premise>
+<response>
+<p>  Slope depends only on <m>x</m></p>
+</response>
+</match>
+<match>
+<premise>
+  <m>\dfrac{dy}{dx} = y</m>
+</premise>
+<premise>
+Slopes change as you move up or down, but are the same along
+        horizontal lines.
+</premise>
+<premise>
+  Slope segments are horizontal along the <m>x</m>-axis.
+</premise>
+<response>
+<p>Slope depends only on <m>y</m></p>
+</response>
+</match>
+
+  <match>
+      <premise>
+        <m>\dfrac{dy}{dx} = x - y</m>
+      </premise>
+
+      <premise>
+        Slope segments are horizontal along the line <m>y=x</m>.
+      </premise>
+
+      <premise>
+        Slopes increase when <m>x</m> increases and decrease when <m>y</m>
+        increases.
+      </premise>
+
+      <response>
+        <p>Slope depends on both <m>x</m> and <m>y</m></p>
+      </response>
+    </match>
+
+<match>
+      <premise>
+        <m>\dfrac{dy}{dx} = y^2</m>
+      </premise>
+
+      <premise>
+        All slopes are nonnegative.
+      </premise>
+
+      <premise>
+        Slope segments get steeper as <m>|y|</m> increases.
+      </premise>
+
+      <response>
+        <p>Slope is always zero or positive</p>
+      </response>
+    </match>
+</cardsort>
+</exercise>
+
   <!-- EXERCISE 1 -->
   <exercise xml:id="value-of-slopefields">
     <statement>
@@ -620,6 +711,8 @@ Sketch a solution to the initial value problem <m>\frac{dy}{dx} = 1.5y</m>, <m>y
 
   </choices>
 </exercise>
+
+
 
 <exercise>
   <statement>
