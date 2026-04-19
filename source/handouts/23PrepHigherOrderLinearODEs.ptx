@@ -386,6 +386,64 @@ Find the general solution to <m>y^{(v)}+18y'''+81y'=0</m>.
   </choices>
 </exercise>
 
+<exercise label="23-prep-cardsort1">
+  <title>Understanding Higher-Order Linear Differential Equations</title>
+
+  <statement>
+    <p>
+      Higher-order linear differential equations have solution spaces whose
+      structure depends on the order of the equation.
+      Sort each pair of statements so that they belong together.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>y'' + y = 0</m>
+      </premise>
+
+      <premise>
+        Two initial conditions are required to determine a unique solution.
+      </premise>
+
+      <response>
+        <p>Second-order linear differential equation</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y''' - y = 0</m>
+      </premise>
+
+      <premise>
+        Three linearly independent solutions are needed.
+      </premise>
+
+      <response>
+        <p>Third-order linear differential equation</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\{e^x,\;e^{-x}\}</m>
+      </premise>
+
+      <premise>
+        Any solution is a linear combination of these functions.
+      </premise>
+
+      <response>
+        <p>Fundamental solution set</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="higherorder-1">
   <statement>
     <p>

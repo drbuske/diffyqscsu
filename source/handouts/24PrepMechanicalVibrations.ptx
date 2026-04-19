@@ -604,6 +604,92 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_mv.html#subsection-44">Subsection 2.4.4
   </choices>
 </exercise>
 
+<exercise label="24-prep-cardsort1">
+  <title>Interpreting Mechanical Vibration Models</title>
+
+  <statement>
+    <p>
+      Each differential equation below models the motion of a mass attached
+      to a spring, possibly with damping or external forcing.
+      Sort the equations so that they match the correct physical behavior.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>x'' + \omega^2 x = 0</m>
+      </premise>
+
+      <premise>
+        No damping or external force is present.
+      </premise>
+
+      <response>
+        <p>Undamped free vibration</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>x'' + 2\beta x' + \omega^2 x = 0</m>
+      </premise>
+
+      <premise>
+        Motion eventually decays to equilibrium.
+      </premise>
+
+      <response>
+        <p>Damped free vibration</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>x'' + \omega^2 x = F_0 \cos(\gamma t)</m>
+      </premise>
+
+      <premise>
+        Oscillations persist due to an external driving force.
+      </premise>
+
+      <response>
+        <p>Undamped forced vibration</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>x'' + 2\beta x' + \omega^2 x = F_0 \cos(\gamma t)</m>
+      </premise>
+
+      <premise>
+        Long-term motion approaches a steady oscillation.
+      </premise>
+
+      <response>
+        <p>Damped forced vibration</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>x'' + 2\beta x' + \omega^2 x = 0</m>
+      </premise>
+
+      <premise>
+        The mass returns to equilibrium without oscillating.
+      </premise>
+
+      <response>
+        <p>Overdamped motion</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="spring-mass-dashpot">
   <statement>
 

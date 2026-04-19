@@ -400,6 +400,48 @@ https://web.uvic.ca/~tbazett/diffyqs/solinear_section.html#subsection-32">Subsec
   </choices>
 </exercise>
 
+<exercise label="21-prep-cardsort1">
+<title>Linear independence of two functions</title>
+<statement>
+<p> 
+Determine whether the two functions are
+      <em>linearly independent</em> or
+      <em>linearly dependent</em>.
+ </p>
+</statement>
+<cardsort>
+<match>
+<premise>
+        <m>\{e^{2x},\;5e^{2x}\}</m>
+      </premise>
+<premise>
+        <m>\{x,\;2x\}</m>
+      </premise>
+      <response>
+        <p> Linearly dependent</p>
+      </response>
+    </match>
+
+   <match>
+<premise>
+        <m>\{e^{x},\;e^{-x}\}</m>
+      </premise>
+      <premise>
+        <m>\{\sin x,\;\cos x\}</m>
+      </premise>
+      <premise>
+        <m>\{x^2,\;x^2+1\}</m>
+      </premise>
+      <premise>
+        <m>\{e^{x},\;xe^{x}\}</m>
+      </premise>
+      <response>
+        <p> Linearly independent</p>
+      </response>
+    </match>
+</cardsort>
+</exercise>
+
 <exercise xml:id="secondorder-linear-operator-1">
   <statement>
     <p>

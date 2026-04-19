@@ -719,6 +719,59 @@ find a particular solution to <m>y''-4y=2e^{2x}</m>.
   </choices>
 </exercise>
 
+<exercise label="25-prep-cardsort1">
+  <title>Undetermined Coefficients or Variation of Parameters?</title>
+
+  <statement>
+    <p>
+      Each differential equation below is linear and nonhomogeneous.
+      Decide whether it is more appropriate to use the method of
+      <em>undetermined coefficients</em> or the method of
+      <em>variation of parameters</em> to find a particular solution.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>y'' - 3y' + 2y = e^{2x}</m>
+      </premise>
+
+      <premise>
+        <m>y'' + y = \sin x</m>
+      </premise>
+
+      <premise>
+        <m>y'' - 4y = x^2</m>
+      </premise>
+
+      <response>
+        <p>Use undetermined coefficients</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y'' + y = \tan x</m>
+      </premise>
+
+      <premise>
+        <m>y'' - y = \dfrac{1}{x}</m>
+      </premise>
+
+      <premise>
+        <m>y'' + 2y' + y = e^{x^2}</m>
+      </premise>
+
+      <response>
+        <p>Use variation of parameters</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="nonhom-particular-1">
   <statement>
     <p>

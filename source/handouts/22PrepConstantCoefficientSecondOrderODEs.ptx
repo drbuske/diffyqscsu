@@ -410,6 +410,120 @@ general solution.
   </choices>
 </exercise>
 
+<exercise label="22-prep-cardsort1">
+  <title>Grouping Constant-Coefficient Second-Order Differential Equation Behaviors</title>
+
+  <statement>
+    <p>
+      Each item described matches one of the given constant-coefficient ODEs.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>y(t) = C_1 e^{2t} + C_2 e^{-2t}</m>
+      </premise>
+
+      <premise>
+        Characteristic equation:
+        <m>r^2 - 4 = 0</m>
+      </premise>
+
+      <premise>
+        Two distinct real roots
+      </premise>
+
+      <premise>
+        General solution involves exponentials
+      </premise>
+
+      <response>
+        <p>
+          <m>y'' - 4y = 0</m>
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y(t) = C_1 \cos(3t) + C_2 \sin(3t)</m>
+      </premise>
+
+      <premise>
+        Characteristic equation:
+        <m>r^2 + 9 = 0</m>
+      </premise>
+
+      <premise>
+        Complex conjugate roots
+      </premise>
+
+      <premise>
+        Solutions oscillate
+      </premise>
+
+      <response>
+        <p>
+          <m>y'' + 9y = 0</m> 
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y(t) = (C_1 + C_2 t)e^{3t}</m>
+      </premise>
+
+      <premise>
+        Characteristic equation:
+        <m>r^2 - 6r + 9 = 0</m>
+      </premise>
+
+      <premise>
+        Repeated real root
+      </premise>
+
+      <premise>
+        One solution must be multiplied by <m>t</m>
+      </premise>
+
+      <response>
+        <p>
+          <m>y'' - 6y' + 9y = 0</m> 
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y(t) = e^{-t}\bigl(C_1 \cos(2t) + C_2 \sin(2t)\bigr)</m>
+      </premise>
+
+      <premise>
+        Characteristic equation:
+        <m>r^2 + 2r + 5 = 0</m>
+      </premise>
+
+      <premise>
+        Complex roots with negative real part
+      </premise>
+
+      <premise>
+        Oscillations with exponential decay
+      </premise>
+
+      <response>
+        <p>
+          <m>y'' + 2y' + 5y = 0</m> 
+        </p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="ccsol-ivp-particular-homogeneous">
   <statement>
     <p>
