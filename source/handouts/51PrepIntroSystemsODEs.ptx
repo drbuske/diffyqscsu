@@ -424,6 +424,75 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_introtosys.html#subsection-135">Subsect
   </choices>
 </exercise>
 
+<exercise label="51-prep-cardsort-intro-systems">
+  <title>Understanding Systems of Differential Equations</title>
+
+  <statement>
+    <p>
+      A system of differential equations describes how several quantities
+      change together.
+      Sort the equations and interpretations so that items that belong
+      together are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x'(t) = y(t) \\
+          y'(t) = -x(t)
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        Two first-order equations describe the evolution of two variables.
+      </premise>
+
+      <response>
+        <p>System of first-order differential equations</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          y''(t) + y(t) = 0
+        </m>
+      </premise>
+
+      <premise>
+        Can be rewritten as a first-order system by introducing new variables.
+      </premise>
+
+      <response>
+        <p>Single higher-order equation equivalent to a system</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \mathbf{x}'(t) =
+          \begin{bmatrix}
+            0 \amp 1 \\
+           -1 \amp 0
+          \end{bmatrix}
+          \mathbf{x}(t)
+        </m>
+      </premise>
+
+      <response>
+        <p>Matrix representation of a system</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   <exercise xml:id="sysbasicidentification">
     <statement>
       <p>

@@ -374,6 +374,85 @@ dashpot).] Find the resulting position function <m>x(t)</m> of the mass.
   </choices>
 </exercise>
 
+<exercise label="32-prep-cardsort-laplace-derivatives-ode">
+  <title>Matching Differential Equations with Their Laplace Transforms</title>
+
+  <statement>
+    <p>
+      Each differential equation below has been transformed using the Laplace
+      transform.
+      Match each differential equation with its correct transformed equation
+      in the <m>s</m>-domain.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <md>
+          <mrow>y'(t) + 3y(t) = 0,</mrow>
+          <mrow> y(0)=2 </mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>        <m>
+          sY(s) - 2 + 3Y(s) = 0
+        </m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <md>
+          <mrow> y''(t) + y(t) = 0,</mrow>
+          <mrow> y(0)=1, y'(0)=0 </mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>        <m>
+          s^2Y(s) - s + Y(s) = 0
+        </m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <md>
+          <mrow>y''(t) - 4y(t) = e^t,</mrow> 
+          <mrow>y(0)=0, y'(0)=1</mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>        <m>
+          s^2Y(s) - 1 - 4Y(s) = \dfrac{1}{s-1}
+        </m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <md>
+          <mrow>y'''(t) = 0,</mrow> 
+          <mrow> y(0)=1, y'(0)=2,</mrow>
+          <mrow> y''(0)=0</mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>        <m>
+          s^3Y(s) - s^2 - 2s = 0
+        </m></p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+
 <exercise xml:id="laplace-deriv-mcq-5">
   <title>Inverse Laplace Identification</title>
 

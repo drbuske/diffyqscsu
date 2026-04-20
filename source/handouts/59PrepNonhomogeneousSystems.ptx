@@ -365,6 +365,93 @@ https://web.uvic.ca/~tbazett/diffyqs/nonhomogsys_section.html#subsection-164">Su
   </choices>
 </exercise>
 
+<exercise label="59-prep-cardsort-nonhomogeneous-systems">
+  <title>Understanding Nonhomogeneous Linear Systems</title>
+
+  <statement>
+    <p>
+      A nonhomogeneous linear system has the form
+      <m>\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)</m>.
+      Sort the equations and descriptions so that items that belong together
+      are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>\mathbf{x}' = A\mathbf{x}</m>
+      </premise>
+
+      <premise>
+        No external forcing is present.
+      </premise>
+
+      <response>
+        <p>Homogeneous linear system</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)</m>
+      </premise>
+
+      <premise>
+        An external input affects the system.
+      </premise>
+
+      <response>
+        <p>Nonhomogeneous linear system</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{x}_h(t)</m>
+      </premise>
+
+      <premise>
+        Solves the associated homogeneous system.
+      </premise>
+
+      <response>
+        <p>Homogeneous solution</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{x}_p(t)</m>
+      </premise>
+
+      <premise>
+        Depends on the forcing term <m>\mathbf{f}(t)</m>.
+      </premise>
+
+      <response>
+        <p>Particular solution</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>\mathbf{x}(t)=\mathbf{x}_h(t)+\mathbf{x}_p(t)</m>
+      </premise>
+
+      <premise>
+        Describes the general solution of the system.
+      </premise>
+
+      <response>
+        <p>General solution of a nonhomogeneous system</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="nonhomog-open-1">
     <title>Solving a Nonhomogeneous System with Diagonal A</title>

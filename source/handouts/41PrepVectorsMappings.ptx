@@ -528,6 +528,86 @@ Express each of the following as a linear combination of <m>{\mathbf{v}}_{1}</m>
   </choices>
 </exercise>
 
+<exercise label="41-prep-cardsort-vectors-maps">
+  <title>Vectors, Mappings, and Matrices</title>
+
+  <statement>
+    <p>
+      Vectors, mappings, and matrices are closely related objects, but they
+      play different roles.
+      Sort the items below so that expressions, interpretations, and
+      descriptions that belong together are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>\begin{bmatrix}2\\-1\end{bmatrix}</m>
+      </premise>
+
+      <premise>
+        An element of <m>\mathbb{R}^2</m>
+      </premise>
+
+      <premise>
+        An arrow having magnitude and direction
+      </premise>
+
+      <response>
+        <p>Vector</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          T(\mathbf{x}) =
+          \begin{bmatrix}
+            1 \amp 0 \\
+            2 \amp -1
+          \end{bmatrix}
+          \mathbf{x}
+        </m>
+      </premise>
+
+      <premise>
+        Takes a vector as input and produces a vector as output
+      </premise>
+
+      <premise>
+        <m>T(a\mathbf{x}+b\mathbf{y})=aT(\mathbf{x})+bT(\mathbf{y})</m> for all scalars <m>a,b</m>
+      </premise>
+
+      <response>
+        <p>Linear mapping</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{bmatrix}
+            1 \amp 0 \\
+            2 \amp -1
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        Represents a linear transformation
+      </premise>
+
+      <response>
+        <p>Matrix</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+
 <exercise xml:id="linop-definition">
   <statement>
     <p>

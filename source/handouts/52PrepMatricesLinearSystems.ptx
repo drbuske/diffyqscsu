@@ -461,6 +461,119 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_matrix.html#subsection-141">Subsection 
   </choices>
 </exercise>
 
+<exercise label="52-prep-cardsort-determinant-values">
+  <title>Computing Determinant Values</title>
+
+  <statement>
+    <p>
+      Each card contains a small matrix.
+      Compute the determinant of each matrix and sort the matrices according
+      to their determinant values.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>
+          \begin{bmatrix}
+            1 \amp 2 \\
+            3 \amp 4
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        <m>
+          \begin{bmatrix}
+            0 \amp -2 \\
+            -1 \amp 0
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <response>
+        <p>Determinant equals <m>-2</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{bmatrix}
+            2 \amp 1 \\
+            4 \amp 2
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        <m>
+          \begin{bmatrix}
+            3 \amp 6 \\
+            1 \amp 2
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <response>
+        <p>Determinant equals <m>0</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{bmatrix}
+            2 \amp 0 \\
+            0 \amp 5
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        <m>
+          \begin{bmatrix}
+            1 \amp 0 \amp 0 \\
+            2 \amp 2 \amp 0 \\
+            -1 \amp 4 \amp 5
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <response>
+        <p>Determinant equals <m>10</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{bmatrix}
+            0 \amp 1 \\
+            1 \amp 0
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        <m>
+          \begin{bmatrix}
+            1 \amp 2 \amp 3 \\
+            0 \amp 1 \amp 4 \\
+            0 \amp 0 \amp -1
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <response>
+        <p>Determinant equals <m>-1</m></p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
 
   <!-- Problem 1 -->
   <exercise xml:id="matrixcomputation1">

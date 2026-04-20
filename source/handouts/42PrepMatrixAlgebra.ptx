@@ -422,6 +422,47 @@ Compute <m>AB</m>, <m>(AB)^{T}</m>, <m>A^{T}B^{T}</m>, and <m>B^{T}A^{T}</m>.
   </choices>
 </exercise>
 
+<exercise label="42-prep-matrix-multiplication">
+      <title>Algebraic properties of matrix multiplication</title>
+
+      <statement>
+        <p>
+          Suppose <m>b</m> and <m>c</m> are scalars, <m>\vvec,
+          \wvec</m> are vectors in
+          <m>\real^5</m>, and <m>A</m> is a <m>5\times 5</m>
+          matrix.
+          Determine whether each of the following algebraic
+          properties is Always True, Never True, or Sometimes True.
+        </p>
+      </statement> 
+      <cardsort>
+        <match>
+          <response>Always True</response>
+          <premise order="7"><m>A(b\vvec +c\wvec)=bA\vvec +
+          cA\wvec</m></premise> 
+          <premise order="1"><m>A\zerovec=\zerovec</m></premise>
+          <premise order="5"><m>(a+b)\vvec=a\vvec+b\vvec</m></premise>
+          <premise order="4"><m>A(b\vvec)=bA\vvec</m></premise>
+          <premise order="8"><m>I\vvec=\vvec</m> where <m>I</m> is the
+          <m>5\times5</m> identity</premise>
+          <premise order="2"><m>0\vvec=\zerovec</m></premise>
+        </match>
+        <match>
+          <response>Never True</response>
+          <premise order="6"><m>A\vvec=\vvec A</m></premise>
+          <premise order="10"><p>If <m>A\vvec=3\vvec</m>, then
+          <m>A=3</m>.</p></premise> 
+        </match>
+        <match>
+          <response>Sometimes True</response>
+          <premise order="9"><p>If <m>A\vvec=A\wvec</m>, then
+          <m>\vvec=\wvec</m>.</p></premise> 
+          <premise order="3"><p>If <m>A\vvec=\zerovec</m>, then
+          <m>\vvec=\zerovec</m>.</p></premise> 
+        </match>
+      </cardsort>
+    </exercise>
+
 <exercise xml:id="matrix-dotproduct-relationship">
   <statement>
     <p>

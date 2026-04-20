@@ -581,6 +581,107 @@ https://web.uvic.ca/~tbazett/diffyqs/eigenmethod_section.html#subsection-146">Su
   </choices>
 </exercise>
 
+<exercise label="54-prep-cardsort-eigenmethod">
+  <title>Interpreting the Eigenvalue Method for Linear Systems</title>
+
+  <statement>
+    <p>
+      The eigenvalue method is used to solve linear systems of the form
+      <m>\mathbf{x}' = A\mathbf{x}</m>.
+      Sort the matrices, eigenvalue information, and solution descriptions so
+      that items that belong together are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>
+          A =
+          \begin{bmatrix}
+            2 \amp 0 \\
+            0 \amp -1
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        Eigenvalues: <m>\lambda_1=2</m>, <m>\lambda_2=-1</m>
+      </premise>
+
+      <response>
+        <p>
+          Solutions involve exponentials
+          <m>e^{2t}</m> and <m>e^{-t}</m>
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          A =
+          \begin{bmatrix}
+            0 \amp -1 \\
+            1 \amp 0
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        Eigenvalues are purely imaginary
+      </premise>
+
+      <response>
+        <p>
+          Solutions are oscillatory
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          A =
+          \begin{bmatrix}
+            -2 \amp 0 \\
+            0 \amp -3
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        Both eigenvalues are negative
+      </premise>
+
+      <response>
+        <p>
+          All solutions decay to the origin
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Matrix <m>A</m> has a repeated real eigenvalue
+      </premise>
+
+      <premise>
+        Only one linearly independent eigenvector exists
+      </premise>
+
+      <response>
+        <p>
+          General solution includes a term multiplied by <m>t</m>
+        </p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+``
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="eigenmethod-open-1">
     <title>Deriving the Eigenvalue Equation</title>

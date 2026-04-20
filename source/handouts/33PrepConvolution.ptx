@@ -389,6 +389,64 @@ https://web.uvic.ca/~tbazett/diffyqs/convolution_section.html#example-61">Exampl
   </choices>
 </exercise>
 
+<exercise label="33-prep-cardsort-convolution">
+  <title>Recognizing Convolution in Differential Equations</title>
+
+  <statement>
+    <p>
+      Convolution appears naturally when solving linear differential equations
+      with forcing terms using Laplace transforms.
+      Match each situation with the correct interpretation or expression
+      involving convolution.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <md>
+          <mrow>y'' + y = f(t), </mrow>
+          <mrow> y(0)=0, y'(0)=0</mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>        <m>
+          y(t) = \int_0^t \sin(t-\tau)\,f(\tau)\,d\tau
+        </m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          Y(s) = \dfrac{1}{s^2+1}\,F(s)
+        </m>
+      </premise>
+
+      <response>
+        <p><m>
+          y(t) = (\sin t) * f(t)
+        </m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \frac{1}{s-1}F(s)
+        </m>
+      </premise>
+
+      <response>
+        <p><m>y(t)=e^t * f(t)</m></p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="conv-purpose">
   <statement>
     <p>

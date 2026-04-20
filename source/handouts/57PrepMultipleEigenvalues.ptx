@@ -338,6 +338,50 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_multeigen.html#subsection-154">Subsecti
   </choices>
 </exercise>
 
+<exercise label="57-prep-cardsort-multiple-eigenvalues">
+  <title>Linear Systems with Repeated Eigenvalues</title>
+
+  <statement>
+    <p>
+      Some linear systems have repeated eigenvalues.
+      The structure of the solution depends on whether there are enough
+      linearly independent eigenvectors.
+      Sort the systems and descriptions so that items that belong together
+      are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>2 \times 2</m> matrix <m>A</m> has a repeated eigenvalue
+        <m>\lambda</m> and two linearly independent eigenvectors exist
+      </premise>
+
+      <premise>
+        Matrix <m>A</m> has distinct eigenvalues
+      </premise>
+
+      <response>
+        <p>General solution to <m>\xvec'=A\xvec</m> uses two exponential solutions</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>2 \times 2</m> matrix <m>A</m> has a repeated eigenvalue
+        <m>\lambda</m> and only one linearly independent eigenvector exists
+      </premise>
+
+      <response>
+        <p>General solution includes a <m>t e^{\lambda t}</m> term</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="multeigennew1">
     <title>Checking Whether a Matrix Is Defective</title>

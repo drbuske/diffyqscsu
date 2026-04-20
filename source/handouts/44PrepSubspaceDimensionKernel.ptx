@@ -467,6 +467,47 @@ A.3.1, A.3.2, A.3.5, A.3.8, A.3.101, A.3.102, A.3.103, A.3.104, A.3.105, A.3.108
   </hint>
 </exercise>
 
+<exercise label="44-prep-matchdim">
+      <title>Determining dimensions of subspaces</title>
+      <statement>
+        <p>Suppose <m>A</m> is a <m>23\times 24</m> matrix with
+        <m>\rank(A)=22</m>. Match the unknown values on the left with
+        the values on the right.</p>
+      </statement>
+      <cardsort>
+        <match>
+          <response><m>1</m></response>
+        </match>
+        <match>
+          <premise><p>The dimension of <m>\nul(A)</m>.</p></premise>
+          <premise><p>The number of free variables describing the
+          solutions to <m>A\xvec =\zerovec</m>.</p></premise>
+          <response><m>2</m></response>
+        </match>
+        <match>
+          <response><m>3</m></response>
+        </match>
+        <match>
+          <premise><p>The dimension of <m>\col(A)</m>.</p></premise>
+          <premise><p>The number of pivot positions in <m>A</m>.</p></premise>
+          <premise><p>The number of linearly independent columns of
+          <m>A</m>.</p></premise>
+          <response><m>22</m></response>
+        </match>
+
+        <match>
+          <premise><p><m>\col(A)</m> is a subspace of <m>\real^p</m> for which <m>p</m>?</p></premise>
+          <response><m>23</m></response>
+        </match>
+        <match>
+          <premise><p><m>\nul(A)</m> is a subspace of <m>\real^p</m> for which <m>p</m>?</p></premise>
+          <premise><p><m>\dim(\nul(A))+\dim(\col(A))=</m>?</p></premise>
+          <response><m>24</m></response>
+        </match>
+
+      </cardsort>
+
+    </exercise>
 
 <exercise>
     <statement>

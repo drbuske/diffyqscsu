@@ -374,6 +374,78 @@ https://web.uvic.ca/~tbazett/diffyqs/sol_section.html#subsection-151">Subsection
   </choices>
 </exercise>
 
+<exercise label="56-prep-cardsort-second-order-behavior">
+  <title>Second-Order Systems and Phase-Plane Behavior</title>
+
+  <statement>
+    <p>
+      Second-order differential equations can be rewritten as systems and
+      interpreted geometrically in the phase plane using position and velocity.
+      Sort each equation so that it matches the correct qualitative behavior
+      of its solutions.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        Closed orbits in the phase plane
+      </premise>
+
+      <premise>
+        Energy is conserved and solutions repeat periodically.
+      </premise>
+
+      <response>
+        <p><m>y'' + y = 0</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Trajectories approach the origin monotonically
+      </premise>
+
+      <premise>
+        Motion decays smoothly to equilibrium without oscillation.
+      </premise>
+
+      <response>
+        <p><m>y'' + 2y' + y = 0</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Spiral motion toward the origin
+      </premise>
+
+      <premise>
+        Oscillations occur with decreasing amplitude.
+      </premise>
+
+      <response>
+        <p><m>y'' + y' + y = 0</m></p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        Saddle-type instability
+      </premise>
+
+      <premise>
+        Small disturbances grow rapidly over time.
+      </premise>
+
+      <response>
+        <p><m>y'' - y = 0</m></p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
 
   <!-- PROBLEM 1 -->
   <exercise xml:id="secondorderopennew1">

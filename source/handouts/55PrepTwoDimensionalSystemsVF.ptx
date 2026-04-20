@@ -341,6 +341,103 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_twodimaut.html#subsection-147">Subsecti
   </choices>
 </exercise>
 
+<exercise label="55-prep-cardsort-two-dim-autonomous">
+  <title>Interpreting Two-Dimensional Autonomous Systems</title>
+
+  <statement>
+    <p>
+      A two-dimensional autonomous system has the form
+      <m>\mathbf{x}' = \mathbf{f}(\mathbf{x})</m>.
+      Such systems are studied using equilibrium points and phase-plane
+      analysis.
+      Sort the systems and descriptions so that items that belong together
+      are grouped correctly.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x' = y \\
+          y' = -x
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        Solutions form closed orbits around the origin.
+      </premise>
+
+      <response>
+        <p>Center equilibrium</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x' = x \\
+          y' = -y
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        Trajectories approach the origin along one direction and move away
+        along another.
+      </premise>
+
+      <response>
+        <p>Saddle point</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x' = -x \\
+          y' = -y
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        All nearby solutions move toward the origin as time increases.
+      </premise>
+
+      <response>
+        <p>Stable node</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x' = x - y \\
+          y' = x + y
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        Solutions spiral outward from the origin.
+      </premise>
+
+      <response>
+        <p>Unstable spiral</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+``
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="twodim-open-1">
     <title>Describing the Vector Field and Trajectory Behavior</title>

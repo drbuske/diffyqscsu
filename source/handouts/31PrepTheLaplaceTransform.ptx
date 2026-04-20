@@ -481,6 +481,61 @@ using partial fractions and tables.  Does AI agree with your result?
   </choices>
 </exercise>
 
+<exercise label="31-prep-cardsort-laplace">
+  <title>Choosing the Laplace Transform Method</title>
+
+  <statement>
+    <p>
+      Each differential equation below can be solved using different methods.
+      Sort the equations according to whether the Laplace transform is
+      especially well suited for solving the problem.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>y'' + y = \begin{cases}
+          0 \amp 0 \le t &lt; 2 \\
+          1 \amp t \ge 2
+        \end{cases}</m>
+      </premise>
+
+      <premise>
+        <m>y'' + 3y' + 2y = u(t-5)</m>
+      </premise>
+
+      <premise>
+        <m>y'' + y = \delta(t-3)</m>
+      </premise>
+
+      <response>
+        <p>Laplace transform is especially useful</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y'' - 4y = e^{2t}</m>
+      </premise>
+
+      <premise>
+        <m>y'' + y = \sin t</m>
+      </premise>
+
+      <premise>
+        <m>y'' - y' = t^2</m>
+      </premise>
+
+      <response>
+        <p>Better suited for earlier methods</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="laplace-basic-definition">
   <statement>
     <p>

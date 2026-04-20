@@ -374,6 +374,70 @@ Solve (find the impulse response) <m>x'' + x' + x = \delta(t)</m>, <m>x(0) = 0</
   </choices>
 </exercise>
 
+<exercise label="34-prep-cardsort-dirac-delta">
+  <title>Interpreting the Dirac Delta Function</title>
+
+  <statement>
+    <p>
+      The Dirac delta function is used to model instantaneous forces or inputs
+      in differential equations.
+      Sort the equations and conclusions so that each group correctly
+      describes the effect of the delta function.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>y'' + y = \delta(t-2)</m>
+      </premise>
+
+      <premise>
+        The solution is continuous, but its derivative has a jump at
+        <m>t=2</m>.
+      </premise>
+
+      <response>
+        <p>Impulse forcing causes a sudden change in velocity</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y' + y = \delta(t-1)</m>
+      </premise>
+
+      <premise>
+        The forcing occurs instantaneously at <m>t=1</m>.
+      </premise>
+
+      <premise>
+        The solution has a jump discontinuity at <m>t=1</m>.
+      </premise>
+
+      <response>
+        <p>Impulse causes a sudden change in the solution value</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>y'' + 4y = 0</m>
+      </premise>
+
+      <premise>
+        All changes in the solution occur smoothly over time.
+      </premise>
+
+      <response>
+        <p>No impulsive forcing</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
 <exercise xml:id="delta-open-1">
   <statement>
     <p>

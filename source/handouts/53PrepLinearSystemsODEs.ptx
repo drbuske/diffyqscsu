@@ -482,6 +482,63 @@ https://web.uvic.ca/~tbazett/diffyqs/linsystems_section.html#subsection-142">Sub
   </choices>
 </exercise>
 
+<exercise label="53-prep-cardsort-linear-systems">
+  <title>Interpreting Linear Systems of Differential Equations</title>
+
+  <statement>
+    <p>
+      Linear systems of differential equations can be represented and
+      interpreted in several equivalent ways.
+      Sort the equations and descriptions so that each group correctly
+      describes a single type of linear system behavior or structure.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x'(t) = 3x(t) \\
+          y'(t) = -2y(t)
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        The equations can be solved independently.
+      </premise>
+
+      <response>
+        <p>Decoupled linear system</p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          \begin{cases}
+          x'(t) = x(t) + y(t) \\
+          y'(t) = x(t) - y(t)
+          \end{cases}
+        </m>
+      </premise>
+
+      <premise>
+        Each equation depends on both variables.
+      </premise>
+
+      <response>
+        <p>Coupled linear system</p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
+
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="linsysopen1">
     <!-- <title>Checking if Functions Form a Solution Set</title> -->

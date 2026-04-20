@@ -386,6 +386,87 @@ https://web.uvic.ca/~tbazett/diffyqs/sec_matexp.html#subsection-160">Subsection 
   </choices>
 </exercise>
 
+<exercise label="58-prep-cardsort-matrix-exponential-simple">
+  <title>Understanding the Matrix Exponential</title>
+
+  <statement>
+    <p>
+      The matrix exponential is used to solve linear systems of the form
+      <m>\mathbf{x}' = A\mathbf{x}</m>.
+      Sort the expressions so that each system is matched with the correct
+      form of its solution.
+    </p>
+  </statement>
+
+  <cardsort>
+
+    <match>
+      <premise>
+        <md>
+        <mrow>\mathbf{x}' = A\mathbf{x}</mrow>
+        <mrow>\mathbf{x}(0)=\mathbf{x}_0</mrow>
+      </md>
+      </premise>
+
+      <response>
+        <p>
+          <m>\mathbf{x}(t)=e^{At}\mathbf{x}_0</m>
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <md>
+        <mrow>
+          A =
+          \begin{bmatrix}
+            \lambda_1 \amp 0 \\
+            0 \amp \lambda_2
+          \end{bmatrix}
+         and    </mrow>
+        <mrow>\lambda_1 \neq \lambda_2</mrow>
+        </md>
+      </premise>
+
+      <response>
+        <p>
+          <m>
+            e^{At} =
+            \begin{bmatrix}
+              e^{\lambda_1 t} \amp 0 \\
+              0 \amp e^{\lambda_2 t}
+            \end{bmatrix}
+          </m>
+        </p>
+      </response>
+    </match>
+
+    <match>
+      <premise>
+        <m>
+          A =
+          \begin{bmatrix}
+            \lambda \amp 1 \\
+            0 \amp \lambda
+          \end{bmatrix}
+        </m>
+      </premise>
+
+      <premise>
+        Single eigenvalue with one eigenvector
+      </premise>
+
+      <response>
+        <p>
+          <m>e^{At}</m> contains a factor of <m>t e^{\lambda t}</m>
+        </p>
+      </response>
+    </match>
+
+  </cardsort>
+</exercise>
+
   <!-- PROBLEM 1 -->
   <exercise xml:id="matexpnew1">
     <title>Using the Series Definition to Compute a Simple Matrix Exponential</title>
