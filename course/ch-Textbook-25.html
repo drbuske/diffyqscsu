@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.4';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -933,8 +933,41 @@ e^{t}\)</span></div></li>
 </div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Exercise 7: Verifying a Solution from an Eigenpair"><a href="#mcqchecksolutionform" title="Copy heading and permalink for Exercise 7: Verifying a Solution from an Eigenpair" aria-label="Copy heading and permalink for Exercise 7: Verifying a Solution from an Eigenpair">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethod-open-1"><h5 class="heading">
-<span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Deriving the Eigenvalue Equation.</span>
+<div class="autopermalink" data-description="Exercise 7: Verifying a Solution from an Eigenpair"><a href="#mcqchecksolutionform" title="Copy heading and permalink for Exercise 7: Verifying a Solution from an Eigenpair" aria-label="Copy heading and permalink for Exercise 7: Verifying a Solution from an Eigenpair">🔗</a></div></article><article class="exercise exercise-like" id="54-prep-cardsort-eigenmethod"><h5 class="heading">
+<span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interpreting the Eigenvalue Method for Linear Systems.</span>
+</h5>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-54-prep-cardsort-eigenmethod">
+<span data-subcomponent="question"><div class="para" id="54-prep-cardsort-eigenmethod-2-1">The eigenvalue method is used to solve linear systems of the form <span class="process-math">\(\mathbf{x}' = A\mathbf{x}\text{.}\)</span> Sort the matrices, eigenvalue information, and solution descriptions so that items that belong together are grouped correctly.<div class="autopermalink" data-description="Paragraph"><a href="#54-prep-cardsort-eigenmethod-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag1" data-category="1"><span class="process-math">\(A =
+\begin{bmatrix}
+2 \amp 0 \\
+0 \amp -1
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag2" data-category="1">Eigenvalues: <span class="process-math">\(\lambda_1=2\text{,}\)</span> <span class="process-math">\(\lambda_2=-1\)</span>
+</li>
+<li data-subcomponent="dropzone" for="rs-54-prep-cardsort-eigenmethod_drag1" data-category="1"><div class="para" id="54-prep-cardsort-eigenmethod-3-1-3-1">Solutions involve exponentials <span class="process-math">\(e^{2t}\)</span> and <span class="process-math">\(e^{-t}\)</span>
+</div></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag3" data-category="2"><span class="process-math">\(A =
+\begin{bmatrix}
+0 \amp -1 \\
+1 \amp 0
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag4" data-category="2">Eigenvalues are purely imaginary</li>
+<li data-subcomponent="dropzone" for="rs-54-prep-cardsort-eigenmethod_drag2" data-category="2"><div class="para" id="54-prep-cardsort-eigenmethod-3-2-3-1">Solutions are oscillatory</div></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag5" data-category="3"><span class="process-math">\(A =
+\begin{bmatrix}
+-2 \amp 0 \\
+0 \amp -3
+\end{bmatrix}\)</span></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag6" data-category="3">Both eigenvalues are negative</li>
+<li data-subcomponent="dropzone" for="rs-54-prep-cardsort-eigenmethod_drag3" data-category="3"><div class="para" id="54-prep-cardsort-eigenmethod-3-3-3-1">All solutions decay to the origin</div></li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag7" data-category="4">Matrix <span class="process-math">\(A\)</span> has a repeated real eigenvalue</li>
+<li data-subcomponent="draggable" id="rs-54-prep-cardsort-eigenmethod_drag8" data-category="4">Only one linearly independent eigenvector exists</li>
+<li data-subcomponent="dropzone" for="rs-54-prep-cardsort-eigenmethod_drag4" data-category="4"><div class="para" id="54-prep-cardsort-eigenmethod-3-4-3-1">General solution includes a term multiplied by <span class="process-math">\(t\)</span>
+</div></li>
+</ul></div></div>
+<div class="autopermalink" data-description="Exercise 8: Interpreting the Eigenvalue Method for Linear Systems"><a href="#54-prep-cardsort-eigenmethod" title="Copy heading and permalink for Exercise 8: Interpreting the Eigenvalue Method for Linear Systems" aria-label="Copy heading and permalink for Exercise 8: Interpreting the Eigenvalue Method for Linear Systems">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethod-open-1"><h5 class="heading">
+<span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Deriving the Eigenvalue Equation.</span>
 </h5>
 <div class="para" id="eigenmethod-open-1-2-1">Consider a linear homogeneous constant-coefficient system <span class="process-math">\(\vec{x}' = P\vec{x}\text{.}\)</span> Starting from the trial solution <span class="process-math">\(\vec{x}(t) = \vec{v} e^{\lambda t}\text{,}\)</span> derive the algebraic eigenvalue equation that <span class="process-math">\(\lambda\)</span> and <span class="process-math">\(\vec{v}\)</span> must satisfy. Explain each step clearly.<div class="autopermalink" data-description="Paragraph"><a href="#eigenmethod-open-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -968,10 +1001,10 @@ P(\vec{v} e^{\lambda t})
 </div>
 <div class="para" id="eigenmethod-open-1-3-8">This is exactly the eigenvalue equation. It states that <span class="process-math">\(\vec{v}\)</span> must be an eigenvector of <span class="process-math">\(P\)</span> with eigenvalue <span class="process-math">\(\lambda\text{.}\)</span> The section emphasizes this derivation as the foundation of the eigenvalue method.<div class="autopermalink" data-description="Paragraph"><a href="#eigenmethod-open-1-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 8.1"><a href="#eigenmethod-open-1-3" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 9.1"><a href="#eigenmethod-open-1-3" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 8: Deriving the Eigenvalue Equation"><a href="#eigenmethod-open-1" title="Copy heading and permalink for Exercise 8: Deriving the Eigenvalue Equation" aria-label="Copy heading and permalink for Exercise 8: Deriving the Eigenvalue Equation">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethodopen2"><h5 class="heading">
-<span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Verifying an Eigenvector Solution.</span>
+<div class="autopermalink" data-description="Exercise 9: Deriving the Eigenvalue Equation"><a href="#eigenmethod-open-1" title="Copy heading and permalink for Exercise 9: Deriving the Eigenvalue Equation" aria-label="Copy heading and permalink for Exercise 9: Deriving the Eigenvalue Equation">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethodopen2"><h5 class="heading">
+<span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Verifying an Eigenvector Solution.</span>
 </h5>
 <div class="para" id="eigenmethodopen2-2-1">Let <span class="process-math">\(P =
 \begin{bmatrix}
@@ -1030,10 +1063,10 @@ P\vec{v}
 </div>
 <div class="para" id="eigenmethodopen2-3-6">This exercise illustrates a key requirement: a solution of the form <span class="process-math">\(\vec{v} e^{\lambda t}\)</span> exists only when <span class="process-math">\(P\vec{v} = \lambda \vec{v}\)</span> holds.<div class="autopermalink" data-description="Paragraph"><a href="#eigenmethodopen2-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 9.1"><a href="#eigenmethodopen2-3" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 10.1"><a href="#eigenmethodopen2-3" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 9: Verifying an Eigenvector Solution"><a href="#eigenmethodopen2" title="Copy heading and permalink for Exercise 9: Verifying an Eigenvector Solution" aria-label="Copy heading and permalink for Exercise 9: Verifying an Eigenvector Solution">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethodopen3"><h5 class="heading">
-<span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Constructing a General Solution from Two Eigenpairs.</span>
+<div class="autopermalink" data-description="Exercise 10: Verifying an Eigenvector Solution"><a href="#eigenmethodopen2" title="Copy heading and permalink for Exercise 10: Verifying an Eigenvector Solution" aria-label="Copy heading and permalink for Exercise 10: Verifying an Eigenvector Solution">🔗</a></div></article><article class="exercise exercise-like" id="eigenmethodopen3"><h5 class="heading">
+<span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Constructing a General Solution from Two Eigenpairs.</span>
 </h5>
 <div class="para" id="eigenmethodopen3-2-1">Suppose a system <span class="process-math">\(\vec{x}' = P\vec{x}\)</span> has two distinct eigenvalues <span class="process-math">\(\lambda_1 = 1\)</span> and <span class="process-math">\(\lambda_2 = 4\)</span> with corresponding eigenvectors <span class="process-math">\(\vec{v}_1 =
 \begin{bmatrix}
@@ -1083,9 +1116,9 @@ e^{4t}.
 </div>
 <div class="para" id="eigenmethodopen3-3-5">Because the eigenvalues <span class="process-math">\(1\)</span> and <span class="process-math">\(4\)</span> are distinct, the corresponding eigenvectors are automatically linearly independent. Hence these two solutions form a fundamental set, and every solution to the system is their linear combination, exactly as described in the theory.<div class="autopermalink" data-description="Paragraph"><a href="#eigenmethodopen3-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 10.1"><a href="#eigenmethodopen3-3" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 11.1"><a href="#eigenmethodopen3-3" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Exercise 10: Constructing a General Solution from Two Eigenpairs"><a href="#eigenmethodopen3" title="Copy heading and permalink for Exercise 10: Constructing a General Solution from Two Eigenpairs" aria-label="Copy heading and permalink for Exercise 10: Constructing a General Solution from Two Eigenpairs">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Exercises"><a href="#sec-Toprepareforclass54-4" title="Copy heading and permalink for Exercises: Exercises" aria-label="Copy heading and permalink for Exercises: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section: Learn!"><a href="#sec-Toprepareforclass54" title="Copy heading and permalink for Section: Learn!" aria-label="Copy heading and permalink for Section: Learn!">🔗</a></div></section><section class="section" id="sec-Advancedlearningobjectives54"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Exercise 11: Constructing a General Solution from Two Eigenpairs"><a href="#eigenmethodopen3" title="Copy heading and permalink for Exercise 11: Constructing a General Solution from Two Eigenpairs" aria-label="Copy heading and permalink for Exercise 11: Constructing a General Solution from Two Eigenpairs">🔗</a></div></article><div class="autopermalink" data-description="Exercises: Exercises"><a href="#sec-Toprepareforclass54-4" title="Copy heading and permalink for Exercises: Exercises" aria-label="Copy heading and permalink for Exercises: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section: Learn!"><a href="#sec-Toprepareforclass54" title="Copy heading and permalink for Section: Learn!" aria-label="Copy heading and permalink for Section: Learn!">🔗</a></div></section><section class="section" id="sec-Advancedlearningobjectives54"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Advanced learning objectives</span>
 </h3>
 <div class="para" id="sec-Advancedlearningobjectives54-2">In addition to mastering the basic objectives, here are the tasks you should be able to perform, with practice:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Advancedlearningobjectives54-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
